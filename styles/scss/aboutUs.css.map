@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "aboutUs.scss",
+        "_aboutChooseUs.scss",
+        "_aboutReviews.scss",
+        "_aboutSkills.scss",
+        "_aboutSlider.scss",
+        "_aboutTeam.scss",
+        "_aboutValues.scss",
+        "_aboutWeGive.scss"
+    ],
+    "names": [],
+    "file": "aboutUs.css"
+}
