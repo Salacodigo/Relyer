@@ -1,3 +1,54 @@
+.about-we-give {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.about-we-give .what-do-we-give .title-section-we-give {
+  font-size: 40px;
+  margin: 0;
+}
+.about-we-give .what-do-we-give .explanation-about-us {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 0 15px;
+}
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give, .about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
+  display: block;
+}
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
+  font-weight: bold;
+}
+.about-we-give .what-do-we-give .about-us-img {
+  border-radius: 18px;
+  max-width: 90%;
+  margin: auto;
+}
 
+@media (min-width: 768px) {
+  .about-we-give .what-do-we-give {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-we-give .what-do-we-give .title-section-we-give {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+  .about-we-give .what-do-we-give .explanation-about-us {
+    justify-content: center;
+    text-align: justify;
+    margin: 0 auto;
+    flex-direction: row;
+    font-size: 20px;
+    max-width: 1100px;
+  }
+  .about-we-give .what-do-we-give .explanation-about-us .info {
+    margin-right: 35px;
+  }
+  .about-we-give .what-do-we-give .about-us-img {
+    width: 35%;
+    height: fit-content;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=aboutUs.css.map */
