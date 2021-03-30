@@ -1,0 +1,111 @@
+@import '_variables.scss';
+.counters{
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    font-family: $raleway;
+    .counter1, .counter2, .counter3{
+        text-align: center;
+        margin: 20px 0;
+        .figure{
+            font-size: 35px;
+        }
+        .title-counter{
+            font-size: 20px;
+        }
+    }
+}
+.values{
+    font-family: $raleway;
+    text-align: center;
+    .title-values{
+        .logo-simple{
+            width: 50px;
+        }
+        .subtitle-values{
+            margin: 0;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        .relyer-brand{
+            font-size: 35px;
+            h3{
+                margin: 0;
+                letter-spacing: 2px;
+            }
+            // To dont show the break-line
+                br {
+                    content: ''
+                }
+                br:after {
+                    content: ''
+                }
+                .title-our-ADN{
+                    font-weight: normal;
+                    font-size: 20px;
+                    margin: 35px auto 15px ;
+                }
+        }
+    }
+    .our-ADN{
+        .ourValues{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .counters{
+        flex-direction: row;
+        margin: 55px auto;
+        justify-content: center;
+        .counter1, .counter2, .counter3{
+            text-align: center;
+            margin: 0 100px;
+            .figure{
+                font-size: 48px;
+            }
+            .title-counter{
+                font-size: 23px;
+            }
+        }
+    }
+    .values{
+        display: flex;
+        margin-right: 100px;
+        .title-values{
+            width: 60%;
+            margin: auto 0;
+            .logo-simple{
+                width: 70px;
+            }
+            .subtitle-values{
+                margin: 0 auto;
+                font-size: 20px;
+            }
+            .relyer-brand{
+                font-size: 55px;
+                h3{
+                    margin: 0;
+                }
+                // To don't show the break-line
+                    br {
+                        display: flex;
+                    }
+                    .title-our-ADN{
+                        font-weight: normal;
+                        font-size: 20px;
+                        margin: 35px auto 15px ;
+                    }
+            }
+        }
+        .our-ADN{
+            .ourValues{
+                // width: 500px;
+                // height: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
+}

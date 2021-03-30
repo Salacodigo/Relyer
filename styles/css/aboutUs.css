@@ -1,3 +1,164 @@
+.choose-us {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.choose-us .title-choose-us h3 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.choose-us .logo-simple {
+  margin: 30px 0 0 0;
+  width: 50px;
+}
+.choose-us .items-why-choose-us {
+  display: flex;
+  flex-direction: column;
+}
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #8FC2F2, #8251DB);
+}
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
+  width: 90px;
+  margin: 0 auto;
+}
+.choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .choose-us .title-choose-us h3 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+  }
+  .choose-us .logo-simple {
+    margin: 30px 0 0 0;
+    width: 70px;
+  }
+  .choose-us .items-why-choose-us {
+    margin: 40px 150px;
+    flex-direction: row;
+  }
+  .choose-us .items-why-choose-us .item1-why-chooseUs, .choose-us .items-why-choose-us .item2-why-chooseUs, .choose-us .items-why-choose-us .item3-why-chooseUs {
+    width: 33.3%;
+    margin: 0 40px;
+  }
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
+    margin: 10px auto;
+  }
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
+    width: 90px;
+    margin: 0 auto;
+  }
+  .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+.counters {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  font-family: "Raleway", sans-serif;
+}
+.counters .counter1, .counters .counter2, .counters .counter3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.counters .counter1 .figure, .counters .counter2 .figure, .counters .counter3 .figure {
+  font-size: 35px;
+}
+.counters .counter1 .title-counter, .counters .counter2 .title-counter, .counters .counter3 .title-counter {
+  font-size: 20px;
+}
+
+.values {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.values .title-values .logo-simple {
+  width: 50px;
+}
+.values .title-values .subtitle-values {
+  margin: 0;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+.values .title-values .relyer-brand {
+  font-size: 35px;
+}
+.values .title-values .relyer-brand h3 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+.values .title-values .relyer-brand br {
+  content: "";
+}
+.values .title-values .relyer-brand br:after {
+  content: "";
+}
+.values .title-values .relyer-brand .title-our-ADN {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 35px auto 15px;
+}
+.values .our-ADN .ourValues {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .counters {
+    flex-direction: row;
+    margin: 55px auto;
+    justify-content: center;
+  }
+  .counters .counter1, .counters .counter2, .counters .counter3 {
+    text-align: center;
+    margin: 0 100px;
+  }
+  .counters .counter1 .figure, .counters .counter2 .figure, .counters .counter3 .figure {
+    font-size: 48px;
+  }
+  .counters .counter1 .title-counter, .counters .counter2 .title-counter, .counters .counter3 .title-counter {
+    font-size: 23px;
+  }
+
+  .values {
+    display: flex;
+    margin-right: 100px;
+  }
+  .values .title-values {
+    width: 60%;
+    margin: auto 0;
+  }
+  .values .title-values .logo-simple {
+    width: 70px;
+  }
+  .values .title-values .subtitle-values {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .values .title-values .relyer-brand {
+    font-size: 55px;
+  }
+  .values .title-values .relyer-brand h3 {
+    margin: 0;
+  }
+  .values .title-values .relyer-brand br {
+    display: flex;
+  }
+  .values .title-values .relyer-brand .title-our-ADN {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 35px auto 15px;
+  }
+  .values .our-ADN .ourValues {
+    margin: 0 auto;
+  }
+}
 .about-we-give {
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -49,6 +210,11 @@
     height: fit-content;
     margin: auto;
   }
+}
+html {
+  background-image: url(/assets/svgola1.svg);
+  background-repeat: no-repeat;
+  background-position-y: 350px;
 }
 
 /*# sourceMappingURL=aboutUs.css.map */

@@ -5,3 +5,8 @@
 @import '_aboutTeam.scss';
 @import '_aboutValues.scss';
 @import '_aboutWeGive.scss';
+html{
+    background-image: url(/assets/svgola1.svg);
+    background-repeat: no-repeat;
+    background-position-y: 350px; // Para mover la imagen de fondo
+}
