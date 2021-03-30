@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.register-section {
+  width: 100%;
+}
+.register-section .register-container {
+  position: fixed;
+  right: 10px;
+  left: unset;
+  top: 50px;
+  background-color: #41CCFF;
+  border-radius: 50px;
+  width: 250px;
+  height: 335px;
+}
+.register-section .register-container .logo-container {
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  left: -30px;
+  right: unset;
+  top: -30px;
+}
+.register-section .register-container .close-register {
+  border-radius: 50px;
+  background-color: #08FFBA;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: unset;
+  right: 10px;
+  top: -20px;
+  cursor: pointer;
+}
+.register-section .register-container .register-message {
+  background-color: #305cfa;
+  border-radius: 50px;
+  margin: 20px;
+}
+.register-section .register-container .register-message .message {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px;
+}
+.register-section .register-container .register-form {
+  margin-top: -10px;
+}
+.register-section .register-container .register-form .name-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+.register-section .register-container .register-form .name-container .name-box {
+  background-color: #08FFBA;
+  border-radius: 50px;
+  margin: 0;
+  width: 90px;
+  height: 20px;
+}
+.register-section .register-container .register-form .name-container .name-box .name {
+  display: flex;
+  width: 120px;
+  padding: 2px 0px 2px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #305cfa;
+  align-self: center;
+}
+.register-section .register-container .register-form .name-container .input-box {
+  display: flex;
+  background-color: #08FFBA;
+  border-radius: 50px;
+  margin: 10px 0px 10px 20px;
+  left: unset;
+  right: 0px;
+  width: 185px;
+  height: 25px;
+}
+.register-section .register-container .register-form .name-container .input-box .name-input {
+  display: flex;
+  background-color: #08FFBA;
+  border: 0;
+  margin: 0px 10px;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: green;
+}
+.register-section .register-container .register-form .name-container .input-box .name-input::placeholder {
+  color: #305cfa;
+}
+.register-section .register-container .register-form .email-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+.register-section .register-container .register-form .email-container .email-box {
+  background-color: #08FFBA;
+  border-radius: 50px;
+  margin: 0;
+  width: 90px;
+  height: 20px;
+}
+.register-section .register-container .register-form .email-container .email-box .email {
+  display: flex;
+  width: 120px;
+  padding: 2px 0px 2px 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #305cfa;
+  align-self: center;
+}
+.register-section .register-container .register-form .email-container .input-box {
+  display: flex;
+  background-color: #08FFBA;
+  border-radius: 50px;
+  margin: 10px 0px 10px 20px;
+  left: unset;
+  right: 0px;
+  width: 185px;
+  height: 25px;
+}
+.register-section .register-container .register-form .email-container .input-box .email-input {
+  display: flex;
+  background-color: #08FFBA;
+  border: 0;
+  margin: 0px 10px;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: green;
+}
+.register-section .register-container .register-form .email-container .input-box .email-input::placeholder {
+  color: #305cfa;
+}
+.register-section .register-container .register-form .register-send {
+  background-color: #305cfa;
+  height: 35px;
+  width: 80%;
+  border-radius: 50px;
+  border: 0;
+  margin: 0px 10%;
+  color: #08FFBA;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .register-section {
+    height: 270px;
+    border: 1px solid red;
+  }
+  .register-section .register-container {
+    display: flex;
+    top: 50px;
+    width: 500px;
+    height: 200px;
+  }
+  .register-section .register-container .logo-container {
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    left: -60px;
+    top: -30px;
+  }
+  .register-section .register-container .close-register {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+  }
+  .register-section .register-container .register-message {
+    width: 250px;
+    position: absolute;
+    left: -130px;
+  }
+  .register-section .register-container .register-message .message {
+    font-size: 18px;
+  }
+  .register-section .register-container .register-form {
+    margin: 40px 0px 0px 130px;
+  }
+  .register-section .register-container .register-form .name-container {
+    flex-direction: row;
+  }
+  .register-section .register-container .register-form .name-container .name-box {
+    height: 25px;
+  }
+  .register-section .register-container .register-form .name-container .name-box .name {
+    padding: 2px 0px 2px 10px;
+    font-size: 18px;
+  }
+  .register-section .register-container .register-form .name-container .input-box {
+    margin: 0px 0px 0px 20px;
+    right: 0px;
+    width: 220px;
+    height: 25px;
+  }
+  .register-section .register-container .register-form .name-container .input-box .name-input {
+    font-size: 18px;
+    color: green;
+  }
+  .register-section .register-container .register-form .email-container {
+    flex-direction: row;
+    margin: 10px 20px;
+  }
+  .register-section .register-container .register-form .email-container .email-box {
+    margin: 10px 0px;
+    height: 25px;
+  }
+  .register-section .register-container .register-form .email-container .email-box .email {
+    padding: 2px 0px 2px 10px;
+    font-size: 18px;
+  }
+  .register-section .register-container .register-form .email-container .input-box {
+    left: unset;
+    right: 0px;
+    width: 220px;
+  }
+  .register-section .register-container .register-form .email-container .input-box .email-input {
+    font-size: 18px;
+  }
+  .register-section .register-container .register-form .register-send {
+    height: 50px;
+    width: 50%;
+    font-size: 18px;
+    left: 130px;
+    bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=registerPage.css.map */
