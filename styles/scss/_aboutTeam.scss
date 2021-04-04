@@ -1,0 +1,65 @@
+@import '_variables.scss';
+.team{
+    font-family: $Raleway;
+    .title-section-team{
+        text-align: center;
+        .team-title{
+            font-size: 30px;
+            letter-spacing: 7px;
+            margin: 22px;
+        }
+    }
+    .members-team{
+        display: flex;
+        flex-wrap: wrap;
+        .member-ctn{
+            width: 50%;
+            text-align: center;
+            margin-bottom: 20px;
+            .member-photo{
+                max-width: 90%;
+            }
+            .member-info{
+                p{
+                    margin: 3px;
+                }
+                .name-member{
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                .social-media{
+                    img{
+                        width: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px){
+    .team{
+        .title-section-team{
+            .team-title{
+                font-size: 40px;
+                margin: 30px;
+            }
+        }
+        .members-team{
+            display: flex;
+            flex-wrap: nowrap;
+            margin: 0 5%;
+            .member-ctn{
+                .member-photo{
+                    max-width: 95%;
+                }
+                .member-info{
+                    .social-media{
+                        img{
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

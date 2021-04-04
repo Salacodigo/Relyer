@@ -1,9 +1,15 @@
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
 .choose-us {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
 .choose-us .title-choose-us h3 {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0 0 10px 0;
 }
 .choose-us .logo-simple {
@@ -57,6 +63,69 @@
     font-size: 20px;
   }
 }
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
+.team {
+  font-family: "Raleway", sans-serif;
+}
+.team .title-section-team {
+  text-align: center;
+}
+.team .title-section-team .team-title {
+  font-size: 30px;
+  letter-spacing: 7px;
+  margin: 22px;
+}
+.team .members-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .members-team .member-ctn {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.team .members-team .member-ctn .member-photo {
+  max-width: 90%;
+}
+.team .members-team .member-ctn .member-info p {
+  margin: 3px;
+}
+.team .members-team .member-ctn .member-info .name-member {
+  font-weight: bold;
+  font-size: 25px;
+}
+.team .members-team .member-ctn .member-info .social-media img {
+  width: 10%;
+}
+
+@media (min-width: 768px) {
+  .team .title-section-team .team-title {
+    font-size: 40px;
+    margin: 30px;
+  }
+  .team .members-team {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 5%;
+  }
+  .team .members-team .member-ctn .member-photo {
+    max-width: 95%;
+  }
+  .team .members-team .member-ctn .member-info .social-media img {
+    width: 15%;
+  }
+}
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
 .counters {
   display: flex;
   flex-direction: column;
@@ -159,6 +228,12 @@
     margin: 0 auto;
   }
 }
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
 .about-we-give {
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -215,6 +290,10 @@ html {
   background-image: url(/assets/svgola1.svg);
   background-repeat: no-repeat;
   background-position-y: 350px;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=aboutUs.css.map */
