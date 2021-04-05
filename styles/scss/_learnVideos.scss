@@ -71,17 +71,6 @@
         }
       }
     }
-    #video-one:checked{
-      &~.name{  
-        background-color: yellow;
-      }
-      .description-container{
-        
-        &.description-container{  
-          background-color: orange;
-        }
-      }
-    }
 
   }
 }
@@ -155,19 +144,7 @@
             display: flex;
           }
         }
-      }
-      #video-one:checked{
-        &~.name{  
-          background-color: yellow;
-        }
-        .description-container{
-          
-          &.description-container{  
-            background-color: orange;
-          }
-        }
-      }
-  
+      }  
     }
   }
 }
