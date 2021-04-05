@@ -1,18 +1,7 @@
 //Constants loaded
-@use 'variables';
+@import'variables';
 //Normalize file
-@use 'normalize';
-
-$verdementa: #08FFBA;
-$message: #305cfa;
-$azul: #41CCFF;
-$white: #FFFFFF;
-$greendark: green;
-$verdeCTA: rgb(27, 252, 27);
-//Fonts
-$raleway:'Raleway', sans-serif;
-
-
+@import 'normalize';
 
 //
 //MOBILE REGISTER
@@ -26,7 +15,7 @@ $raleway:'Raleway', sans-serif;
     right: 10px;
     left: unset;
     top: 50px;
-    background-color: $azul;
+    background-color: $lightblue;
     border-radius: 50px;
     width: 250px;
     height: 335px;
@@ -44,7 +33,7 @@ $raleway:'Raleway', sans-serif;
     }
     .close-register{
       border-radius: 50px;
-      background-color: $verdementa;
+      background-color: $green;
       width: 40px;
       height: 40px;
       position: absolute;
@@ -55,12 +44,12 @@ $raleway:'Raleway', sans-serif;
     }
     .register-message{
       
-      background-color: $message;
+      background-color: $bluecontrast;
       border-radius: 50px;
       margin: 20px;
       
       .message{
-        font-family:$raleway;
+        font-family:$Raleway;
         font-weight: 600;
         font-size: 15px;
         text-align: center;
@@ -81,7 +70,7 @@ $raleway:'Raleway', sans-serif;
         
 
         .name-box{
-          background-color: $verdementa;
+          background-color: $green;
           border-radius: 50px;
           margin: 0;
           width: 90px;
@@ -91,16 +80,17 @@ $raleway:'Raleway', sans-serif;
             display: flex;
             width: 120px;
             padding: 2px 0px 2px 15px;
-            font-family:$raleway;
+            font-family:$Raleway;
+            font-weight: 700;
             font-size: 15px;
-            color: $message;
+            color: $bluecontrast;
             align-self: center;
             
           }
         }
         .input-box{
           display: flex;
-          background-color: $verdementa;
+          background-color: $aquamarine;
           border-radius: 50px;
           margin: 10px 0px 10px 20px;
           left: unset;
@@ -110,16 +100,18 @@ $raleway:'Raleway', sans-serif;
 
           .name-input{
             display: flex;
-            background-color: $verdementa;
+            background-color: $aquamarine;
+            width: 90%;
             border: 0;
             margin: 0px 10px;
             outline: none;
-            font-family:$raleway;
+            font-family:$Raleway;
+            font-weight: 700;
             font-size: 15px;
-            color: $greendark;
+            color: $darkblue;
 
             &::placeholder{
-              color: $message;
+              color: $bluecontrast
             }
             
           }
@@ -132,7 +124,7 @@ $raleway:'Raleway', sans-serif;
         margin: 0px 20px;
 
         .email-box{
-          background-color: $verdementa;
+          background-color: $green;
           border-radius: 50px;
           margin: 0;
           width: 90px;
@@ -141,16 +133,17 @@ $raleway:'Raleway', sans-serif;
             display: flex;
             width: 120px;
             padding: 2px 0px 2px 15px;
-            font-family:$raleway;
+            font-family:$Raleway;
+            font-weight: 700;
             font-size: 15px;
-            color: $message;
+            color: $bluecontrast;
             align-self: center;
           }
 
         }
         .input-box{
           display: flex;
-          background-color: $verdementa;
+          background-color: $aquamarine;
           border-radius: 50px;
           margin: 10px 0px 10px 20px;
           left: unset;
@@ -160,16 +153,18 @@ $raleway:'Raleway', sans-serif;
 
           .email-input{
             display: flex;
-            background-color: $verdementa;
+            background-color: $aquamarine;
             border: 0;
+            width: 90%;
             margin: 0px 10px;
             outline: none;
-            font-family:$raleway;
+            font-family:$Raleway;
+            font-weight: 700;
             font-size: 15px;
-            color: $greendark;
+            color: $darkblue;
 
             &::placeholder{
-              color: $message;
+              color: $bluecontrast;
             }
             
           }
@@ -177,15 +172,15 @@ $raleway:'Raleway', sans-serif;
         
       }
       .register-send{
-        background-color: $message;     
+        background-color: $aquamarine;     
         height: 35px;
         width: 80%;
         border-radius: 50px;
         border: 0;
         margin: 0px 10%;
-        color: $verdementa;
+        color: $blue;
         font-weight: 700;
-        font-family:$raleway;
+        font-family:$Raleway;
         font-size: 15px; 
         position: absolute;
         cursor: pointer;
@@ -237,7 +232,7 @@ $raleway:'Raleway', sans-serif;
       }
       .register-form{
   
-        margin: 40px 0px 0px 130px;
+        margin: 35px 0px 0px 130px;
   
         .name-container{
           
@@ -245,10 +240,11 @@ $raleway:'Raleway', sans-serif;
           
           .name-box{
 
-            height: 25px;
+            height: 35px;
+            text-align: center;
   
             .name{
-              padding: 2px 0px 2px 10px;
+              padding: 6px 0px 2px 10px;
               font-size: 18px;
               
             }
@@ -258,11 +254,11 @@ $raleway:'Raleway', sans-serif;
             margin: 0px 0px 0px 20px;
             right: 0px;
             width: 220px;
-            height: 25px;
+            height: 35px;
   
             .name-input{
               font-size: 18px;
-              color: $greendark;
+              color: $darkblue;
               
             }
           }
@@ -270,15 +266,15 @@ $raleway:'Raleway', sans-serif;
         }
         .email-container{
           flex-direction: row;
-          margin: 10px 20px;
+          margin: 5px 20px;
   
           .email-box{
 
             margin: 10px 0px;
-            height: 25px;
+            height: 35px;
             .email{
 
-              padding: 2px 0px 2px 10px;
+              padding: 6px 0px 2px 10px;
               font-size: 18px;
             }
   
@@ -288,6 +284,7 @@ $raleway:'Raleway', sans-serif;
             left: unset;
             right: 0px;
             width: 220px;
+            height: 35px;
   
             .email-input{
 
