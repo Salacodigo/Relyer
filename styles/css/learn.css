@@ -23,7 +23,7 @@ body {
   background-color: white;
   border: 2px solid red;
   width: 100%;
-  height: 900px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -53,7 +53,7 @@ body {
   text-align: center;
   width: 300px;
 }
-.learn-search .learn-content .title-container .search-title {
+.learn-search .learn-content .title-container .title {
   color: #010913;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -237,6 +237,166 @@ body {
   }
   .learn-search .learn-content .results-container .results-box .result-card .result-description .result-link {
     cursor: pointer;
+  }
+}
+/* ---RELYER--- */
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.learn-videos .videos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  border: 1px solid green;
+}
+.learn-videos .videos-content .title-container {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0px;
+}
+.learn-videos .videos-content .title-container .title {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.learn-videos .videos-content .videos-carrousel {
+  width: 440px;
+}
+.learn-videos .videos-content .video-name {
+  display: flex;
+  justify-content: center;
+  width: 440px;
+  margin: 5px 0px;
+  text-align: center;
+}
+.learn-videos .videos-content .video-name .name {
+  color: #1A3256;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 20%;
+  margin: 0px 10px;
+  padding: 10px 20px 0px 20px;
+  cursor: pointer;
+  border-top: 3px solid white;
+  transition: border-top 0.5s ease-in-out;
+}
+.learn-videos .videos-content .video-name .name:hover {
+  border-top: 3px solid #1A3256;
+}
+.learn-videos .videos-content .video-name input {
+  display: none;
+}
+.learn-videos .videos-content .description-container {
+  width: 100%;
+}
+.learn-videos .videos-content .description-container .description {
+  margin: 20px 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: none;
+}
+.learn-videos .videos-content .description-container .description.one {
+  display: flex;
+}
+.learn-videos .videos-content #video-one:checked ~ .name {
+  background-color: yellow;
+}
+.learn-videos .videos-content #video-one:checked .description-container.description-container {
+  background-color: orange;
+}
+
+@media (min-width: 1440px) {
+  .learn-videos .videos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    border: 1px solid green;
+  }
+  .learn-videos .videos-content .title-container {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+  }
+  .learn-videos .videos-content .title-container .title {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .learn-videos .videos-content .videos-carrousel {
+    width: 800px;
+    border: 1px solid blue;
+  }
+  .learn-videos .videos-content .video-name {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 5px 0px;
+  }
+  .learn-videos .videos-content .video-name .name {
+    color: #1A3256;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 20%;
+    margin: 0px 10px;
+    padding: 10px 20px 0px 20px;
+    cursor: pointer;
+    border-top: 3px solid white;
+    transition: border-top 0.5s ease-in-out;
+  }
+  .learn-videos .videos-content .video-name .name:hover {
+    border-top: 3px solid #1A3256;
+  }
+  .learn-videos .videos-content .video-name input {
+    display: none;
+  }
+  .learn-videos .videos-content .description-container {
+    width: 100%;
+  }
+  .learn-videos .videos-content .description-container .description {
+    margin: 25px 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: none;
+  }
+  .learn-videos .videos-content .description-container .description.one {
+    display: flex;
+  }
+  .learn-videos .videos-content #video-one:checked ~ .name {
+    background-color: yellow;
+  }
+  .learn-videos .videos-content #video-one:checked .description-container.description-container {
+    background-color: orange;
   }
 }
 
