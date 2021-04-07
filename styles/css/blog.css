@@ -1,3 +1,343 @@
+/* ---RELYER--- */
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
 
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.section-events {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  border: 2px solid red;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.section-events.waves {
+  position: relative;
+  z-index: 0;
+}
+.section-events.waves::after {
+  display: block;
+  background-image: url("../../assets/svgola3.svg");
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+  top: 330px;
+  left: 0px;
+  background-repeat: no-repeat;
+}
+.section-events .events-content {
+  z-index: 10;
+}
+.section-events .events-content .title-container {
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 300px;
+}
+.section-events .events-content .title-container .title {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.section-events .events-content .calendar-container {
+  border: 1px solid red;
+  width: 440px;
+  height: 440px;
+  background-color: #41CCFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-events .events-content .calendar-container .calendar {
+  width: 390px;
+  height: 390px;
+  background-color: white;
+}
+.section-events .events-content .subtitle-container {
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 300px;
+}
+.section-events .events-content .subtitle-container .title {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.section-events .events-content .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 440px;
+}
+.section-events .events-content .cards-container .card {
+  width: 400px;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.section-events .events-content .cards-container .card .date-card {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  background-color: #41CCFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.section-events .events-content .cards-container .card .date-card .month, .section-events .events-content .cards-container .card .date-card .day {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 18px;
+}
+.section-events .events-content .cards-container .card .date-card .month {
+  margin: 10px 5px 5px 5px;
+}
+.section-events .events-content .cards-container .card .date-card .day {
+  margin: 0px 5px 5px 5px;
+  font-size: 30px;
+}
+.section-events .events-content .cards-container .card .information .title {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.section-events .events-content .cards-container .card .information .description {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 3px;
+}
+.section-events .events-content .cards-container .card .information .time {
+  color: #010913;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 3px;
+}
+
+@media (min-width: 1440px) {
+  .section-events {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    border: 2px solid red;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .section-events.waves {
+    position: relative;
+    z-index: 0;
+  }
+  .section-events.waves::after {
+    display: block;
+    background-image: url("../../assets/svgola3.svg");
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    z-index: 0;
+    top: 330px;
+    left: 0px;
+    background-repeat: no-repeat;
+  }
+  .section-events .events-content {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid red;
+  }
+  .section-events .events-content .title-container {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    width: 300px;
+  }
+  .section-events .events-content .title-container .title {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .section-events .events-content .calendar-container {
+    grid-column: 3/6;
+    grid-row: 3/6;
+    border: 1px solid red;
+    width: 440px;
+    height: 440px;
+    background-color: #41CCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-events .events-content .calendar-container .calendar {
+    width: 390px;
+    height: 390px;
+    background-color: white;
+  }
+  .section-events .events-content .subtitle-container {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    width: 300px;
+  }
+  .section-events .events-content .subtitle-container .title {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .section-events .events-content .cards-container {
+    grid-column: 1/3;
+    grid-row: 3/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 440px;
+  }
+  .section-events .events-content .cards-container .card {
+    width: 400px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .section-events .events-content .cards-container .card .date-card {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: #41CCFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .section-events .events-content .cards-container .card .date-card .month, .section-events .events-content .cards-container .card .date-card .day {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .section-events .events-content .cards-container .card .date-card .month {
+    margin: 10px 5px 5px 5px;
+  }
+  .section-events .events-content .cards-container .card .date-card .day {
+    margin: 0px 5px 5px 5px;
+    font-size: 30px;
+  }
+  .section-events .events-content .cards-container .card .information .title {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .section-events .events-content .cards-container .card .information .description {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 3px;
+  }
+  .section-events .events-content .cards-container .card .information .time {
+    color: #010913;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 3px;
+  }
+}
+/* ---RELYER--- */
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.section-blog {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  border: 2px solid red;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.section-blog.waves {
+  position: relative;
+  z-index: 0;
+}
+.section-blog.waves::after {
+  display: block;
+  background-image: url("../../assets/svgola3.svg");
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+  top: 330px;
+  left: 0px;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=blog.css.map */
