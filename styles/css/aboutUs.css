@@ -63,6 +63,98 @@
     font-size: 20px;
   }
 }
+.reviews {
+  font-family: "Raleway", sans-serif;
+}
+.reviews .title-section-reviews {
+  text-align: center;
+  font-size: 40px;
+  margin: 0 20px;
+}
+.reviews .review-metrics {
+  display: flex;
+  text-align: center;
+  margin: 10px 15%;
+}
+.reviews .review-metrics .positive-reviews {
+  margin: 0px 30px;
+}
+.reviews .review-metrics .review-score {
+  display: flex;
+}
+.reviews .review-metrics .review-score .score-star {
+  width: 20px;
+  height: 20px;
+}
+.reviews .messages-ctn {
+  background-color: #FFDDC1;
+  padding-bottom: 20px;
+}
+.reviews .messages-ctn .client-photo {
+  text-align: center;
+}
+.reviews .messages-ctn .client-photo .photo {
+  margin: 20px 0;
+  border-radius: 50%;
+  width: 80px;
+}
+.reviews .messages-ctn .message-client1 {
+  background-color: white;
+  margin: 0 15px;
+  border-radius: 20px;
+}
+.reviews .messages-ctn .message-client1 .name-client1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.reviews .messages-ctn .message-client1 .message {
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .reviews .review-metrics {
+    margin: 10px 30%;
+    justify-content: space-around;
+  }
+  .reviews .messages-ctn {
+    padding-bottom: 20px;
+  }
+  .reviews .messages-ctn .client-photo .photo {
+    margin: 20px 0;
+    width: 90px;
+  }
+  .reviews .messages-ctn .message-client1 {
+    margin: 0 85px;
+  }
+  .reviews .messages-ctn .message-client1 .name-client1 {
+    font-size: 35px;
+  }
+  .reviews .messages-ctn .message-client1 .message {
+    margin: 0 40px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    margin: 0 150px 19px;
+  }
+  .reviews .messages-ctn {
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  .reviews .messages-ctn .client-photo .photo {
+    margin: 20px 0;
+    width: 100px;
+  }
+  .reviews .messages-ctn .message-client1 {
+    margin: 0 205px;
+  }
+  .reviews .messages-ctn .message-client1 .message {
+    margin: 0 40px;
+    text-align: center;
+  }
+}
 .skills {
   font-family: "Raleway", sans-serif;
 }
