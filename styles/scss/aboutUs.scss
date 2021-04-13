@@ -10,6 +10,13 @@ html{
     background-repeat: no-repeat;
     background-position-y: 350px; // Para mover la imagen de fondo
 }
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    min-width: 320px;
+    overflow-x: hidden;
 }

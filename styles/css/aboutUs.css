@@ -63,6 +63,61 @@
     font-size: 20px;
   }
 }
+.skills {
+  font-family: "Raleway", sans-serif;
+}
+.skills .title-section-skills {
+  text-align: center;
+  font-size: 40px;
+}
+.skills .skills-ctn {
+  background-color: azure;
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .skills-ctn .progress1, .skills .skills-ctn .progress2, .skills .skills-ctn .progress3 {
+  margin-top: 24px;
+  text-align: center;
+  width: 100%;
+}
+.skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
+  width: 70%;
+  margin: 0 auto;
+  background-color: red;
+  border-radius: 40px;
+  height: 20px;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    margin: 0 20%;
+  }
+  .skills .skills-ctn {
+    height: 40%;
+    margin: 25px;
+  }
+  .skills .skills-ctn .progress1, .skills .skills-ctn .progress2, .skills .skills-ctn .progress3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 12px 0 12px 0;
+    text-align: center;
+    width: 100%;
+  }
+  .skills .skills-ctn .progress1 .skill1, .skills .skills-ctn .progress1 .skill2, .skills .skills-ctn .progress1 .skill3, .skills .skills-ctn .progress2 .skill1, .skills .skills-ctn .progress2 .skill2, .skills .skills-ctn .progress2 .skill3, .skills .skills-ctn .progress3 .skill1, .skills .skills-ctn .progress3 .skill2, .skills .skills-ctn .progress3 .skill3 {
+    width: 30%;
+    text-align: left;
+    margin-left: 70px;
+  }
+  .skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
+    width: 50%;
+    background-color: red;
+    border-radius: 40px;
+    height: 20px;
+    justify-content: space-between;
+  }
+}
 /* COLORS */
 /* Layers */
 /* Call to action */
@@ -292,8 +347,16 @@ html {
   background-position-y: 350px;
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=aboutUs.css.map */
