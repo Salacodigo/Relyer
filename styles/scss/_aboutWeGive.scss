@@ -5,13 +5,13 @@
     .what-do-we-give{
         .title-section-we-give{
             font-size: 40px;
-            margin: 0;
+            margin: 10px;
         }
         .explanation-about-us{
             display: flex;
             flex-direction: column;
             text-align: justify;
-            margin: 0 15px;
+            margin: 0 25px;
             .info-we-give, .info-we-give2{
                 display: block;
             }
@@ -22,7 +22,7 @@
         .about-us-img{
             border-radius: 18px;
             max-width: 90%;
-            margin: auto;
+            margin: 15px auto;
         }
     }
 }
@@ -43,13 +43,13 @@
                 font-size: 20px;
                 max-width: 1100px;
                 .info{
-                    margin-right: 35px;
+                    margin: 0 35px;
                 }
             }
             .about-us-img{
                 width: 35%;
                 height: fit-content;
-                margin: auto;
+                margin: auto 10px;
             }
         }
     }

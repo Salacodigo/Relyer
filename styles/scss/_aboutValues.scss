@@ -58,7 +58,7 @@
 @media (min-width: 768px){
     .counters{
         flex-direction: row;
-        margin: 55px auto;
+        margin: 55px 30px;
         justify-content: center;
         .counter1, .counter2, .counter3{
             text-align: center;
@@ -73,7 +73,7 @@
     }
     .values{
         display: flex;
-        margin-right: 100px;
+        // margin-right: 100px;
         .title-values{
             width: 60%;
             margin: auto 0;
@@ -107,5 +107,10 @@
                 margin: 0 auto;
             }
         }
+    }
+}
+@media(min-width: 1200px){
+    .values{
+        padding: 0 200px;
     }
 }

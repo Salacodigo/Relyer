@@ -44,7 +44,7 @@
     width: 70px;
   }
   .choose-us .items-why-choose-us {
-    margin: 40px 150px;
+    margin: 40px 100px;
     flex-direction: row;
   }
   .choose-us .items-why-choose-us .item1-why-chooseUs, .choose-us .items-why-choose-us .item2-why-chooseUs, .choose-us .items-why-choose-us .item3-why-chooseUs {
@@ -251,20 +251,34 @@
 }
 
 @media (min-width: 768px) {
-  .team .title-section-team .team-title {
-    font-size: 40px;
-    margin: 30px;
+  .team .members-team {
+    display: flex;
+    flex-wrap: wrap;
   }
+  .team .members-team .member-ctn {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .team .members-team .member-ctn .member-photo {
+    max-width: 90%;
+  }
+  .team .members-team .member-ctn .member-info p {
+    margin: 3px;
+  }
+  .team .members-team .member-ctn .member-info .name-member {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .team .members-team .member-ctn .member-info .social-media img {
+    width: 10%;
+  }
+}
+@media (min-width: 1200px) {
   .team .members-team {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 5%;
-  }
-  .team .members-team .member-ctn .member-photo {
-    max-width: 95%;
-  }
-  .team .members-team .member-ctn .member-info .social-media img {
-    width: 15%;
   }
 }
 /* COLORS */
@@ -328,7 +342,7 @@
 @media (min-width: 768px) {
   .counters {
     flex-direction: row;
-    margin: 55px auto;
+    margin: 55px 30px;
     justify-content: center;
   }
   .counters .counter1, .counters .counter2, .counters .counter3 {
@@ -344,7 +358,6 @@
 
   .values {
     display: flex;
-    margin-right: 100px;
   }
   .values .title-values {
     width: 60%;
@@ -375,6 +388,11 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 1200px) {
+  .values {
+    padding: 0 200px;
+  }
+}
 /* COLORS */
 /* Layers */
 /* Call to action */
@@ -387,13 +405,13 @@
 }
 .about-we-give .what-do-we-give .title-section-we-give {
   font-size: 40px;
-  margin: 0;
+  margin: 10px;
 }
 .about-we-give .what-do-we-give .explanation-about-us {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  margin: 0 15px;
+  margin: 0 25px;
 }
 .about-we-give .what-do-we-give .explanation-about-us .info-we-give, .about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
   display: block;
@@ -404,7 +422,7 @@
 .about-we-give .what-do-we-give .about-us-img {
   border-radius: 18px;
   max-width: 90%;
-  margin: auto;
+  margin: 15px auto;
 }
 
 @media (min-width: 768px) {
@@ -425,12 +443,12 @@
     max-width: 1100px;
   }
   .about-we-give .what-do-we-give .explanation-about-us .info {
-    margin-right: 35px;
+    margin: 0 35px;
   }
   .about-we-give .what-do-we-give .about-us-img {
     width: 35%;
     height: fit-content;
-    margin: auto;
+    margin: auto 10px;
   }
 }
 html {
