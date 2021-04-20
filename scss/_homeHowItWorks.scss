@@ -1,0 +1,232 @@
+.how-it-works {
+
+    h2 {
+        font: 700 3.5rem $Raleway;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .wave1,
+    .wave2,
+    .wave3 {
+        display: none;
+    }
+
+    /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+    &>.hiwsection-container {
+        padding-top: 0;
+
+        /* GENERAL STYLES FOR ALL OF THEM */
+        &>.hiwsection {
+
+            position: relative;
+
+            &>.content {
+                text-align: center;
+                margin: 0 auto;
+
+                &>h3 {
+                    font: 800 3.5rem $Raleway;
+                    color: $blue;
+                }
+
+                &>p {
+                    font: 400 2rem/40px $Raleway;
+                }
+
+            }
+
+            .numbers {
+                transform: scale(0.7);
+            }
+        }
+
+        .spider,
+        .reading,
+        .chess {
+            display: none;
+        }
+
+        .spiderwhite,
+        .readingwhite,
+        .chesswhite {
+            display: block;
+            transform: scale(0.7);
+            margin: 0 auto;
+            z-index: -10;
+        }
+
+        /* EACH OF THE SECTIONS */
+        &>.identify {
+            background: linear-gradient(90.9deg, rgba(170, 224, 253, 0.63) -3.59%, rgba(117, 141, 236, 0.53) 99.23%);
+
+            &>.number1 {
+                margin-left: 20px;
+            }
+
+        }
+
+        &>.learn {
+            position: unset;
+            background: linear-gradient(270deg, #b4f0e0 7.09%, rgba(223, 243, 240, 0.09) 100%);
+
+            &>.number2 {
+                position: unset;
+            }
+
+        }
+
+        &>.apply {
+
+            background: linear-gradient(270.45deg, rgba(170, 224, 253, 0.63) 10.17%, rgba(117, 141, 236, 0.53) 90.03%);
+
+            &>.number3 {
+                margin-left: 20px;
+            }
+        }
+
+    }
+}
+
+
+
+
+@media (min-width:1200px) {
+
+
+    .how-it-works {
+
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 30px;
+            margin-left: 140px;
+            font: 400 6.5rem $Raleway;
+            color: $darkblue;
+            z-index: 50;
+
+            &>span {
+                font-weight: 700;
+            }
+        }
+
+        .wave1,
+        .wave2,
+        .wave3 {
+            display: block;
+            width: 100%;
+            z-index: 40;
+
+        }
+
+        .wave1 {
+            position: absolute;
+        }
+
+
+        /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+        &>.hiwsection-container {
+            padding-top: 480px;
+
+            /* GENERAL STYLES FOR ALL OF THEM */
+            &>.hiwsection {
+                background: white;
+                opacity: 1;
+                height: 40vw;
+
+
+                .wave2 {
+                    position: relative;
+                    bottom: 320px;
+                }
+
+                .wave3 {
+                    position: relative;
+                    bottom: 50px;
+                }
+
+                &>.content {
+                    text-align: unset;
+                    margin: unset;
+                    margin: 40px 0px 100px 120px;
+
+                    &>h3 {
+                        font: 800 5rem $Raleway;
+                    }
+
+                    &>p {
+                        margin-top: 10px;
+                        font: 400 2rem/40px $Raleway;
+                        color: $black;
+                    }
+
+                }
+
+                .numbers {
+                    transform: none;
+                }
+            }
+
+            .spider,
+            .reading,
+            .chess {
+                display: block;
+                position: absolute;
+            }
+
+            .spiderwhite,
+            .readingwhite,
+            .chesswhite {
+                display: none;
+            }
+
+            /* EACH OF THE SECTIONS */
+            &>.identify {
+
+                &>.spider {
+                    top: 150px;
+                    left: 55vw;
+                }
+
+            }
+
+            &>.learn {
+
+                position: relative;
+
+                &>.number2 {
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                }
+
+                &>.content {
+                    position: absolute;
+                    top: 100px;
+                    right: 110px;
+                    text-align: right;
+                }
+
+                &>.reading {
+                    top: 140px;
+                    right: 55vw;
+                }
+
+            }
+
+            &>.apply {
+
+                margin-top: 200px;
+                height: 30vw;
+
+                &>.chess {
+                    top: 150px;
+                    left: 55vw;
+                }
+            }
+
+        }
+    }
+
+}

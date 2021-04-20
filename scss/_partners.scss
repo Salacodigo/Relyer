@@ -1,0 +1,72 @@
+
+.carrousel{
+
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &>h2{
+        font: 800 2.5rem $Raleway;
+        text-align: center;
+
+    }
+
+    &>.imgcontainer{
+        background-color: $graycontrast;
+        border-radius: 20px;
+        width: 100%;
+        padding: 100px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &>.statistics{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        &>h3{
+            font: 300 1.5rem $Raleway;
+            text-align: center;
+
+            &>span.statistics-numbers{
+                font: 300 2rem $Prata;
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+@media (min-width:1200px) {
+
+    .carrousel{
+
+
+        &>.statistics{
+
+            &>h3{
+                font: 300 2.5rem $Raleway;
+                text-align: center;
+    
+                &>span.statistics-numbers{
+                    font: 300 3rem $Prata;
+                }
+    
+            }
+
+        }
+    }
+    
+}

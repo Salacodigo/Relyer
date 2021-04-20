@@ -1,0 +1,94 @@
+.CTA {
+
+    position: relative;
+    height: 500px;
+
+    &>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &>.start-now{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        margin: auto;
+        border-radius: 50px;
+        width: 50vw;
+        height: 100px;
+        background-color: $aquamarine;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &>h2{
+            font: 900 2rem/60px $Raleway;
+
+        }
+
+        &>i{
+            font-size: 2.5rem;
+        }
+
+    }
+
+}
+
+.tech-level{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    background-color: $lightblue;
+    margin-bottom:40px ;
+
+    &>h2{
+        font: 700 2rem $Raleway;
+        color: white;
+        max-width: 50vw;
+
+        &>span{
+            color: $darkblue;
+        }
+    }
+
+    &>img{
+        position: relative;
+        top: 15px;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+
+    .CTA{
+
+        &>.start-now{
+            width: 22vw;
+    
+        }
+
+    }
+
+    .tech-level{
+
+        &>h2{
+            max-width: 70vw;
+            letter-spacing: 0.4rem;
+        }
+
+        &>img{
+            cursor: pointer;
+        }
+    }
+    
+}
