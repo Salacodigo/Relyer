@@ -786,19 +786,20 @@ nav .responsive-nav > ul > .responsive4:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* SLIDER */
 }
 
 .carrousel > h2 {
-  font: 800 2.5rem "Raleway", sans-serif;
+  font: 800 2rem "Raleway", sans-serif;
   text-align: center;
 }
 
-.carrousel > .imgcontainer {
-  background-color: #F6F6FC;
+.carrousel > .slider-container {
+  background: white;
   border-radius: 20px;
   width: 100%;
-  padding: 100px;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,9 +807,52 @@ nav .responsive-nav > ul > .responsive4:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carrousel > .slider-container > .slidertrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: calc(400px *7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scroll 15s linear infinite;
+          animation: scroll 15s linear infinite;
+}
+
+.carrousel > .slider-container > .slidertrack > img {
+  width: 300px;
+  height: 150px;
+  margin: 0 100px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-400px * 7 - (100px / 2 + 8px)));
+            transform: translateX(calc(-400px * 7 - (100px / 2 + 8px)));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-400px * 7 - (100px / 2 + 8px)));
+            transform: translateX(calc(-400px * 7 - (100px / 2 + 8px)));
+  }
 }
 
 .carrousel > .statistics {
@@ -823,21 +867,50 @@ nav .responsive-nav > ul > .responsive4:hover {
 }
 
 .carrousel > .statistics > h3 {
-  font: 300 1.5rem "Raleway", sans-serif;
+  font: 300 1.2rem "Raleway", sans-serif;
   text-align: center;
 }
 
 .carrousel > .statistics > h3 > span.statistics-numbers {
-  font: 300 2rem "Prata", serif;
+  font: 300 1.7rem "Prata", serif;
 }
 
 @media (min-width: 1200px) {
+  .carrousel > h2 {
+    font: 800 3rem "Raleway", sans-serif;
+  }
+  .carrousel > .slider-container {
+    /* DARK MODE */
+    /* X - Y - BLUR -SPREAD */
+    -webkit-box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
+    margin-top: 50px;
+  }
+  .carrousel > .slider-container::before, .carrousel > .slider-container::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 400px;
+    z-index: 2;
+  }
+  .carrousel > .slider-container::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .carrousel > .slider-container::before {
+    left: 0;
+    top: 0;
+  }
   .carrousel > .statistics > h3 {
-    font: 300 2.5rem "Raleway", sans-serif;
+    font: 300 2rem "Raleway", sans-serif;
     text-align: center;
   }
   .carrousel > .statistics > h3 > span.statistics-numbers {
-    font: 300 3rem "Prata", serif;
+    font: 300 2.5rem "Prata", serif;
   }
 }
 
@@ -865,7 +938,7 @@ nav .responsive-nav > ul > .responsive4:hover {
   margin: auto;
   border-radius: 50px;
   width: 50vw;
-  height: 100px;
+  height: 70px;
   background-color: #08FFBA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,11 +952,11 @@ nav .responsive-nav > ul > .responsive4:hover {
 }
 
 .CTA > .start-now > h2 {
-  font: 900 2rem/60px "Raleway", sans-serif;
+  font: 900 1rem/60px "Raleway", sans-serif;
 }
 
 .CTA > .start-now > i {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .tech-level {
@@ -902,7 +975,7 @@ nav .responsive-nav > ul > .responsive4:hover {
 }
 
 .tech-level > h2 {
-  font: 700 2rem "Raleway", sans-serif;
+  font: 700 1.5rem "Raleway", sans-serif;
   color: white;
   max-width: 50vw;
 }
@@ -919,6 +992,10 @@ nav .responsive-nav > ul > .responsive4:hover {
 @media (min-width: 1200px) {
   .CTA > .start-now {
     width: 22vw;
+    height: 100px;
+  }
+  .CTA > .start-now > h2 {
+    font-size: 2rem;
   }
   .tech-level > h2 {
     max-width: 70vw;
