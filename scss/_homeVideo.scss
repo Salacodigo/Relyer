@@ -4,7 +4,7 @@
     background: linear-gradient(180deg,
             rgba(65, 204, 255, 0.95) 0%,
             rgba(65, 175, 255, 0.342) 100%);
-
+    z-index: 50;
     h1 {
         font: 900 5rem $Raleway;
         color: $darkblue;
@@ -36,6 +36,10 @@
         transform: scale(0.7);
     }
 
+    .mainwave{
+        position: absolute;
+        bottom:-75px;
+    }
 
 
 }
@@ -57,7 +61,7 @@
         &>p {
             font: 300 2.5rem $Raleway;
             padding-left: 60px;
-            padding-bottom: 120px;
+            padding-bottom: 0px;
 
         }
 
@@ -70,10 +74,12 @@
             border-radius: 30px;
             background-color: #3AB0E2;
             position: absolute;
-            bottom: 20px;
+            bottom: -70px;
             right: 20px;
             display: flex;
             align-items: center;
+            z-index: 30;
+
 
             &>p {
                 font: 400 1.4rem $Raleway;
@@ -113,11 +119,36 @@
         .bubbles {
             transform: none;
             top: 30%;
+            z-index: 30;
 
         }
 
+        .mainwave{
+            position: absolute;
+            bottom:-300px;
+            z-index: -10;
+            overflow: hidden;
+        }
+
+        .wave2{
+            position: absolute;
+            bottom:-335px;
+            z-index: -20;
+        }
+
+        .wave3{
+            position: absolute;
+            bottom:-365px;
+            z-index: -30;
+        }
+
+        .wave4{
+            position: absolute;
+            bottom:-400px;
+            z-index: -40;
+        }
+
+
     }
-
-
 
 }
