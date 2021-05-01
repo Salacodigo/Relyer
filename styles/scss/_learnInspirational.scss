@@ -60,11 +60,18 @@
       .photo-container{
         grid-row: 1;
         grid-column: 1;
-        
         width: 320px;
         height: 300px;
+
         img{
+          width: 100%;
+          height: 100%;
           object-fit: cover;
+          display: none;
+        }
+
+        #photo-one{
+          display: flex;
         }
       }
       .photo-name{

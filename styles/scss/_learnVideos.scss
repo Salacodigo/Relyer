@@ -29,10 +29,17 @@
     .videos-carrousel{
       width: 320px;
 
+      .video-container{
 
-      #video-box{
-        width: 320px;
-        height: 250px;
+        .video-box{
+          width: 320px;
+          height: 250px;
+          display: none;
+        }
+        
+        #video1{
+          display: inline;
+        }
       }
     }
     .video-name{
@@ -90,13 +97,16 @@
       .videos-carrousel{
         width: 600px;
         
+        .video-container{
 
-        #video-box{
-          width: 600px;
-          height: 400px;
+          
+          .video-box{
+            width: 600px;
+            height: 400px;
+          }
         }
-
       }
+      
       .video-name{
         width: 600px;
         
@@ -128,10 +138,11 @@
       .videos-carrousel{
         width: 800px;
         
-
-        #video-box{
-          width: 800px;
-          height: 450px;
+        .video-container{
+          .video-box{
+            width: 800px;
+            height: 450px;
+          }
         }
       }
       .video-name{

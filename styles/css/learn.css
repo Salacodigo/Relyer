@@ -78,11 +78,12 @@ body {
   outline: none;
 }
 .learn-search .learn-content .input-container img {
-  height: 40px;
+  height: 30px;
   width: 30px;
   position: absolute;
   left: unset;
-  right: 0px;
+  top: 5px;
+  right: 5px;
 }
 .learn-search .learn-content .results-container {
   margin: 20px auto 0px auto;
@@ -142,6 +143,14 @@ body {
   .learn-search .learn-content .input-container {
     width: 370px;
   }
+  .learn-search .learn-content .input-container img {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: unset;
+    top: 5px;
+    right: 5px;
+  }
   .learn-search .learn-content .results-container .failed-search {
     width: 350px;
   }
@@ -179,8 +188,10 @@ body {
     height: 50px;
   }
   .learn-search .learn-content .input-container img {
-    height: 50px;
+    height: 40px;
     width: 40px;
+    top: 5px;
+    right: 10px;
   }
   .learn-search .learn-content .results-container {
     margin: 40px auto 0px auto;
@@ -253,9 +264,13 @@ body {
 .learn-videos .videos-content .videos-carrousel {
   width: 320px;
 }
-.learn-videos .videos-content .videos-carrousel #video-box {
+.learn-videos .videos-content .videos-carrousel .video-container .video-box {
   width: 320px;
   height: 250px;
+  display: none;
+}
+.learn-videos .videos-content .videos-carrousel .video-container #video1 {
+  display: inline;
 }
 .learn-videos .videos-content .video-name {
   display: flex;
@@ -301,7 +316,7 @@ body {
   .learn-videos .videos-content .videos-carrousel {
     width: 600px;
   }
-  .learn-videos .videos-content .videos-carrousel #video-box {
+  .learn-videos .videos-content .videos-carrousel .video-container .video-box {
     width: 600px;
     height: 400px;
   }
@@ -323,7 +338,7 @@ body {
   .learn-videos .videos-content .videos-carrousel {
     width: 800px;
   }
-  .learn-videos .videos-content .videos-carrousel #video-box {
+  .learn-videos .videos-content .videos-carrousel .video-container .video-box {
     width: 800px;
     height: 450px;
   }
@@ -412,7 +427,13 @@ body {
   height: 300px;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .photo-container img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: none;
+}
+.learn-inspirational .inspirational-content .photos-carrousel .photo-container #photo-one {
+  display: flex;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .photo-name {
   grid-row: 2;
@@ -567,7 +588,6 @@ body {
   width: 100%;
   border-radius: 50px;
   display: flex;
-  cursor: pointer;
   margin: 20px 0px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -577,11 +597,15 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .learn-news .news-content .news-container .news-card .img-container {
+  cursor: pointer;
   border-radius: 20px 0px 0px 20px;
   width: 30%;
 }
 .learn-news .news-content .news-container .news-card .img-container img {
+  height: 100%;
   width: 100%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
 }
 .learn-news .news-content .news-container .news-card .new-information {
   width: 70%;
@@ -599,6 +623,11 @@ body {
 }
 .learn-news .news-content .news-container .news-card .new-information .description {
   margin: 5px 10px;
+  height: 30px;
+  overflow-y: scroll;
+}
+.learn-news .news-content .news-container .news-card .new-information .description::-webkit-scrollbar {
+  display: none;
 }
 .learn-news .news-content .news-container .news-card .new-information .description .text {
   font-family: "Raleway", sans-serif;
@@ -634,6 +663,10 @@ body {
   font-weight: 600;
   line-height: 20px;
   text-align: center;
+  margin: 0 10px;
+}
+.learn-news .news-content .loadmore img {
+  height: 30px;
 }
 .learn-news .news-content .loadmore:hover {
   background-color: #08FFBA;
@@ -773,7 +806,7 @@ body {
   width: 15%;
 }
 .learn-tools .tools-content .tools-container .results .row .more img {
-  background-color: #7DDC98;
+  height: 30px;
 }
 
 @media (min-width: 768px) {
