@@ -37,7 +37,7 @@ nav > .hamburguer {
   width: 50px;
   height: 40px;
   display: block;
-  z-index: 30;
+  z-index: 500;
 }
 
 nav > .hamburguer > span {
@@ -59,7 +59,7 @@ nav .responsive-nav {
   left: 0;
   opacity: 0.9;
   background-color: #1A3256;
-  z-index: 20;
+  z-index: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +207,7 @@ nav .responsive-nav > ul > .responsive4:hover {
     height: 160px;
     margin-left: 56px;
     margin-top: 20px;
+    cursor: pointer;
   }
   nav ul .nav-list2 {
     display: -webkit-box;

@@ -6,7 +6,7 @@ let navTemplate= document.createElement('template')
 navTemplate.innerHTML= `   
     <ul>
         <li class="nav-list1">
-            <img class="relyer-logo" src="/Assets/relyer-logo.svg" alt="Relyer Logo">
+            <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
         </li>
 
         <li class="nav-list2">
@@ -19,10 +19,10 @@ navTemplate.innerHTML= `
         <li class="nav-list3">
             <div class="login">Login</div>
             <div class="register">Register</div>
-            <div class="languagesticky"> <h3>En</h3> <img class="language-flag" src="/Assets/en-flag.svg" alt="United States flag"></div>
+            <div class="languagesticky"> <h3>En</h3> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States flag"></div>
         </li>
     </ul>
-    <div class="language"> <h3>En</h3> <img class="language-flag" src="/Assets/en-flag.svg" alt="United States flag"></div>
+    <div class="language"> <h3>En</h3> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States flag"></div>
     <div class="hamburguer"><span></span><span></span><span></span></div>
 
     <div class="responsive-nav">
@@ -37,6 +37,8 @@ navTemplate.innerHTML= `
     `
 /* nav container */
 let navContainer= document.getElementsByClassName('nav-container')[0]
+
+if(document.body.id !== "home")
 navContainer.appendChild(navTemplate.content)
 
 
@@ -90,3 +92,35 @@ window.addEventListener('scroll',()=>{
 
 })
 
+/*  GO TO HOME ON LOGO */
+
+let relyerlogo= document.getElementsByClassName('relyer-logo')[0];
+
+console.log(relyerlogo)
+
+relyerlogo.addEventListener('click',()=>{
+    location.href = "../index.html"
+
+})
+
+
+
+
+
+
+/* let counters = document.querySelectorAll('.figure');
+window.onload = contador(40);
+
+function contador(speed) {
+    counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const inc = target / speed;
+        if (count < target) {
+        counter.innerText = count + inc;
+        setTimeout(updateCount, 1);
+        } else {
+        counter.innerText = target;}};
+    updateCount();});}
+ */
