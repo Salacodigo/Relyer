@@ -37,9 +37,11 @@
     z-index: 10;
 
     .title-container{
+      display: flex;
       margin: 40px auto 20px auto;
+      justify-content: center;
       text-align: center;
-      width: 300px;
+      
       .title{
         color: $black;
         font-family: $Raleway;
@@ -77,15 +79,17 @@
           left: 0;
           right: 0;
           position: absolute;
-          height: 80px;
-          width: 80px;
-          content: '';
-          border-radius: 20px;
-          background-color: yellow;
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-
+          height: 100px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          
           img{
-            object-fit: cover;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: contain;
+            
           }
         }
         .title{
@@ -94,13 +98,18 @@
         }
         .description{
           margin-top: 20px;
+          height: 55px;
+          overflow-y: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
           
         }
         .entrie-footer{
           margin-top: 20px;
           display: flex;
           justify-content: space-between;
-
+          
         }
       }
     }
@@ -120,6 +129,10 @@
         font-weight: 600;
         line-height: 20px;
         text-align: center;
+        margin: 0 10px;
+      }
+      img{
+        height: 30px;
       }
       &:hover{
         background-color: $aquamarine;
@@ -171,15 +184,24 @@
           
           .photo-container{
             
-            top: 20px;
-            height: 100px;
-            width: 100px;
-  
-            
+            top: 15px;
+            height: 120px;
+            width: 120px; 
           }
           .title{
-            
+            font-weight: 700;
             margin-top: 120px;
+          }
+          .description{
+            margin-top: 20px;
+            height: 65px;
+            
+          }
+          .entrie-footer{
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            
           }
         }
       }
@@ -219,7 +241,7 @@
 
 
         .blog-entrie{
-          height: 380px;
+          height: 370px;
           margin: 40px 40px;
           
           font-size: 18px;
@@ -227,11 +249,25 @@
 
           .photo-container{
             
-            top: 30px;
+            top: 20px;
+            height: 120px;
+            width: 120px; 
 
           }
           .title{
-            margin-top: 155px;
+            font-weight: 700;
+            margin-top: 130px;
+          }
+          .description{
+            margin-top: 20px;
+            height: 105px;
+            
+          }
+          .entrie-footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            
           }
         }
       }

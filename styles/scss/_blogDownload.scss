@@ -37,10 +37,11 @@
     z-index: 10;
 
     .title-container{
+      display: flex;
       margin: 40px auto 20px auto;
-      text-align: center;
-      width: 300px;
+      justify-content: center;
       .title{
+        flex-wrap: wrap;
         color: $black;
         font-family: $Raleway;
         font-weight: 700;
@@ -58,7 +59,7 @@
       .download-entrie{
         position: relative;
         width: 290px;
-        height: 300px;
+        height: 160px;
         margin: 30px 20px;
         background: rgba( 255, 255, 255, 0.25 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -70,49 +71,44 @@
         font-family: $Raleway;
         font-weight: 500;
         font-size: 14px;
-        padding: 25px;
+        padding: 15px 25px;
         text-align: center;
         
-
-        .photo-container{
-          margin: 0 auto;
-          top: -20px;
-          left: 0;
-          right: 0;
-          position: absolute;
-          height: 100px;
-          width: 100px;
-          content: '';
-          border-radius: 20px;
-          background-color: yellow;
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-
-          img{
-            object-fit: cover;
-          }
-        }
-        .arrow-container{
-          margin: 0 auto;
-          top: 70px;
-          left: 0;
-          right: 0;
-          position: relative;
-          height: 60px;
-          width: 60px;
-          content: '';
-          border-radius: 60px;
-          background-color: $darkblue;
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-
-        }
-        .title{
+        .link{
           font-weight: 700;
-          margin-top: 80px;
+          margin-top: 0px;
+          font-size: 20px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-around;
           
+          
+          span{
+            top: 0;
+            line-height: 20px;
+            margin: 0 20px;
+            
+          }
+
+          .arrow-container{
+            margin: 0 auto;
+            top: 0px;
+            left: 0;
+            right: 0;
+            position: relative;
+            height: 25px;
+            width: 25px;
+            content: '';
+        
+          }
         }
         .description{
           margin-top: 20px;
-          
+          overflow-y: scroll;
+          height: 35px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
         }
         .download-footer{
           margin-top: 20px;
@@ -136,6 +132,10 @@
         font-weight: 600;
         line-height: 20px;
         text-align: center;
+        margin: 0 10px;
+      }
+      img{
+        height: 30px;
       }
       &:hover{
         background-color: $aquamarine;
@@ -165,8 +165,8 @@
     .download-content{
       
         .title{
-
           font-size: 40px;
+          
         }
       
       .download-container{
@@ -175,27 +175,50 @@
         .download-entrie{
           
           width: 280px;
-          height: 400px;
+          height: 200px;
           margin: 40px 40px;
           font-size: 18px;
 
-          .photo-container{
+          .link{
+            font-weight: 700;
+            margin-top: 0px;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-around;
             
-            top: 30px;
-            border-radius: 50px;
             
+            span{
+              top: 0;
+              line-height: 20px;
+              margin: 0 20px;
+              
+            }
+  
+            .arrow-container{
+              margin: 0 auto;
+              top: 0px;
+              left: 0;
+              right: 0;
+              position: relative;
+              height: 25px;
+              width: 25px;
+              content: '';
+          
+            }
           }
 
-          .arrow-container{
-            
-            top: 130px;
-            
-          }
-          .title{
-            
-            margin-top: 155px;
-          }
+ 
           
+          .description{
+            margin-top: 20px;
+            overflow-y: scroll;
+            height: 65px;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+
         }
       }
     }
