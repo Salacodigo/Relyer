@@ -21,9 +21,7 @@ body {
   position: relative;
   z-index: 10;
   background-color: white;
-  border: 2px solid red;
   width: 100%;
-  height: 700px;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -63,7 +61,7 @@ body {
   margin: 0 auto;
   display: flex;
   position: relative;
-  width: 340px;
+  width: 270px;
   height: 40px;
   border: 2px solid #F6F6FC;
   border-radius: 30px;
@@ -80,7 +78,6 @@ body {
   outline: none;
 }
 .learn-search .learn-content .input-container img {
-  border: 2px solid red;
   height: 40px;
   width: 30px;
   position: absolute;
@@ -97,23 +94,23 @@ body {
 }
 .learn-search .learn-content .results-container .failed-search .message {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 25px;
   text-align: center;
 }
 .learn-search .learn-content .results-container .results-box {
-  margin: 25px auto;
+  margin: 15px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(130px, auto);
-  grid-gap: 30px;
+  grid-gap: 15px;
   justify-items: center;
 }
 .learn-search .learn-content .results-container .results-box .result-card {
   display: flex;
   flex-direction: column;
-  width: 160px;
+  width: 140px;
   height: 130px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -138,9 +135,31 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+  .learn-search .learn-content .title-container {
+    width: 500px;
+  }
+  .learn-search .learn-content .input-container {
+    width: 370px;
+  }
+  .learn-search .learn-content .results-container .failed-search {
+    width: 350px;
+  }
+  .learn-search .learn-content .results-container .failed-search .message {
+    font-size: 18px;
+  }
+  .learn-search .learn-content .results-container .results-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+  .learn-search .learn-content .results-container .results-box .result-card {
+    width: 180px;
+    height: 130px;
+  }
+}
+@media (min-width: 1200px) {
   .learn-search {
-    height: 900px;
+    height: 100%;
   }
   .learn-search.waves::after {
     width: 100%;
@@ -148,95 +167,48 @@ body {
     top: 210px;
     object-fit: cover;
   }
-  .learn-search .learn-content {
-    z-index: 10;
-  }
   .learn-search .learn-content .title-container {
     margin: 50px auto 40px auto;
-    text-align: center;
     width: 600px;
   }
   .learn-search .learn-content .title-container .search-title {
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
   }
   .learn-search .learn-content .input-container {
     width: 600px;
     height: 50px;
-    border: 2px solid #F6F6FC;
-    border-radius: 30px;
-    background-color: white;
-    border: 1px solid #6E80EC;
-  }
-  .learn-search .learn-content .input-container input {
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    margin: auto 20px;
-    height: 30px;
-    width: 90%;
-    border: 0;
-    outline: none;
   }
   .learn-search .learn-content .input-container img {
-    border: 2px solid red;
     height: 50px;
     width: 40px;
-    position: absolute;
-    left: unset;
-    right: 0px;
   }
   .learn-search .learn-content .results-container {
     margin: 40px auto 0px auto;
   }
   .learn-search .learn-content .results-container .failed-search {
     width: 500px;
-    display: flex;
     margin: 10px auto;
   }
   .learn-search .learn-content .results-container .failed-search .message {
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 40px;
-    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
   }
   .learn-search .learn-content .results-container .results-box {
     margin: 45px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 40px;
-    justify-items: center;
   }
   .learn-search .learn-content .results-container .results-box .result-card {
-    display: flex;
-    flex-direction: column;
     cursor: pointer;
-    height: 150px;
-    width: 250px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 230px;
+    height: 160px;
   }
   .learn-search .learn-content .results-container .results-box .result-card .result-title {
-    font-family: "Raleway", sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    margin: 20px 15px;
   }
   .learn-search .learn-content .results-container .results-box .result-card .result-description {
-    font-family: "Raleway", sans-serif;
     font-size: 20px;
-    font-weight: 500;
     margin: 10px 15px;
-  }
-  .learn-search .learn-content .results-container .results-box .result-card .result-description .result-link {
-    cursor: pointer;
   }
 }
 /* ---RELYER--- */
@@ -265,8 +237,7 @@ body {
   margin: 0 auto;
   background-color: white;
   width: 100%;
-  height: 700px;
-  border: 1px solid green;
+  height: 100%;
 }
 .learn-videos .videos-content .title-container {
   width: 100%;
@@ -280,12 +251,16 @@ body {
   font-size: 25px;
 }
 .learn-videos .videos-content .videos-carrousel {
-  width: 440px;
+  width: 320px;
+}
+.learn-videos .videos-content .videos-carrousel #video-box {
+  width: 320px;
+  height: 250px;
 }
 .learn-videos .videos-content .video-name {
   display: flex;
   justify-content: center;
-  width: 440px;
+  width: 320px;
   margin: 5px 0px;
   text-align: center;
 }
@@ -293,10 +268,10 @@ body {
   color: #1A3256;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   width: 20%;
-  margin: 0px 10px;
-  padding: 10px 20px 0px 20px;
+  margin: 0px 5px;
+  padding: 10px 20px 0px 5px;
   cursor: pointer;
   border-top: 3px solid white;
   transition: border-top 0.5s ease-in-out;
@@ -314,7 +289,7 @@ body {
   margin: 20px 30px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   display: none;
 }
@@ -322,69 +297,45 @@ body {
   display: flex;
 }
 
-@media (min-width: 1440px) {
-  .learn-videos .videos-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background-color: white;
-    width: 100%;
-    height: 700px;
-    border: 1px solid green;
-  }
-  .learn-videos .videos-content .title-container {
-    width: 100%;
-    text-align: center;
-    margin: 50px 0px;
-  }
-  .learn-videos .videos-content .title-container .title {
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
+@media (min-width: 768px) {
   .learn-videos .videos-content .videos-carrousel {
-    width: 800px;
-    border: 1px solid blue;
+    width: 600px;
+  }
+  .learn-videos .videos-content .videos-carrousel #video-box {
+    width: 600px;
+    height: 400px;
   }
   .learn-videos .videos-content .video-name {
-    display: flex;
-    justify-content: center;
-    width: 800px;
-    margin: 5px 0px;
+    width: 600px;
   }
   .learn-videos .videos-content .video-name .name {
-    color: #1A3256;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    width: 20%;
+    font-size: 18px;
     margin: 0px 10px;
-    padding: 10px 20px 0px 20px;
-    cursor: pointer;
-    border-top: 3px solid white;
-    transition: border-top 0.5s ease-in-out;
-  }
-  .learn-videos .videos-content .video-name .name:hover {
-    border-top: 3px solid #1A3256;
-  }
-  .learn-videos .videos-content .video-name input {
-    display: none;
-  }
-  .learn-videos .videos-content .description-container {
-    width: 100%;
+    padding: 10px 20px 0px 10px;
   }
   .learn-videos .videos-content .description-container .description {
     margin: 25px 30px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-    display: none;
+    line-height: 30px;
   }
-  .learn-videos .videos-content .description-container .description.one {
-    display: flex;
+}
+@media (min-width: 1200px) {
+  .learn-videos .videos-content .videos-carrousel {
+    width: 800px;
+  }
+  .learn-videos .videos-content .videos-carrousel #video-box {
+    width: 800px;
+    height: 450px;
+  }
+  .learn-videos .videos-content .video-name {
+    width: 800px;
+  }
+  .learn-videos .videos-content .video-name .name {
+    font-size: 20px;
+    padding: 10px 20px 0px 20px;
+  }
+  .learn-videos .videos-content .description-container .description {
+    line-height: 24px;
   }
 }
 /* ---RELYER--- */
@@ -410,9 +361,8 @@ body {
   position: relative;
   z-index: 10;
   background-color: white;
-  border: 2px solid red;
   width: 100%;
-  height: 700px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -453,13 +403,12 @@ body {
 .learn-inspirational .inspirational-content .photos-carrousel {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  width: 440px;
+  width: 320px;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .photo-container {
   grid-row: 1;
   grid-column: 1;
-  border: 1px solid red;
-  width: 440px;
+  width: 320px;
   height: 300px;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .photo-container img {
@@ -470,7 +419,7 @@ body {
   grid-column: 1;
   display: flex;
   justify-content: center;
-  width: 440px;
+  width: 320px;
   margin: 5px 0px;
   text-align: center;
 }
@@ -478,10 +427,10 @@ body {
   color: #1A3256;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   width: 20%;
-  margin: 0px 10px;
-  padding: 10px 20px 0px 20px;
+  margin: 0px 5px;
+  padding: 10px 20px 0px 7px;
   cursor: pointer;
   border-top: 3px solid rgba(0, 0, 0, 0);
   transition: border-top 0.5s ease-in-out;
@@ -492,14 +441,13 @@ body {
 .learn-inspirational .inspirational-content .photos-carrousel .description-container {
   grid-row: 3;
   grid-column: 1;
-  border: 1px solid blue;
   width: 100%;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .description-container .description {
   margin: 20px 30px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   display: none;
 }
@@ -507,109 +455,48 @@ body {
   display: flex;
 }
 
-@media (min-width: 1440px) {
-  .learn-inspirational {
-    position: relative;
-    z-index: 10;
-    background-color: white;
-    border: 2px solid red;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  .learn-inspirational.waves {
-    position: relative;
-    z-index: 0;
-  }
-  .learn-inspirational.waves::after {
-    display: block;
-    background-image: url("../../assets/svgola1.svg");
-    position: absolute;
-    content: "";
-    width: 150%;
-    height: 70%;
-    z-index: 0;
-    top: 190px;
-    left: 0px;
-    background-repeat: no-repeat;
-  }
+@media (min-width: 768px) {
   .learn-inspirational .inspirational-content {
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
-  }
-  .learn-inspirational .inspirational-content .title-container {
-    margin: 40px auto 20px auto;
-    text-align: center;
-    width: 300px;
-  }
-  .learn-inspirational .inspirational-content .title-container .title {
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
   }
   .learn-inspirational .inspirational-content .photos-carrousel {
-    display: grid;
     margin: 0 auto;
-    width: 900px;
-    border: 5px solid red;
+    width: 760px;
     grid-template-columns: repeat(3, 1fr);
   }
   .learn-inspirational .inspirational-content .photos-carrousel .photo-container {
     grid-row: 1;
     grid-column: 1/3;
-    border: 1px solid red;
     width: 100%;
-    height: 300px;
-  }
-  .learn-inspirational .inspirational-content .photos-carrousel .photo-container img {
-    object-fit: cover;
   }
   .learn-inspirational .inspirational-content .photos-carrousel .photo-name {
     grid-row: 2;
     grid-column: 1/3;
-    display: flex;
-    justify-content: center;
     width: 100%;
-    margin: 5px 0px;
-    text-align: center;
   }
   .learn-inspirational .inspirational-content .photos-carrousel .photo-name .name {
-    color: #1A3256;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 16px;
-    width: 20%;
     margin: 0px 10px;
-    padding: 10px 20px 0px 20px;
-    cursor: pointer;
-    border-top: 3px solid rgba(0, 0, 0, 0);
-    transition: border-top 0.5s ease-in-out;
-  }
-  .learn-inspirational .inspirational-content .photos-carrousel .photo-name .name:hover {
-    border-top: 3px solid #1A3256;
+    padding: 10px 20px 0px 10px;
   }
   .learn-inspirational .inspirational-content .photos-carrousel .description-container {
     grid-row: 1/3;
     grid-column: 3;
-    border: 1px solid blue;
-    width: 100%;
   }
   .learn-inspirational .inspirational-content .photos-carrousel .description-container .description {
-    margin: 20px 30px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
-    display: none;
   }
-  .learn-inspirational .inspirational-content .photos-carrousel .description-container .description.one {
-    display: flex;
+}
+@media (min-width: 1200px) {
+  .learn-inspirational .inspirational-content .photos-carrousel {
+    width: 1000px;
+  }
+  .learn-inspirational .inspirational-content .photos-carrousel .photo-name .name {
+    padding: 10px 20px 0px 20px;
+  }
+  .learn-inspirational .inspirational-content .photos-carrousel .description-container .description {
+    font-size: 18px;
   }
 }
 /* ---RELYER--- */
@@ -635,9 +522,8 @@ body {
   position: relative;
   z-index: 10;
   background-color: white;
-  border: 2px solid red;
   width: 100%;
-  height: 780px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -675,7 +561,7 @@ body {
 }
 .learn-news .news-content .news-container {
   margin: 0 auto;
-  width: 400px;
+  width: 300px;
 }
 .learn-news .news-content .news-container .news-card {
   width: 100%;
@@ -691,7 +577,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .learn-news .news-content .news-container .news-card .img-container {
-  border: 1px solid yellow;
   border-radius: 20px 0px 0px 20px;
   width: 30%;
 }
@@ -754,37 +639,9 @@ body {
   background-color: #08FFBA;
 }
 
-@media (min-width: 1440px) {
-  .learn-news {
-    position: relative;
-    z-index: 10;
-    background-color: white;
-    border: 2px solid red;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  .learn-news.waves {
-    position: relative;
-    z-index: 0;
-  }
+@media (min-width: 768px) {
   .learn-news.waves::after {
-    display: block;
-    background-image: url("../../assets/svgola1.svg");
-    position: absolute;
-    content: "";
-    width: 150%;
-    height: 70%;
-    z-index: 0;
     top: 190px;
-    left: 0px;
-    background-repeat: no-repeat;
-  }
-  .learn-news .news-content {
-    z-index: 10;
   }
   .learn-news .news-content .title-container {
     margin: 40px auto 20px auto;
@@ -798,89 +655,29 @@ body {
     font-size: 25px;
   }
   .learn-news .news-content .news-container {
-    margin: 0 auto;
-    width: 1000px;
-    border: 3px solid red;
+    width: 720px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(150px, auto);
     grid-gap: 30px;
   }
   .learn-news .news-content .news-container .news-card {
-    width: 100%;
-    border-radius: 50px;
-    display: flex;
-    cursor: pointer;
     margin: 0px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .learn-news .news-content .loadmore {
+    margin: 35px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .learn-news .news-content .news-container {
+    width: 1000px;
   }
   .learn-news .news-content .news-container .news-card .img-container {
-    border: 1px solid yellow;
     border-radius: 20px 0px 0px 20px;
     width: 30%;
   }
   .learn-news .news-content .news-container .news-card .img-container img {
     width: 100%;
-  }
-  .learn-news .news-content .news-container .news-card .new-information {
-    width: 70%;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .title-container {
-    width: 80%;
-    margin: 5px 10px;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .title-container .title {
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .description {
-    margin: 5px 10px;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .description .text {
-    font-family: "Raleway", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .date-container {
-    margin: 5px 10px;
-  }
-  .learn-news .news-content .news-container .news-card .new-information .date-container .date {
-    font-family: "Raleway", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-  }
-  .learn-news .news-content .loadmore {
-    width: 180px;
-    height: 40px;
-    margin: 35px auto;
-    background-color: #6E80EC;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  .learn-news .news-content .loadmore span {
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 20px;
-    text-align: center;
-  }
-  .learn-news .news-content .loadmore:hover {
-    background-color: #08FFBA;
   }
 }
 /* ---RELYER--- */
@@ -904,12 +701,11 @@ body {
 
 .learn-tools .tools-content {
   width: 100%;
-  border: 1px solid red;
 }
 .learn-tools .tools-content .title-container {
   margin: 40px auto 20px auto;
   text-align: center;
-  width: 350px;
+  width: 310px;
 }
 .learn-tools .tools-content .title-container .title {
   color: #010913;
@@ -919,7 +715,7 @@ body {
 }
 .learn-tools .tools-content .tools-container {
   margin: 40px auto;
-  width: 440px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -929,19 +725,21 @@ body {
 .learn-tools .tools-content .tools-container .category-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .learn-tools .tools-content .tools-container .category-container .category {
   color: #010913;
   background-color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  height: 25px;
-  width: 120px;
-  margin: 0px 5px;
-  border-radius: 30px;
+  font-size: 14px;
+  height: 20px;
+  width: 90px;
+  margin: 0px 7px;
+  border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  flex-wrap: wrap-reverse;
   transition: background-color 0.5s ease-in-out;
 }
 .learn-tools .tools-content .tools-container .category-container .category:hover {
@@ -978,78 +776,29 @@ body {
   background-color: #7DDC98;
 }
 
-@media (min-width: 1440px) {
-  .learn-tools .tools-content {
-    width: 100%;
-  }
+@media (min-width: 768px) {
   .learn-tools .tools-content .title-container {
-    margin: 40px auto 20px auto;
-    text-align: center;
     width: 350px;
   }
-  .learn-tools .tools-content .title-container .title {
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
-  .learn-tools .tools-content .tools-container {
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
   .learn-tools .tools-content .tools-container .category-container {
-    display: flex;
-    justify-content: space-between;
     width: 700px;
   }
   .learn-tools .tools-content .tools-container .category-container .category {
-    color: #010913;
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 22px;
     height: 28px;
     width: 140px;
     margin: 0px 5px;
-    border-radius: 30px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.5s ease-in-out;
-  }
-  .learn-tools .tools-content .tools-container .category-container .category:hover {
-    background-color: #6E80EC;
-    color: #7DDC98;
   }
   .learn-tools .tools-content .tools-container .results {
-    margin: 30px 0px;
-    overflow-y: scroll;
-    height: 400px;
-    width: 940px;
+    width: 700px;
   }
   .learn-tools .tools-content .tools-container .results .row {
-    display: flex;
-    border-bottom: 5px solid #6E80EC;
-    align-items: center;
     height: 100px;
-    text-align: center;
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
     font-size: 20px;
-    justify-content: space-between;
     cursor: pointer;
   }
-  .learn-tools .tools-content .tools-container .results .row .name {
-    width: 25%;
-  }
-  .learn-tools .tools-content .tools-container .results .row .description {
-    text-align: left;
-    width: 50%;
-  }
+}
+@media (min-width: 1200px) {
   .learn-tools .tools-content .tools-container .results .row .more {
     width: 15%;
   }
@@ -1080,9 +829,8 @@ body {
   position: relative;
   z-index: 10;
   background-color: white;
-  border: 2px solid red;
   width: 100%;
-  height: 780px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -1098,7 +846,7 @@ body {
   position: absolute;
   content: "";
   width: 150%;
-  height: 70%;
+  height: 100%;
   z-index: 0;
   top: 30px;
   left: 0px;
@@ -1106,7 +854,7 @@ body {
 }
 .learn-experts .experts-content {
   z-index: 10;
-  height: 500px;
+  height: 320px;
 }
 .learn-experts .experts-content .title-container {
   margin: 40px auto 20px auto;
@@ -1121,14 +869,18 @@ body {
 }
 .learn-experts .experts-content .contacts-carrousel {
   display: flex;
-  margin: 10px;
-  width: 440px;
-  border: 1px solid red;
+  margin: 10px 0px;
+  width: 320px;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.learn-experts .experts-content .contacts-carrousel::-webkit-scrollbar {
+  display: none;
 }
 .learn-experts .experts-content .contacts-carrousel .contact-card {
   position: relative;
-  margin: 50px 20px 10px 0px;
-  width: 50%;
+  margin: 50px 15px 10px 15px;
+  width: 210px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -1138,7 +890,7 @@ body {
   color: #010913;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 .learn-experts .experts-content .contacts-carrousel .contact-card .photo {
   position: absolute;
@@ -1154,98 +906,65 @@ body {
 .learn-experts .experts-content .contacts-carrousel .contact-card .photo img {
   object-fit: cover;
 }
-@media (min-width: 1440px) {
-  .learn-experts {
-    position: relative;
-    z-index: 10;
-    background-color: white;
-    border: 2px solid red;
-    width: 100%;
-    height: 780px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  .learn-experts.waves {
-    position: relative;
-    z-index: 0;
-  }
+.learn-experts .experts-content .contacts-carrousel .contact-card .name-container {
+  margin: 20px 5px 5px 5px;
+  width: 150px;
+}
+.learn-experts .experts-content .contacts-carrousel .contact-card .experience {
+  margin: 15px 5px 5px 5px;
+}
+.learn-experts .experts-content .contacts-carrousel .contact-card .experience .description {
+  font-family: 14px;
+}
+.learn-experts .experts-content .contacts-carrousel .contact-card .contact-CTA {
+  margin: 15px 5px 5px 5px;
+}
+
+@media (min-width: 768px) {
   .learn-experts.waves::after {
-    display: block;
-    background-image: url("../../assets/svgola1.svg");
-    position: absolute;
-    content: "";
-    width: 150%;
     height: 70%;
     z-index: 0;
-    top: 30px;
-    left: 0px;
-    background-repeat: no-repeat;
   }
   .learn-experts .experts-content {
-    z-index: 10;
     height: 500px;
   }
-  .learn-experts .experts-content .title-container {
-    margin: 40px auto 20px auto;
-    text-align: center;
-    width: 300px;
-  }
-  .learn-experts .experts-content .title-container .title {
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-  }
   .learn-experts .experts-content .contacts-carrousel {
-    display: flex;
-    margin: 10px;
-    width: 900px;
-    border: 1px solid red;
-    overflow-x: scroll;
+    margin: 10px 20px;
+    width: 740px;
   }
   .learn-experts .experts-content .contacts-carrousel .contact-card {
-    position: relative;
-    margin: 70px 20px 10px 0px;
+    margin: 70px 20px 10px 20px;
     width: 300px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #010913;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
+    height: 230px;
     font-size: 18px;
   }
   .learn-experts .experts-content .contacts-carrousel .contact-card .photo {
-    position: absolute;
-    right: -10px;
-    left: unset;
     top: -60px;
-    border: #1A3256;
-    background-color: #1A3256;
     border-radius: 80px;
     width: 110px;
     height: 110px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .photo img {
-    object-fit: cover;
-  }
   .learn-experts .experts-content .contacts-carrousel .contact-card .name-container {
-    margin: 10px 15px;
-    width: 150px;
-    border: 1px solid red;
+    margin: 50px 15px 5px;
   }
   .learn-experts .experts-content .contacts-carrousel .contact-card .experience {
-    margin: 18px 15px;
+    margin: 10px 15px;
+  }
+  .learn-experts .experts-content .contacts-carrousel .contact-card .experience .description {
+    font-size: 16px;
   }
   .learn-experts .experts-content .contacts-carrousel .contact-card .contact-CTA {
     width: 100%;
     text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .learn-experts {
+    height: 780px;
+  }
+  .learn-experts .experts-content .contacts-carrousel {
+    margin: 10px;
+    width: 1000px;
   }
 }
 

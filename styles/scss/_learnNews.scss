@@ -9,9 +9,9 @@
   position: relative;
   z-index: 10;
   background-color: $white;
-  border: 2px solid red;
+  
   width: 100%;
-  height: 780px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -54,7 +54,7 @@
 
     .news-container{
       margin: 0 auto;
-      width: 400px;
+      width: 300px;
       
       .news-card{
         width: 100%;
@@ -70,7 +70,7 @@
         border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         .img-container{
-          border: 1px solid yellow;
+          
           border-radius: 20px 0px 0px 20px;
           width: 30%;
           img{
@@ -142,42 +142,20 @@
   }
 }
 
-// DESKTOP LEARN SEARCH
-@media(min-width:1440px){
+// TABLET LEARN SEARCH
+@media(min-width:768px){
   .learn-news{
-    position: relative;
-    z-index: 10;
-    background-color: $white;
-    border: 2px solid red;
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
     
     //Controla el fondo
     &.waves{
-      position: relative;
-      z-index: 0;
       
       &::after{
-        display: block;
-        background-image: url('../../assets/svgola1.svg');
-        position: absolute;
-        content: '';
-        width: 150%;
-        height: 70%;
-        z-index: 0;
+        
         top: 190px;
-        left: 0px;
-        background-repeat: no-repeat;
-        // transform: skew(0, -5deg);
         
       }
     }
     .news-content{
-      z-index: 10;
   
       .title-container{
         margin: 40px auto 20px auto;
@@ -192,9 +170,8 @@
       }
   
       .news-container{
-        margin: 0 auto;
-        width: 1000px;
-        border: 3px solid red;
+        
+        width: 720px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(150px, auto);
@@ -202,86 +179,39 @@
         
         
         .news-card{
-          width: 100%;
-          border-radius: 50px;
-          display: flex;
-          cursor: pointer;
           margin: 0px;
-          background: rgba( 255, 255, 255, 0.25 );
-          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-          backdrop-filter: blur( 4px );
-          -webkit-backdrop-filter: blur( 4px );
-          border-radius: 20px;
-          border: 1px solid rgba( 255, 255, 255, 0.18 );
-  
+          
+        }
+      }
+      .loadmore{
+        margin: 35px auto;
+        
+      }
+    }
+  }
+}
+
+// DESKTOP LEARN SEARCH
+@media(min-width:1200px){
+  .learn-news{
+    //Controla el fondo
+    
+    .news-content{
+    
+      .news-container{
+        width: 1000px;
+      
+        
+        .news-card{
+          
           .img-container{
-            border: 1px solid yellow;
+            
             border-radius: 20px 0px 0px 20px;
             width: 30%;
             img{
               width: 100%;
             }
           }
-          .new-information{
-            width: 70%;
-            .title-container{
-              width: 80%;
-              margin: 5px 10px;
-              
-  
-              .title{
-                font-family: $Raleway;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 16px;
-                text-align: left;
-              }
-  
-            }
-  
-            .description{
-              margin: 5px 10px;
-              .text{
-                font-family: $Raleway;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 16px;
-                text-align: left;
-              }
-            }
-  
-            .date-container{
-              margin: 5px 10px;
-              .date{
-                font-family: $Raleway;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 16px;
-                text-align: left;
-              }
-            }
-          }
-        }
-      }
-      .loadmore{
-        width: 180px;
-        height: 40px;
-        margin: 35px auto;
-        background-color: $blue;
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        span{
-          font-family: $Raleway;
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 20px;
-          text-align: center;
-        }
-        &:hover{
-          background-color: $aquamarine;
         }
       }
     }

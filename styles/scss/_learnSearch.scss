@@ -9,9 +9,9 @@
   position: relative;
   z-index: 10;
   background-color: $white;
-  border: 2px solid red;
+  
   width: 100%;
-  height: 700px;
+  
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -58,7 +58,7 @@
       margin: 0 auto;
       display: flex;
       position: relative;
-      width: 340px;
+      width: 270px;
       height: 40px;
       border: 2px solid $graycontrast;
       border-radius: 30px;
@@ -77,7 +77,7 @@
         outline: none;
       }
       img{
-        border: 2px solid red;
+        
         height: 40px;
         width: 30px;
         position: absolute;
@@ -96,7 +96,7 @@
         .message{
       
           font-family: $Raleway;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 700;
           line-height: 25px;
           text-align: center;
@@ -104,18 +104,18 @@
       }
       
       .results-box{
-        margin: 25px auto;
+        margin: 15px auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(130px, auto);
-        grid-gap: 30px;
+        grid-gap: 15px;
         justify-items: center;
 
 
         .result-card{
           display: flex;
           flex-direction: column;
-          width: 160px;
+          width: 140px;
           height: 130px;
           background: rgba( 255, 255, 255, 0.25 );
           box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -149,10 +149,58 @@
   }
 }
 
-//DESKTOP SEARCH
-@media(min-width:1440px){
+
+//TABLET SEARCH
+@media(min-width:768px){
   .learn-search{
-    height: 900px;
+    
+    
+    .learn-content{
+      
+      .title-container{
+
+        width: 500px;
+  
+      }
+      .input-container{
+        width: 370px;
+      
+      }
+      .results-container{
+      
+        
+        .failed-search{
+          width: 350px;
+          
+          .message{
+        
+            font-size: 18px;
+            
+          }   
+        }
+        
+        .results-box{
+          
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 25px;
+  
+          .result-card{
+            
+            width: 180px;
+            height: 130px;
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//DESKTOP SEARCH
+@media(min-width:1200px){
+  .learn-search{
+    height: 100%;
   
     //Controla el fondo
     &.waves{
@@ -168,18 +216,14 @@
     }
     
     .learn-content{
-      z-index: 10;
+      
       .title-container{
         
         margin: 50px auto 40px auto;
-        text-align: center;
         width: 600px;
   
         .search-title{
-          color: $black;
-          font-family: $Raleway;
-          font-weight: 700;
-          font-size: 35px;
+          font-size: 40px;
         }
   
       }
@@ -187,28 +231,11 @@
 
         width: 600px;
         height: 50px;
-        border: 2px solid $graycontrast;
-        border-radius: 30px;
-        background-color: $white;
-        border: 1px solid $blue;
         
-        
-        input{
-          background-color: $white;
-          font-family: $Raleway;
-          margin: auto 20px;
-          height: 30px;
-          width: 90%;
-          border: 0;
-          outline: none;
-        }
         img{
-          border: 2px solid red;
+        
           height: 50px;
           width: 40px;
-          position: absolute;
-          left: unset;
-          right: 0px;
         }
       }
       .results-container{
@@ -216,59 +243,34 @@
         margin: 40px auto 0px auto;
         .failed-search{
           width: 500px;
-          display: flex;
           margin: 10px auto;
           
           .message{
-        
-            font-family: $Raleway;
-            font-size: 25px;
-            font-weight: 700;
-            line-height: 40px;
-            text-align: center;
+
+            font-size: 22px;
+            line-height: 30px;
           }   
         }
         
         .results-box{
           margin: 45px auto;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
           grid-auto-rows: minmax(150px, auto);
           grid-gap: 40px;
-          justify-items: center;
-  
   
           .result-card{
-            display: flex;
-            flex-direction: column;
             cursor: pointer;
-            height: 150px;
-            width: 250px;
-            background: rgba( 255, 255, 255, 0.25 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 4px );
-            -webkit-backdrop-filter: blur( 4px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
-            
+            width: 230px;
+            height: 160px;
             
             .result-title{
-              font-family: $Raleway;
+            
               font-size: 20px;
-              font-weight: 700;
-              margin: 20px 15px;
             }
             .result-description{
-              font-family: $Raleway;
+              
               font-size: 20px;
-              font-weight: 500;
               margin: 10px 15px;
-              .keyword{
-                
-              }
-              .result-link{
-                cursor: pointer;
-              }
+              
             }
           }
         }
