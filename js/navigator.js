@@ -100,7 +100,6 @@ console.log(relyerlogo)
 
 relyerlogo.addEventListener('click',()=>{
     location.href = "../index.html"
-
 })
 
 
