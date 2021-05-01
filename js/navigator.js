@@ -10,7 +10,7 @@ navTemplate.innerHTML= `
         </li>
 
         <li class="nav-list2">
-            <a href="/index.html" class="main-sections"><h3>Home</h3></a>
+            <a href="../index.html" class="main-sections"><h3>Home</h3></a>
             <a href="./html/aboutUs.html" class="main-sections"><h3>About us</h3></a>
             <a href="./html/learn.html" class="main-sections digitalt"><h3>Digital  <br> transformation</h3></a>
             <a href="./html/contact.html" class="main-sections"><h3>Contact</h3></a>
@@ -99,6 +99,7 @@ let relyerlogo= document.getElementsByClassName('relyer-logo')[0];
 console.log(relyerlogo)
 
 relyerlogo.addEventListener('click',()=>{
+    if ( document.body.id !== "home")
     location.href = "../index.html"
 })
 
