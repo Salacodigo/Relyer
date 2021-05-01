@@ -6,23 +6,23 @@ let navTemplate= document.createElement('template')
 navTemplate.innerHTML= `   
     <ul>
         <li class="nav-list1">
-            <img class="relyer-logo" src="Assets/relyer-logo.svg" alt="Relyer Logo">
+            <img class="relyer-logo" src="/Assets/relyer-logo.svg" alt="Relyer Logo">
         </li>
 
         <li class="nav-list2">
-            <div class="main-sections"><h3>Home</h3></div>
-            <div class="main-sections"><h3>About us</h3></div>
-            <div class="main-sections digitalt"><h3>Digital  <br> transformation</h3></div>
-            <div class="main-sections"><h3>Contact</h3></div>
+            <a href="/index.html" class="main-sections"><h3>Home</h3></a>
+            <a href="./html/aboutUs.html" class="main-sections"><h3>About us</h3></a>
+            <a href="./html/learn.html" class="main-sections digitalt"><h3>Digital  <br> transformation</h3></a>
+            <a href="./html/contact.html" class="main-sections"><h3>Contact</h3></a>
         </li>
 
         <li class="nav-list3">
             <div class="login">Login</div>
             <div class="register">Register</div>
-            <div class="languagesticky"> <h3>En</h3> <img class="language-flag" src="Assets/en-flag.svg" alt="United States flag"></div>
+            <div class="languagesticky"> <h3>En</h3> <img class="language-flag" src="/Assets/en-flag.svg" alt="United States flag"></div>
         </li>
     </ul>
-    <div class="language"> <h3>En</h3> <img class="language-flag" src="Assets/en-flag.svg" alt="United States flag"></div>
+    <div class="language"> <h3>En</h3> <img class="language-flag" src="/Assets/en-flag.svg" alt="United States flag"></div>
     <div class="hamburguer"><span></span><span></span><span></span></div>
 
     <div class="responsive-nav">

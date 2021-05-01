@@ -215,6 +215,7 @@ nav .responsive-nav > ul > .responsive4:hover {
     gap: 70px;
   }
   nav ul .nav-list2 > .main-sections {
+    text-decoration: none;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
