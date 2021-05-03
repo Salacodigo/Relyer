@@ -1,0 +1,154 @@
+.home {
+
+    position: relative;
+    background: linear-gradient(180deg,
+            rgba(65, 204, 255, 0.95) 0%,
+            rgba(65, 175, 255, 0.342) 100%);
+    z-index: 50;
+    h1 {
+        font: 900 5rem $Raleway;
+        color: $darkblue;
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+
+    p {
+        font: 300 1.5rem $Raleway;
+        color: $white;
+        padding-left: 40px;
+
+    }
+
+
+    .play-button {
+        display: none;
+    }
+
+
+    /* BUTTON TECH LVEL */
+    .techlevel {
+        opacity: 0;
+    }
+
+    .bubbles {
+        position: absolute;
+        top: 10%;
+        transform: scale(0.7);
+    }
+
+    .mainwave{
+        position: absolute;
+        bottom:-75px;
+    }
+
+
+}
+
+
+@media (min-width:1200px) {
+
+
+    .home {
+
+        position: relative;
+
+        h1 {
+            font: 900 8rem $Raleway;
+            padding-top: 50px;
+            padding-left: 60px;
+        }
+
+        &>p {
+            font: 300 2.5rem $Raleway;
+            padding-left: 60px;
+            padding-bottom: 0px;
+
+        }
+
+
+        /* BUTTON TECH LVEL */
+        .techlevel {
+            opacity: 1;
+            width: 380px;
+            height: 70px;
+            border-radius: 30px;
+            background-color: #3AB0E2;
+            position: absolute;
+            bottom: -70px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            z-index: 30;
+
+
+            &>p {
+                font: 400 1.4rem $Raleway;
+                text-align: center;
+
+                &>.techlevelspan {
+                    font-weight: 700;
+                    color: $darkblue;
+                }
+            }
+
+            &>.rightarrowcontainer {
+                color: $aquamarine;
+                font-size: 40px;
+                margin-left: 50px;
+                cursor: pointer;
+            }
+        }
+
+
+        .play-button {
+            display: block;
+            position: absolute;
+            color: $aquamarine;
+            font-size: 9rem;
+            top: 130px;
+            left: 45%;
+            cursor: pointer;
+
+            &:hover {
+                transition: 1.5s;
+                transform: scale(1.05);
+
+            }
+        }
+
+        .bubbles {
+            transform: none;
+            top: 30%;
+            z-index: 30;
+
+        }
+
+        .mainwave{
+            position: absolute;
+            bottom:-300px;
+            z-index: -10;
+            overflow: hidden;
+        }
+
+        .wave2{
+            position: absolute;
+            bottom:-335px;
+            z-index: -20;
+        }
+
+        .wave3{
+            position: absolute;
+            bottom:-365px;
+            z-index: -30;
+        }
+
+        .wave4{
+            position: absolute;
+            bottom:-400px;
+            z-index: -40;
+        }
+
+
+    }
+
+}

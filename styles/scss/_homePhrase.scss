@@ -1,0 +1,83 @@
+.first-step {
+    margin-top: 40px;
+    background-color: rgba(110, 128, 236, 0.7);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>h2 {
+        padding-top: 50px;
+        font: 600 2rem/45px $Raleway;
+        color: white;
+        max-width: 80vw;
+
+    }
+
+    &>img {
+        padding-top: 25px;
+        width: 80vw;
+
+        filter: blur(0.3px);
+    }
+
+    &>h3 {
+        padding: 25px 0px 50px 0px;
+        font: 400 1.5rem $Raleway;
+        text-align: center;
+        color: $darkblue;
+
+    }
+}
+
+
+
+
+
+@media (min-width:1200px) {
+
+    .first-step {
+        display: block;
+        position: relative;
+        height: 500px;
+        margin-bottom: 50px;
+    
+        &>h2 {
+            position: absolute;
+            font: 500 2.5rem/60px $Raleway;
+            color: white;
+            max-width: 40vw;
+            top: 80px;
+            left: 60px;
+
+    
+        }
+    
+        &>img {
+            padding-top: none;
+            position: absolute;
+            width: 50vw;
+            top: -50px;
+            right: -70px;
+            filter: blur(0px);
+        }
+    
+        &>h3 {
+            position: absolute;
+            font: 400 2.5rem $Raleway;
+            text-align: left;
+            bottom: 10px;
+            right: 20px;
+            width: 35vw;
+    
+        }
+
+        .first{
+            font-weight: 900;
+        }
+    }
+
+    
+    
+}
