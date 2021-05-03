@@ -5,6 +5,10 @@
             rgba(65, 204, 255, 0.95) 0%,
             rgba(65, 175, 255, 0.342) 100%);
     z-index: 50;
+
+
+
+
     h1 {
         font: 900 5rem $Raleway;
         color: $darkblue;
@@ -46,11 +50,28 @@
 
 
 @media (min-width:1200px) {
+    
+    video{
+        display: none;
 
+    }
 
+    @keyframes rollvideo {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    
     .home {
-
+        
         position: relative;
+        
 
         h1 {
             font: 900 8rem $Raleway;
@@ -61,7 +82,7 @@
         &>p {
             font: 300 2.5rem $Raleway;
             padding-left: 60px;
-            padding-bottom: 0px;
+            padding-bottom: 50px;
 
         }
 
