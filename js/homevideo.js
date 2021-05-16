@@ -33,8 +33,41 @@ playbutton.addEventListener('click',()=>{
     opacity:0;
     `)
 
-
-
 })
+
+
+// document.addEventListener('DOMContentLoaded', ()=>{
+
+//     setTimeout(() => {
+
+//         videointro.setAttribute('style',
+//         `
+//         display:block;
+//         animation: 3s rollvideo ease-in-out forwards;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         bottom: 0;
+//         object-fit: cover;
+//         width: 100%;
+//         z-index: 100;`);
+        
+//         videointro.muted= true
+//         videointro.play()
+//         videointro.loop= true;
+        
+//         navcontainer.setAttribute('style',`
+//         background-color:rgba(14, 2, 2, 0.096);
+//         `
+//         )
+    
+//         home.setAttribute('style',`
+//         opacity:0;
+//         `)
+        
+//     }, 3000);
+// })
+
 
 
