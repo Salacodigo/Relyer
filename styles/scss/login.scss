@@ -1,0 +1,129 @@
+@import 'variables';
+
+/*---GENERAL---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    // background-image: url(../../Assets/seebg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background: rgb(29,49,112);
+    background: linear-gradient(148deg, $lightblue 0%, rgba(91,185,234,1) 63%, rgba(29,49,112,0.3648809865743172) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Raleway;
+}
+
+
+
+
+form {
+    width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    box-shadow: -4px 5px 28px 4px rgba(0,0,0,0.58);
+
+    &>.form-decoration,
+    &>.form-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    &>.form-decoration {
+        width: 55%;
+        position: relative;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        left: 0;
+        background-image: url(../../Assets/seawall.jpg);
+        background-size: cover;
+        background-position: left;
+        
+        &>.bgdolphin{
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+        
+    }
+    
+    &>.form-container {
+        width: 45%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+
+        &>h1{
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-weight: 800;
+            color: #081A47;
+        }
+
+        &>.user-label{
+            margin-top: 50px;
+        }
+
+        &>.password-label{
+            margin-top: 25px;
+        }
+
+        &>.user-label,
+        &>.password-label{
+            font-size: 1.1rem;
+            font-weight: 400;
+            display: inline-block;
+            margin-left: 40px;
+            margin-bottom: 10px;
+        }
+
+        
+        &>.user-input,
+        &>.password-input{
+            padding-left: 20px;
+            font: 600 1rem $Raleway;
+            width: 80%;
+            height: 50px;
+            border-radius: 10px;
+            border-color: rgba(128, 128, 128, 0.397);
+            margin-left: 10%;
+            background-color: transparent;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &>.ctabutton{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 25% ;
+            margin-top: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: transparent;
+            background-color: $aquamarine;
+            font: 600 1rem $Raleway;
+        }
+
+    }
+
+}

@@ -40,10 +40,7 @@
                 width: 300px;
                 height: 150px;
                 margin: 0 100px;
-                // padding: 0px 50px;
             }
-
-
 
 
             @keyframes scroll {
@@ -91,10 +88,6 @@
         }
 
         &>.slider-container {
-
-
-            /* DARK MODE */
-            // filter: invert(185%) sepia(0%) saturate(739%) hue-rotate(184deg) brightness(92%) contrast(100%);
 
             /* X - Y - BLUR -SPREAD */
             box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .125);

@@ -1,94 +1,84 @@
 @import 'variables';
 
 
+/* MOBILE FIRST*/
 nav {
 
-    background-color:rgba(65, 204, 255, 0.95);
+    background-color: rgba(65, 204, 255, 0.95);
 
+    &>ul {
 
-    ul {
-
-        /* MOBILE FIRST*/
-        .nav-list1 {
-
+        &>.nav-list1 {
             &>.relyer-logo {
                 width: 150px;
                 height: 140px;
-                margin-left: 30px;
                 margin-top: 20px;
+                margin-left: 30px;
             }
         }
-
-        .nav-list2,
-        .nav-list3 {
+        &>.nav-list2,
+        &>.nav-list3,
+        &>.language {
             display: none;
         }
-
-    }
-
-    &>.language {
-        display: none;
     }
 
     &>.hamburguer {
-        position: absolute;
-        top: 60px;
-        right: 40px;
-        cursor: pointer;
         width: 50px;
         height: 40px;
-        display: block;
+        top: 60px;
+        right: 40px;
         z-index: 500;
-
-        &>span {
-            display: block;
-            background-color: $black;
-            width: 100%;
-            height: 6.5px;
-            border-radius: 25px;
-            margin-top: 10px;
-        }
-    }
-
-    
-    
-.responsive-nav {
-    transform: translateX(-100%);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
-    background-color: $darkblue;
-    z-index: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &>ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        text-align: center;
-        height: 70px;
-        gap: 60px;
-        color: $white;
-        font-size: 2rem;
-        font-weight: 600;
+        display: block;
+        position: absolute;
         cursor: pointer;
 
-        &>.responsive1:hover,
-        &>.responsive2:hover,
-        &>.responsive3:hover,
-        &>.responsive4:hover {
-            color: $purple;
+        &>span {
+            width: 100%;
+            height: 6.5px;
+            margin-top: 10px;
+            border-radius: 25px;
+            display: block;
+            background-color: $black;
         }
-
     }
-}
 
+    .responsive-nav {
+        transform: translateX(-100%);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.9;
+        z-index: 400;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $darkblue;
+
+        &>ul {
+            height: 70px;
+            gap: 60px;
+            font-size: 2rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            list-style: none;
+            text-align: center;
+            cursor: pointer;
+            color: $white;
+
+            &>.responsive1:hover,
+            &>.responsive2:hover,
+            &>.responsive3:hover,
+            &>.responsive4:hover {
+                color: $purple;
+            }
+
+        }
+    }
 
 }
 
@@ -97,100 +87,45 @@ nav {
 /* DESK */
 @media (min-width:1200px) {
 
-
-    /* REPEATED CODE FUNCTION   */
-    %language{
-        position: absolute;
-        top: 110px;
-        right: 45px;
-        width: 160px;
-        height: 50px;
-        border-radius: 50px;
-        z-index: 10;
-        font: 900 29px/40px "Raleway";
-        background-color: #9DB2FF;
-        color: rgb(255, 255, 255);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #98adfa;
-        }
-
-        &>h3 {
-            font: 900 29px/40px "Raleway";
-            margin-left: 20px;
-        }
-
-        &>.language-flag {
-            transform: scale(0.9);
-        }
-    }
-
     nav {
-        position: sticky;
         top: 0;
         left: 0;
         z-index: 1000;
-        transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) ;
+        position: sticky;
+        display: flex;
+        transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
 
         /* WHEN THE NAVIGATOR IS STICKY */
         &.sticky {
-            background-color: $white;
             opacity: 0.95;
-            
+            background-color: $white;
+
             &>ul {
 
                 &>.nav-list1 {
-
                     .relyer-logo {
-                        width: 100px;
+                        width: 90px;
+                        height: 95px;
+                        // margin-top: 15px;
                         margin-right: 56px;
-                        height: 105px;
                         margin-left: 56px;
-                        margin-top: 15px;
                     }
-
                 }
 
                 &>.nav-list2 {
-
                     &>.main-sections {
                         height: 105px;
                         color: $darkblue;
-
-                        &:hover{
+                        &:hover {
                             background-color: rgba(255, 255, 255, 0.836);
                         }
                     }
-
                 }
 
                 &>.nav-list3 {
-
-                    &>.register {
-                        display: none;
-                    }
-
-                    &>.login{
+                    &>.login {
                         background-color: $bluecontrast;
-
-                        &:hover{
-                            background-color: #708ddcdc;
-                        }
-                    }
-
-                    &>.languagesticky{
-                        @extend %language;
-                        background-color: $bluecontrast;
-                        position: unset;
-                        right: unset;
-                        top: unset;
-                        display: flex;
-
-                        &:hover{
+                        &:hover {
                             background-color: #708ddcdc;
                         }
                     }
@@ -198,28 +133,24 @@ nav {
 
             }
 
-            &>.language{
-                display: none;
-            }
         }
 
         ul {
 
+            width: 100vw;
             display: flex;
             justify-content: space-between;
-            flex-shrink: 0;
-
+            align-items: center;
+            gap: 70px;
 
             &>li {
                 display: flex;
             }
 
-
             .nav-list1>.relyer-logo {
-                width: 150px;
-                height: 160px;
+                width: 110px;
+                height: 120px;
                 margin-left: 56px;
-                margin-top: 20px;
                 cursor: pointer;
             }
 
@@ -228,77 +159,94 @@ nav {
                 gap: 70px;
 
                 &>.main-sections {
-                    text-decoration: none;
-                    width: fit-content;
-                    height: 117px;
                     border-radius: 5px;
-                    color: whitesmoke;
-                    text-align: left;
                     z-index: 10;
                     display: flex;
                     justify-content: center;
+                    text-decoration: none;
+                    text-align: left;
+                    width: fit-content;
+                    color: whitesmoke;
 
                     &:hover {
                         border-bottom: 5px solid $aquamarine;
-                        background-color: #46cbfc9d;
                         cursor: pointer;
+                        background-color: #46cbfc9d;
                     }
 
                     &>h3 {
-                        font: 700 24px/28px "Raleway";
-                        align-self: flex-end;
+                        font: 700 22px/28px "Raleway";
                         margin-bottom: 20px;
                         padding-left: 10px;
                         padding-right: 10px;
+                        align-self: flex-end;
 
                     }
                 }
             }
 
             .nav-list3 {
-                display: flex;
+
                 gap: 22px;
-                margin-top: 43px;
+                padding-right: 35px;
+                display: flex;
+                justify-content: space-between;
 
                 &>.login,
-                .register {
-                    width: 160px;
-                    height: 50px;
+                &>.register {
+                    width: 145px;
+                    height: 44px;
                     border-radius: 50px;
-                    font: 900 29px/40px "Raleway";
-                    background: #08ffb9ad;
-                    color: rgb(255, 255, 255);
+                    font: 900 26px/40px "Raleway";
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
+                    background: #08ffb9ad;
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
 
                     &:hover {
                         background: #16fdbc8c;
                     }
                 }
 
-                &:last-child {
-                    padding-right: 50px;
-                }
+                &>.language {
+                    width: 100px;
+                    height: 44px;
+                    border-radius: 50px;
+                    display: flex;
+                    border-radius: 50px;
+                    position: relative;
+                    justify-content: space-around;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: $bluecontrast;
+                    color: white;
 
-                &>.languagesticky{
-                    display: none;
+                    &>.language-flag {
+                        transform: scale(0.7);
+                    }
+
+                    &>.fa-sort-down {
+                        font-size: 1.5rem;
+                        position: absolute;
+                        right: 5px;
+                        top: 5px;
+                    }
+
+                    &:hover {
+                        background-color: #708ddcdc;
+                    }
                 }
 
             }
 
         }
 
-        &>.language {
-            @extend %language;
-        }
-
-
 
         &>.hamburguer {
             display: none;
-
             &>span {
                 display: none;
             }

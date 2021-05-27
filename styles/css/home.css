@@ -62,7 +62,7 @@
   }
   .home h1 {
     font: 900 8rem "Raleway", sans-serif;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-left: 60px;
   }
   .home > p {
@@ -325,7 +325,7 @@
     position: absolute;
   }
   .how-it-works > .hiwsection-container {
-    padding-top: 480px;
+    padding-top: 540px;
     /* GENERAL STYLES FOR ALL OF THEM */
     /* EACH OF THE SECTIONS */
   }
@@ -538,7 +538,6 @@
     font: 800 3rem "Raleway", sans-serif;
   }
   .carrousel > .slider-container {
-    /* DARK MODE */
     /* X - Y - BLUR -SPREAD */
     box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.125);
     margin-top: 50px;
