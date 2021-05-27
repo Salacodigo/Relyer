@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+.img-background-footer {
+  background: url(../../Assets/c24724c96c6d39574d59c2a71bfbfa36-diseno-de-fondo-de-mar-submarino.jpg);
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-logo-footer {
+  margin: 0 30%;
+  top: -40px;
+}
+
+.logo-footer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.logo-footer img {
+  margin: -40px 0px 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.background-menu {
+  background: url(../../Assets/Rectangle36.png);
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-footer-mobile li {
+  text-align: center;
+  list-style: none;
+  color: white;
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
+.menu-footer-mobile li a {
+  color: white;
+  text-decoration: none;
+}
+
+.img-networks {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.img-networks img {
+  margin: 0 10px;
+  width: 10%;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .background-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 25%;
+    height: 50%;
+  }
+  .menu-footer {
+    flex-direction: column;
+    width: 33%;
+  }
+  .content-logo-footer {
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    width: 33%;
+  }
+  .networks {
+    flex-direction: column;
+    width: 33%;
+  }
+  .background-menu-mobile {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+  .img-background-footer {
+    position: relative;
+  }
+  .menu-footer li {
+    text-align: center;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px 0px;
+  }
+  .menu-footer li a {
+    color: white;
+    text-decoration: none;
+  }
+  .logo-footer img {
+    width: 50%;
+    margin: 0;
+  }
+}

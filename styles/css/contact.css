@@ -1,1 +1,104 @@
 /* No CSS */
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #fff;
+  width: 60%;
+  box-shadow: 0px 0px 5px 1px #CDCDCD;
+  margin-left: 20%;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+  color: #6E80EC;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.contact-form form button,
+.contact-form form input {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #6E80EC;
+}
+
+.contact-form form textarea {
+  margin-top: 10px;
+  width: 100%;
+  padding: .7em;
+}
+
+.contact-form form button {
+  background: #5CB2E2;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact-section {
+  background-image: url(../../Assets/fondo.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 0;
+}
+
+.left-contact {
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+
+.right-contact {
+  flex-direction: column;
+  width: 50%;
+}
+
+.left-contact h2 {
+  font-size: 45px;
+  color: #35517A;
+  font-weight: bold;
+}
+
+.left-contact span {
+  font-size: 20px;
+  color: #35517A;
+}
+
+.padding-left-contact {
+  padding: 0 20%;
+}
+
+.padding-btn-send {
+  padding: 0 30%;
+}
