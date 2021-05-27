@@ -1,3 +1,4 @@
+@import 'normalize';
 @import '_aboutChooseUs.scss';
 @import '_aboutReviews.scss';
 @import '_aboutSkills.scss';
@@ -5,17 +6,13 @@
 @import '_aboutTeam.scss';
 @import '_aboutValues.scss';
 @import '_aboutWeGive.scss';
+
 html{
     background-image: url(/assets/svgola1.svg);
     background-repeat: no-repeat;
     background-position-y: 350px; // Para mover la imagen de fondo
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+
 body{
     min-width: 320px;
     overflow-x: hidden;
