@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../styles/css/login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
+
     <title>Relyer</title>
 </head>
 <body class="index">
@@ -22,13 +24,19 @@
         
         <div class="form-container">
             <h1>Sign Up</h1>
-        
-            <label class="user-label" for="email">Username or email</label> <br>
-            <input class="user-input" type="email"  id="email" autocomplete="off" required> <br>
-        
-            <label class="password-label" for="psw">Password</label> <br>
-            <input class="password-input" type="password" id="psw" autocomplete="off" required> <br>
-        
+
+            <div class="inputcontainer">
+                <h2>Email or username</h2>
+                <input class="input email-input" type="email" placeholder="Email"  id="email" autocomplete="off" required> 
+                <i class="fas fa-at"></i>
+            </div>
+
+            <div class="inputcontainer">
+                <h2>Password</h2>
+                <input placeholder="Password" class="input password-input" type="password" id="psw" autocomplete="off" required> <br>
+                <i class="fas fa-key"></i>
+            </div>
+            
             <button type="submit" class="ctabutton">Login</button>
 
             <p class="createaccount">New user ? <a href="./register.html">Create account</a> </p>
