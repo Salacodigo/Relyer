@@ -26,12 +26,12 @@
                 margin: 0 auto;
 
                 &>h3 {
-                    font: 800 3.5rem $Raleway;
+                    font: 800 3.2rem $Raleway;
                     color: $blue;
                 }
 
                 &>p {
-                    font: 400 2rem/40px $Raleway;
+                    font: 400 1.7rem/40px $Raleway;
                 }
 
             }
@@ -95,14 +95,13 @@
 
 
     .how-it-works {
-
         position: relative;
 
         h2 {
             position: absolute;
             top: 30px;
             margin-left: 140px;
-            font: 400 6.5rem $Raleway;
+            font: 400 5rem $Raleway;
             color: $darkblue;
             z-index: 50;
 
@@ -129,6 +128,7 @@
         &>.hiwsection-container {
             padding-top: 540px;
 
+
             /* GENERAL STYLES FOR ALL OF THEM */
             &>.hiwsection {
                 background: white;
@@ -152,12 +152,12 @@
                     margin: 40px 0px 100px 120px;
 
                     &>h3 {
-                        font: 800 5rem $Raleway;
+                        font: 800 4rem $Raleway;
                     }
 
                     &>p {
                         margin-top: 10px;
-                        font: 400 2rem/40px $Raleway;
+                        font: 400 1.8rem/40px $Raleway;
                         color: $black;
                     }
 
@@ -184,6 +184,7 @@
             /* EACH OF THE SECTIONS */
             &>.identify {
 
+
                 &>.spider {
                     top: 150px;
                     left: 55vw;
@@ -192,6 +193,7 @@
             }
 
             &>.learn {
+
 
                 position: relative;
 
@@ -216,6 +218,7 @@
             }
 
             &>.apply {
+
 
                 margin-top: 200px;
                 height: 30vw;

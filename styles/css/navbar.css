@@ -2,7 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 /* ---RELYER--- */
@@ -17,7 +23,7 @@ nav {
   background-color: rgba(65, 204, 255, 0.95);
 }
 
-nav > ul > .nav-list1 > .relyer-logo {
+nav > ul > .relyer-logo {
   width: 150px;
   height: 140px;
   margin-top: 20px;
@@ -51,7 +57,8 @@ nav > .hamburguer > span {
 }
 
 nav .responsive-nav {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   top: 0;
   right: 0;
   left: 0;
@@ -59,9 +66,15 @@ nav .responsive-nav {
   opacity: 0.9;
   z-index: 400;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #1A3256;
 }
 
@@ -70,9 +83,16 @@ nav .responsive-nav > ul {
   gap: 60px;
   font-size: 2rem;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
   text-align: center;
   cursor: pointer;
@@ -92,81 +112,140 @@ nav .responsive-nav > ul > .responsive4:hover {
     top: 0;
     left: 0;
     z-index: 1000;
+    position: -webkit-sticky;
     position: sticky;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
     /* WHEN THE NAVIGATOR IS STICKY */
   }
   nav.sticky {
     opacity: 0.95;
-    background-color: white;
+    background-color: #41ccffde;
   }
-  nav.sticky > ul > .nav-list1 .relyer-logo {
+  nav.sticky > ul .relyer-logo {
     width: 90px;
     height: 95px;
     margin-right: 56px;
     margin-left: 56px;
   }
-  nav.sticky > ul > .nav-list2 > .main-sections {
-    height: 105px;
-    color: #1A3256;
+  nav.sticky > ul .nav-list2 > .main-sections {
+    height: 100px;
   }
-  nav.sticky > ul > .nav-list2 > .main-sections:hover {
-    background-color: rgba(255, 255, 255, 0.836);
+  nav.sticky > ul .nav-list2 > .main-sections > i {
+    bottom: 10px;
+    display: none;
   }
-  nav.sticky > ul > .nav-list3 > .login {
-    background-color: #708DDC;
+  nav.sticky > ul .nav-list2 > .main-sections > .paragraph {
+    position: fixed;
   }
-  nav.sticky > ul > .nav-list3 > .login:hover {
-    background-color: #708ddcdc;
+  nav.sticky > ul .nav-list2 > .main-sections > .first-paragraph {
+    bottom: calc(-45px * 1);
+  }
+  nav.sticky > ul .nav-list2 > .main-sections > .second-paragraph {
+    bottom: calc(-45px * 2);
+  }
+  nav.sticky > ul > .nav-list3 > .login, nav.sticky > ul > .nav-list3 > .register {
+    background-color: #08FFBA;
+  }
+  nav.sticky > ul > .nav-list3 > .login:hover, nav.sticky > ul > .nav-list3 > .register:hover {
+    background-color: #08ffb9dc;
   }
   nav ul {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
   }
   nav ul > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-  nav ul .nav-list1 > .relyer-logo {
+  nav ul .relyer-logo {
     width: 110px;
     height: 120px;
     margin-left: 56px;
     cursor: pointer;
   }
   nav ul .nav-list2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    gap: 70px;
+    gap: 35px;
   }
   nav ul .nav-list2 > .main-sections {
     border-radius: 5px;
+    position: relative;
     z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
-    text-align: left;
-    width: fit-content;
+    text-align: center;
+    width: 150px;
+    height: 140px;
     color: whitesmoke;
   }
-  nav ul .nav-list2 > .main-sections:hover {
-    border-bottom: 5px solid #08FFBA;
+  nav ul .nav-list2 > .main-sections:hover, nav ul .nav-list2 > .main-sections:focus {
     cursor: pointer;
-    background-color: #46cbfc9d;
+    background-color: #3ab0e223;
+  }
+  nav ul .nav-list2 > .main-sections:hover > i, nav ul .nav-list2 > .main-sections:focus > i {
+    display: block;
   }
   nav ul .nav-list2 > .main-sections > h3 {
     font: 700 22px/28px "Raleway";
-    margin-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    align-self: flex-end;
+  }
+  nav ul .nav-list2 > .main-sections > i {
+    position: absolute;
+    bottom: 28px;
+    font-size: 1.4rem;
+    display: none;
+  }
+  nav ul .nav-list2 > .main-sections > .paragraph {
+    position: absolute;
+    left: 0;
+    height: 32px;
+    width: 150px;
+    font: 500 1.15rem/28px "Raleway";
+    background-color: #3AB0E2;
+  }
+  nav ul .nav-list2 > .main-sections > .paragraph.display {
+    display: none;
+  }
+  nav ul .nav-list2 > .main-sections > .first-paragraph {
+    bottom: calc(-40px * 1);
+  }
+  nav ul .nav-list2 > .main-sections > .second-paragraph {
+    bottom: calc(-40px * 2);
   }
   nav ul .nav-list3 {
     gap: 22px;
     padding-right: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav ul .nav-list3 > .login,
   nav ul .nav-list3 > .register {
@@ -174,9 +253,15 @@ nav .responsive-nav > ul > .responsive4:hover {
     height: 44px;
     border-radius: 50px;
     font: 900 26px/40px "Raleway";
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     background: #08ffb9ad;
     color: white;
@@ -190,17 +275,23 @@ nav .responsive-nav > ul > .responsive4:hover {
     width: 100px;
     height: 44px;
     border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 50px;
     position: relative;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     background-color: #708DDC;
     color: white;
   }
   nav ul .nav-list3 > .language > .language-flag {
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   nav ul .nav-list3 > .language > .fa-sort-down {
     font-size: 1.5rem;

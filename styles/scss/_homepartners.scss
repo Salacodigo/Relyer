@@ -17,7 +17,6 @@
 
     &>.slider-container {
         background: white;
-        border-radius: 20px;
         width: 100%;
         margin-top: 25px;
         padding: 25px 0px;
@@ -84,7 +83,7 @@
     .carrousel {
 
         &>h2 {
-            font: 800 3rem $Raleway;
+            font: 800 2.5rem $Raleway;
         }
 
         &>.slider-container {
@@ -123,11 +122,11 @@
         &>.statistics {
 
             &>h3 {
-                font: 300 2rem $Raleway;
+                font: 300 1.8rem $Raleway;
                 text-align: center;
 
                 &>span.statistics-numbers {
-                    font: 300 2.5rem $Prata;
+                    font: 300 2.2rem $Prata;
                 }
 
             }

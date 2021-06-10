@@ -1,73 +1,39 @@
 
+let playbutton=document.getElementsByClassName('fa-play-circle')[0]
 
-const videointro=document.getElementsByClassName('video-intro')[0];
-const navcontainer=document.getElementsByClassName('nav-container')[0];
-const playbutton=document.getElementsByClassName('play-button')[0];
-const home=document.getElementsByClassName('home')[0];
+playbutton.addEventListener('click',()=>{
 
-// playbutton.addEventListener('click',()=>{
+    console.log('clicked')
+    let bg = document.createElement('div')
+    bg.setAttribute('style',`
+        position:absolute;
+        inset: 0;
+        z-index:1000;
+        background-color: rgba(0, 0, 0, 0.678);
+    `)
 
-//     videointro.setAttribute('style',
-//     `
-//     display:block;
-//     animation: 3s rollvideo ease-in-out forwards;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     left: 0;
-//     bottom: 0;
-//     object-fit: cover;
-//     width: 100%;
-//     z-index: 100;`);
-    
-//     videointro.play()
-//     videointro.loop= true;
-    
-//     navcontainer.setAttribute('style',`
-//     background-color:rgba(14, 2, 2, 0.096);
-//     `
-//     )
+    document.body.appendChild(bg)
+    // document.documentElement.setAttribute('style', 'overflow-y:hidden;')
 
+    document.body.innerHTML+= `
+    <img class="returnButton" src="../Assets/closewhite.svg" alt="Return button" style="position:fixed; right:20px; top:20px; height:20px; width:20px; z-index:99999;cursor:pointer;">
 
-//     home.setAttribute('style',`
-//     opacity:0;
-//     `)
+    <iframe style=" position:fixed; right:25%; top:20%; z-index:99999; max-width:100vw; "  width="800" height="415" src="https://www.youtube.com/embed/K4DyBUG242c"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `
 
-// })
+    // RETURN ON X CLICK
+    let returnMaxButton = document.getElementsByClassName('returnButton')[0]
 
+    const closeMax = () => {
 
-// document.addEventListener('DOMContentLoaded', ()=>{
+        for (let i= 0; i < 3; i++) {
+            document.body.removeChild(document.body.lastElementChild)            
+        }
+        // document.documentElement.setAttribute('style', 'overflow-y:unset;')
+    }
 
-//     setTimeout(() => {
-
-//         videointro.setAttribute('style',
-//         `
-//         display:block;
-//         animation: 3s rollvideo ease-in-out forwards;
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         left: 0;
-//         bottom: 0;
-//         object-fit: cover;
-//         width: 100%;
-//         z-index: 100;`);
-        
-//         videointro.muted= true
-//         videointro.play()
-//         videointro.loop= true;
-        
-//         navcontainer.setAttribute('style',`
-//         background-color:rgba(14, 2, 2, 0.096);
-//         `
-//         )
-    
-//         home.setAttribute('style',`
-//         opacity:0;
-//         `)
-        
-//     }, 3000);
-// })
+    returnMaxButton.addEventListener('click', closeMax)
 
 
+    })
 

@@ -9,23 +9,62 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   width: 100vw;
   height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(65, 204, 255, 0.95)), to(rgba(65, 176, 255, 0.164)));
   background: linear-gradient(180deg, rgba(65, 204, 255, 0.95) 0%, rgba(65, 176, 255, 0.164) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Raleway", sans-serif;
   overflow: hidden;
 }
 
+.fa-arrow-circle-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  z-index: 500;
+  cursor: pointer;
+  color: #081A47;
+}
+
+@-webkit-keyframes register {
+  0% {
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes register {
   0% {
-    transform: translateY(-10vw);
+    -webkit-transform: translateY(-10vw);
+            transform: translateY(-10vw);
     opacity: 0;
   }
   100% {
@@ -38,6 +77,8 @@ form {
   height: 100vh;
   border-radius: 25px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -48,13 +89,24 @@ form > .form-decoration {
 form > .form-container {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #41CCFF;
 }
 
 form > .form-container > h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   margin-top: 50px;
   margin-left: 30px;
   font-weight: 800;
@@ -63,14 +115,16 @@ form > .form-container > h1 {
 
 form > .form-container > .inputcontainer {
   position: relative;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 20px;
 }
 
 form > .form-container > .inputcontainer > h2 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: rgba(128, 128, 128, 0.697);
+  color: white;
 }
 
 form > .form-container > .inputcontainer > i {
@@ -90,11 +144,12 @@ form > .form-container > div > .input {
   padding-left: 35px;
   font: 600 1rem "Raleway", sans-serif;
   border-radius: 10px;
-  border-color: rgba(128, 128, 128, 0.197);
+  border-color: white;
   background-color: transparent;
 }
 
 form > .form-container > div > .input:focus {
+  border-color: white;
   outline: none;
 }
 
@@ -102,12 +157,18 @@ form > .form-container > .ctabutton {
   width: 200px;
   height: 40px;
   border-radius: 10px;
-  margin-left: 25%;
+  margin-left: unset;
   margin-top: 20px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-color: transparent;
   background-color: #08FFBA;
   font: 400 1.15rem "Raleway", sans-serif;
@@ -116,7 +177,9 @@ form > .form-container > .ctabutton {
 form > .form-container > .createaccount {
   margin-top: 20px;
   margin-left: -25px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 1200px) {
@@ -125,8 +188,11 @@ form > .form-container > .createaccount {
     height: 580px;
     border-radius: 25px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    animation: register 0.5s forwards ease-in-out;
+    -webkit-animation: register 0.5s forwards ease-in-out;
+            animation: register 0.5s forwards ease-in-out;
   }
   form > .form-decoration,
   form > .form-container {
@@ -135,12 +201,15 @@ form > .form-container > .createaccount {
     bottom: 0;
   }
   form > .form-decoration {
+    display: block;
     width: 55%;
     position: relative;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     left: 0;
     background-image: url(../../Assets/seawall.jpg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-size: cover;
     background-position: left;
@@ -150,8 +219,19 @@ form > .form-container > .createaccount {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: white;
   }
   form > .form-container > h1 {
@@ -163,7 +243,9 @@ form > .form-container > .createaccount {
   }
   form > .form-container > .inputcontainer {
     position: relative;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-bottom: 20px;
   }
   form > .form-container > .inputcontainer > h2 {
@@ -199,9 +281,15 @@ form > .form-container > .createaccount {
     margin-left: 25%;
     margin-top: 20px;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-color: transparent;
     background-color: #08FFBA;
     font: 400 1.15rem "Raleway", sans-serif;
@@ -209,6 +297,8 @@ form > .form-container > .createaccount {
   form > .form-container > .createaccount {
     margin-top: 20px;
     margin-left: -25px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }

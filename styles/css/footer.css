@@ -2,7 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -75,7 +81,8 @@ body {
 }
 
 ul {
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .desktop {
@@ -84,25 +91,40 @@ ul {
 
 @media (min-width: 768px) {
   .background-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     bottom: 25%;
     height: 50%;
   }
   .menu-footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 33%;
   }
   .content-logo-footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     top: 0;
     width: 33%;
   }
   .networks {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 33%;
   }
   .background-menu-mobile {

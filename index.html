@@ -8,32 +8,45 @@
     <link rel='preconnect' href='https://fonts.gstatic.com'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="./styles/css/navbar.css">
     <link rel="stylesheet" href="./styles/css/home.css">
     <script src="js/navigator.js" defer></script>
     <script src="js/homevideo.js" defer></script>
+    <script src="js/accordionNav.js" defer></script>
     <title>Home</title>
 </head>
 <body id="home">
 
+
     <nav class="nav-container">
         <ul>
-            <li class="nav-list1">
-                <img class="relyer-logo" src="./Assets/relyer-logo.svg" alt="Relyer Logo">
-            </li>
+            <img class="relyer-logo" src="./Assets/relyer-logo.svg" alt="Relyer Logo">
     
             <li class="nav-list2">
-                <a href="#" class="main-sections"><h3>Home</h3></a>
-                <a href="./html/aboutUs.html" class="main-sections"><h3>About us</h3></a>
-                <a href="./html/learn.html" class="main-sections digitalt"><h3>Digital  <br> transformation</h3></a>
-                <a href="./html/contact.html" class="main-sections"><h3>Contact</h3></a>
+                <a href="#" class="main-sections">
+                    <h3>Home</h3>
+                </a>
+                <a href="#" class="main-sections services">
+                    <h3>Services</h3>
+                    <i class="fas fa-angle-double-down"></i>
+                    <p class="paragraph display first-paragraph experts">Experts & Tools</p>
+                    <p class="paragraph display second-paragraph test">Diagnosis Test</p>
+                </a>
+                <a href="./html/learn.html" class="main-sections learnmore">
+                    <h3> Learn more</h3>
+                </a>
+                <a href="#" class="main-sections aboutus">
+                    <h3>About us </h3>
+                    <i class="fas fa-angle-double-down"></i>
+                    <p class="paragraph display first-paragraph knowus">Know us</p>
+                    <p class="paragraph display second-paragraph contact">Contact</p>
+                </a>
             </li>
     
             <li class="nav-list3">
-                <!-- <div class="login">Login</div> -->
-                <!-- <div class="register">Register</div> -->
                 <a href="./html/login.html" class="login">Login</a>
                 <a href="./html/register.html" class="register">Register</a>
                 <div class="language"> <img class="language-flag" src="./Assets/en-flag.svg" alt="United States flag"><i class="fas fa-sort-down"></i></div>
@@ -44,9 +57,9 @@
         <div class="responsive-nav">
             <ul>
                 <li class="responsive1">Home</li>
-                <li class="responsive2">About us</li>
-                <li class="responsive3">Digital transformation</li>
-                <li class="responsive4"> Contact</li>
+                <li class="responsive2">Services</li>
+                <li class="responsive3">Learn more</li>
+                <li class="responsive4"> About us</li>
             
             </ul>
         </div>
@@ -75,12 +88,10 @@
         
         <img class="bubbles" src="Assets/bubbles.svg" alt="Bubbles">
 
-        <img class="mainwave" src="Assets/mainwave.svg" alt="Main wave">
-        <img class="wave2" src="Assets/wave2.svg" alt="Wave 2">
-        <img class="wave3" src="Assets/wave3.svg" alt="Wave 3">
-        <img class="wave4" src="Assets/wave4.svg" alt="Wave 4">
 
     </header>
+    <img class="mainwave" src="Assets/wave.jpg" alt="Wave">
+
 
 
     <section class="home-solutions">
