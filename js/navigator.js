@@ -5,33 +5,46 @@
 let navTemplate = document.createElement('template')
 navTemplate.innerHTML = `   
     <ul>
-    <li class="nav-list1">
-        <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
-    </li>
+    <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
 
     <li class="nav-list2">
-        <a href="../index.html" class="main-sections"><h3>Home</h3></a>
-        <a href="#" class="main-sections"><h3>Services</h3></a>
-        <a href="../html/learn.html" class="main-sections learnmore"><h3> Learn more</h3></a>
-        <a href="#" class="main-sections aboutus"><h3>About us </h3></a>
+        <a href="../index.html" class="main-sections">
+            <h3>Home</h3>
+        </a>
+        <div class="main-sections services">
+            <h3>Services</h3>
+            <i class="fas fa-angle-double-down"></i>
+            <p class="paragraph display first-paragraph experts">Experts & Tools</p>
+            <p class="paragraph display second-paragraph test">Diagnosis Test</p>
+        </div>
+        <a href="../html/learn.html" class="main-sections learnmore">
+            <h3> Learn more</h3>
+        </a>
+        <div  class="main-sections aboutus">
+            <h3>About us </h3>
+            <i class="fas fa-angle-double-down"></i>
+            <p class="paragraph display first-paragraph knowus">Know us</p>
+            <p class="paragraph display second-paragraph contact">Contact</p>
+        </div>
     </li>
 
     <li class="nav-list3">
-        <!-- <div class="login">Login</div> -->
-        <!-- <div class="register">Register</div> -->
         <a href="../html/login.html" class="login">Login</a>
         <a href="../html/register.html" class="register">Register</a>
-        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United    States flag"><i class="fas fa-sort-down"></i></div>
+        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States     flag"><i class="fas fa-sort-down"></i></div>
     </li>
     </ul>
     <div class="hamburguer"><span></span><span></span><span></span></div>
 
     <div class="responsive-nav">
     <ul>
-        <li class="responsive1">Home</li>
-        <li class="responsive2">Services</li>
-        <li class="responsive3">Learn more</li>
-        <li class="responsive4"> About us</li>
+        <a class="responsive1">Home</a>
+        <a class="responsive2">Experts & Tools</a>
+        <a class="responsive3">Diagnosis Test  </a>
+        <a class="responsive4">Learn more</a>
+        <a class="responsive5">Know us </a>
+        <a class="responsive6">Contact </a>
+
 
     </ul>
     </div>
@@ -67,8 +80,8 @@ function containeranimation(quit) {
 
     if (contadornav == 0 && quit === false) {
 
-        firstspan.setAttribute('style', ' transition:1s;transform: rotate(45deg) translateY(10px) translateX(12px); background-color: white;')
-        secondspan.setAttribute('style', 'transition:1s; transform: rotate(-45deg) ; background-color: white;')
+        firstspan.setAttribute('style', ' transition:1s;transform: rotate(44deg) translateY(10.5px) translateX(9px); background-color: white;')
+        secondspan.setAttribute('style', 'transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;')
         thirdspan.setAttribute('style', 'display:none;')
         responsivenav.setAttribute('style', 'transition:1s; transform: none;')
         contadornav = 1

@@ -12,9 +12,6 @@ const showMenu = (position) => {
         let accordionMenu = document.getElementsByClassName('paragraph')[element]
         accordionMenu.classList.toggle("display")
 
-        if (accordionMenu.classList.contains("display"))
-            accordionMenu.parentElement.blur()
-        
     })
 }
 
@@ -26,6 +23,23 @@ let knowus = document.getElementsByClassName('knowus')[0]
 let contact = document.getElementsByClassName('contact')[0]
 
 experts.addEventListener('click',()=> window.location.href = "#")
-test.addEventListener('click',()=> window.location.href = "../html/testInformative.htmlz<")
+test.addEventListener('click',()=> window.location.href = "../html/testInformative.html")
 knowus.addEventListener('click',()=> window.location.href = "../html/aboutUs.html")
 contact.addEventListener('click',()=> window.location.href = "../html/contact.html")
+
+
+// ON MOBILE 
+let responsive1 = document.getElementsByClassName('responsive1')[0]
+let responsive2= document.getElementsByClassName('responsive2')[0]
+let responsive3 = document.getElementsByClassName('responsive3')[0]
+let responsive4 = document.getElementsByClassName('responsive4')[0]
+let responsive5 = document.getElementsByClassName('responsive5')[0]
+let responsive6 = document.getElementsByClassName('responsive6')[0]
+
+
+responsive1.addEventListener('click',()=> document.location.href= "../index.html")
+responsive2.addEventListener('click',()=> document.location.href= "#")
+responsive3.addEventListener('click',()=> document.location.href= "../html/testInformative.html")
+responsive4.addEventListener('click',()=> document.location.href= "../html/learn.html")
+responsive5.addEventListener('click',()=> document.location.href= "../html/aboutUs.html")
+responsive6.addEventListener('click',()=> document.location.href= "../html/contact.html")

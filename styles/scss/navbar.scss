@@ -23,8 +23,8 @@ nav {
     }
 
     &>.hamburguer {
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 50px;
         top: 60px;
         right: 40px;
         z-index: 500;
@@ -35,7 +35,7 @@ nav {
         &>span {
             width: 100%;
             height: 6.5px;
-            margin-top: 10px;
+            margin-top: 7px;
             border-radius: 25px;
             display: block;
             background-color: $black;
@@ -72,9 +72,12 @@ nav {
             &>.responsive1:hover,
             &>.responsive2:hover,
             &>.responsive3:hover,
-            &>.responsive4:hover {
+            &>.responsive4:hover,
+            &>.responsive5:hover,
+            &>.responsive6:hover {
                 color: $purple;
             }
+
 
         }
     }
@@ -118,16 +121,16 @@ nav {
                             display: none;
                         }
 
-                        &>.paragraph{
+                        &>p.paragraph{
                             position: fixed;
                         }
 
                         &>.first-paragraph{
-                            bottom:  calc(-45px * 1);
+                            top:  120px;
                         }
     
                         &>.second-paragraph{
-                            bottom: calc(-45px * 2);
+                            top: 160px;
                         }
                     }
                 }
@@ -205,8 +208,7 @@ nav {
                     }
 
                     &>.paragraph{
-                        position: absolute;
-                        left: 0;
+                        position: fixed;
                         height: 32px;
                         width: 150px;
                         font: 500 1.15rem/28px "Raleway";
@@ -218,11 +220,11 @@ nav {
                     }
                     
                     &>.first-paragraph{
-                        bottom:  calc(-40px * 1);
+                        top:  150px;
                     }
 
                     &>.second-paragraph{
-                        bottom: calc(-40px * 2);
+                        top: 190px;
                     }
                 }
             }

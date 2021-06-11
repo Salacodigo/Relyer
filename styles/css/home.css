@@ -30,13 +30,13 @@ html {
   font: 900 5rem "Raleway", sans-serif;
   color: #1A3256;
   padding-top: 40px;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .home p {
   font: 300 1.5rem "Raleway", sans-serif;
   color: white;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .home .play-button {
@@ -749,7 +749,7 @@ html {
   top: 15px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .CTA > img {
     display: block;
     position: absolute;

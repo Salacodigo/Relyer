@@ -37,8 +37,8 @@ nav > ul > .language {
 }
 
 nav > .hamburguer {
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 50px;
   top: 60px;
   right: 40px;
   z-index: 500;
@@ -50,7 +50,7 @@ nav > .hamburguer {
 nav > .hamburguer > span {
   width: 100%;
   height: 6.5px;
-  margin-top: 10px;
+  margin-top: 7px;
   border-radius: 25px;
   display: block;
   background-color: #010913;
@@ -102,7 +102,9 @@ nav .responsive-nav > ul {
 nav .responsive-nav > ul > .responsive1:hover,
 nav .responsive-nav > ul > .responsive2:hover,
 nav .responsive-nav > ul > .responsive3:hover,
-nav .responsive-nav > ul > .responsive4:hover {
+nav .responsive-nav > ul > .responsive4:hover,
+nav .responsive-nav > ul > .responsive5:hover,
+nav .responsive-nav > ul > .responsive6:hover {
   color: #BBAAE8;
 }
 
@@ -138,14 +140,14 @@ nav .responsive-nav > ul > .responsive4:hover {
     bottom: 10px;
     display: none;
   }
-  nav.sticky > ul .nav-list2 > .main-sections > .paragraph {
+  nav.sticky > ul .nav-list2 > .main-sections > p.paragraph {
     position: fixed;
   }
   nav.sticky > ul .nav-list2 > .main-sections > .first-paragraph {
-    bottom: calc(-45px * 1);
+    top: 120px;
   }
   nav.sticky > ul .nav-list2 > .main-sections > .second-paragraph {
-    bottom: calc(-45px * 2);
+    top: 160px;
   }
   nav.sticky > ul > .nav-list3 > .login, nav.sticky > ul > .nav-list3 > .register {
     background-color: #08FFBA;
@@ -221,8 +223,7 @@ nav .responsive-nav > ul > .responsive4:hover {
     display: none;
   }
   nav ul .nav-list2 > .main-sections > .paragraph {
-    position: absolute;
-    left: 0;
+    position: fixed;
     height: 32px;
     width: 150px;
     font: 500 1.15rem/28px "Raleway";
@@ -232,10 +233,10 @@ nav .responsive-nav > ul > .responsive4:hover {
     display: none;
   }
   nav ul .nav-list2 > .main-sections > .first-paragraph {
-    bottom: calc(-40px * 1);
+    top: 150px;
   }
   nav ul .nav-list2 > .main-sections > .second-paragraph {
-    bottom: calc(-40px * 2);
+    top: 190px;
   }
   nav ul .nav-list3 {
     gap: 22px;
