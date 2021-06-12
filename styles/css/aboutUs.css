@@ -18,19 +18,27 @@ html {
 /* Titles */
 /* Contrast */
 /* FONTS */
+.about-wave {
+  position: absolute;
+  width: 100vw;
+  top: 1010px;
+  z-index: -1;
+}
+
 .choose-us {
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
-.choose-us .title-choose-us h3 {
-  font-size: 30px;
-  margin: 0 0 10px 0;
-}
-
 .choose-us .logo-simple {
   margin: 30px 0 0 0;
-  width: 50px;
+  width: 100px;
+}
+
+.choose-us .title-section-chooseUs {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 70px;
 }
 
 .choose-us .items-why-choose-us {
@@ -63,11 +71,9 @@ html {
 @media (min-width: 768px) {
   .choose-us .title-choose-us h3 {
     font-size: 40px;
-    margin: 0 0 10px 0;
   }
   .choose-us .logo-simple {
     margin: 30px 0 0 0;
-    width: 70px;
   }
   .choose-us .items-why-choose-us {
     margin: 40px 100px;
@@ -281,6 +287,7 @@ html {
 /* Contrast */
 /* FONTS */
 .team {
+  margin-top: 130px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -397,6 +404,7 @@ html {
 }
 
 .values {
+  margin-top: 110px;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -416,6 +424,7 @@ html {
 }
 
 .values .title-values .relyer-brand h3 {
+  color: white;
   margin: 0;
   letter-spacing: 2px;
 }
@@ -510,7 +519,37 @@ html {
 /* Titles */
 /* Contrast */
 /* FONTS */
+.introTitle {
+  position: absolute;
+  font: 700 2.5rem "Raleway", sans-serif;
+  color: white;
+  z-index: 900;
+  top: 80px;
+  left: 150px;
+}
+
+.introTitle2 {
+  position: absolute;
+  font: 800 6rem/50px "Raleway", sans-serif;
+  letter-spacing: 12px;
+  color: white;
+  z-index: 900;
+  top: 180px;
+  left: 150px;
+}
+
+.swiper-container {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 99vw;
+  height: 600px;
+}
+
 .about-we-give {
+  margin-top: 100px;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -585,13 +624,6 @@ html {
   }
 }
 
-html {
-  background-image: url(/assets/svgola1.svg);
-  background-repeat: no-repeat;
-  background-position-y: 350px;
-}
-
 body {
   min-width: 320px;
-  overflow-x: hidden;
 }

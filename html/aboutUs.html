@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,83 @@
     <title>About Us</title>
     <!-- Font Raleway -> $Raleway -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- ICON -->
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
     <!-- Styles connection -->
     <link rel="stylesheet" href="../styles/css/navbar.css">
     <link rel="stylesheet" href="../styles/css/aboutUs.css">
     <link rel="stylesheet" href="../styles/css/footer.css">
-    
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
     <!-- SCRIPTSS -->
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/aboutSlider.js" defer></script>
     <script src="../js/navigator.js" defer></script>
     <script src="../js/accordionNav.js" defer></script>
     <script src="../js/footer.js" defer></script>
 
 
-    
+
 </head>
+
 <body>
 
     <nav class="nav-container"></nav>
     <!-- Section Slider -->
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+
+        <h1 class="introTitle">DISCOVER</h1>
+        <h2 class="introTitle2"> RELYER</h2>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://source.unsplash.com/lzh3hPtJz9c/2000x800" alt="cats">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://source.unsplash.com/QckxruozjRg/2000x800" alt="cats">
+            </div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/JTtWu85K9So/2000x800" alt="animal"></div>
+            <div style="position: top;" class="swiper-slide"><img src="https://source.unsplash.com/2001x800/?music"
+                    alt="girl"></div>
+            <div class="swiper-slide"><img src="https://source.unsplash.com/zPFws4toKhg/2000x800" alt="drawing"></div>
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
     <!-- Section about We Give -->
     <section class="about-we-give">
         <div class="what-do-we-give">
             <h3 class="title-section-we-give">¿Quiénes somos?</h3>
             <div class="explanation-about-us">
-                <p class="info"><span class="info-we-give">Somos Relyer y a través de nuestra plataforma puedes acceder a recursos y formación de la mano de expertos que te permitirán facilitar y fortalecer el manejo del desarrollo de tu empresa </span><br><span class="info-we-give2">Nuestros pilares abordan todas las etapas del proceso de transformación </span><br> Haz crecer tu empresa, sus colaboradores y su futuro a través de la  <span style="font-weight: bold;">transformación digital y cognitiva</span></p>
-                <img src="https://i1.wp.com/cyf.com/wp-content/uploads/2020/05/campaign-creators-gmsnxqiljp4-unsplash.jpeg?ssl=1" alt="aboutUs" class="about-us-img">
+                <p class="info"><span class="info-we-give">Somos Relyer y a través de nuestra plataforma puedes acceder
+                        a recursos y formación de la mano de expertos que te permitirán facilitar y fortalecer el manejo
+                        del desarrollo de tu empresa </span><br><span class="info-we-give2">Nuestros pilares abordan
+                        todas las etapas del proceso de transformación </span><br> Haz crecer tu empresa, sus
+                    colaboradores y su futuro a través de la <span style="font-weight: bold;">transformación digital y
+                        cognitiva</span></p>
+                <img src="https://i1.wp.com/cyf.com/wp-content/uploads/2020/05/campaign-creators-gmsnxqiljp4-unsplash.jpeg?ssl=1"
+                    alt="aboutUs" class="about-us-img">
             </div>
         </div>
     </section>
+
     <!-- Section Values -->
     <div class="counters">
         <div class="counter1">
@@ -52,9 +100,11 @@
             <div class="title-counter">Articles</div>
         </div>
     </div>
+
+    <img class="about-wave" src="../Assets/aboutwave.svg" alt="wave">
     <section class="values">
         <div class="title-values">
-            <img src="https://i.pinimg.com/originals/d9/be/06/d9be06e4ff83cf983e95624fc609326d.png" alt="dolphinLogo" class="logo-simple">
+            <img src="../Assets/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
             <p class="subtitle-values">Discover</p>
             <div class="relyer-brand">
                 <h3>RE<br>LY<br>ER<br></h3>
@@ -62,31 +112,35 @@
             </div>
         </div>
         <div class="our-ADN">
-            <img src="https://www.claromentis.com/wp-content/uploads/2019/09/CoreValue-small-960x1024.png" alt="ourValues" class="ourValues">
+            <img src="https://www.claromentis.com/wp-content/uploads/2019/09/CoreValue-small-960x1024.png"
+                alt="ourValues" class="ourValues">
         </div>
     </section>
     <!-- Section Choose Us -->
     <section class="choose-us">
         <div class="title-choose-us">
-            <img src="https://i.pinimg.com/originals/d9/be/06/d9be06e4ff83cf983e95624fc609326d.png" alt="dolphinLogo" class="logo-simple">
+            <img src="../Assets/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
             <h3 class="title-section-chooseUs">¿Por qué RELYER?</h3>
         </div>
         <div class="items-why-choose-us">
             <div class="item1-why-chooseUs">
                 <div class="item-1">
-                    <img src="https://i.pinimg.com/originals/d1/f3/cc/d1f3ccc7e836617fb6e5db7fed1ae90b.png" alt="iconConnection" class="icon-item1">
+                    <img src="https://i.pinimg.com/originals/d1/f3/cc/d1f3ccc7e836617fb6e5db7fed1ae90b.png"
+                        alt="iconConnection" class="icon-item1">
                 </div>
                 <div class="info-item-1">Valoramos a las personas como individuos y a la familia</div>
             </div>
             <div class="item2-why-chooseUs">
                 <div class="item-2">
-                    <img src="https://image.flaticon.com/icons/png/512/1340/1340105.png" alt="iconMeasure" class="icon-item2">
+                    <img src="https://image.flaticon.com/icons/png/512/1340/1340105.png" alt="iconMeasure"
+                        class="icon-item2">
                 </div>
                 <div class="info-item-2">Trabajamos en equipo con nuestros clientes de manera transparente</div>
             </div>
             <div class="item3-why-chooseUs">
                 <div class="item-3">
-                    <img src="https://image.flaticon.com/icons/png/512/107/107788.png" alt="iconMeasure" class="icon-item3">
+                    <img src="https://image.flaticon.com/icons/png/512/107/107788.png" alt="iconMeasure"
+                        class="icon-item3">
                 </div>
                 <div class="info-item-3">Somos generadores de ideas y soluciones</div>
             </div>
@@ -99,57 +153,82 @@
         </div>
         <div class="members-team">
             <div class="member1 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member" class="photo-member1 member-photo">
+                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                    class="photo-member1 member-photo">
                 <div class="member-info">
                     <p class="name-member1 name-member">Santiago</p>
                     <p class="position-member1">Scrum Master</p>
                     <div class="social-media">
-                        <a href="" class="twitter tw-member1"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                        <a href="" class="linkedin ln-member1"><img src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png" alt=""></a>
+                        <a href="" class="twitter tw-member1"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member1"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="member2 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member" class="photo-member2 member-photo">
+                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                    class="photo-member2 member-photo">
                 <div class="member-info">
                     <p class="name-member2 name-member">Daniel</p>
                     <p class="position-member2">Diseñador UX/UI</p>
                     <div class="social-media">
-                        <a href="" class="twitter tw-member2"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                        <a href="" class="linkedin ln-member2"><img src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png" alt=""></a>
+                        <a href="" class="twitter tw-member2"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member2"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="member3 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member" class="photo-member3 member-photo">
+                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                    class="photo-member3 member-photo">
                 <div class="member-info">
                     <p class="name-member3 name-member">Alejandra</p>
                     <p class="position-member3">Product Owner</p>
                     <div class="social-media">
-                        <a href="" class="twitter tw-member3"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                        <a href="" class="linkedin ln-member3"><img src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png" alt=""></a>
+                        <a href="" class="twitter tw-member3"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member3"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="member4 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member" class="photo-member4 member-photo">
+                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                    class="photo-member4 member-photo">
                 <div class="member-info">
                     <p class="name-member4 name-member">Juan José</p>
                     <p class="position-member4">Desarrollador Backend</p>
                     <div class="social-media">
-                        <a href="" class="twitter tw-member4"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                        <a href="" class="linkedin ln-member4"><img src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png" alt=""></a>
+                        <a href="" class="twitter tw-member4"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member4"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="member5 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member" class="photo-member4 member-photo">
+                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                    class="photo-member4 member-photo">
                 <div class="member-info">
                     <p class="name-member5 name-member">Alejandro</p>
                     <p class="position-member5">Desarrollador Frontend</p>
                     <div class="social-media">
-                        <a href="" class="twitter tw-member5"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt=""></a>
-                        <a href="" class="linkedin ln-member5"><img src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png" alt=""></a>
+                        <a href="" class="twitter tw-member5"><img
+                                src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                alt=""></a>
+                        <a href="" class="linkedin ln-member5"><img
+                                src="https://www.oseyo.co.uk/wp-content/uploads/2020/04/linkedin-icon-png-circle-2.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
@@ -200,11 +279,13 @@
         </div>
         <div class="messages-ctn">
             <div class="client-photo">
-                <img src="https://previews.123rf.com/images/yupiramos/yupiramos1709/yupiramos170930757/87002882-ilustración-de-vector-de-dibujos-animados-de-persona-de-personaje-joven-de-hombre-de-retrato.jpg" alt="" class="photo">
+                <img src="https://previews.123rf.com/images/yupiramos/yupiramos1709/yupiramos170930757/87002882-ilustración-de-vector-de-dibujos-animados-de-persona-de-personaje-joven-de-hombre-de-retrato.jpg"
+                    alt="" class="photo">
             </div>
             <div class="message-client1">
                 <div class="name-client1">Luis</div>
-                <div class="message">“They did a great job, I was looking for something to improve my company, and this was just it. Good job training our team and giving practical advice :)“</div>
+                <div class="message">“They did a great job, I was looking for something to improve my company, and this
+                    was just it. Good job training our team and giving practical advice :)“</div>
             </div>
 
         </div>
@@ -213,4 +294,5 @@
     <footer></footer>
 
 </body>
+
 </html>

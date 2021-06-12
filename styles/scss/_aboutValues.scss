@@ -1,4 +1,5 @@
 @import '_variables.scss';
+
 .counters{
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@
     }
 }
 .values{
+    margin-top: 110px;
     font-family: $Raleway;
     text-align: center;
     .title-values{
@@ -30,6 +32,7 @@
         .relyer-brand{
             font-size: 35px;
             h3{
+                color: white;
                 margin: 0;
                 letter-spacing: 2px;
             }

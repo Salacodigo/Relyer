@@ -1,5 +1,37 @@
 @import '_variables.scss';
+
+// SWIPER SLIDER
+
+.introTitle{
+    position: absolute;
+    font: 700 2.5rem $Raleway;
+    color: white;
+    z-index: 900;
+    top: 80px;
+    left: 150px;
+}
+
+.introTitle2{
+    position: absolute;
+    font: 800 6rem/50px $Raleway;
+    letter-spacing: 12px;
+    color: white;
+    z-index: 900;
+    top: 180px;
+    left: 150px;
+}
+
+
+.swiper-container {
+    justify-self: center;
+    align-self: center;
+
+    width: 99vw;
+    height: 600px;
+}
+
 .about-we-give{
+    margin-top: 100px;
     font-family: $Raleway;
     text-align: center;
     .what-do-we-give{
