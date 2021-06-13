@@ -1,12 +1,24 @@
 .skills{
+    margin: 0;
+
     font-family: $Raleway;
     .title-section-skills{
-        text-align: center;
-        font-size: 40px;
+
+        &>h4{
+            margin: 15px;
+            margin-top: 110px;
+            font-weight: 900;
+            text-align: start;
+            letter-spacing: 12px;
+            color: #35517A;
+            font-size: 2.5rem;
+        }
     }
     .skills-ctn{
-        background-color: azure;
+        background-color: #91BAE1;
+        width: 90vw;
         margin: 15px;
+        padding: 20px;
         display: flex;
         flex-wrap: wrap;
         .progress1, .progress2, .progress3{
@@ -16,7 +28,7 @@
             .progress-bar{
                 width: 70%;
                 margin: 0 auto;
-                background-color: red;
+                background-color: white;
                 border-radius: 40px;
                 height: 20px;
                 justify-content: space-between;
@@ -26,10 +38,12 @@
 }
 @media (min-width: 768px){
     .skills{
-        margin: 0 20%;
+        margin: 0 5%;
         .skills-ctn{
+            background-color: #91BAE1;
+            padding: 30px;
             height: 40%;
-            margin: 25px;
+            width: 98%;
             .progress1, .progress2, .progress3{
                 display: flex;
                 flex-wrap: nowrap;
@@ -37,16 +51,31 @@
                 text-align: center;
                 width: 100%;
                 .skill1, .skill2, .skill3{
-                    width: 30%;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    width: 20%;
                     text-align: left;
                     margin-left: 70px;
                 }
                 .progress-bar{
-                    width: 50%;
-                    background-color: red;
+                    background-color: white;
                     border-radius: 40px;
                     height: 20px;
-                    justify-content: space-between;
+                    justify-content: flex-end;
+                    width: 50%;
+                    
+                    &.progress-value1{
+                    }
+
+                    
+                    &.progress-value2{
+                        
+                    }
+
+                    
+                    &.progress-value3{
+
+                    }
                 }
             }
         }

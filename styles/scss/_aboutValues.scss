@@ -17,6 +17,8 @@
     }
 }
 .values{
+    padding-top: 30px ;
+    background-color: #3DC2F8;
     margin-top: 110px;
     font-family: $Raleway;
     text-align: center;
@@ -76,6 +78,7 @@
     }
     .values{
         display: flex;
+        background-color: unset;
         // margin-right: 100px;
         .title-values{
             width: 60%;

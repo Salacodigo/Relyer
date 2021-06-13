@@ -19,13 +19,12 @@ html {
 /* Contrast */
 /* FONTS */
 .about-wave {
-  position: absolute;
-  width: 100vw;
-  top: 1010px;
-  z-index: -1;
+  display: none;
 }
 
 .choose-us {
+  background-color: #3DC2F8;
+  padding: 50px;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -69,6 +68,16 @@ html {
 }
 
 @media (min-width: 768px) {
+  .about-wave {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: 1010px;
+    z-index: -1;
+  }
+  .choose-us {
+    background-color: unset;
+  }
   .choose-us .title-choose-us h3 {
     font-size: 40px;
   }
@@ -104,123 +113,45 @@ html {
 }
 
 .reviews .title-section-reviews {
-  text-align: center;
   font-size: 40px;
-  margin: 0 20px;
 }
 
-.reviews .review-metrics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  margin: 10px 15%;
-}
-
-.reviews .review-metrics .positive-reviews {
-  margin: 0px 30px;
-}
-
-.reviews .review-metrics .review-score {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.reviews .review-metrics .review-score .score-star {
-  width: 20px;
-  height: 20px;
-}
-
-.reviews .messages-ctn {
-  background-color: #FFDDC1;
-  padding-bottom: 20px;
-}
-
-.reviews .messages-ctn .client-photo {
-  text-align: center;
-}
-
-.reviews .messages-ctn .client-photo .photo {
-  margin: 20px 0;
-  border-radius: 50%;
-  width: 80px;
-}
-
-.reviews .messages-ctn .message-client1 {
-  background-color: white;
-  margin: 0 15px;
-  border-radius: 20px;
-}
-
-.reviews .messages-ctn .message-client1 .name-client1 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.reviews .messages-ctn .message-client1 .message {
-  margin: 0 10px;
-}
-
-@media (min-width: 768px) {
-  .reviews .review-metrics {
-    margin: 10px 30%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .reviews .messages-ctn {
-    padding-bottom: 20px;
-  }
-  .reviews .messages-ctn .client-photo .photo {
-    margin: 20px 0;
-    width: 90px;
-  }
-  .reviews .messages-ctn .message-client1 {
-    margin: 0 85px;
-  }
-  .reviews .messages-ctn .message-client1 .name-client1 {
-    font-size: 35px;
-  }
-  .reviews .messages-ctn .message-client1 .message {
-    margin: 0 40px;
-    text-align: center;
-  }
+.reviews .title-section-reviews > h4 {
+  color: #35517A;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-top: 110px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
-  .reviews {
-    margin: 0 150px 19px;
-  }
-  .reviews .messages-ctn {
-    padding-bottom: 20px;
-    border-radius: 10px;
-  }
-  .reviews .messages-ctn .client-photo .photo {
-    margin: 20px 0;
-    width: 100px;
-  }
-  .reviews .messages-ctn .message-client1 {
-    margin: 0 205px;
-  }
-  .reviews .messages-ctn .message-client1 .message {
-    margin: 0 40px;
-    text-align: center;
+  .swiper-container2 {
+    height: 500px;
+    margin-bottom: 40px;
   }
 }
 
 .skills {
+  margin: 0;
   font-family: "Raleway", sans-serif;
 }
 
-.skills .title-section-skills {
-  text-align: center;
-  font-size: 40px;
+.skills .title-section-skills > h4 {
+  margin: 15px;
+  margin-top: 110px;
+  font-weight: 900;
+  text-align: start;
+  letter-spacing: 12px;
+  color: #35517A;
+  font-size: 2.5rem;
 }
 
 .skills .skills-ctn {
-  background-color: azure;
+  background-color: #91BAE1;
+  width: 90vw;
   margin: 15px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +168,7 @@ html {
 .skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
   width: 70%;
   margin: 0 auto;
-  background-color: red;
+  background-color: white;
   border-radius: 40px;
   height: 20px;
   -webkit-box-pack: justify;
@@ -247,11 +178,13 @@ html {
 
 @media (min-width: 768px) {
   .skills {
-    margin: 0 20%;
+    margin: 0 5%;
   }
   .skills .skills-ctn {
+    background-color: #91BAE1;
+    padding: 30px;
     height: 40%;
-    margin: 25px;
+    width: 98%;
   }
   .skills .skills-ctn .progress1, .skills .skills-ctn .progress2, .skills .skills-ctn .progress3 {
     display: -webkit-box;
@@ -264,18 +197,20 @@ html {
     width: 100%;
   }
   .skills .skills-ctn .progress1 .skill1, .skills .skills-ctn .progress1 .skill2, .skills .skills-ctn .progress1 .skill3, .skills .skills-ctn .progress2 .skill1, .skills .skills-ctn .progress2 .skill2, .skills .skills-ctn .progress2 .skill3, .skills .skills-ctn .progress3 .skill1, .skills .skills-ctn .progress3 .skill2, .skills .skills-ctn .progress3 .skill3 {
-    width: 30%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 20%;
     text-align: left;
     margin-left: 70px;
   }
   .skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
-    width: 50%;
-    background-color: red;
+    background-color: white;
     border-radius: 40px;
     height: 20px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%;
   }
 }
 
@@ -287,17 +222,19 @@ html {
 /* Contrast */
 /* FONTS */
 .team {
-  margin-top: 130px;
   font-family: "Raleway", sans-serif;
 }
 
 .team .title-section-team {
-  text-align: center;
+  text-align: right;
 }
 
 .team .title-section-team .team-title {
-  font-size: 30px;
-  letter-spacing: 7px;
+  padding-right: 10%;
+  font-size: 2.5rem;
+  color: #35517A;
+  font-weight: 900;
+  letter-spacing: 15px;
   margin: 22px;
 }
 
@@ -404,6 +341,8 @@ html {
 }
 
 .values {
+  padding-top: 30px;
+  background-color: #3DC2F8;
   margin-top: 110px;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -473,6 +412,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: unset;
   }
   .values .title-values {
     width: 60%;
@@ -521,21 +461,21 @@ html {
 /* FONTS */
 .introTitle {
   position: absolute;
-  font: 700 2.5rem "Raleway", sans-serif;
+  font: 700 1.5rem "Raleway", sans-serif;
   color: white;
   z-index: 900;
-  top: 80px;
-  left: 150px;
+  top: 50px;
+  left: 20px;
 }
 
 .introTitle2 {
   position: absolute;
-  font: 800 6rem/50px "Raleway", sans-serif;
+  font: 800 4rem/50px "Raleway", sans-serif;
   letter-spacing: 12px;
   color: white;
   z-index: 900;
-  top: 180px;
-  left: 150px;
+  left: 20px;
+  top: 105px;
 }
 
 .swiper-container {
@@ -586,6 +526,23 @@ html {
 }
 
 @media (min-width: 768px) {
+  .introTitle {
+    position: absolute;
+    font: 700 2.5rem "Raleway", sans-serif;
+    color: white;
+    z-index: 900;
+    top: 80px;
+    left: 150px;
+  }
+  .introTitle2 {
+    position: absolute;
+    font: 800 6rem/50px "Raleway", sans-serif;
+    letter-spacing: 12px;
+    color: white;
+    z-index: 900;
+    top: 180px;
+    left: 150px;
+  }
   .about-we-give .what-do-we-give {
     display: -webkit-box;
     display: -ms-flexbox;

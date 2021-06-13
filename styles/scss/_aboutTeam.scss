@@ -1,12 +1,15 @@
 @import '_variables.scss';
 .team{
-    margin-top: 130px;
+    // margin-top: 130px;
     font-family: $Raleway;
     .title-section-team{
-        text-align: center;
+        text-align: right;
         .team-title{
-            font-size: 30px;
-            letter-spacing: 7px;
+            padding-right: 10%;
+            font-size: 2.5rem;
+            color: #35517A;
+            font-weight: 900;
+            letter-spacing: 15px;
             margin: 22px;
         }
     }
@@ -17,6 +20,7 @@
             width: 50%;
             text-align: center;
             margin-bottom: 20px;
+
             .member-photo{
                 max-width: 90%;
             }

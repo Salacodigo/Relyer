@@ -1,13 +1,13 @@
 @import '_variables.scss';
 
-.about-wave{
-    position: absolute;
-    width: 100vw;
-    top: 1010px;
-    z-index: -1;
-}
 
+
+.about-wave{
+    display: none;
+}
 .choose-us{
+    background-color: #3DC2F8 ;
+    padding: 50px;
     font-family: $Raleway;
     text-align: center;
 
@@ -43,7 +43,17 @@
     }
 }
 @media (min-width: 768px){
+    .about-wave{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        top: 1010px;
+        z-index: -1;
+    }
+
+
     .choose-us{
+        background-color: unset;
         // font-family: $raleway;
         // text-align: center;
         .title-choose-us h3{
