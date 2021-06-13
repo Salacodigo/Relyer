@@ -121,17 +121,23 @@ nav {
                             display: none;
                         }
 
-                        &>p.paragraph{
-                            position: fixed;
+                        &>.subsection{
+                            top: 110px;
                         }
 
-                        &>.first-paragraph{
-                            top:  120px;
-                        }
-    
-                        &>.second-paragraph{
-                            top: 160px;
-                        }
+                        // &>.subsection>.paragraph{
+
+
+                        //     &>.first-paragraph{
+                        //         top:  80px;
+                        //     }
+        
+                        //     &>.second-paragraph{
+                        //         top: 140px;
+                        //     }
+
+                        // }
+
                     }
                 }
 
@@ -207,24 +213,50 @@ nav {
                         display: none;
                     }
 
-                    &>.paragraph{
+                    &>.subsection{
                         position: fixed;
-                        height: 32px;
+                        top: 137px;
                         width: 150px;
-                        font: 500 1.15rem/28px "Raleway";
-                        background-color: $secondblue;
+                        height: fit-content;
+                        padding-top: 10px;
 
-                        &.display{
-                            display: none;
+                    }
+
+                    // SUB SECTIONS
+                    &>.subsection>.paragraph{
+                        height: 32px;
+                        font: 500 1.15rem/28px "Raleway";
+                        margin-bottom: 10px;
+                        background-color: $secondblue;
+                        display: none;
+
+                        &>.first-paragraph{
+                            top:  150px;
+                        }
+    
+                        &>.second-paragraph{
+                            top: 190px;
                         }
                     }
                     
-                    &>.first-paragraph{
-                        top:  150px;
-                    }
 
-                    &>.second-paragraph{
-                        top: 190px;
+                    // ON HOVER SHOW THE SUBSECTIONS
+                    &.services{
+                        &:hover{
+                            
+                            &>.subsection>.paragraph{
+                                display: block;
+                            }
+                        }
+                    }   
+
+                    &.aboutus{
+                        &:hover{
+                            &>.subsection>.paragraph{
+                                display: block;
+                            }
+
+                        }
                     }
                 }
             }

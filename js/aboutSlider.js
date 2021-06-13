@@ -1,5 +1,5 @@
 
-    const swiper = new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swpcont1', {
 
         // Optional parameters
         direction: 'horizontal',
@@ -8,7 +8,7 @@
 
         // If we need pagination
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swp1',
             dynamicBullets: true,
         },
 
@@ -21,23 +21,28 @@
     });
 
     
-    const swiper2 = new Swiper('.swiper-container2', {
+    const swiper2 = new Swiper('.swpcont2', {
 
         // Optional parameters
         direction: 'horizontal',
         loop: true,
         speed: 500,
 
+        // AUTOPLAY
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
         // If we need pagination
         pagination: {
-            el: '#pagination2',
+            el: '.swp2',
             dynamicBullets: true,
         },
 
-        // Navigation arrows
         navigation: {
-            nextEl: '#buttonnext2',
-            prevEl: '#buttonprev2',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
 
     });
