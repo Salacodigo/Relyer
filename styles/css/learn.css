@@ -31,16 +31,9 @@ body {
   position: relative;
   z-index: 0;
 }
-.learn-search.waves::after {
-  display: block;
-  background-image: url("../../assets/svgola1.svg");
-  position: absolute;
-  content: "";
-  width: 150%;
-  height: 70%;
-  z-index: 0;
-  top: 190px;
-  left: 0px;
+.learn-search.waves {
+  background-image: url("../../Assets/learns-back.svg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .learn-search .learn-content {
@@ -246,7 +239,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: white;
   width: 100%;
   height: 100%;
 }
@@ -276,7 +268,7 @@ body {
   display: flex;
   justify-content: center;
   width: 320px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   text-align: center;
 }
 .learn-videos .videos-content .video-name .name {
@@ -286,19 +278,23 @@ body {
   font-size: 14px;
   width: 20%;
   margin: 0px 5px;
-  padding: 10px 20px 0px 5px;
+  padding: 10px 20px 10px 5px;
   cursor: pointer;
-  border-top: 3px solid white;
-  transition: border-top 0.5s ease-in-out;
+  background-color: #08FFBA;
+  border-radius: 30px;
+
 }
 .learn-videos .videos-content .video-name .name:hover {
-  border-top: 3px solid #1A3256;
+  transform:translateY(-2px);
+  transition: all 0.3s ease;
+
 }
 .learn-videos .videos-content .video-name input {
   display: none;
 }
 .learn-videos .videos-content .description-container {
   width: 100%;
+  
 }
 .learn-videos .videos-content .description-container .description {
   margin: 20px 30px;
@@ -326,7 +322,7 @@ body {
   .learn-videos .videos-content .video-name .name {
     font-size: 18px;
     margin: 0px 10px;
-    padding: 10px 20px 0px 10px;
+    padding: 10px 20px 20px 10px;
   }
   .learn-videos .videos-content .description-container .description {
     margin: 25px 30px;
@@ -347,7 +343,7 @@ body {
   }
   .learn-videos .videos-content .video-name .name {
     font-size: 20px;
-    padding: 10px 20px 0px 20px;
+    padding: 7px 20px 7px 20px;
   }
   .learn-videos .videos-content .description-container .description {
     line-height: 24px;
@@ -387,18 +383,7 @@ body {
   position: relative;
   z-index: 0;
 }
-.learn-inspirational.waves::after {
-  display: block;
-  background-image: url("../../assets/svgola1.svg");
-  position: absolute;
-  content: "";
-  width: 150%;
-  height: 70%;
-  z-index: 0;
-  top: 190px;
-  left: 0px;
-  background-repeat: no-repeat;
-}
+
 .learn-inspirational .inspirational-content {
   z-index: 10;
   display: flex;
@@ -463,6 +448,10 @@ body {
   grid-row: 3;
   grid-column: 1;
   width: 100%;
+  background-image: url("../../Assets/burbujas2.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .learn-inspirational .inspirational-content .photos-carrousel .description-container .description {
   margin: 20px 30px;
@@ -471,6 +460,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   display: none;
+  backdrop-filter: blur(4px);
 }
 .learn-inspirational .inspirational-content .photos-carrousel .description-container .description.one {
   display: flex;
@@ -670,6 +660,22 @@ body {
 }
 .learn-news .news-content .loadmore:hover {
   background-color: #08FFBA;
+}
+
+
+
+
+/*Edit Alejandro Villamil*/
+
+.background-learn-video-history{
+  background-image: url("../../Assets/Frame.svg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -240px;
+}
+
+.select-video{
+  background-color: lightgrey !important;
 }
 
 @media (min-width: 768px) {

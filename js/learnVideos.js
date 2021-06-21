@@ -26,6 +26,7 @@ function videosEventListeners(){
 function hideAllVideos(){
    let videos = [video1, video2, video3, video4];
    let descriptions = [descVideo1, descVideo2, descVideo3, descVideo4];
+   let namesVideos = [nameVideo1,nameVideo2,nameVideo3,nameVideo4];
 
    videos.forEach( video => {
       video.style.display = "none";
@@ -34,30 +35,50 @@ function hideAllVideos(){
    descriptions.forEach( desc => {
       desc.style.display = "none";
    })
+   
 }
 
 function show1(){
    hideAllVideos();
    video1.style.display = "flex";
    descVideo1.style.display = "flex";
+   nameVideo1.classList.toggle('select-video');   
+   nameVideo2.classList.remove("select-video");
+   nameVideo3.classList.remove("select-video");
+   nameVideo4.classList.remove("select-video");
+
 }
 
 function show2(){
    hideAllVideos();
    video2.style.display = "flex";
    descVideo2.style.display = "flex";
+   nameVideo2.classList.toggle('select-video');    
+   nameVideo1.classList.remove("select-video");
+   nameVideo3.classList.remove("select-video");
+   nameVideo4.classList.remove("select-video");
 }
 
 function show3(){
    hideAllVideos();
    video3.style.display = "flex";
    descVideo3.style.display = "flex";
+   nameVideo3.classList.toggle('select-video');   
+   nameVideo1.classList.remove("select-video");
+   nameVideo2.classList.remove("select-video");
+   nameVideo4.classList.remove("select-video");
+
 }
 
 function show4(){
    hideAllVideos();
    video4.style.display = "flex";
    descVideo4.style.display = "flex";
+   nameVideo4.classList.toggle('select-video');     
+   nameVideo2.classList.remove("select-video");
+   nameVideo3.classList.remove("select-video");
+   nameVideo1.classList.remove("select-video");
+
 }
 
 
