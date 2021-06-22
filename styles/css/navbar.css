@@ -140,14 +140,8 @@ nav .responsive-nav > ul > .responsive6:hover {
     bottom: 10px;
     display: none;
   }
-  nav.sticky > ul .nav-list2 > .main-sections > p.paragraph {
-    position: fixed;
-  }
-  nav.sticky > ul .nav-list2 > .main-sections > .first-paragraph {
-    top: 120px;
-  }
-  nav.sticky > ul .nav-list2 > .main-sections > .second-paragraph {
-    top: 160px;
+  nav.sticky > ul .nav-list2 > .main-sections > .subsection {
+    top: 110px;
   }
   nav.sticky > ul > .nav-list3 > .login, nav.sticky > ul > .nav-list3 > .register {
     background-color: #08FFBA;
@@ -222,21 +216,33 @@ nav .responsive-nav > ul > .responsive6:hover {
     font-size: 1.4rem;
     display: none;
   }
-  nav ul .nav-list2 > .main-sections > .paragraph {
+  nav ul .nav-list2 > .main-sections > .subsection {
     position: fixed;
-    height: 32px;
+    top: 137px;
     width: 150px;
-    font: 500 1.15rem/28px "Raleway";
-    background-color: #3AB0E2;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: 10px;
   }
-  nav ul .nav-list2 > .main-sections > .paragraph.display {
+  nav ul .nav-list2 > .main-sections > .subsection > .paragraph {
+    height: 32px;
+    font: 500 1.15rem/28px "Raleway";
+    margin-bottom: 10px;
+    background-color: #3AB0E2;
     display: none;
   }
-  nav ul .nav-list2 > .main-sections > .first-paragraph {
+  nav ul .nav-list2 > .main-sections > .subsection > .paragraph > .first-paragraph {
     top: 150px;
   }
-  nav ul .nav-list2 > .main-sections > .second-paragraph {
+  nav ul .nav-list2 > .main-sections > .subsection > .paragraph > .second-paragraph {
     top: 190px;
+  }
+  nav ul .nav-list2 > .main-sections.services:hover > .subsection > .paragraph {
+    display: block;
+  }
+  nav ul .nav-list2 > .main-sections.aboutus:hover > .subsection > .paragraph {
+    display: block;
   }
   nav ul .nav-list3 {
     gap: 22px;

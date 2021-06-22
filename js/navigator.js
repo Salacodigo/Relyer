@@ -14,24 +14,32 @@ navTemplate.innerHTML = `
         <div class="main-sections services">
             <h3>Services</h3>
             <i class="fas fa-angle-double-down"></i>
-            <p class="paragraph display first-paragraph experts">Experts & Tools</p>
-            <p class="paragraph display second-paragraph test">Diagnosis Test</p>
+
+            <div class="subsection">
+                <p class="paragraph first-paragraph experts">Experts & Tools</p>
+                <p class="paragraph second-paragraph test">Diagnosis Test</p>
+            </div>
+
         </div>
         <a href="../html/learn.html" class="main-sections learnmore">
             <h3> Learn more</h3>
         </a>
-        <div  class="main-sections aboutus">
+        <div class="main-sections aboutus">
             <h3>About us </h3>
             <i class="fas fa-angle-double-down"></i>
-            <p class="paragraph display first-paragraph knowus">Know us</p>
-            <p class="paragraph display second-paragraph contact">Contact</p>
+            <div class="subsection">
+                <p class="paragraph first-paragraph knowus">Know us</p>
+                <p class="paragraph second-paragraph contact">Contact</p>
+            </div>
+
         </div>
     </li>
 
     <li class="nav-list3">
         <a href="../html/login.html" class="login">Login</a>
         <a href="../html/register.html" class="register">Register</a>
-        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States     flag"><i class="fas fa-sort-down"></i></div>
+        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States     flag"><i
+                class="fas fa-sort-down"></i></div>
     </li>
     </ul>
     <div class="hamburguer"><span></span><span></span><span></span></div>
@@ -39,8 +47,8 @@ navTemplate.innerHTML = `
     <div class="responsive-nav">
     <ul>
         <a class="responsive1">Home</a>
-        <a class="responsive2">Experts & Tools</a>
-        <a class="responsive3">Diagnosis Test  </a>
+        <a class="responsive2">Experts & Tools </a>
+        <a class="responsive3"> Diagnosis Test</a>
         <a class="responsive4">Learn more</a>
         <a class="responsive5">Know us </a>
         <a class="responsive6">Contact </a>
