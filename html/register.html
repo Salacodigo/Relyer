@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,57 +10,61 @@
     <link rel="stylesheet" href="../styles/css/register.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
-        <!--SCRIPT  -->
-    <script src="../js/navigator.js" defer></script>
+    <!--SCRIPT  -->
     <script src="../js/register.js" defer></script>
     <title>Relyer</title>
 </head>
+
 <body class="index">
 
     <i class="fas fa-arrow-circle-left"></i>
 
-    <form>
-        
+    <form action="#" class="register-form">
+
         <div class="form-decoration">
-            
+
         </div>
-        
+
         <div class="form-container">
             <h1>Register</h1>
-            
+
             <div class="inputcontainer">
-                <input class="input user-input" type="text" placeholder="Fullname"  id="Name" autocomplete="off" required> 
+                <input class="input user-input" type="text" placeholder="Fullname" id="Name" autocomplete="off"
+                    required>
                 <i class="fas fa-user"></i>
             </div>
 
             <div class="inputcontainer">
-                <input class="input email-input" type="email" placeholder="Email"  id="email" autocomplete="off" required> 
+                <input class="input email-input" type="email" placeholder="Email" id="email" autocomplete="off"
+                    required>
                 <i class="fas fa-at"></i>
             </div>
 
             <div class="inputcontainer">
-                <input placeholder="Secure password" class="input password-input" type="password" id="psw" autocomplete="off" required> <br>
+                <input placeholder="Secure password" class="input password-input" type="password" id="psw"
+                    autocomplete="off" required> <br>
                 <i class="fas fa-key"></i>
             </div>
 
 
             <label class="selectlabel" for="city">Select a city :</label>
-            <select class="inputselect" id="city" name="city" >
+            <select class="inputselect" id="city" name="city">
                 <option value="santander">Santander</option>
                 <option value="nortedesantander">Norte de Santander</option>
                 <option class="lastoption" value="bogota">Bogotá</option>
             </select>
 
             <label class="selectlabel role-label" for="entrp">Select a Role :</label>
-            <select class="inputselect" id="entrp" name="role" >
+            <select class="inputselect" id="entrp" name="role">
                 <option value="company">Company</option>
                 <option value="entrepeneur">Entrepreneur</option>
                 <option class="lastoption" value="learning">Just Learning</option>
             </select>
-        
-        
+
+
             <button type="submit" class="ctabutton">Create account</button>
 
             <p class="createaccount">Already have an account ? <a href="./login.html">Login instead</a> </p>
@@ -72,4 +76,5 @@
 
 
 </body>
+
 </html>
