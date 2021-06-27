@@ -42,14 +42,13 @@ ctaButton.addEventListener('submit', async (e) => {
         })
         let response = await request.json()
 
-        console.log(response)
 
         if (response.usuario) {
-            console.log(response.usuario)
+            alert('User correctly created')
+            window.location.href = "../html/login.html"
         } else {
             response.errors.forEach(error => {
-                console.log(error.msg)
-
+                alert(error.msg)
             })
         }
 

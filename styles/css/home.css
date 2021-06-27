@@ -256,7 +256,7 @@ html {
 
 @media (min-width: 1200px) {
   .home-solutions h2 {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 4.3rem "Raleway", sans-serif;
   }
   .home-solutions p {
     font: 300 2rem/50px "Raleway", sans-serif;
@@ -368,7 +368,7 @@ html {
     position: absolute;
     top: 30px;
     margin-left: 140px;
-    font: 400 5rem "Raleway", sans-serif;
+    font: 400 4.5rem "Raleway", sans-serif;
     color: #1A3256;
     z-index: 50;
   }
@@ -384,6 +384,7 @@ html {
   }
   .how-it-works .wave1 {
     position: absolute;
+    width: 100vw;
   }
   .how-it-works > .hiwsection-container {
     padding-top: 540px;
@@ -393,20 +394,22 @@ html {
   .how-it-works > .hiwsection-container > .hiwsection {
     background: white;
     opacity: 1;
-    height: 40vw;
+    height: 35vw;
   }
   .how-it-works > .hiwsection-container > .hiwsection .wave2 {
     position: relative;
-    bottom: 320px;
+    bottom: 400px;
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
   .how-it-works > .hiwsection-container > .hiwsection .wave3 {
     position: relative;
-    bottom: 50px;
+    bottom: 260px;
   }
   .how-it-works > .hiwsection-container > .hiwsection > .content {
     text-align: unset;
     margin: unset;
-    margin: 40px 0px 100px 120px;
+    margin: 0px 0px 100px 120px;
   }
   .how-it-works > .hiwsection-container > .hiwsection > .content > h3 {
     font: 800 4rem "Raleway", sans-serif;
@@ -432,7 +435,7 @@ html {
     display: none;
   }
   .how-it-works > .hiwsection-container > .identify > .spider {
-    top: 150px;
+    top: 50px;
     left: 55vw;
   }
   .how-it-works > .hiwsection-container > .learn {
@@ -441,25 +444,23 @@ html {
   .how-it-works > .hiwsection-container > .learn > .number2 {
     position: absolute;
     right: 20px;
-    top: 0;
+    top: -120px;
   }
   .how-it-works > .hiwsection-container > .learn > .content {
     position: absolute;
-    top: 100px;
+    top: 0px;
     right: 110px;
     text-align: right;
   }
   .how-it-works > .hiwsection-container > .learn > .reading {
-    top: 140px;
-    right: 55vw;
+    right: 45vw;
   }
   .how-it-works > .hiwsection-container > .apply {
-    margin-top: 200px;
     height: 30vw;
   }
   .how-it-works > .hiwsection-container > .apply > .chess {
-    top: 150px;
-    left: 55vw;
+    top: 80px;
+    left: 45vw;
   }
 }
 
