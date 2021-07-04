@@ -39,6 +39,24 @@ html {
     }
 }
 
+.errorMessage {
+    animation: error 3s ease-out;
+}
+
+@keyframes error {
+
+    0% {}
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
 
 form {
     width: 100vw;
