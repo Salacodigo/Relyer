@@ -6,6 +6,16 @@ arrowBack.addEventListener('click', () => history.back())
 const login = document.getElementsByClassName('loginForm')[0]
 
 
+async function servidor() {
+
+    let request = await fetch('https://server-relyer.herokuapp.com/api/auth/login')
+    let response = request.json()
+
+    console.log(response)
+
+}
+
+
 login.addEventListener('submit', async (e) => {
 
     let loginData = document.querySelectorAll(' input')
@@ -32,7 +42,8 @@ login.addEventListener('submit', async (e) => {
     let response = await request.json()
 
     if (response.usuario) {
-        console.log(response)
+        localStorage.setItem('token', response.token)
+        window.location.href = "../index.html"
     } else {
 
 
@@ -43,19 +54,19 @@ login.addEventListener('submit', async (e) => {
 
         let errorMessage = document.createElement('div')
         errorMessage.style = `
-position: absolute;
-top: 10px;
-left: 50%;
-transform: translate(-50%, 0);
-width: 450px;
-height: 70px;
-border-radius: 5px;
-display:flex;
-justify-content:center;
-align-items:center; 
-background-color: ${maincolor};
-color: ${secondcolor} ;
-`
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 450px;
+            height: 70px;
+            border-radius: 5px;
+            display:flex;
+            justify-content:center;
+            align-items:center; 
+            background-color: ${maincolor};
+            color: ${secondcolor} ;
+            `
         errorMessage.className = "errorMessage"
         errorMessage.innerHTML = `
     <div class="decoration" style="    

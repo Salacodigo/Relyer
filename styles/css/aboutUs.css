@@ -620,7 +620,8 @@ html {
   margin: 0 25px;
 }
 
-.about-we-give .what-do-we-give .explanation-about-us .info-we-give, .about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give,
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
   display: block;
 }
 
@@ -675,8 +676,8 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 20px;
-    max-width: 1100px;
+    font-size: 22px;
+    max-width: 90vw;
   }
   .about-we-give .what-do-we-give .explanation-about-us .info {
     margin: 0 35px;
