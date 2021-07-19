@@ -69,19 +69,19 @@ login.addEventListener('submit', async (e) => {
             `
         errorMessage.className = "errorMessage"
         errorMessage.innerHTML = `
-    <div class="decoration" style="    
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 15px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background-color: ${secondcolor}">
-    </div>
+            <div class="decoration" style="    
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 15px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-color: ${secondcolor}">
+            </div>
 
-    <h2 style="font-size: 1.2rem; max-width:70%;"> <strong> ${message}</strong> </h2>
-`
+            <h2 style="font-size: 1.2rem; max-width:70%;"> <strong> ${message}</strong> </h2>
+            `
 
         document.body.appendChild(errorMessage)
 

@@ -9,12 +9,13 @@ nav {
 
     &>ul {
 
-            &>.relyer-logo {
-                width: 150px;
-                height: 140px;
-                margin-top: 20px;
-                margin-left: 30px;
+        &>.relyer-logo {
+            width: 150px;
+            height: 140px;
+            margin-top: 20px;
+            margin-left: 30px;
         }
+
         &>.nav-list2,
         &>.nav-list3,
         &>.language {
@@ -104,46 +105,35 @@ nav {
 
             &>ul {
 
-                    .relyer-logo {
-                        width: 90px;
-                        height: 95px;
-                        // margin-top: 15px;
-                        margin-right: 56px;
-                        margin-left: 56px;
-                    }
+                .relyer-logo {
+                    width: 90px;
+                    height: 95px;
+                    // margin-top: 15px;
+                    margin-right: 56px;
+                    margin-left: 56px;
+                }
 
                 .nav-list2 {
                     &>.main-sections {
-                        height: 100px ;
+                        height: 100px;
 
-                        &>i{
+                        &>i {
                             bottom: 10px;
                             display: none;
                         }
 
-                        &>.subsection{
+                        &>.subsection {
                             top: 110px;
                         }
-
-                        // &>.subsection>.paragraph{
-
-
-                        //     &>.first-paragraph{
-                        //         top:  80px;
-                        //     }
-        
-                        //     &>.second-paragraph{
-                        //         top: 140px;
-                        //     }
-
-                        // }
 
                     }
                 }
 
                 &>.nav-list3 {
-                    &>.login,&>.register {
+
+                    &>.login {
                         background-color: $aquamarine;
+
                         &:hover {
                             background-color: #08ffb9dc;
                         }
@@ -172,12 +162,13 @@ nav {
                 margin-left: 56px;
                 cursor: pointer;
             }
+
             .nav-list2 {
                 display: flex;
                 gap: 35px;
 
 
-                &>.main-sections{
+                &>.main-sections {
                     border-radius: 5px;
                     position: relative;
                     z-index: 10;
@@ -190,11 +181,12 @@ nav {
                     height: 140px;
                     color: whitesmoke;
 
-                    &:hover,&:focus {
+                    &:hover,
+                    &:focus {
                         cursor: pointer;
                         background-color: #3ab0e223;
 
-                        &>i{
+                        &>i {
                             display: block;
                         }
                     }
@@ -206,14 +198,14 @@ nav {
 
                     }
 
-                    &>i{
+                    &>i {
                         position: absolute;
                         bottom: 28px;
                         font-size: 1.4rem;
                         display: none;
                     }
 
-                    &>.subsection{
+                    &>.subsection {
                         position: fixed;
                         top: 137px;
                         width: 150px;
@@ -223,36 +215,35 @@ nav {
                     }
 
                     // SUB SECTIONS
-                    &>.subsection>.paragraph{
+                    &>.subsection>.paragraph {
                         height: 32px;
                         font: 500 1.15rem/28px "Raleway";
                         margin-bottom: 10px;
                         background-color: $secondblue;
                         display: none;
 
-                        &>.first-paragraph{
-                            top:  150px;
+                        &>.first-paragraph {
+                            top: 150px;
                         }
-    
-                        &>.second-paragraph{
+
+                        &>.second-paragraph {
                             top: 190px;
                         }
                     }
-                    
 
                     // ON HOVER SHOW THE SUBSECTIONS
-                    &.services{
-                        &:hover{
-                            
-                            &>.subsection>.paragraph{
+                    &.services {
+                        &:hover {
+
+                            &>.subsection>.paragraph {
                                 display: block;
                             }
                         }
-                    }   
+                    }
 
-                    &.aboutus{
-                        &:hover{
-                            &>.subsection>.paragraph{
+                    &.aboutus {
+                        &:hover {
+                            &>.subsection>.paragraph {
                                 display: block;
                             }
 
@@ -268,11 +259,12 @@ nav {
                 display: flex;
                 justify-content: space-between;
 
-                &>.login,
-                &>.register {
-                    width: 145px;
+                &>.login {
+                    width: fit-content;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     height: 44px;
-                    border-radius: 50px;
+                    border-radius: 20px;
                     font: 900 26px/40px "Raleway";
                     display: flex;
                     justify-content: center;
@@ -288,31 +280,60 @@ nav {
                 }
 
                 &>.language {
-                    width: 100px;
+                    width: 190px;
                     height: 44px;
-                    border-radius: 50px;
+                    border-radius: 20px;
                     display: flex;
-                    border-radius: 50px;
                     position: relative;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     background-color: $bluecontrast;
                     color: white;
 
                     &>.language-flag {
-                        transform: scale(0.7);
+                        width: 60px;
+                        height: 40px;
                     }
 
-                    &>.fa-sort-down {
-                        font-size: 1.5rem;
-                        position: absolute;
-                        right: 5px;
-                        top: 5px;
-                    }
 
                     &:hover {
                         background-color: #708ddcdc;
+
+                        &>.optionlanguage>.languageoptions {
+                            display: block;
+                        }
+                    }
+
+                    &>.optionlanguage {
+                        position: fixed;
+                        top: 90px;
+                        width: 150px;
+                        height: fit-content;
+                        padding-top: 10px;
+
+                        &>.languageoptions {
+                            background-color: #708ddcdc;
+                            height: 32px;
+                            font: 500 1.15rem/28px "Raleway";
+                            border-radius: 5px;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            display: none;
+
+                            &.selected {
+                                color: gainsboro;
+                            }
+
+                            &>.en {
+                                top: 150px;
+                            }
+
+                            &>.es {
+                                top: 190px;
+                            }
+                        }
+
                     }
                 }
 
@@ -323,6 +344,7 @@ nav {
 
         &>.hamburguer {
             display: none;
+
             &>span {
                 display: none;
             }

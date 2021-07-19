@@ -36,11 +36,18 @@ navTemplate.innerHTML = `
     </li>
 
     <li class="nav-list3">
-        <a href="../html/login.html" class="login">Login</a>
-        <a href="../html/register.html" class="register">Register</a>
-        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States     flag"><i
-                class="fas fa-sort-down"></i></div>
-    </li>
+    <a href="../html/login.html" class="login">Login/Register</a>
+    <div class="language">
+        <img class="language-flag" src="../Assets/en-flag.svg" alt="United States flag">
+        <h2 class="langtitle">English</h2>
+
+        <div class="optionlanguage">
+            <p class="languageoptions en selected">English</p>
+            <p class="languageoptions es">Spanish</p>
+        </div>
+
+    </div>
+</li>
     </ul>
     <div class="hamburguer"><span></span><span></span><span></span></div>
 
