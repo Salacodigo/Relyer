@@ -166,7 +166,7 @@
                 }
 
                 .numbers {
-                    transform: none;
+                    transform: scale(0.8);
                 }
             }
 
@@ -187,8 +187,9 @@
             &>.identify {
 
                 &>.spider {
-                    top: 50px;
-                    left: 55vw;
+                    top: 80px;
+                    left: 35vw;
+                    transform: scale(0.7);
                 }
 
             }

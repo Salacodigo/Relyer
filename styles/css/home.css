@@ -115,6 +115,7 @@ html {
   }
   .home .techlevel > p {
     font: 400 1.25rem "Raleway", sans-serif;
+    width: 250px;
     text-align: center;
   }
   .home .techlevel > p > .techlevelspan {
@@ -188,8 +189,8 @@ html {
 }
 
 .home-solutions .card-solutions-container {
-  margin-top: 100px;
-  width: 70vw;
+  margin-top: 40px;
+  width: 60vw;
   margin-bottom: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +210,7 @@ html {
 .home-solutions .card-solutions {
   margin-top: 45px;
   position: relative;
-  width: 230px;
+  width: 240px;
   height: 320px;
   background: #FEFFFF;
   opacity: 0.75;
@@ -420,8 +421,8 @@ html {
     color: #010913;
   }
   .how-it-works > .hiwsection-container > .hiwsection .numbers {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .how-it-works > .hiwsection-container .spider,
   .how-it-works > .hiwsection-container .reading,
@@ -435,8 +436,10 @@ html {
     display: none;
   }
   .how-it-works > .hiwsection-container > .identify > .spider {
-    top: 50px;
-    left: 55vw;
+    top: 80px;
+    left: 35vw;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   .how-it-works > .hiwsection-container > .learn {
     position: relative;
@@ -510,7 +513,7 @@ html {
     height: 500px;
     margin-bottom: 50px;
   }
-  .first-step > h2 {
+  .first-step > p {
     position: absolute;
     font: 400 2.2rem/60px "Raleway", sans-serif;
     color: white;

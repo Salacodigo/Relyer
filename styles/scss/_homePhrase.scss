@@ -41,8 +41,8 @@
         position: relative;
         height: 500px;
         margin-bottom: 50px;
-    
-        &>h2 {
+
+        &>p {
             position: absolute;
             font: 400 2.2rem/60px $Raleway;
             color: white;
@@ -50,9 +50,9 @@
             top: 80px;
             left: 60px;
 
-    
+
         }
-    
+
         &>img {
             padding-top: none;
             position: absolute;
@@ -60,7 +60,7 @@
             right: 20px;
             filter: blur(0px);
         }
-    
+
         &>h3 {
             position: absolute;
             font: 400 2.2rem $Raleway;
@@ -68,14 +68,14 @@
             bottom: 10px;
             right: 20px;
             width: 35vw;
-    
+
         }
 
-        .first{
+        .first {
             font-weight: 900;
         }
     }
 
-    
-    
+
+
 }

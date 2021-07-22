@@ -40,9 +40,9 @@
         transform: scale(0.7);
     }
 
-    .mainwave{
+    .mainwave {
         position: absolute;
-        bottom:-75px;
+        bottom: -75px;
     }
 
 
@@ -50,31 +50,31 @@
 
 
 @media (min-width:800px) {
-    
-    video{
+
+    video {
         display: none;
 
     }
 
     @keyframes rollvideo {
 
-        0%{
+        0% {
             opacity: 0;
         }
 
-        100%{
+        100% {
             opacity: 1;
         }
-        
+
     }
-    
+
     .home {
         position: relative;
         background: linear-gradient(180deg,
                 rgba(65, 204, 255, 0.95) 0%,
                 rgba(65, 175, 255, 0.342) 100%);
         z-index: 100;
-        
+
         // FIRST TITLES 
         h1 {
             font: 900 7rem $Raleway;
@@ -107,6 +107,7 @@
 
             &>p {
                 font: 400 1.25rem $Raleway;
+                width: 250px;
                 text-align: center;
 
                 &>.techlevelspan {
@@ -147,11 +148,12 @@
 
         }
 
-        
+
     }
-    
+
 }
-.mainwave{
+
+.mainwave {
     position: absolute;
     // bottom:-300px;
     z-index: -10;

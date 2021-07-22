@@ -8,7 +8,7 @@ const langflag = document.getElementsByClassName('language-flag')[0]
 const homeContent = {
 
     spanish: [
-        'Inicio', 'Servicios', 'Expertos', 'Test diagnóstico', 'Aprende', 'Sobre nosotros', 'Conócenos', 'Contacto', 'Inicia sesión', 'Inicio', 'Expertos', 'Test diagnóstico', 'Aprende', 'Sobre nosotros', 'Contacto', 'Relyer', 'Somos la conexión entre pequeños <br> empresarios y soluciones tecnológicas,<br> organizacionales y culturales', 'Conoce tu <span class="techlevelspan"> nivel tecnológico </span>', 'Nuestras soluciones', 'La tecnología y la innovación son nuestras principales cartas', 'Expertos', 'Tecnología', 'Recursos', '¿Cómo <span>funciona?</span>', 'Identifica', 'Puedes encontrar posibles <br> falencias por tu cuenta <br> o usar nuestro diagnóstico  ', 'Aprende', 'Descubre como las herramientas <br> tecnológicas y diferentes metologías <br> pueden llevarte al siguiente nivel <br> de la mano de expertos', 'Aplica', 'Usa los conceptos <br> aprendidos para expandir <br> tu empresa/negocio', 'No importa si se te dificulta la tecnología o si tienes más experiencia', 'Te ayudamos a dar tu <span class="first">Primer paso</span>', 'Empresas que confían en nosotros', '<span class="statistics-numbers ">+100</span> <br>Empresas', '<span class="statistics-numbers ">+4.5</span> <br>Puntaje', '<span class="statistics-numbers ">2</span> <br>idiomas', 'COMIENZA AHORA', 'Conoce el <span>nivel tecnológico </span> de tu empresa'
+        'Inicio', 'Servicios', 'Expertos', 'Test diagnóstico', 'Aprende', 'Sobre nosotros', 'Conócenos', 'Contacto', 'Inicia sesión', 'Inicio', 'Expertos', 'Test diagnóstico', 'Aprende', 'Sobre nosotros', 'Contacto', 'Relyer', 'Somos la conexión entre pequeños <br> empresarios y soluciones tecnológicas,<br> organizacionales y culturales', 'Conoce tu <span class="techlevelspan"> nivel tecnológico </span> ', 'Nuestras soluciones', 'La tecnología y la innovación son nuestras principales cartas', 'Expertos', 'Tecnología', 'Recursos', '¿Cómo <span>funciona?</span>', 'Identifica', 'Puedes encontrar posibles <br> falencias por tu cuenta <br> o usar nuestro diagnóstico  ', 'Aprende', 'Descubre como las herramientas <br> tecnológicas y diferentes metologías <br> pueden llevarte al siguiente nivel <br> de la mano de expertos', 'Aplica', 'Usa los conceptos <br> aprendidos para expandir <br> tu empresa/negocio', 'No importa si se te dificultan <br> las nuevas tecnologías o el ambiente digital o si tienes previa <br> experiencia', 'Te ayudamos a dar tu <span class="first">Primer paso</span>', 'Empresas que confían en nosotros', '<span class="statistics-numbers ">+100</span> <br>Empresas', '<span class="statistics-numbers ">+4.5</span> <br>Puntaje', '<span class="statistics-numbers ">2</span> <br>idiomas', 'COMIENZA AHORA', 'Conoce el <span>nivel tecnológico </span> de tu empresa'
     ]
     ,
     english: [
@@ -48,6 +48,8 @@ spanish.addEventListener('click', () => {
 if (localStorage.getItem('language')) {
     const currentLanguage = localStorage.getItem('language')
 }
+
+
 
 
 const translate = document.querySelectorAll('.translate')
