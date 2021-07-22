@@ -912,10 +912,10 @@ body {
 .learn-experts .experts-content .contacts-carrousel::-webkit-scrollbar {
   display: none;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card {
+ .contact-card {
   position: relative;
   margin: 50px 15px 10px 15px;
-  width: 210px;
+  width: 250px;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -927,7 +927,7 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card .photo {
+ .contact-card .photo {
   position: absolute;
   right: -10px;
   left: unset;
@@ -937,21 +937,23 @@ body {
   border-radius: 50px;
   width: 70px;
   height: 70px;
+ }
+.contact-card .photo img {
+  width: 100%;
+  position: absolute;
+  top:35%;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card .photo img {
-  object-fit: cover;
-}
-.learn-experts .experts-content .contacts-carrousel .contact-card .name-container {
+ .contact-card .name-container {
   margin: 20px 5px 5px 5px;
   width: 150px;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card .experience {
+ .contact-card .experience {
   margin: 15px 5px 5px 5px;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card .experience .description {
+ .contact-card .experience .description {
   font-family: 14px;
 }
-.learn-experts .experts-content .contacts-carrousel .contact-card .contact-CTA {
+ .contact-card .contact-CTA {
   margin: 15px 5px 5px 5px;
 }
 
@@ -967,28 +969,28 @@ body {
     margin: 10px 20px;
     width: 740px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card {
+  .contact-card {
     margin: 70px 20px 10px 20px;
     width: 300px;
     height: 230px;
     font-size: 18px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .photo {
+ .contact-card .photo {
     top: -60px;
     border-radius: 80px;
     width: 110px;
     height: 110px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .name-container {
+.name-container {
     margin: 50px 15px 5px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .experience {
+.experience {
     margin: 10px 15px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .experience .description {
+ .contact-card .experience .description {
     font-size: 16px;
   }
-  .learn-experts .experts-content .contacts-carrousel .contact-card .contact-CTA {
+ .contact-card .contact-CTA {
     width: 100%;
     text-align: center;
   }
@@ -1004,3 +1006,8 @@ body {
 }
 
 /*# sourceMappingURL=learn.css.map */
+
+.swiper-container {
+  width: 1000px;
+  height: 400px;
+}
