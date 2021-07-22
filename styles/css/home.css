@@ -715,8 +715,10 @@ html {
           align-items: center;
 }
 
+.CTA > .start-now > a,
 .CTA > .start-now > h2 {
   font: 900 1rem/60px "Raleway", sans-serif;
+  text-decoration: none;
 }
 
 .CTA > .start-now > i {
@@ -767,12 +769,15 @@ html {
     width: 22vw;
     height: 100px;
   }
-  .CTA > .start-now > h2 {
+  .CTA > .start-now > h2,
+  .CTA > .start-now > a {
+    color: black;
     font-size: 2rem;
   }
   .tech-level > h2 {
     max-width: 70vw;
     letter-spacing: 0.4rem;
+    text-decoration: none;
   }
   .tech-level > img {
     cursor: pointer;
