@@ -15,16 +15,17 @@ main{
             font-size: 1em;
             text-align: start;
         }
+        #parrafo-pasos {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #cccccc;
+            width: 100%;
+        }
         #pasos {
             width: 80%;
             margin-top: 2%;
-            #parrafo-pasos {
-                text-align: center;
-                font-size: 1.2em;
-                font-weight: bold;
-                color: #cccccc;
-                width: 100%;
-            }
+            
             h2 {
                 color: $titles;
                 margin-top: 3%;
