@@ -6,6 +6,87 @@
 /* Contrast */
 /* FONTS */
 h1 {
-  font: 900 3.4rem "Raleway", sans-serif;
+  font: 900 4rem "Raleway", sans-serif;
   padding: 20px;
+  padding-bottom: 30px;
+}
+
+.swiper-container {
+  margin-top: 20px;
+  width: 90vw;
+  height: 400px;
+}
+
+.swiper-container .swiper-wrapper {
+  max-width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 300px;
+  height: 120%;
+  border-radius: 20px;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card > img {
+  border-radius: 50%;
+  bottom: 10px;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card > h2 {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card > p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card > .category {
+  padding: 10px;
+  background-color: rgba(100, 148, 237, 0.103);
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper > .swiper-slide > .expert-card > button {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  width: 60%;
+  padding: 10px;
+  height: 10%;
+  border-radius: 10px;
+  background-color: #6E80EC;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
 }

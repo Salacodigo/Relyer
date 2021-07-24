@@ -6,22 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experts & tools</title>
-
     <link rel="stylesheet" href="../styles/css/navbar.css">
     <link rel="stylesheet" href="../styles/css/expertstool.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
-
-
     <script src="../js/navigator.js" defer></script>
     <script src="../js/expertsandtools.js" defer></script>
 </head>
 
 <body>
-
     <nav class="nav-container"></nav>
     <h1>Find the best tools and experts for you</h1>
+    <!-- EXPERT SECTION -->
+    <!--Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slider"></div>
+            <div class="swiper-slider"></div>
+            <div class="swiper-slider"></div>
 
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
+
+            // // Responsive breakpoints
+            // breakpoints: {
+
+            //     320: {
+            //         slidesPerView: 2,
+            //     },
+            //     890: {
+            //     }
+            // },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+            }
+
+            ,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+
+
+        }
+
+        );
+    </script>
 </body>
 
 </html>
