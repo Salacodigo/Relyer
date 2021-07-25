@@ -149,6 +149,10 @@ nav .responsive-nav > ul > .responsive6:hover {
   nav.sticky > ul > .nav-list3 > .login:hover {
     background-color: #08ffb9dc;
   }
+  nav.sticky > ul > .nav-list3 > .language > .optionlanguage > .languageoptions {
+    position: relative;
+    bottom: 10px;
+  }
   nav ul {
     width: 100vw;
     display: -webkit-box;
@@ -227,6 +231,8 @@ nav .responsive-nav > ul > .responsive6:hover {
   }
   nav ul .nav-list2 > .main-sections > .subsection > .paragraph {
     height: 32px;
+    color: white;
+    text-decoration: none;
     font: 500 1.15rem/28px "Raleway";
     margin-bottom: 10px;
     background-color: #3AB0E2;

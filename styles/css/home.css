@@ -741,6 +741,9 @@ html {
 }
 
 .tech-level > h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #41CCFF;
+          text-decoration-color: #41CCFF;
   font: 700 1.5rem "Raleway", sans-serif;
   color: white;
   max-width: 50vw;
@@ -777,7 +780,6 @@ html {
   .tech-level > h2 {
     max-width: 70vw;
     letter-spacing: 0.4rem;
-    text-decoration: none;
   }
   .tech-level > img {
     cursor: pointer;

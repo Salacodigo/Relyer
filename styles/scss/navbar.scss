@@ -138,6 +138,13 @@ nav {
                             background-color: #08ffb9dc;
                         }
                     }
+
+                    &>.language>.optionlanguage {
+                        &>.languageoptions {
+                            position: relative;
+                            bottom: 10px;
+                        }
+                    }
                 }
 
             }
@@ -217,6 +224,8 @@ nav {
                     // SUB SECTIONS
                     &>.subsection>.paragraph {
                         height: 32px;
+                        color: white;
+                        text-decoration: none;
                         font: 500 1.15rem/28px "Raleway";
                         margin-bottom: 10px;
                         background-color: $secondblue;

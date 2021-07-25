@@ -47,6 +47,8 @@
     margin-bottom: 40px;
 
     &>h2 {
+        text-decoration: underline;
+        text-decoration-color: $lightblue;
         font: 700 1.5rem $Raleway;
         color: white;
         max-width: 50vw;
@@ -97,7 +99,6 @@
         &>h2 {
             max-width: 70vw;
             letter-spacing: 0.4rem;
-            text-decoration: none;
         }
 
         &>img {
