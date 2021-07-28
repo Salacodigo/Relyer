@@ -1,5 +1,5 @@
 
-let playbutton = document.getElementsByClassName('fa-play-circle')[0]
+let playbutton = document.getElementsByClassName('play-button-video')[0]
 
 playbutton.addEventListener('click', () => {
 

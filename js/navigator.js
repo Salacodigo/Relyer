@@ -16,8 +16,8 @@ navTemplate.innerHTML = `
             <i class="fas fa-angle-double-down"></i>
 
             <div class="subsection">
-                        <h3 class="paragraph first-paragraph experts translate"> <a
-                                href="../html/expertstools.html">Experts & Tools</a></h3>
+            <a class="paragraph first-paragraph experts translate" href="./html/expertstools.html">Experts &
+            Tools</a></h3>
                         <h3 class="paragraph second-paragraph test translate">Diagnosis Test</h3>
                     </div>
 

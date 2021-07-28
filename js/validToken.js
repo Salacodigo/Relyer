@@ -6,7 +6,8 @@ if (localStorage.getItem('token')) {
 
     let language = localStorage.getItem('language')
 
-    if (language == "en") {
+
+    if (language === "en") {
         loginButton.innerHTML = 'Logout'
     } else {
         loginButton.innerHTML = 'Cerrar sesión'
@@ -25,9 +26,9 @@ loginButton.addEventListener('click', () => {
         localStorage.setItem('token', '')
 
         if (language === "en") {
-            loginButton.innerHTML = "Login/Register"
+            loginButton.innerText = "Login/Register"
         } else {
-            loginButton.innerHTML = "Iniciar sesión"
+            loginButton.innerText = "Iniciar sesión"
         }
 
         logged = false
