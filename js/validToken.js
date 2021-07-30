@@ -6,11 +6,10 @@ if (localStorage.getItem('token')) {
 
     let language = localStorage.getItem('language')
 
-
-    if (language === "en") {
-        loginButton.innerHTML = 'Logout'
-    } else {
+    if (language === "es") {
         loginButton.innerHTML = 'Cerrar sesión'
+    } else {
+        loginButton.innerHTML = 'Logout'
     }
 
     logged = true
@@ -25,11 +24,15 @@ loginButton.addEventListener('click', () => {
         event.preventDefault()
         localStorage.setItem('token', '')
 
-        if (language === "en") {
-            loginButton.innerText = "Login/Register"
-        } else {
+        if (language === "es") {
             loginButton.innerText = "Iniciar sesión"
+            printMessage('#FFE1DE', '#FE455B', 'Cierre de sesión correcto', 'successMessage')
+        } else {
+            loginButton.innerText = "Login/Register"
+            printMessage('#FFE1DE', '#FE455B', 'Successful logout', 'successMessage')
         }
+
+
 
         logged = false
 

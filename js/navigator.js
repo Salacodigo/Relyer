@@ -16,7 +16,7 @@ navTemplate.innerHTML = `
             <i class="fas fa-angle-double-down"></i>
 
             <div class="subsection">
-            <a class="paragraph first-paragraph experts translate" href="./html/expertstools.html">Experts &
+            <a class="paragraph first-paragraph experts translate" href="./expertstools.html">Experts &
             Tools</a></h3>
                         <h3 class="paragraph second-paragraph test translate">Diagnosis Test</h3>
                     </div>
@@ -125,8 +125,6 @@ window.addEventListener('scroll', () => {
 /*  GO TO HOME ON LOGO */
 
 let relyerlogo = document.getElementsByClassName('relyer-logo')[0];
-
-console.log(relyerlogo)
 
 relyerlogo.addEventListener('click', () => {
     if (document.body.id !== "home")

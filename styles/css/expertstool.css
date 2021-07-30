@@ -270,8 +270,8 @@ body {
       flex-wrap: wrap;
   width: 40%;
   background: #0b3bbd;
-  background: -webkit-gradient(linear, left top, right top, color-stop(23%, rgba(11, 59, 189, 0.911946)), to(rgba(12, 108, 247, 0.850148)));
-  background: linear-gradient(90deg, rgba(11, 59, 189, 0.911946) 23%, rgba(12, 108, 247, 0.850148) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(33%, rgba(11, 58, 189, 0.753)), to(rgba(12, 110, 247, 0.411)));
+  background: linear-gradient(90deg, rgba(11, 58, 189, 0.753) 33%, rgba(12, 110, 247, 0.411) 100%);
   border-radius: 20px;
 }
 
@@ -291,16 +291,18 @@ body {
 }
 
 .tools-container > .swiper-container > .swiper-wrapper > .swiper-slide > .imgwrap > img {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   bottom: 20px;
   z-index: 1000000;
 }
 
 .tools-container > .swiper-container > .swiper-wrapper > .swiper-slide > .info {
-  width: 70%;
+  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +326,7 @@ body {
   color: white;
   width: 95%;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 40px;
   margin-top: 20px;
 }

@@ -1,30 +1,18 @@
 
-const swiper2 = new Swiper(".swp2", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-
 
 const expertsContainer = document.getElementsByClassName('swiper-wrapper')[0]
+const toolsContainer = document.getElementsByClassName('swiper-wrapper')[1]
 
 !async function fetchExpert() {
 
-    let request = await fetch('https://server-relyer.herokuapp.com/api/expertos')
+    let request = await fetch('https://server-relyer.herokuapp.com/api/expertos?limite=10')
     let response = await request.json()
     let experts = response.usuarios
 
     let counter = 1
     let imgAlt
+
+    console.log(experts)
 
     experts.forEach(expert => {
 
@@ -34,10 +22,10 @@ const expertsContainer = document.getElementsByClassName('swiper-wrapper')[0]
             imgAlt = 'Girl'
         }
 
-        let swiperSlide = document.createElement('div')
-        swiperSlide.className = "swiper-slide"
+        let expertSlide = document.createElement('div')
+        expertSlide.className = "swiper-slide"
 
-        swiperSlide.innerHTML = `
+        expertSlide.innerHTML = `
         <div class="expert-card">
             <img src="../Assets/experts/ex${counter}.jpg" alt="${imgAlt}">
             <h2>${expert.nombre}</h2>
@@ -46,15 +34,16 @@ const expertsContainer = document.getElementsByClassName('swiper-wrapper')[0]
                 <h2>${expert.category}</h2>
             </div>
             <button class="expert expert${counter}">Contact Me</button>
-        </div>`
+            <div style="display:none;" value="${expert.uid}"></div>
+                    </div>`
 
-        expertsContainer.appendChild(swiperSlide)
+        expertsContainer.appendChild(expertSlide)
 
         counter++
     });
 
 
-    // SLIDERS
+    // SLIDER IS APPEND WHEN INFO IS RETURNED
 
     const swiper = new Swiper('.swp1', {
         // Optional parameters
@@ -94,6 +83,23 @@ const expertsContainer = document.getElementsByClassName('swiper-wrapper')[0]
 
     });
 
+    // CONTACT EACH EXPERT CLICKING IT
+    const expertContact = document.querySelectorAll('.expert')
+
+    expertContact.forEach(expert => {
+
+        expert.addEventListener('click', () => {
+            let expertName = expert.previousElementSibling.previousElementSibling.previousElementSibling.innerText
+
+            if (logged === false) {
+                printMessage('#FFE1DE', '#F47174', `Login to contact experts`, 'error')
+            } else {
+                printMessage('#C5F3D7', 'black', `${expertName} will contact you soon ..`, 'success')
+                console.log(expertName)
+            }
+        })
+    });
+
 }()
 
 
@@ -103,11 +109,41 @@ const expertsContainer = document.getElementsByClassName('swiper-wrapper')[0]
     let response = await request.json()
     let tools = response.tools
 
-    console.log('%c tools', 'color:blue;')
     console.log(tools)
 
+    let counter = 1
+
     tools.forEach(tool => {
-        console.log(tool)
+        let toolSlide = document.createElement('div')
+        toolSlide.className = "swiper-slide"
+
+        toolSlide.innerHTML = `
+            <div class="imgwrap">
+                <img src="../Assets/tools/tool${counter}.png" alt="tool">
+            </div>
+
+            <div class="info">
+                <h2>${tool.nombre}</h2>
+                <p>${tool.description}</p>
+                <button class= "tool${counter}">Know More</button>
+            </div>`
+
+        toolsContainer.appendChild(toolSlide)
+        counter++
+    });
+
+    const swiper2 = new Swiper(".swp2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 
 
