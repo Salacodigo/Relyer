@@ -9,49 +9,57 @@ navTemplate.innerHTML = `
 
     <li class="nav-list2">
         <a href="../index.html" class="main-sections">
-            <h3>Home</h3>
+            <h3 class="translate ">Home</h3>
         </a>
         <div class="main-sections services">
-            <h3>Services</h3>
+            <h3 class="translate ">Services</h3>
             <i class="fas fa-angle-double-down"></i>
 
             <div class="subsection">
-                <p class="paragraph first-paragraph experts">Experts & Tools</p>
-                <p class="paragraph second-paragraph test">Diagnosis Test</p>
-            </div>
+            <a class="paragraph first-paragraph experts translate" href="./expertstools.html">Experts &
+            Tools</a></h3>
+                        <h3 class="paragraph second-paragraph test translate">Diagnosis Test</h3>
+                    </div>
 
         </div>
         <a href="../html/learn.html" class="main-sections learnmore">
-            <h3> Learn more</h3>
+            <h3 class="translate "> Learn more</h3>
         </a>
         <div class="main-sections aboutus">
-            <h3>About us </h3>
+            <h3 class="translate ">About us </h3>
             <i class="fas fa-angle-double-down"></i>
             <div class="subsection">
-                <p class="paragraph first-paragraph knowus">Know us</p>
-                <p class="paragraph second-paragraph contact">Contact</p>
+                <p class="paragraph first-paragraph knowus translate">Know us</p>
+                <p class="paragraph second-paragraph contact translate">Contact</p>
             </div>
 
         </div>
     </li>
 
     <li class="nav-list3">
-        <a href="../html/login.html" class="login">Login</a>
-        <a href="../html/register.html" class="register">Register</a>
-        <div class="language"> <img class="language-flag" src="../Assets/en-flag.svg" alt="United States     flag"><i
-                class="fas fa-sort-down"></i></div>
-    </li>
+    <a href="../html/login.html" class="login translate">Login/Register</a>
+    <div class="language">
+        <img class="language-flag" src="../Assets/en-flag.svg" alt="United States flag">
+        <h2 class="langtitle">English</h2>
+
+        <div class="optionlanguage">
+            <p class="languageoptions en selected">English</p>
+            <p class="languageoptions es">Spanish</p>
+        </div>
+
+    </div>
+</li>
     </ul>
     <div class="hamburguer"><span></span><span></span><span></span></div>
 
     <div class="responsive-nav">
     <ul>
-        <a class="responsive1">Home</a>
-        <a class="responsive2">Experts & Tools </a>
-        <a class="responsive3"> Diagnosis Test</a>
-        <a class="responsive4">Learn more</a>
-        <a class="responsive5">Know us </a>
-        <a class="responsive6">Contact </a>
+        <a class="responsive1 translate">Home</a>
+        <a class="responsive2 translate">Experts & Tools </a>
+        <a class="responsive3 translate"> Diagnosis Test</a>
+        <a class="responsive4 translate">Learn more</a>
+        <a class="responsive5 translate">Know us </a>
+        <a class="responsive6 translate">Contact </a>
 
 
     </ul>
@@ -117,8 +125,6 @@ window.addEventListener('scroll', () => {
 /*  GO TO HOME ON LOGO */
 
 let relyerlogo = document.getElementsByClassName('relyer-logo')[0];
-
-console.log(relyerlogo)
 
 relyerlogo.addEventListener('click', () => {
     if (document.body.id !== "home")

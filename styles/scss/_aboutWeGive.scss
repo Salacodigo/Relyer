@@ -2,7 +2,7 @@
 
 // SWIPER SLIDER
 
-.introTitle{
+.introTitle {
     position: absolute;
     font: 700 1.5rem $Raleway;
     color: white;
@@ -11,7 +11,7 @@
     left: 20px;
 }
 
-.introTitle2{
+.introTitle2 {
     position: absolute;
     font: 800 4rem/50px $Raleway;
     letter-spacing: 12px;
@@ -30,37 +30,44 @@
     height: 600px;
 }
 
-.about-we-give{
+.about-we-give {
     margin-top: 100px;
     font-family: $Raleway;
     text-align: center;
-    .what-do-we-give{
-        .title-section-we-give{
+
+    .what-do-we-give {
+        .title-section-we-give {
             font-size: 40px;
             margin: 10px;
         }
-        .explanation-about-us{
+
+        .explanation-about-us {
             display: flex;
             flex-direction: column;
             text-align: justify;
             margin: 0 25px;
-            .info-we-give, .info-we-give2{
+
+            .info-we-give,
+            .info-we-give2 {
                 display: block;
             }
-            .info-we-give2{
+
+            .info-we-give2 {
                 font-weight: bold;
             }
         }
-        .about-us-img{
+
+        .about-us-img {
             border-radius: 18px;
             max-width: 90%;
             margin: 15px auto;
         }
     }
 }
-@media (min-width: 768px){
 
-    .introTitle{
+@media (min-width: 768px) {
+
+    .introTitle {
         position: absolute;
         font: 700 2.5rem $Raleway;
         color: white;
@@ -68,8 +75,8 @@
         top: 80px;
         left: 150px;
     }
-    
-    .introTitle2{
+
+    .introTitle2 {
         position: absolute;
         font: 800 6rem/50px $Raleway;
         letter-spacing: 12px;
@@ -79,26 +86,30 @@
         left: 150px;
     }
 
-    .about-we-give{
-        .what-do-we-give{
+    .about-we-give {
+        .what-do-we-give {
             display: flex;
             flex-direction: column;
-            .title-section-we-give{
-                    font-size: 50px;
-                    margin-bottom: 40px;
-                }
-            .explanation-about-us{
+
+            .title-section-we-give {
+                font-size: 50px;
+                margin-bottom: 40px;
+            }
+
+            .explanation-about-us {
                 justify-content: center;
                 text-align: justify;
                 margin: 0 auto;
                 flex-direction: row;
-                font-size: 20px;
-                max-width: 1100px;
-                .info{
+                font-size: 22px;
+                max-width: 90vw;
+
+                .info {
                     margin: 0 35px;
                 }
             }
-            .about-us-img{
+
+            .about-us-img {
                 width: 35%;
                 height: fit-content;
                 margin: auto 10px;

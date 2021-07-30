@@ -72,6 +72,33 @@ html {
   }
 }
 
+.errorMessage {
+  -webkit-animation: error 3s ease-out;
+          animation: error 3s ease-out;
+}
+
+@-webkit-keyframes error {
+  0% {
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes error {
+  0% {
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 form {
   width: 100vw;
   height: 100vh;
@@ -149,7 +176,6 @@ form > .form-container > div > .input {
 }
 
 form > .form-container > div > .input:focus {
-  border-color: white;
   outline: none;
 }
 

@@ -1,6 +1,6 @@
+let footer = document.getElementsByTagName('footer')[0]
+let footerTemplate = document.createElement('template')
 
-
-let footerTemplate= document.createElement('template')
 footerTemplate.innerHTML = `
         <div class="img-background-footer">
             <div class="mobile content-logo-footer ">
@@ -11,10 +11,9 @@ footerTemplate.innerHTML = `
             <div class="background-menu mobile">
                 <div class="menu-footer-mobile">
                     <ul>
-                        <li> <a href=""> Recent news</a></li>
-                        <li><a href=""> Contact</a></li>
-                        <li><a href=""> About us</a></li>
-                        <li><a href=""> Donate</a></li>
+                        <li> <a href="/html/learn.html"> Learn more</a></li>
+                        <li><a href="/hmtl/contact.html"> Contact</a></li>
+                        <li><a href="/html/aboutUs.html"> About us</a></li>
                     </ul>
                 </div>
 
@@ -22,10 +21,9 @@ footerTemplate.innerHTML = `
             <div class="background-menu desktop">
                 <div class="menu-footer">
                     <ul>
-                        <li> <a href=""> Recent news</a></li>
-                        <li><a href=""> Contact</a></li>
-                        <li><a href=""> About us</a></li>
-                        <li><a href=""> Donate</a></li>
+                    <li> <a href="/html/learn.html"> Learn more</a></li>
+                    <li><a href="/hmtl/contact.html"> Contact</a></li>
+                    <li><a href="/html/aboutUs.html"> About us</a></li>
                     </ul>
                 </div>
                 <div class="content-logo-footer">
@@ -54,6 +52,5 @@ footerTemplate.innerHTML = `
         </div>
 `
 
-let footer = document.getElementsByTagName('footer')[0]
-
 footer.appendChild(footerTemplate.content)
+

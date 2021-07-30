@@ -6,8 +6,8 @@ html {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg,
-    rgba(6, 146, 197, 0.95) 0%,
-    rgba(65, 176, 255, 0) 100%);
+            rgba(6, 146, 197, 0.95) 0%,
+            rgba(65, 176, 255, 0) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ html {
     overflow: hidden;
 }
 
-.fa-arrow-circle-left{
+.fa-arrow-circle-left {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -39,10 +39,28 @@ html {
     }
 }
 
+.errorMessage {
+    animation: error 3s ease-out;
+}
+
+@keyframes error {
+
+    0% {}
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
 
 form {
     width: 100vw;
-    height:100vh;
+    height: 100vh;
     background-color: $lightblue;
     position: relative;
     display: flex;
@@ -160,7 +178,7 @@ form {
 
 }
 
-@media (min-width:1200px) {
+@media (min-width:800px) {
 
     form {
         width: 1000px;
@@ -170,16 +188,16 @@ form {
         justify-content: unset;
         display: flex;
         animation: register 0.5s normal forwards ease-in-out;
-    
+
         &>.form-decoration,
         &>.form-container {
             position: absolute;
             top: 0;
             bottom: 0;
         }
-    
+
         &>.form-decoration {
-            display:block;
+            display: block;
             width: 55%;
             position: relative;
             border-top-left-radius: 25px;
@@ -191,7 +209,7 @@ form {
             background-size: cover;
             background-position: left;
         }
-    
+
         &>.form-container {
             width: 45%;
             border-top-right-radius: 25px;
@@ -202,7 +220,7 @@ form {
             align-items: unset;
             flex-direction: column;
             background-color: rgb(255, 255, 255);
-    
+
             &>h1 {
                 font-size: 3rem;
                 margin-top: 50px;
@@ -210,26 +228,26 @@ form {
                 font-weight: 800;
                 color: #081A47;
             }
-    
-    
+
+
             &>.inputcontainer {
                 position: relative;
                 align-self: center;
                 margin-bottom: 15px;
-                
+
                 &>i {
                     position: absolute;
                     bottom: 18px;
                     left: 12px;
                     margin: 0px;
                 }
-                
+
                 &:first-of-type {
                     margin-top: 30px;
                 }
             }
-            
-            
+
+
             &>.inputcontainer>.input {
                 width: 351px;
                 height: 46px;
@@ -239,13 +257,13 @@ form {
                 border-color: rgba(128, 128, 128, 0.197);
                 color: black;
                 background-color: transparent;
-                
+
                 &:focus {
                     outline: none;
                 }
             }
-            
-            
+
+
             &>.inputselect {
                 margin-top: -10px;
                 padding-left: 20px;
@@ -257,13 +275,13 @@ form {
                 border-color: rgba(128, 128, 128, 0.197);
                 align-self: center;
                 background-color: transparent;
-    
+
                 &:focus {
                     outline: none;
                 }
-    
+
             }
-    
+
             &>.selectlabel {
                 margin-bottom: 20px;
                 font-weight: 800;
@@ -272,12 +290,12 @@ form {
                 display: inline-block;
                 margin-left: 40px;
                 color: #5a4f4f;
-    
+
                 &:last-of-type {
                     margin-top: 20px;
                 }
             }
-    
+
             &>.ctabutton {
                 width: 200px;
                 height: 40px;
@@ -292,7 +310,7 @@ form {
                 background-color: $aquamarine;
                 font: 400 1.15rem $Raleway;
             }
-    
+
             &>.createaccount {
                 margin-top: 20px;
                 margin-left: -25px;
@@ -300,6 +318,6 @@ form {
             }
         }
     }
-    
-    
+
+
 }

@@ -436,16 +436,22 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-.counters .counter1, .counters .counter2, .counters .counter3 {
+.counters .counter1,
+.counters .counter2,
+.counters .counter3 {
   text-align: center;
   margin: 20px 0;
 }
 
-.counters .counter1 .figure, .counters .counter2 .figure, .counters .counter3 .figure {
+.counters .counter1 .figure,
+.counters .counter2 .figure,
+.counters .counter3 .figure {
   font-size: 35px;
 }
 
-.counters .counter1 .title-counter, .counters .counter2 .title-counter, .counters .counter3 .title-counter {
+.counters .counter1 .title-counter,
+.counters .counter2 .title-counter,
+.counters .counter3 .title-counter {
   font-size: 20px;
 }
 
@@ -507,14 +513,20 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .counters .counter1, .counters .counter2, .counters .counter3 {
+  .counters .counter1,
+  .counters .counter2,
+  .counters .counter3 {
     text-align: center;
     margin: 0 100px;
   }
-  .counters .counter1 .figure, .counters .counter2 .figure, .counters .counter3 .figure {
+  .counters .counter1 .figure,
+  .counters .counter2 .figure,
+  .counters .counter3 .figure {
     font-size: 48px;
   }
-  .counters .counter1 .title-counter, .counters .counter2 .title-counter, .counters .counter3 .title-counter {
+  .counters .counter1 .title-counter,
+  .counters .counter2 .title-counter,
+  .counters .counter3 .title-counter {
     font-size: 23px;
   }
   .values {
@@ -539,6 +551,7 @@ html {
   }
   .values .title-values .relyer-brand h3 {
     margin: 0;
+    color: white;
   }
   .values .title-values .relyer-brand br {
     display: -webkit-box;
@@ -620,7 +633,8 @@ html {
   margin: 0 25px;
 }
 
-.about-we-give .what-do-we-give .explanation-about-us .info-we-give, .about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give,
+.about-we-give .what-do-we-give .explanation-about-us .info-we-give2 {
   display: block;
 }
 
@@ -675,8 +689,8 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    font-size: 20px;
-    max-width: 1100px;
+    font-size: 22px;
+    max-width: 90vw;
   }
   .about-we-give .what-do-we-give .explanation-about-us .info {
     margin: 0 35px;

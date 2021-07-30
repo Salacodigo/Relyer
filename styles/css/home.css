@@ -115,6 +115,7 @@ html {
   }
   .home .techlevel > p {
     font: 400 1.25rem "Raleway", sans-serif;
+    width: 250px;
     text-align: center;
   }
   .home .techlevel > p > .techlevelspan {
@@ -188,8 +189,8 @@ html {
 }
 
 .home-solutions .card-solutions-container {
-  margin-top: 100px;
-  width: 70vw;
+  margin-top: 40px;
+  width: 60vw;
   margin-bottom: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +210,7 @@ html {
 .home-solutions .card-solutions {
   margin-top: 45px;
   position: relative;
-  width: 230px;
+  width: 240px;
   height: 320px;
   background: #FEFFFF;
   opacity: 0.75;
@@ -256,7 +257,7 @@ html {
 
 @media (min-width: 1200px) {
   .home-solutions h2 {
-    font: 800 4rem "Raleway", sans-serif;
+    font: 800 4.3rem "Raleway", sans-serif;
   }
   .home-solutions p {
     font: 300 2rem/50px "Raleway", sans-serif;
@@ -368,7 +369,7 @@ html {
     position: absolute;
     top: 30px;
     margin-left: 140px;
-    font: 400 5rem "Raleway", sans-serif;
+    font: 400 4.5rem "Raleway", sans-serif;
     color: #1A3256;
     z-index: 50;
   }
@@ -384,6 +385,7 @@ html {
   }
   .how-it-works .wave1 {
     position: absolute;
+    width: 100vw;
   }
   .how-it-works > .hiwsection-container {
     padding-top: 540px;
@@ -393,20 +395,22 @@ html {
   .how-it-works > .hiwsection-container > .hiwsection {
     background: white;
     opacity: 1;
-    height: 40vw;
+    height: 35vw;
   }
   .how-it-works > .hiwsection-container > .hiwsection .wave2 {
     position: relative;
-    bottom: 320px;
+    bottom: 400px;
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
   .how-it-works > .hiwsection-container > .hiwsection .wave3 {
     position: relative;
-    bottom: 50px;
+    bottom: 260px;
   }
   .how-it-works > .hiwsection-container > .hiwsection > .content {
     text-align: unset;
     margin: unset;
-    margin: 40px 0px 100px 120px;
+    margin: 0px 0px 100px 120px;
   }
   .how-it-works > .hiwsection-container > .hiwsection > .content > h3 {
     font: 800 4rem "Raleway", sans-serif;
@@ -417,8 +421,8 @@ html {
     color: #010913;
   }
   .how-it-works > .hiwsection-container > .hiwsection .numbers {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .how-it-works > .hiwsection-container .spider,
   .how-it-works > .hiwsection-container .reading,
@@ -432,8 +436,10 @@ html {
     display: none;
   }
   .how-it-works > .hiwsection-container > .identify > .spider {
-    top: 150px;
-    left: 55vw;
+    top: 80px;
+    left: 35vw;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   .how-it-works > .hiwsection-container > .learn {
     position: relative;
@@ -441,25 +447,23 @@ html {
   .how-it-works > .hiwsection-container > .learn > .number2 {
     position: absolute;
     right: 20px;
-    top: 0;
+    top: -120px;
   }
   .how-it-works > .hiwsection-container > .learn > .content {
     position: absolute;
-    top: 100px;
+    top: 0px;
     right: 110px;
     text-align: right;
   }
   .how-it-works > .hiwsection-container > .learn > .reading {
-    top: 140px;
-    right: 55vw;
+    right: 45vw;
   }
   .how-it-works > .hiwsection-container > .apply {
-    margin-top: 200px;
     height: 30vw;
   }
   .how-it-works > .hiwsection-container > .apply > .chess {
-    top: 150px;
-    left: 55vw;
+    top: 80px;
+    left: 45vw;
   }
 }
 
@@ -509,7 +513,7 @@ html {
     height: 500px;
     margin-bottom: 50px;
   }
-  .first-step > h2 {
+  .first-step > p {
     position: absolute;
     font: 400 2.2rem/60px "Raleway", sans-serif;
     color: white;
@@ -711,8 +715,10 @@ html {
           align-items: center;
 }
 
+.CTA > .start-now > a,
 .CTA > .start-now > h2 {
   font: 900 1rem/60px "Raleway", sans-serif;
+  text-decoration: none;
 }
 
 .CTA > .start-now > i {
@@ -735,6 +741,9 @@ html {
 }
 
 .tech-level > h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #41CCFF;
+          text-decoration-color: #41CCFF;
   font: 700 1.5rem "Raleway", sans-serif;
   color: white;
   max-width: 50vw;
@@ -763,7 +772,9 @@ html {
     width: 22vw;
     height: 100px;
   }
-  .CTA > .start-now > h2 {
+  .CTA > .start-now > h2,
+  .CTA > .start-now > a {
+    color: black;
     font-size: 2rem;
   }
   .tech-level > h2 {
