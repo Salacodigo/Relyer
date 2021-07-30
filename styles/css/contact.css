@@ -1,9 +1,10 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway';
 }
-.img-background-footer{
+
+.img-background-footer {
   background: url(/assets/c24724c96c6d39574d59c2a71bfbfa36-diseno-de-fondo-de-mar-submarino.jpg);
   width: 100%;
   height: 400px;
@@ -14,31 +15,26 @@ body{
   background-size: cover;
 }
 
-.content-logo-footer{
+.content-logo-footer {
   margin: 0 30%;
   top: -40px;
-  
 }
 
-.logo-footer{
+.logo-footer {
   width: 100%;
   height: 100%;
   text-align: center;
-
 }
 
-
-.logo-footer img{
-  margin:-40px 0px 0;
+.logo-footer img {
+  margin: -40px 0px 0;
   width: 100%;
   height: 100%;
-  position: relative;      
-  
-
+  position: relative;
 }
 
-.background-menu{
-  background: url(/assets/Rectangle\ 36.png);
+.background-menu {
+  background: url("../../assets/Rectangle36.png");
   width: 100%;
   height: 150px;
   margin: 0;
@@ -48,7 +44,7 @@ body{
   background-size: cover;
 }
 
-.menu-footer-mobile li{
+.menu-footer-mobile li {
   text-align: center;
   list-style: none;
   color: white;
@@ -56,92 +52,98 @@ body{
   margin: 10px 0px;
 }
 
-.menu-footer-mobile li a{
+.menu-footer-mobile li a {
   color: white;
   text-decoration: none;
 }
 
-
-.img-networks{
+.img-networks {
   text-align: center;
   margin: 25px 0;
-  
 }
-.img-networks img{
+
+.img-networks img {
   margin: 0 10px;
   width: 10%;
 }
 
 ul {
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
-.desktop{
+.desktop {
   display: none;
 }
 
-
-
-
-
 @media (min-width: 768px) {
-  .background-menu{
-      display: flex;
-      justify-content: space-between;
-      align-items:center;
-      position: absolute;
-      bottom: 25%;
-      height: 50%;
+  .background-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    bottom: 25%;
+    height: 50%;
   }
-  .menu-footer{
-      flex-direction: column;
-      width: 33%;
+  .menu-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%;
   }
-  .content-logo-footer{
-      flex-direction: column;
-      margin:0;
-      top: 0;
-      width: 33%;
+  .content-logo-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    top: 0;
+    width: 33%;
   }
-  .networks{
-      flex-direction: column;
-      width: 33%;
+  .networks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33%;
   }
-  .background-menu-mobile{
-      display: none;
+  .background-menu-mobile {
+    display: none;
   }
-  .mobile{
-      display: none;
+  .mobile {
+    display: none;
   }
-  .img-background-footer{
-      position: relative;
+  .img-background-footer {
+    position: relative;
   }
-  .menu-footer li{
-      text-align: center;
-      list-style: none;
-      color: white;
-      font-size: 25px;
-      margin: 10px 0px;
+  .menu-footer li {
+    text-align: center;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px 0px;
   }
-  
-  .menu-footer li a{
-      color: white;
-      text-decoration: none;
+  .menu-footer li a {
+    color: white;
+    text-decoration: none;
   }
-
-  .logo-footer img{
-      width: 50%;
-      margin: 0;
+  .logo-footer img {
+    width: 50%;
+    margin: 0;
   }
 }
 
-
-
-
 /*----------- Contacto --------------*/
-
 .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .contact-wrapper > * {
@@ -150,14 +152,11 @@ ul {
 
 .contact-form {
   background: #fff;
-  width: 60%  ;
-  box-shadow: 0px 0px 5px 1px #CDCDCD;
+  width: 60%;
+  -webkit-box-shadow: 0px 0px 5px 1px #CDCDCD;
+          box-shadow: 0px 0px 5px 1px #CDCDCD;
   margin-left: 20%;
 }
-
-
-
-
 
 .contact-form form p {
   margin: 0;
@@ -168,18 +167,17 @@ ul {
 }
 
 .contact-form form button,
-.contact-form form input{
+.contact-form form input {
   width: 100%;
   padding: .7em;
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: black;
   border-bottom: 1px solid #6E80EC;
 }
 
-
-.contact-form form textarea{
+.contact-form form textarea {
   margin-top: 10px;
   width: 100%;
   padding: .7em;
@@ -196,6 +194,7 @@ ul {
 .contact-form form button:focus {
   background: #d63031;
   color: #fff;
+  -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
   outline: 0;
 }
@@ -205,75 +204,80 @@ ul {
   background: #000;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
 
-
-
-
-
-.contact-section{
+.contact-section {
   background-image: url(/assets/fondo.png);
   background-repeat: no-repeat;
-  background-attachment:local;
+  background-attachment: local;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10% 0;
   background-size: cover;
 }
-.left-contact{
-  flex-direction: column;
+
+.left-contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
   text-align: center;
 }
 
-.right-contact{
-  flex-direction: column;
+.right-contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
 }
 
-
-
-.left-contact h2{
+.left-contact h2 {
   font-size: 45px;
   color: #35517A;
   font-weight: bold;
 }
 
-.left-contact span{
+.left-contact span {
   font-size: 20px;
   color: #35517A;
 }
 
-.padding-left-contact{
-  padding:0 20%;
+.padding-left-contact {
+  padding: 0 20%;
 }
 
-.padding-btn-send{
+.padding-btn-send {
   padding: 0 30%;
 }
 
-.img-networks-contact{
+.img-networks-contact {
   background: #1A3256;
   border-radius: 30px;
   padding: 10px;
   margin: 0 60px;
 }
 
-
-.img-networks-contact img{
+.img-networks-contact img {
   width: 50px;
 }
 
-
-
-
 #site {
   opacity: 0;
+  -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
+
 #preloader {
   height: 40px;
   width: 40px;
@@ -283,6 +287,7 @@ ul {
   margin-top: -20px;
   margin-left: -20px;
 }
+
 #preloader:before {
   content: "";
   display: block;
@@ -291,11 +296,13 @@ ul {
   top: -1px;
   height: 100%;
   width: 100%;
-  animation: rotation 1s linear infinite;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
   border: 1px solid #41CCFF;
   border-top: 1px solid transparent;
   border-radius: 100%;
 }
+
 #preloader > .icon {
   position: absolute;
   top: 50%;
@@ -304,8 +311,10 @@ ul {
   width: 10.6px;
   margin-top: -12.5px;
   margin-left: -5.3px;
-  animation: wink 1s ease-in-out infinite alternate;
+  -webkit-animation: wink 1s ease-in-out infinite alternate;
+          animation: wink 1s ease-in-out infinite alternate;
 }
+
 @media only screen and (min-width: 768px) {
   #preloader {
     height: 60px;
@@ -328,6 +337,7 @@ ul {
     margin-left: -7.949999999999999px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   #preloader {
     height: 80px;
@@ -342,15 +352,30 @@ ul {
     margin-left: -25px;
   }
 }
-@keyframes rotation {
+
+@-webkit-keyframes rotation {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
-@keyframes wink {
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes wink {
   from {
     opacity: 0;
   }
@@ -359,3 +384,11 @@ ul {
   }
 }
 
+@keyframes wink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
