@@ -23,17 +23,27 @@
     <script src="../js/validToken.js" defer></script>
     <script src="../js/accordionNav.js" defer></script>
     <script src="../js/footer.js" defer></script>
+<<<<<<< HEAD
+    <script src="../js/preloader.js" defer></script>
+=======
     <script src="../js/language.js" defer></script>
 
 
+>>>>>>> 6dfff0143eeeb4f97471e6bad14801abbda4b52d
     <title>Contact</title>
 
 </head>
 
 <body>
-    <nav class="nav-container">
-    </nav>
-
+    
+<nav class="nav-container">
+</nav>
+    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"><img class="icon" src="/assets/depositphotos_44070285-stock-illustration-dolphin 1.png">
+    </div>
+    
+    <main id="site" role="main"></main>
+    <div style="height: 100px;">
+    </div>
 
     <section class="contact-section">
         <div class="left-contact">
@@ -44,12 +54,20 @@
                     dudes en contactarnos.
                 </span>
                 <h2>Nuestras redes sociales</h2>
+                <div class="networks-contact">
+                    <div class="img-networks-contact">
+                        <img src="/assets/markunread.png" alt="Correo">
+                        <img src="/assets/Instagram.png" alt="Instagram">
+                        <img src="/assets/Facebook.png" alt="Facebook">
+                        <img src="/assets/Tinder.png" alt="Tinder">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="right-contact">
             <div class="contact-wrapper animated bounceInUp">
                 <div class="contact-form">
-                    <form action="#">
+                    <form action="">
                         <p>
                             <label>Nombres</label>
                             <input type="text" name="fullname">
@@ -70,21 +88,20 @@
                             <label>Comentarios</label>
                             <textarea name="message" rows="3"></textarea>
                         </p>
-                        <!-- <p class="block"> -->
+                        <p class="block">
                         <div class="padding-btn-send">
                             <button>
                                 Enviar
                             </button>
                         </div>
-                        <!-- </p> -->
+                        </p>
                     </form>
                 </div>
             </div>
-        </div>
     </section>
 
     <footer>
-
+        
     </footer>
 </body>
 
