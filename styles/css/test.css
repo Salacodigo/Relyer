@@ -175,6 +175,10 @@ main #inicioTest .button a {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main #test {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,6 +219,7 @@ main #test .card {
   height: auto;
   width: 90%;
   padding: 2%;
+  opacity: 0.3;
 }
 
 main #test .card p {
@@ -230,6 +235,10 @@ main #test .card h2 {
 
 main #test .card label {
   font-size: 1em;
+}
+
+main #test .card.active {
+  opacity: 1;
 }
 
 main #test #terminar-test {
