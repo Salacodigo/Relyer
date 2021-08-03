@@ -10,24 +10,6 @@
   font-family: 'Raleway', sans-serif;
 }
 
-
-.arriba{
- animation: animacionx 0.9s ease-in-out;
-  transition: all 400ms ease;
-}
-
-@keyframes animacionx {
-  50%{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  100%{
-    box-shadow: none;
-    transform: none;
-  }
-}
-
-
 main #inicioTest {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,11 +51,11 @@ main #inicioTest #pasos #parrafo-pasos {
 }
 
 main #inicioTest #pasos h2 {
-  color: white;
+  color: #6E80EC;
   margin-top: 3%;
-  font-size: 1.3em;
-  text-align: center;
-  line-height: 1;
+  font-size: 1.5em;
+  text-align: start;
+  line-height: 1.5;
 }
 
 main #inicioTest #pasos p {
@@ -165,21 +147,15 @@ main #inicioTest .button a {
     width: 60%;
   }
   main #inicioTest #pasos {
-    width: 90%;
+    width: 60%;
   }
-
-  main #inicioTest #pasos .pasos-container-cards {
-   display: flex;
+  main #inicioTest #pasos div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    vertical-align: initial;
   }
-
-  main #inicioTest #pasos .pasos-container-cards .card {
-    width: 25%;
-    padding: 1%;  
-    margin: 0 1.5%;
-    background: rgba(8, 255, 186, 0.37);
-    border: solid 1px black;
-    min-height: 430px;
-   }
   main #inicioTest #pasos div img {
     width: 20%;
     margin-right: 5%;
@@ -199,8 +175,21 @@ main #inicioTest .button a {
   }
 }
 
+/* ---RELYER--- */
+/* COLORS */
+/* Layers */
+/* Call to action */
+/* Titles */
+/* Contrast */
+/* FONTS */
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+main progress {
+  position: absolute;
+  top: 200px;
 }
 
 main #test {
@@ -265,6 +254,10 @@ main #test .card.active {
   opacity: 1;
 }
 
+main #test .respuestasInput {
+  width: 20pbx;
+}
+
 main #test #terminar-test {
   margin: 3% 0%;
   padding: 3% 5%;
@@ -272,6 +265,9 @@ main #test #terminar-test {
   background-color: #70FFD7;
   cursor: pointer;
   font-size: 1em;
+  color: #1A3256;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 768px) {
