@@ -150,7 +150,8 @@ main #inicioTest .button a {
   }
   main #inicioTest #pasos div img {
     width: 30%;
-    margin-right: 5%;
+    margin:auto 0;
+
   }
   main #inicioTest .button {
     margin-top: 0%;
@@ -181,8 +182,9 @@ main #inicioTest .button a {
     min-height: 430px;
    }
   main #inicioTest #pasos div img {
-    width: 20%;
-    margin-right: 5%;
+    width: 30%;
+    margin: 0 auto;
+    min-height: 60px;
   }
   main #inicioTest #pasos div div {
     -ms-flex-item-align: center;
