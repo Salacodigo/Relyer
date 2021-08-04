@@ -204,7 +204,7 @@ switch (currentPage) {
 
 // BUTTONS TO CHANGE LANGUAGE
 english.addEventListener("click", () => {
-	if (htmlFileName === "index.hmtl") {
+	if (currentPage === "index.html") {
 		langflag.src = "./Assets/en-flag.svg";
 	} else {
 		langflag.src = "../Assets/en-flag.svg";
@@ -221,7 +221,7 @@ english.addEventListener("click", () => {
 });
 
 spanish.addEventListener("click", () => {
-	if (htmlFileName === "index.html") {
+	if (currentPage === "index.html") {
 		langflag.src = "./Assets/es-flag.svg";
 	} else {
 		langflag.src = "../Assets/es-flag.svg";
