@@ -1,12 +1,9 @@
 .home {
-
     position: relative;
     background: linear-gradient(180deg,
             rgba(65, 204, 255, 0.95) 0%,
             rgba(65, 175, 255, 0.342) 100%);
     z-index: 50;
-
-
 
 
     h1 {
@@ -17,16 +14,21 @@
     }
 
     p {
+        max-width: 80vw;
         font: 300 1.5rem $Raleway;
         color: $white;
         padding-left: 60px;
 
+        &>br {
+            display: none;
+        }
     }
 
 
     .play-button {
         display: none;
     }
+
 
 
     /* BUTTON TECH LVEL */
@@ -45,6 +47,20 @@
         bottom: -75px;
     }
 
+
+}
+
+@media (max-width:1200px) {
+
+    .home {
+        .play-button-video {
+            display: none;
+        }
+
+
+
+
+    }
 
 }
 
@@ -86,6 +102,11 @@
             font: 300 2rem $Raleway;
             padding-left: 80px;
             padding-bottom: 50px;
+
+
+            &>br {
+                display: block;
+            }
 
         }
 
@@ -151,11 +172,10 @@
 
     }
 
-}
-
-.mainwave {
-    position: absolute;
-    // bottom:-300px;
-    z-index: -10;
-    overflow: hidden;
+    .mainwave {
+        position: absolute;
+        // bottom:-300px;
+        z-index: -10;
+        overflow: hidden;
+    }
 }
