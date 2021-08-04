@@ -20,6 +20,7 @@
     <script src="../js/navigator.js" defer></script>
     <script src="../js/accordionNav.js" defer></script>
     <script src="../js/learnVideos.js" defer></script>
+    <script src="../js/learnSearch.js" defer></script>
     <script src="../js/learnInspirational.js" defer></script>
     <script src="../js/learnTools.js" defer></script>
     <script src="../js/footer.js" defer></script>
@@ -38,48 +39,46 @@
             <div class="title-container">
                 <h2 class="title">Encuentra información relevante</h2>
             </div>
-            <div class="input-container">
-                <input class="input" placeholder="Busca por términos clave">
-                <img src="https://img.icons8.com/pastel-glyph/64/000000/view-file--v1.png" alt="lookup keywords">
+            
+            <div class="buscador_preguntas_frecuentes text-center">
+                <form class="buscador_pf input-container">
+                    <input type="text" class="input" placeholder="Busca por términos clave" required> 
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/view-file--v1.png" alt="lookup keywords">	
+                </form>
             </div>
-            <div class="results-container">
-                <div class="failed-search">
-                    <h2 class="message">No se encontraron recursos con esa palabra, puedes revisar esto que te
-                        sugerimos...</h2>
-                </div>
+            <div id="resultados_busqueda" class="results-container results-box">
+              
+		
+		
+            </div>
+
+            <div class="results-container" style="display: none;">
                 <div class="results-box">
                     <div class="result-card">
+                        <div style="visibility: hidden;" class="keyword">Palabra clave</div>
                         <div class="result-title">Página-sección</div>
                         <div class="result-description">
-                            <span class="keyword">Palabra clave</span>
-                            <br>
+
                             <a class="result-link" href="#">Link al recurso</a>
                         </div>
                     </div>
                     <div class="result-card">
+                        <div class="keyword">Palabra clave</div>
                         <div class="result-title">Página-sección</div>
                         <div class="result-description">
-                            <span class="keyword">Palabra clave</span>
-                            <br>
+
                             <a class="result-link" href="#">Link al recurso</a>
                         </div>
                     </div>
                     <div class="result-card">
+                        <div class="keyword">Palabra clave</div>
                         <div class="result-title">Página-sección</div>
                         <div class="result-description">
-                            <span class="keyword">Palabra clave</span>
-                            <br>
+
                             <a class="result-link" href="#">Link al recurso</a>
                         </div>
                     </div>
-                    <div class="result-card">
-                        <div class="result-title">Página-sección</div>
-                        <div class="result-description">
-                            <span class="keyword">Palabra clave</span>
-                            <br>
-                            <a class="result-link" href="#">Link al recurso</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
