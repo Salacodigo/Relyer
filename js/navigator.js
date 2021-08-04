@@ -29,8 +29,8 @@ navTemplate.innerHTML = `
             <h3 class="translate ">About us </h3>
             <i class="fas fa-angle-double-down"></i>
             <div class="subsection">
-                <p class="paragraph first-paragraph knowus translate">Know us</p>
-                <p class="paragraph second-paragraph contact translate">Contact</p>
+                <a class="paragraph first-paragraph knowus translate">Know us</a>
+                <a class="paragraph second-paragraph contact translate">Contact</a>
             </div>
 
         </div>

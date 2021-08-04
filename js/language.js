@@ -221,7 +221,7 @@ english.addEventListener("click", () => {
 });
 
 spanish.addEventListener("click", () => {
-	if (htmlFileName === "index.hmtl") {
+	if (htmlFileName === "index.html") {
 		langflag.src = "./Assets/es-flag.svg";
 	} else {
 		langflag.src = "../Assets/es-flag.svg";
