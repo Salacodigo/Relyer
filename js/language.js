@@ -242,12 +242,12 @@ if (localStorage.getItem("language")) {
 	console.log(currentLanguage);
 
 	if (currentLanguage === "en") {
-		console.log("lets go for english");
 		english.click();
 	} else {
-		console.log("lets go for spanish");
 		spanish.click();
 	}
+} else {
+	english.click();
 }
 
 function toSpanish(content) {
