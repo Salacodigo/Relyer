@@ -1,8 +1,7 @@
 /*-------- APPEND NAVIGATOR, RESPONSIVE, NAV BUTTONS--------- */
 
 /*TEMPLATE FOR THE NAVIGATOR */
-
-let navTemplate = document.createElement('template')
+let navTemplate = document.createElement("template");
 navTemplate.innerHTML = `   
     <ul>
     <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
@@ -16,9 +15,10 @@ navTemplate.innerHTML = `
             <i class="fas fa-angle-double-down"></i>
 
             <div class="subsection">
-            <a class="paragraph first-paragraph experts translate" href="./expertstools.html">Experts &
-            Tools</a></h3>
-                        <h3 class="paragraph second-paragraph test translate">Diagnosis Test</h3>
+            <a class="paragraph first-paragraph experts translate" href="../html/expertstools.html">Experts &
+                            Tools</a>
+                        <a href="../html/testInformative.html"
+                            class="paragraph second-paragraph test translate">Diagnosis Test</a>
                     </div>
 
         </div>
@@ -29,8 +29,8 @@ navTemplate.innerHTML = `
             <h3 class="translate ">About us </h3>
             <i class="fas fa-angle-double-down"></i>
             <div class="subsection">
-                <p class="paragraph first-paragraph knowus translate">Know us</p>
-                <p class="paragraph second-paragraph contact translate">Contact</p>
+                <a class="paragraph first-paragraph knowus translate">Know us</a>
+                <a class="paragraph second-paragraph contact translate">Contact</a>
             </div>
 
         </div>
@@ -64,72 +64,65 @@ navTemplate.innerHTML = `
 
     </ul>
     </div>
-    `
+    `;
 /*  NAV CONTAINER */
-let navContainer = document.getElementsByClassName('nav-container')[0]
+let navContainer = document.getElementsByClassName("nav-container")[0];
 
-if (document.body.id !== "home")
-    navContainer.appendChild(navTemplate.content)
-
+if (document.body.id !== "home") navContainer.appendChild(navTemplate.content);
 
 /*HAMBURGUER RESPONSIVE*/
 
-let hamburguer = document.getElementsByClassName('hamburguer')[0]
-let firstspan = hamburguer.firstElementChild
-let secondspan = hamburguer.firstElementChild.nextElementSibling
-let thirdspan = hamburguer.lastElementChild
-let responsivenav = document.getElementsByClassName('responsive-nav')[0]
+let hamburguer = document.getElementsByClassName("hamburguer")[0];
+let firstspan = hamburguer.firstElementChild;
+let secondspan = hamburguer.firstElementChild.nextElementSibling;
+let thirdspan = hamburguer.lastElementChild;
+let responsivenav = document.getElementsByClassName("responsive-nav")[0];
 
-let contadornav = 0
+let contadornav = 0;
 
-
-window.addEventListener('scroll', () => {
-    containeranimation(true)
-})
-hamburguer.addEventListener('click', () => {
-    containeranimation(false)
-})
-
+window.addEventListener("scroll", () => {
+	containeranimation(true);
+});
+hamburguer.addEventListener("click", () => {
+	containeranimation(false);
+});
 
 function containeranimation(quit) {
-
-
-    if (contadornav == 0 && quit === false) {
-
-        firstspan.setAttribute('style', ' transition:1s;transform: rotate(44deg) translateY(10.5px) translateX(9px); background-color: white;')
-        secondspan.setAttribute('style', 'transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;')
-        thirdspan.setAttribute('style', 'display:none;')
-        responsivenav.setAttribute('style', 'transition:1s; transform: none;')
-        contadornav = 1
-
-    } else {
-        firstspan.setAttribute('style', ' transition:1s;transform: none;')
-        secondspan.setAttribute('style', 'transition:1s; transform: none;')
-        thirdspan.setAttribute('style', 'transition:2s; display:block;')
-        responsivenav.setAttribute('style', 'transition:1s; transform: translateX(-100%);')
-        contadornav = 0
-
-    }
-
+	if (contadornav == 0 && quit === false) {
+		firstspan.setAttribute(
+			"style",
+			" transition:1s;transform: rotate(44deg) translateY(10.5px) translateX(9px); background-color: white;"
+		);
+		secondspan.setAttribute(
+			"style",
+			"transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;"
+		);
+		thirdspan.setAttribute("style", "display:none;");
+		responsivenav.setAttribute("style", "transition:1s; transform: none;");
+		contadornav = 1;
+	} else {
+		firstspan.setAttribute("style", " transition:1s;transform: none;");
+		secondspan.setAttribute("style", "transition:1s; transform: none;");
+		thirdspan.setAttribute("style", "transition:2s; display:block;");
+		responsivenav.setAttribute(
+			"style",
+			"transition:1s; transform: translateX(-100%);"
+		);
+		contadornav = 0;
+	}
 }
 
-let digitaltText = document.getElementsByClassName('digitalt')[0]
+let digitaltText = document.getElementsByClassName("digitalt")[0];
 /* STICKY NAV */
 
-window.addEventListener('scroll', () => {
-    navContainer.classList.toggle('sticky', window.scrollY > 0)
-
-
-})
+window.addEventListener("scroll", () => {
+	navContainer.classList.toggle("sticky", window.scrollY > 0);
+});
 
 /*  GO TO HOME ON LOGO */
 
-let relyerlogo = document.getElementsByClassName('relyer-logo')[0];
+let relyerlogo = document.getElementsByClassName("relyer-logo")[0];
 
-relyerlogo.addEventListener('click', () => {
-    if (document.body.id !== "home")
-        location.href = "../index.html"
-})
-
-
-
+relyerlogo.addEventListener("click", () => {
+	if (document.body.id !== "home") location.href = "../index.html";
+});

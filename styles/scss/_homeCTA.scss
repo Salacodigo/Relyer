@@ -4,7 +4,15 @@
     height: 500px;
 
     &>img {
-        display: none;
+        width: 60%;
+        height: 60%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     &>.start-now {
@@ -28,6 +36,7 @@
         &>h2 {
             font: 900 1rem/60px $Raleway;
             text-decoration: none;
+            color: black;
         }
 
         &>i {
@@ -65,20 +74,19 @@
 
 }
 
+@media (max-width:1200px) {
+    .CTA {
+
+        &>a {
+            text-align: center;
+        }
+    }
+}
+
 @media (min-width:800px) {
 
 
     .CTA {
-
-        &>img {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
 
         &>.start-now {
             width: 22vw;
