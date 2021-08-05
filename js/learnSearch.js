@@ -80,3 +80,17 @@ removeAccents(acc.firstElementChild.textContent.toLocaleLowerCase()).includes(pa
 	const removeAccents = (str) => {
   		return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 	} 
+
+
+
+let cardsNew = document.querySelectorAll('.news-card');
+let btnVerNews = document.querySelector('.loadmore');
+
+btnVerNews.addEventListener('click', function (){
+	cardsNew.forEach((card,index) => {
+		if (index > 3){
+			card.style.display = 'flex';
+		}
+	})
+	btnVerNews.style.display = 'none';
+});
