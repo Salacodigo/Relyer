@@ -1,28 +1,35 @@
-let respuestas = [];
-let input = document.querySelectorAll('input');
-let cantidad_preguntas = 5;
-let preguntas_contestadas = 0;
-let barra_progreso = document.getElementsByClassName('barra')[0];
-window.onload = inicio();
+/*let inputs = document.querySelectorAll('div.card');
+console.log(inputs);
+//window.onload = inicio();
+
+
+for(let value of inputs){
+    console.log(value);
+    value.addEventListener('change', function (){
+        console.log('a');
+    })
+}
+
+function inicio(){
+}
+
 
 for (let i = 0; i < input.length; i++) {
     input[i].addEventListener('change', updateValue);
 }
 
-/*$(document).ready(function(){
-    let ancho=$('.barra').width();
-    console.log(ancho);
-});*/
 
 function inicio() {
-    console.log('a');
     let dataRespuestas = JSON.parse(localStorage.getItem("respuestas"));
+    let idRespuestas = JSON.parse(localStorage.getItem("idRespuestas"));
     if (dataRespuestas != null) {
         alert('Se han cargado las respuestas que tenias antes de cerrar la pagina');
 
         for (let i = 0; i < dataRespuestas.length; i++) {
+            let contador = i+1
             if (dataRespuestas[i] != null) {
-                document.getElementById(dataRespuestas[i] + '.' + i).checked = true;
+                console.log(idRespuestas[i]);
+                document.getElementById(idRespuestas[i]).checked = true;
             }
         }
     } else {
@@ -32,17 +39,22 @@ function inicio() {
 
 function updateValue(e) {
     let dataRespuestas = JSON.parse(localStorage.getItem("respuestas"));
+    let idRespuestas = JSON.parse(localStorage.getItem("idRespuestas"));
     console.log(e.srcElement.value + " " + e.srcElement.name);
     if (dataRespuestas == null) {
         console.log('a');
         localStorage.setItem('respuestas', JSON.stringify(respuestas));
+        localStorage.setItem('idRespuestas', JSON.stringify(respuestas));
         dataRespuestas = JSON.parse(localStorage.getItem("respuestas"));
+        idRespuestas = JSON.parse(localStorage.getItem("idRespuestas"));
     }
     for (let i = 0; i < cantidad_preguntas; i++) {
         if (e.srcElement.name == 'card' + i) {
             dataRespuestas[i] = e.srcElement.value;
+            idRespuestas[i] = e.srcElement.id;
             console.log(dataRespuestas);
             localStorage.setItem('respuestas', JSON.stringify(dataRespuestas));
+            localStorage.setItem('idRespuestas', JSON.stringify(idRespuestas));
             break;
         }
     }
@@ -67,4 +79,4 @@ function updateValue(e) {
     else if (preguntas_contestadas == 5) {
         barra_progreso.style.width = '100%'
     }
-}
+}*/
