@@ -3,6 +3,7 @@
 	const resultsDiv = document.querySelector('#resultados_busqueda');
 	const form = document.querySelector('.buscador_pf');
 	const inputPreguntas = document.querySelector('.buscador_pf input');
+	const defaults = document.querySelectorAll('.default');
 	let value;
 	let dataToShow = [];
 	console.log(accordionItems[0].firstElementChild.textContent);
@@ -17,9 +18,14 @@
 		const url = `?=${value}`;
 		
 		history.pushState(state, title, url);
-		
+		console.log(defaults)
+		defaults.forEach(def => {
+			def.style.display = "none";
+		});
+
 		removeChildren();
 		showResults();
+
 	}
 	
 	async function showResults(){
@@ -71,7 +77,7 @@ removeAccents(acc.firstElementChild.textContent.toLocaleLowerCase()).includes(pa
 				const h3 = document.createElement('h3');
 				h3.innerText = 'No se encontraron recursos con esa palabra';
 				div.appendChild(h3);
-				div.setAttribute("class", "text-center");
+				div.setAttribute("class", "noencont");
 				
 				arr.push(div);  
 			}
