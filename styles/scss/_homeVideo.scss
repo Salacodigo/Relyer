@@ -1,28 +1,34 @@
 .home {
-
     position: relative;
     background: linear-gradient(180deg,
             rgba(65, 204, 255, 0.95) 0%,
             rgba(65, 175, 255, 0.342) 100%);
     z-index: 50;
+
+
     h1 {
         font: 900 5rem $Raleway;
         color: $darkblue;
         padding-top: 40px;
-        padding-left: 40px;
+        padding-left: 60px;
     }
 
     p {
+        max-width: 80vw;
         font: 300 1.5rem $Raleway;
         color: $white;
-        padding-left: 40px;
+        padding-left: 60px;
 
+        &>br {
+            display: none;
+        }
     }
 
 
     .play-button {
         display: none;
     }
+
 
 
     /* BUTTON TECH LVEL */
@@ -36,43 +42,82 @@
         transform: scale(0.7);
     }
 
-    .mainwave{
+    .mainwave {
         position: absolute;
-        bottom:-75px;
+        bottom: -75px;
     }
 
 
 }
 
-
-@media (min-width:1200px) {
-
+@media (max-width:1200px) {
 
     .home {
+        .play-button-video {
+            display: none;
+        }
 
+
+
+
+    }
+
+}
+
+
+@media (min-width:800px) {
+
+    video {
+        display: none;
+
+    }
+
+    @keyframes rollvideo {
+
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    .home {
         position: relative;
+        background: linear-gradient(180deg,
+                rgba(65, 204, 255, 0.95) 0%,
+                rgba(65, 175, 255, 0.342) 100%);
+        z-index: 100;
 
+        // FIRST TITLES 
         h1 {
-            font: 900 8rem $Raleway;
-            padding-top: 50px;
-            padding-left: 60px;
+            font: 900 7rem $Raleway;
+            padding-top: 70px;
+            padding-left: 80px;
         }
 
         &>p {
-            font: 300 2.5rem $Raleway;
-            padding-left: 60px;
-            padding-bottom: 0px;
+            font: 300 2rem $Raleway;
+            padding-left: 80px;
+            padding-bottom: 50px;
+
+
+            &>br {
+                display: block;
+            }
 
         }
 
 
-        /* BUTTON TECH LVEL */
+        /* BUTTON TECH LEVEL */
         .techlevel {
             opacity: 1;
-            width: 380px;
+            width: 350px;
             height: 70px;
             border-radius: 30px;
-            background-color: #3AB0E2;
+            background-color: $secondblue;
             position: absolute;
             bottom: -70px;
             right: 20px;
@@ -82,7 +127,8 @@
 
 
             &>p {
-                font: 400 1.4rem $Raleway;
+                font: 400 1.25rem $Raleway;
+                width: 250px;
                 text-align: center;
 
                 &>.techlevelspan {
@@ -104,14 +150,14 @@
             display: block;
             position: absolute;
             color: $aquamarine;
-            font-size: 9rem;
+            font-size: 8.5rem;
             top: 130px;
             left: 45%;
             cursor: pointer;
 
             &:hover {
-                transition: 1.5s;
-                transform: scale(1.05);
+                transition: 0.2s;
+                transform: scale(1.09);
 
             }
         }
@@ -123,32 +169,13 @@
 
         }
 
-        .mainwave{
-            position: absolute;
-            bottom:-300px;
-            z-index: -10;
-            overflow: hidden;
-        }
-
-        .wave2{
-            position: absolute;
-            bottom:-335px;
-            z-index: -20;
-        }
-
-        .wave3{
-            position: absolute;
-            bottom:-365px;
-            z-index: -30;
-        }
-
-        .wave4{
-            position: absolute;
-            bottom:-400px;
-            z-index: -40;
-        }
-
 
     }
 
+    .mainwave {
+        position: absolute;
+        // bottom:-300px;
+        z-index: -10;
+        overflow: hidden;
+    }
 }

@@ -1,0 +1,178 @@
+//Constants loaded
+@import'variables';
+//Normalize file
+@import 'normalize';
+
+//MOBILE LEARN VIDEOS
+.learn-videos {
+    .videos-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        background-color: $white;
+        width: 100%;
+        height: 100%;
+
+
+        .title-container {
+            width: 100%;
+            text-align: center;
+            margin: 50px 0px;
+
+            .title {
+                color: $black;
+                font-family: $Raleway;
+                font-weight: 700;
+                font-size: 25px;
+            }
+        }
+
+        .videos-carrousel {
+            width: 320px;
+
+            .video-container {
+
+                .video-box {
+                    width: 320px;
+                    height: 250px;
+                    display: none;
+                }
+
+                #video1 {
+                    display: inline;
+                }
+            }
+        }
+
+        .video-name {
+            display: flex;
+            justify-content: center;
+            width: 320px;
+            margin: 5px 0px;
+            text-align: center;
+
+            .name {
+                color: $darkblue;
+                font-family: $Raleway;
+                font-weight: 500;
+                font-size: 14px;
+                width: 20%;
+                margin: 0px 5px;
+                padding: 10px 20px 0px 5px;
+                cursor: pointer;
+                border-top: 3px solid $white;
+                transition: border-top 0.5s ease-in-out;
+
+                &:hover {
+                    border-top: 3px solid $darkblue;
+                }
+
+            }
+
+            input {
+                display: none;
+            }
+        }
+
+        .description-container {
+            width: 100%;
+
+            .description {
+                margin: 20px 30px;
+                font-family: $Raleway;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                display: none;
+
+                &.one {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+//TABLET LEARN VIDEO
+@media(min-width:768px) {
+    .learn-videos {
+        .videos-content {
+
+
+            .videos-carrousel {
+                width: 600px;
+
+                .video-container {
+
+
+                    .video-box {
+                        width: 600px;
+                        height: 400px;
+                    }
+                }
+            }
+
+            .video-name {
+                width: 600px;
+
+                .name {
+                    font-size: 18px;
+                    margin: 0px 10px;
+                    padding: 10px 20px 0px 10px;
+
+                }
+            }
+
+            .description-container {
+
+                .description {
+                    margin: 25px 30px;
+                    font-size: 20px;
+                    line-height: 30px;
+
+                }
+            }
+        }
+    }
+}
+
+//DESKTOP LEARN VIDEO
+@media(min-width:1200px) {
+    .learn-videos {
+        .videos-content {
+
+            .videos-carrousel {
+                width: 800px;
+
+                .video-container {
+                    .video-box {
+                        width: 800px;
+                        height: 450px;
+                    }
+                }
+            }
+
+            .video-name {
+                width: 800px;
+
+                .name {
+
+                    font-size: 20px;
+                    padding: 10px 20px 0px 20px;
+
+                }
+
+            }
+
+            .description-container {
+
+
+                .description {
+                    line-height: 24px;
+
+                }
+            }
+        }
+    }
+}

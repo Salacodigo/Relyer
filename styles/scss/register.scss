@@ -1,0 +1,323 @@
+@import 'variables';
+@import 'normalize';
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg,
+            rgba(6, 146, 197, 0.95) 0%,
+            rgba(65, 176, 255, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Raleway;
+    overflow: hidden;
+}
+
+.fa-arrow-circle-left {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+    z-index: 500;
+    cursor: pointer;
+    color: #081A47;
+
+}
+
+@keyframes register {
+
+    0% {
+        transform: translateY(10vw);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.errorMessage {
+    animation: error 3s ease-out;
+}
+
+@keyframes error {
+
+    0% {}
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+
+form {
+    width: 100vw;
+    height: 100vh;
+    background-color: $lightblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &>.form-decoration {
+        display: none;
+    }
+
+    &>.form-container {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &>h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-weight: 800;
+            color: #081A47;
+        }
+
+
+        &>.inputcontainer {
+            position: relative;
+            align-self: center;
+            margin-bottom: 15px;
+
+            &>i {
+                position: absolute;
+                bottom: 18px;
+                left: 12px;
+                margin: 0px;
+            }
+
+            &>h2 {
+                color: white;
+            }
+
+            &:first-of-type {
+                margin-top: 30px;
+            }
+        }
+
+
+        &>.inputcontainer>.input {
+            width: 351px;
+            height: 46px;
+            padding-left: 35px;
+            font: 600 1rem $Raleway;
+            border-radius: 10px;
+            border-color: white;
+            color: white;
+            background-color: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+
+        &>.inputselect {
+            margin-top: -10px;
+            padding-left: 20px;
+            font: 600 1rem $Raleway;
+            width: 351px;
+            height: 40px;
+            border-radius: 10px;
+            border-color: rgba(128, 128, 128, 0.197);
+            color: white;
+            align-self: center;
+            background-color: transparent;
+
+            &:focus {
+                outline: none;
+                color: black;
+            }
+
+        }
+
+        &>.selectlabel {
+            margin-bottom: 20px;
+            font-weight: 800;
+            font-size: 1rem;
+            font-weight: 400;
+            display: inline-block;
+            color: black;
+
+            &:last-of-type {
+                margin-top: 20px;
+            }
+        }
+
+        &>.ctabutton {
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color: transparent;
+            background-color: $aquamarine;
+            font: 400 1.15rem $Raleway;
+        }
+
+        &>.createaccount {
+            margin-top: 20px;
+            align-self: center;
+        }
+    }
+
+}
+
+@media (min-width:800px) {
+
+    form {
+        width: 1000px;
+        height: 680px;
+        border-radius: 25px;
+        position: relative;
+        justify-content: unset;
+        display: flex;
+        animation: register 0.5s normal forwards ease-in-out;
+
+        &>.form-decoration,
+        &>.form-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        &>.form-decoration {
+            display: block;
+            width: 55%;
+            position: relative;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            left: 0;
+            background-image: url(../../Assets/seawall.jpg);
+            filter: sepia(1%);
+            display: flex;
+            background-size: cover;
+            background-position: left;
+        }
+
+        &>.form-container {
+            width: 45%;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            right: 0;
+            display: flex;
+            justify-content: unset;
+            align-items: unset;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+
+            &>h1 {
+                font-size: 3rem;
+                margin-top: 50px;
+                margin-left: 30px;
+                font-weight: 800;
+                color: #081A47;
+            }
+
+
+            &>.inputcontainer {
+                position: relative;
+                align-self: center;
+                margin-bottom: 15px;
+
+                &>i {
+                    position: absolute;
+                    bottom: 18px;
+                    left: 12px;
+                    margin: 0px;
+                }
+
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+
+
+            &>.inputcontainer>.input {
+                width: 351px;
+                height: 46px;
+                padding-left: 35px;
+                font: 600 1rem $Raleway;
+                border-radius: 10px;
+                border-color: rgba(128, 128, 128, 0.197);
+                color: black;
+                background-color: transparent;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+
+            &>.inputselect {
+                margin-top: -10px;
+                padding-left: 20px;
+                font: 600 1rem $Raleway;
+                width: 351px;
+                height: 40px;
+                border-radius: 10px;
+                color: black;
+                border-color: rgba(128, 128, 128, 0.197);
+                align-self: center;
+                background-color: transparent;
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            &>.selectlabel {
+                margin-bottom: 20px;
+                font-weight: 800;
+                font-size: 1rem;
+                font-weight: 400;
+                display: inline-block;
+                margin-left: 40px;
+                color: #5a4f4f;
+
+                &:last-of-type {
+                    margin-top: 20px;
+                }
+            }
+
+            &>.ctabutton {
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+                margin-left: 25%;
+                margin-top: 15px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-color: transparent;
+                background-color: $aquamarine;
+                font: 400 1.15rem $Raleway;
+            }
+
+            &>.createaccount {
+                margin-top: 20px;
+                margin-left: -25px;
+                align-self: center;
+            }
+        }
+    }
+
+
+}

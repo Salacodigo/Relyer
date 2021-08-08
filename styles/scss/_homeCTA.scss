@@ -4,6 +4,9 @@
     height: 500px;
 
     &>img {
+        width: 60%;
+        height: 60%;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -12,7 +15,7 @@
         margin: auto;
     }
 
-    &>.start-now{
+    &>.start-now {
         cursor: pointer;
         position: absolute;
         top: 0;
@@ -29,12 +32,14 @@
         justify-content: space-evenly;
         align-items: center;
 
-        &>h2{
+        &>a,
+        &>h2 {
             font: 900 1rem/60px $Raleway;
-
+            text-decoration: none;
+            color: black;
         }
 
-        &>i{
+        &>i {
             font-size: 2rem;
         }
 
@@ -42,58 +47,71 @@
 
 }
 
-.tech-level{
+.tech-level {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
     background-color: $lightblue;
-    margin-bottom:40px ;
+    margin-bottom: 40px;
 
-    &>h2{
+    &>h2 {
+        text-decoration: underline;
+        text-decoration-color: $lightblue;
         font: 700 1.5rem $Raleway;
         color: white;
         max-width: 50vw;
 
-        &>span{
+        &>span {
             color: $darkblue;
         }
     }
 
-    &>img{
+    &>img {
         position: relative;
         top: 15px;
     }
 
 }
 
-@media (min-width:1200px) {
+@media (max-width:1200px) {
+    .CTA {
+
+        &>a {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width:800px) {
 
 
-    .CTA{
+    .CTA {
 
-        &>.start-now{
+        &>.start-now {
             width: 22vw;
             height: 100px;
 
-            &>h2{
+            &>h2,
+            &>a {
+                color: black;
                 font-size: 2rem;
             }
-    
+
         }
 
     }
 
-    .tech-level{
+    .tech-level {
 
-        &>h2{
+        &>h2 {
             max-width: 70vw;
             letter-spacing: 0.4rem;
         }
 
-        &>img{
+        &>img {
             cursor: pointer;
         }
     }
-    
+
 }

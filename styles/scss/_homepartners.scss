@@ -17,7 +17,6 @@
 
     &>.slider-container {
         background: white;
-        border-radius: 20px;
         width: 100%;
         margin-top: 25px;
         padding: 25px 0px;
@@ -26,6 +25,33 @@
         align-items: center;
         overflow: hidden;
         position: relative;
+
+
+        /* X - Y - BLUR -SPREAD */
+        box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .125);
+        margin-top: 50px;
+
+
+        &::before,
+        &::after {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.158) 0%, rgba(255, 255, 255, 0.007) 100%);
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: 400px;
+            z-index: 2;
+        }
+
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateY(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
 
 
 
@@ -40,10 +66,7 @@
                 width: 300px;
                 height: 150px;
                 margin: 0 100px;
-                // padding: 0px 50px;
             }
-
-
 
 
             @keyframes scroll {
@@ -87,54 +110,26 @@
     .carrousel {
 
         &>h2 {
-            font: 800 3rem $Raleway;
+            font: 800 2.5rem $Raleway;
         }
 
         &>.slider-container {
 
-
-            /* DARK MODE */
-            // filter: invert(185%) sepia(0%) saturate(739%) hue-rotate(184deg) brightness(92%) contrast(100%);
-
-            /* X - Y - BLUR -SPREAD */
-            box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .125);
-            margin-top: 50px;
-
-
             &::before,
             &::after {
                 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-                content: "";
-                height: 100%;
-                position: absolute;
-                width: 400px;
-                z-index: 2;
             }
-
-            &::after {
-                right: 0;
-                top: 0;
-                transform: rotateY(180deg);
-            }
-
-            &::before {
-                left: 0;
-                top: 0;
-            }
-
         }
-
-
 
 
         &>.statistics {
 
             &>h3 {
-                font: 300 2rem $Raleway;
+                font: 300 1.8rem $Raleway;
                 text-align: center;
 
                 &>span.statistics-numbers {
-                    font: 300 2.5rem $Prata;
+                    font: 300 2.2rem $Prata;
                 }
 
             }

@@ -1,15 +1,27 @@
 @import '_variables.scss';
+
+
+
+.about-wave{
+    display: none;
+}
 .choose-us{
+    background-color: #3DC2F8 ;
+    padding: 50px;
     font-family: $Raleway;
     text-align: center;
-    .title-choose-us h3{
-        font-size: 30px;
-        margin: 0 0 10px 0;
-    }
+
     .logo-simple{
         margin: 30px 0 0 0;
-        width: 50px;
+        width: 100px;
     }
+    
+    .title-section-chooseUs{
+        font-size: 30px;
+        color: white;
+        margin-bottom: 70px;
+    }
+
     .items-why-choose-us{
         display: flex;
         flex-direction: column;
@@ -31,16 +43,24 @@
     }
 }
 @media (min-width: 768px){
+    .about-wave{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        top: 1010px;
+        z-index: -1;
+    }
+
+
     .choose-us{
+        background-color: unset;
         // font-family: $raleway;
         // text-align: center;
         .title-choose-us h3{
             font-size: 40px;
-            margin: 0 0 10px 0;
         }
         .logo-simple{
             margin: 30px 0 0 0;
-            width: 70px;
         }
         .items-why-choose-us{
             // display: flex;

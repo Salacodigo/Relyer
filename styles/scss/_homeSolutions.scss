@@ -1,30 +1,31 @@
 .home-solutions {
 
-    margin-top: 400px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 
 
-    h2{
-        font: 800 3.2rem $Raleway;
+    h2 {
+        font: 800 3rem $Raleway;
         color: $black;
         text-align: center;
         max-width: 90vw;
     }
 
-    p{
+    p {
         margin-top: 20px;
-        font: 300 1.7rem/50px $Raleway;
+        font: 300 1.5rem/50px $Raleway;
         text-align: center;
         max-width: 90vw;
 
+
     }
 
-    .card-solutions-container{
-        margin-top: 100px;
-        width: 80vw;
+    .card-solutions-container {
+        margin-top: 40px;
+        width: 60vw;
         margin-bottom: 170px;
         display: flex;
         flex-direction: column;
@@ -35,8 +36,8 @@
     .card-solutions {
         margin-top: 45px;
         position: relative;
-        width: 260px;
-        height: 360px;
+        width: 240px;
+        height: 320px;
         background: #FEFFFF;
         opacity: 0.75;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
@@ -47,47 +48,56 @@
         justify-content: center;
         cursor: pointer;
 
-        &:hover{
-            transition: 1s ease-in-out;
-            transform: scale(1.05);
+        &>img {
+            transform: scale(0.85);
+        }
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            transform: scale(1.04);
 
         }
 
-        &>h3{
+        &>h3 {
             position: absolute;
             align-self: center;
             bottom: 20px;
-            font: 400 2.5rem/50px $Raleway;
+            font: 400 1.8rem/50px $Raleway;
             color: #07152c;
 
         }
     }
 }
 
+@media (min-width:800px) {
+    .home-solutions {
+        margin-top: 300px;
 
+    }
+}
 
 
 @media (min-width:1200px) {
 
-    .home-solutions{
+    .home-solutions {
 
-    h2{
-        font: 800 5rem $Raleway;
+        h2 {
+            font: 800 4.3rem $Raleway;
+        }
+
+        p {
+            font: 300 2rem/50px $Raleway;
+        }
+
+        .card-solutions-container {
+            flex-direction: row;
+        }
+
+        .card-solutions {
+            margin-top: 0;
+        }
+
+
     }
 
-    p{
-        font: 300 2.5rem/50px $Raleway;
-    }
-
-    .card-solutions-container{
-        flex-direction: row;
-    }
-
-    .card-solutions {
-        margin-top: 0;
-    }
-    
-    
-}
-    
 }

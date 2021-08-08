@@ -1,0 +1,206 @@
+//Constants loaded
+@import'variables';
+//Normalize file
+@import 'normalize';
+
+
+//MOBILE LEARN EXPERTS
+.learn-experts {
+    position: relative;
+    z-index: 10;
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    //Controla el fondo
+    &.waves {
+        position: relative;
+        z-index: 0;
+
+        &::after {
+            display: block;
+            background-image: url('../../assets/svgola1.svg');
+            position: absolute;
+            content: '';
+            width: 150%;
+            height: 100%;
+            z-index: 0;
+            top: 30px;
+            left: 0px;
+            background-repeat: no-repeat;
+
+        }
+    }
+
+    .experts-content {
+        z-index: 10;
+        height: 320px;
+
+        .title-container {
+            margin: 40px auto 20px auto;
+            text-align: center;
+            width: 300px;
+
+            .title {
+                color: $black;
+                font-family: $Raleway;
+                font-weight: 700;
+                font-size: 25px;
+            }
+        }
+
+        .contacts-carrousel {
+            display: flex;
+            margin: 10px 0px;
+            width: 320px;
+            flex-direction: row;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            .contact-card {
+                position: relative;
+                margin: 50px 15px 10px 15px;
+                width: 210px;
+                background: rgba(255, 255, 255, 0.25);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                border-radius: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                color: $black;
+                font-family: $Raleway;
+                font-weight: 500;
+                font-size: 14px;
+
+
+                .photo {
+                    position: absolute;
+                    right: -10px;
+                    left: unset;
+                    top: -40px;
+                    border: $darkblue;
+                    background-color: $darkblue;
+                    border-radius: 50px;
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+
+                .name-container {
+                    margin: 20px 5px 5px 5px;
+                    width: 150px;
+
+                }
+
+                .experience {
+                    margin: 15px 5px 5px 5px;
+
+                    .description {
+                        font-family: 14px;
+                    }
+                }
+
+                .contact-CTA {
+                    margin: 15px 5px 5px 5px;
+
+                }
+            }
+        }
+    }
+}
+
+//TABLET LEARN EXPERTS
+@media(min-width:768px) {
+    .learn-experts {
+
+        //Controla el fondo
+        &.waves {
+
+            &::after {
+
+                height: 70%;
+                z-index: 0;
+
+
+            }
+        }
+
+        .experts-content {
+            height: 500px;
+
+            .contacts-carrousel {
+
+                margin: 10px 20px;
+                width: 740px;
+
+                .contact-card {
+
+                    margin: 70px 20px 10px 20px;
+                    width: 300px;
+                    height: 230px;
+                    font-size: 18px;
+
+
+                    .photo {
+
+                        top: -60px;
+                        border-radius: 80px;
+                        width: 110px;
+                        height: 110px;
+
+                    }
+
+                    .name-container {
+                        margin: 50px 15px 5px;
+
+                    }
+
+                    .experience {
+                        margin: 10px 15px;
+
+                        .description {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .contact-CTA {
+                        width: 100%;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//DESKTOP LEARN EXPERTS
+@media(min-width:1200px) {
+    .learn-experts {
+
+        height: 780px;
+
+        .experts-content {
+
+            .contacts-carrousel {
+
+                margin: 10px;
+                width: 1000px;
+
+            }
+        }
+    }
+
+}
