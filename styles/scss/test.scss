@@ -1,5 +1,5 @@
 /*General*/
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,14 +9,14 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
 //Colores
 $button: #70FFD7;
 $titles: #6E80EC;
 $header: #5BCFFF;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import "header.scss";
-@import "testInformative.scss";
-@import "testCard.scss";
-@import "testResults.scss";
-
+@import "header";
+@import "testInformative";
+@import "testCard";
+@import "testResults";
