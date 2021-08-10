@@ -2,7 +2,7 @@
 let questions;
 let possibleAnswers;
 // DOM VARIABLES
-let cardContainer = document.getElementById("cards");
+let cardContainer = document.getElementsByClassName("card__container")[0];
 let possibleAnswersContainer = document.getElementsByClassName("card__optionscontainer");
 let submitTest = document.getElementById("terminar-test");
 
@@ -71,12 +71,12 @@ function createCardElement(i, questions, questiontype) {
 		// OTHER OPTION CARD ADDS AN INPUT WHERE THE PERSON CAN TYPE
 		let OtherOption = `
     <input type="${inputType}" onchange="Checked(${i})" class="radio" id="${value.uid}" name="card${i}" value="${value.answer}">
-    <label for="${value.uid}" class="respuestas2">${value.answer}</label><br>
-    <input type="text" id="${value.uid}" disabled class="text" id="text${i}" name="card${i}">
+    <label for="${value.uid}" class="respuestas2 ">${value.answer}</label><br>
+    <input type="text" id="${value.uid}" disabled class="textInput" id="text${i}" name="card${i}">
     `;
 		// QUESTIONS WITH VALUE "NO "OR NONE, OR NOTHING
 		let noOption = `
-    <input type="checkbox" onchange="Checked2(${i},'${value.uid}')" class="checkbox" id="${value.uid}" name="card${i}" value="${value.answer} ">
+    <input type="${inputType}" onchange="Checked2(${i},'${value.uid}')" class="checkbox" id="${value.uid}" name="card${i}" value="${value.answer} ">
     <label for="${value.uid}" class="respuestas2"> ${value.answer} </label><br>
     `;
 
@@ -225,3 +225,13 @@ submitTest.addEventListener("click", async () => {
 
 	sendResult(userData);
 });
+
+const sideBar = document.getElementsByClassName("sidebar")[0];
+
+// ON SCROLL ANIMATION
+window.onscroll = function (e) {
+	let totalHeight = document.body.scrollHeight - document.documentElement.scrollHeight * 0.07;
+	let currentHeight = document.documentElement.scrollTop;
+	let percentage = (currentHeight * 100) / totalHeight;
+	sideBar.style.opacity = 0.3 + 0.7 * (percentage / 100);
+};

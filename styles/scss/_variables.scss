@@ -28,4 +28,11 @@ $graycontrast: #F6F6FC;
 
 /* FONTS */
 
-$Raleway:'Raleway', sans-serif;
+$Raleway:'Raleway',
+sans-serif;
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
