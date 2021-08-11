@@ -6,31 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/test.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <title>Resultados</title>
+    <script src="js/countUp.min.js" type="module"></script>
+    <script src="js/testResults.js" defer type="module"></script>
+
 </head>
 
 <body>
-    <header>
-        <img src="https://via.placeholder.com/60" alt="img">
-    </header>
+    <header><img src="https://via.placeholder.com/60" alt="img"></header>
     <main>
-        <section id="resultados">
-            <h1>Resultados</h1>
-            <p>Puntaje: <span id="score"></span></p>
-            <p id="explicacion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, iusto officiis
-                eveniet tempore
-                ducimus itaque debitis eligendi quidem soluta possimus dicta quas voluptas obcaecati? Quae deleniti ipsa
-                dolor eaque quo!</p>
-            <p id="graficas-parrafo">Preguntas y respuestas contestadas</p>
-            <div class="container">
-                <table id="tabla">
-
-                </table>
+        <section class="results">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+            </div>
+            <div class="results__graphic">
+                <h2 class="punctuation"></h2>
+            </div>
+            <div class="results__data">
+                <div class="data__character">
+                    <img class="character__img" width="150" height="150" src="" alt="Sea Creature">
+                    <h2 class="character__name">You are a </h2>
+                </div>
+                <p class="data__punctuation--mobile"></p>
+                <p class="data__desc"></p>
+                <div class="data__advice">
+                    <a href="#">Find Experts & tools for you</a>
+                </div>
+            </div>
             </div>
         </section>
     </main>
 </body>
-<script src="js/testResults.js"></script>
 
 </html>

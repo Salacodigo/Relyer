@@ -228,7 +228,7 @@ submitTest.addEventListener("click", async () => {
 
 const sideBar = document.getElementsByClassName("sidebar")[0];
 
-// ON SCROLL ANIMATION
+// ON SCROLL ANIMATION , THE OPACITY OF THE LEFT SIDE BAR CHANGES ACCORDING TO THE SCROLL MADE
 window.onscroll = function (e) {
 	let totalHeight = document.body.scrollHeight - document.documentElement.scrollHeight * 0.07;
 	let currentHeight = document.documentElement.scrollTop;
