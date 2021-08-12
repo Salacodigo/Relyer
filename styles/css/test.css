@@ -38,7 +38,7 @@ main #inicioTest p {
 }
 
 main #inicioTest #pasos {
-  width: 80%;
+  width: 90%;
   margin-top: 2%;
 }
 
@@ -51,11 +51,11 @@ main #inicioTest #pasos #parrafo-pasos {
 }
 
 main #inicioTest #pasos h2 {
-  color: #6E80EC;
+  color: white;
   margin-top: 3%;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: start;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 main #inicioTest #pasos p {
@@ -74,12 +74,13 @@ main #inicioTest #pasos div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 main #inicioTest #pasos div img {
-  width: 70%;
+  width: 100%;
   height: auto;
+  max-width: 100px !important;
 }
 
 main #inicioTest #pasos div div {
@@ -92,7 +93,7 @@ main #inicioTest #pasos div div {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+
 }
 
 main #inicioTest #pasos div div p {
@@ -107,7 +108,7 @@ main #inicioTest .button {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: center;
   margin-bottom: 5%;
 }
 
@@ -132,7 +133,8 @@ main #inicioTest .button a {
   }
   main #inicioTest #pasos div img {
     width: 30%;
-    margin-right: 5%;
+    margin-right: 0;
+    max-width: 100px !important;
   }
   main #inicioTest .button {
     margin-top: 0%;
@@ -147,7 +149,7 @@ main #inicioTest .button a {
     width: 60%;
   }
   main #inicioTest #pasos {
-    width: 60%;
+    width: 90%;
   }
   main #inicioTest #pasos div {
     -webkit-box-orient: horizontal;
@@ -157,8 +159,9 @@ main #inicioTest .button a {
     vertical-align: initial;
   }
   main #inicioTest #pasos div img {
-    width: 20%;
-    margin-right: 5%;
+    width: 100%;
+    margin-right: 0;
+    max-width: 100px !important;
   }
   main #inicioTest #pasos div div {
     -ms-flex-item-align: center;
@@ -167,7 +170,7 @@ main #inicioTest .button a {
     line-height: 20px;
   }
   main #inicioTest .button {
-    width: 60%;
+    width: 100%;
     margin-top: 0%;
   }
   main #inicioTest .button a {
@@ -210,6 +213,19 @@ main #test .container-barra {
   width: 95%;
   height: 30px;
   background-color: #EBEDED;
+}
+
+.arriba{
+  transition: all 0.5s ease-out;
+  transform: translateY(-3%);
+}
+
+.card{
+  transition: all 0.5s ease-out;
+  width: 25%;
+  margin: 0 10px;
+  padding: 10px;
+  min-height: 466px;
 }
 
 main #test .container-barra .barra {
@@ -383,5 +399,11 @@ main #resultados .container div canvas {
   }
   main #resultados .container div {
     width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card{
+    width: 80%;
   }
 }

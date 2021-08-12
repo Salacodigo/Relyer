@@ -342,3 +342,27 @@ body {
   text-align: center;
   width: 20%;
 }
+
+
+.swp2 .tools-container > .swiper-container .slidercontrols{
+bottom: 0 !important;
+}
+
+.swp2 {
+  padding: 20px 20px 50px !important;
+}
+
+
+
+@media (max-width:768px) {
+  .img-wrapper img{
+    width: 100%;
+  }
+  .tools-container > img {
+    position: absolute;
+    right: 0;
+    top: 4%;
+    z-index: -  100;
+    width: 50%;
+  }
+}

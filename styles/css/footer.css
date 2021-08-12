@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+footer{
+  margin-top: 50px;
+}
+
 .logo-footer img {
   margin: -40px 0px 0;
   width: 70%;
