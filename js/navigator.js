@@ -2,7 +2,8 @@
 
 /*TEMPLATE FOR THE NAVIGATOR */
 let navTemplate = document.createElement("template");
-navTemplate.innerHTML = `   
+navTemplate.innerHTML = `
+    <script src="https://kit.fontawesome.com/21ea2d94c2.js" crossorigin="anonymous"></script>
     <ul>
     <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
 

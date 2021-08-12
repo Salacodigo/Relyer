@@ -24,7 +24,7 @@ html {
 
 .choose-us {
   background-color: #3DC2F8;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -50,12 +50,17 @@ html {
           flex-direction: column;
 }
 
+.aboutus-img img{
+  width: 100%;
+}
+
 .choose-us .items-why-choose-us .item1-why-chooseUs .item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
   width: 100px;
   margin: 10px auto;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8FC2F2), to(#8251DB));
-  background: linear-gradient(to bottom, #8FC2F2, #8251DB);
+  background: linear-gradient(to top, #011120,#041a3f);
+    color: white;
+    padding: 20px 10px;
 }
 
 .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
@@ -63,11 +68,27 @@ html {
   margin: 0 auto;
 }
 
+.aboutus-img{
+  background: linear-gradient(to top, #011120,#041a3f);
+  text-align: center;
+}
+
+
 .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
   margin-top: 10px;
 }
 
 @media (min-width: 768px) {
+
+  .aboutus-img{
+    background: linear-gradient(to top, #011120,#041a3f);
+    text-align: center;
+  }
+
+  .aboutus-img img{
+    width: 50%;
+  }
+  
   .about-wave {
     display: block;
     position: absolute;
@@ -79,13 +100,14 @@ html {
     background-color: unset;
   }
   .choose-us .title-choose-us h3 {
+    color: #35517A;
     font-size: 40px;
   }
   .choose-us .logo-simple {
     margin: 30px 0 0 0;
   }
   .choose-us .items-why-choose-us {
-    margin: 40px 100px;
+    margin: 0 5%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -131,7 +153,7 @@ html {
 }
 
 .reviews .swiper-slide {
-  background-color: #FFDDC1;
+  background: linear-gradient(to top, #011120,#041a3f);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +213,7 @@ html {
     margin-bottom: 40px;
   }
   .reviews .swiper-slide {
-    background-color: #FFDDC1;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -234,7 +256,7 @@ html {
     text-align: justify;
     text-align: center;
     width: 89%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .reviews .swiper-button-prev, .reviews .swiper-button-next {
     color: white;
@@ -355,6 +377,8 @@ html {
       flex-wrap: wrap;
 }
 
+
+
 .team .members-team .member-ctn {
   width: 50%;
   text-align: center;
@@ -363,6 +387,9 @@ html {
 
 .team .members-team .member-ctn .member-photo {
   max-width: 90%;
+  max-width: 200px;
+  max-height: 200px;
+
 }
 
 .team .members-team .member-ctn .member-info p {
@@ -534,10 +561,12 @@ html {
     display: -ms-flexbox;
     display: flex;
     background-color: unset;
+    align-items: center;
+    justify-content: space-between;
   }
   .values .title-values {
-    width: 60%;
-    margin: auto 0;
+    width: 30%;
+    margin:0;
   }
   .values .title-values .logo-simple {
     width: 70px;
@@ -568,11 +597,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
-  .values {
-    padding: 0 200px;
-  }
-}
+
 
 /* ---RELYER--- */
 /* COLORS */
@@ -581,24 +606,7 @@ html {
 /* Titles */
 /* Contrast */
 /* FONTS */
-.introTitle {
-  position: absolute;
-  font: 700 1.5rem "Raleway", sans-serif;
-  color: white;
-  z-index: 900;
-  top: 50px;
-  left: 20px;
-}
 
-.introTitle2 {
-  position: absolute;
-  font: 800 4rem/50px "Raleway", sans-serif;
-  letter-spacing: 12px;
-  color: white;
-  z-index: 900;
-  left: 20px;
-  top: 105px;
-}
 
 .swiper-container {
   -ms-grid-column-align: center;
@@ -648,14 +656,42 @@ html {
   margin: 15px auto;
 }
 
+.introTitle {
+  position: absolute;
+  font: 700 6vw "Raleway", sans-serif;
+  color: white;
+  z-index: 900;
+  top: 364px;
+  left: 4vw;
+}
+.introTitle2 {
+  position: absolute;
+  font: 800 15vw "Raleway", sans-serif;
+  letter-spacing: 12px;
+  color: white;
+  z-index: 900;
+  top: 280px;
+  left: 4vw;
+}
+
+.aboutus-img{
+  height: 400px;
+}
+
+
+
 @media (min-width: 768px) {
+  .aboutus-img{
+    height: auto;
+  }
+  
   .introTitle {
     position: absolute;
     font: 700 2.5rem "Raleway", sans-serif;
     color: white;
     z-index: 900;
-    top: 80px;
-    left: 150px;
+    top: 20vw;
+    left: 4vw;
   }
   .introTitle2 {
     position: absolute;
@@ -663,8 +699,8 @@ html {
     letter-spacing: 12px;
     color: white;
     z-index: 900;
-    top: 180px;
-    left: 150px;
+    top: 26vw;
+    left: 4vw;
   }
   .about-we-give .what-do-we-give {
     display: -webkit-box;
@@ -701,6 +737,12 @@ html {
     height: -moz-fit-content;
     height: fit-content;
     margin: auto 10px;
+  }
+}
+@media (max-width:400px) {
+  .team .members-team .member-ctn {
+    width: 100%;
+    
   }
 }
 

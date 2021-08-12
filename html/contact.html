@@ -40,13 +40,13 @@
     </div>
 
     <main id="site" role="main"></main>
-    <div style="height: 100px;">
+    <div class="space-contact">
     </div>
 
     <section class="contact-section">
         <div class="left-contact">
             <div class="padding-left-contact">
-                <h2>¡CONTACTANOS!</h2>
+                <h2>¡CONTÁCTANOS!</h2>
                 <span>
                     Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda al respecto, no
                     dudes en contactarnos.
@@ -54,10 +54,10 @@
                 <h2>Nuestras redes sociales</h2>
                 <div class="networks-contact">
                     <div class="img-networks-contact">
-                        <img src="../assets/markunread.png" alt="Correo">
-                        <img src="../assets/Instagram.png" alt="Instagram">
-                        <img src="../assets/Facebook.png" alt="Facebook">
-                        <img src="../assets/Tinder.png" alt="Tinder">
+                        <a href="#" target="blank"><i class="fab fa-facebook social-net-ico"></i></a>
+                <a href="#" target="blank"><i class="fab fa-twitter social-net-ico"></i></i></a>
+                <a href="#" target="blank"><i class="fab fa-instagram social-net-ico"></i></i></a>
+                <a href="#" target="blank"><i class="fab fa-linkedin social-net-ico"></i></a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="right-contact">
             <div class="contact-wrapper animated bounceInUp">
                 <div class="contact-form">
-                    <form action="relyerprotalento@gmail.com" method="post" enctype="text/plain"">
+                    <form action="info@relyer.com.co" method="post" enctype="text/plain"">
                         <p>
                             <label>Nombres</label>
                             <input type=" text" name="fullname">
@@ -82,10 +82,19 @@
                             <label>Teléfono</label>
                             <input type="text" name="affair">
                         </p>
+                        
                         <p class="block">
                             <label>Comentarios</label>
                             <textarea name="message" rows="3"></textarea>
                         </p>
+                        <div class="radios-contact">
+                            <label class="form__label-radio" for="small" class="form__radio-label"> <input type="radio"
+                                    name="size" id="small" class="form__radio-input"> Aliado
+                            </label>
+                            <label class="form__label-radio" for="small" class="form__radio-label"> <input type="radio"
+                                    name="size" id="small" class="form__radio-input"> Empresario
+                            </label>
+                        </div>
                         <p class="block">
                         <div class="padding-btn-send">
                             <button>
@@ -93,6 +102,7 @@
                             </button>
                         </div>
                         </p>
+                       
                     </form>
                 </div>
             </div>

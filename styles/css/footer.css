@@ -20,7 +20,7 @@ body {
 .img-background-footer {
   background: url(../../Assets/c24724c96c6d39574d59c2a71bfbfa36-diseno-de-fondo-de-mar-submarino.jpg);
   width: 100vw;
-  height: 400px;
+  height: 300px;
   margin: 0;
   padding: 0;
   background-position: center;
@@ -41,15 +41,41 @@ body {
 
 .logo-footer img {
   margin: -40px 0px 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   position: relative;
+}
+
+.networks div i{
+  font-size: 35px;
+  color: white;
+  margin: 10px 0;
+
+}
+
+.social-net-ico{
+  font-size: 35px;
+  color: white;
+  margin: 10px ;
+
+}
+
+.menu-footer a, .menu-footer-mobile a{
+  font: 700 18px "Raleway";
+}
+
+.menu-footer ul li{
+  margin:0;
+}
+
+.networks div a{
+margin: 10px 10px;
 }
 
 .background-menu {
   background: url(../../Assets/Rectangle36.png);
   width: 100vw;
-  height: 150px;
+  height: 170px;
   margin: 0;
   padding: 0;
   background-position: center;
@@ -62,7 +88,7 @@ body {
   list-style: none;
   color: white;
   font-size: 25px;
-  margin: 10px 0px;
+  margin: 0px;
 }
 
 .menu-footer-mobile li a {
@@ -148,7 +174,7 @@ ul {
     text-decoration: none;
   }
   .logo-footer img {
-    width: 50%;
+    width:60%;
     margin: 0;
   }
 }

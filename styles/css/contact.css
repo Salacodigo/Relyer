@@ -44,6 +44,10 @@ body {
   background-size: cover;
 }
 
+.space-contact{
+  height: 100px;
+}
+
 .menu-footer-mobile li {
   text-align: center;
   list-style: none;
@@ -75,6 +79,10 @@ ul {
 .desktop {
   display: none;
 }
+
+
+
+
 
 @media (min-width: 768px) {
   .background-menu {
@@ -221,7 +229,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10% 0;
+  padding: 0 0 10%;
   background-size: cover;
 }
 
@@ -246,6 +254,7 @@ ul {
   font-size: 45px;
   color: #35517A;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 .left-contact span {
@@ -265,7 +274,20 @@ ul {
   background: #1A3256;
   border-radius: 30px;
   padding: 10px;
-  margin: 0 60px;
+  margin: 5% 60px;
+}
+
+.radios-contact{
+  display: flex;
+  margin: 0 30px;
+}
+
+.form__label-radio{
+  width: 50%;
+}
+
+.form__label-radio input{
+  width: auto !important;
 }
 
 .img-networks-contact img {
@@ -316,6 +338,14 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
+
+  
+
+
+
+
+
+  
   #preloader {
     height: 60px;
     width: 60px;
@@ -392,3 +422,33 @@ ul {
     opacity: 1;
   }
 }
+
+
+@media  (max-width: 768px) {
+  .left-contact h2{
+    font-size: 35px;
+  }
+
+  .contact-section{
+    display: block;
+  } 
+  .space-contact{
+    height: 0;
+  }
+  .left-contact ,  .right-contact{
+    width: 100%;
+  }
+  .right-contact{
+    margin-top: 100px;
+    padding: 0 5%;
+  }
+
+  .padding-left-contact{
+    padding: 0px 8%;
+  }
+  .contact-form{
+    margin: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  }
