@@ -1,5 +1,5 @@
 .home-solutions {
-
+    max-width: 100vw;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     align-items: center;
 
 
-    h2 {
+    & .home-solutions__title {
         font: 800 3rem $Raleway;
         color: $black;
         text-align: center;
@@ -16,26 +16,29 @@
 
     p {
         margin-top: 20px;
-        font: 300 1.5rem/50px $Raleway;
+        font: 300 1.5rem/35px $Raleway;
         text-align: center;
         max-width: 90vw;
-
-
     }
 
-    .card-solutions-container {
-        margin-top: 40px;
-        width: 60vw;
-        margin-bottom: 170px;
+    &>.card-solutions__container {
+        height: 100%;
+        width: 100%;
+        align-self: flex-start;
+        padding: 20px 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        gap: 30px;
+        overflow-x: auto;
+        scrollbar-width: 30vw;
+
+        @include scroller
     }
 
-    .card-solutions {
+    .card-solutions__card {
         margin-top: 45px;
+        margin-right: 15px;
         position: relative;
+        min-width: 240px;
         width: 240px;
         height: 320px;
         background: #FEFFFF;
@@ -67,36 +70,71 @@
 
         }
     }
+
 }
 
 @media (min-width:800px) {
     .home-solutions {
-        margin-top: 300px;
+        margin-top: 50px;
 
+        .card-solutions__container {
+            white-space: unset;
+            overflow: unset;
+            align-self: center;
+            padding-top: 40px;
+            width: 72vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            flex-direction: row;
+
+
+            .card-solutions__card {
+                width: 230px;
+                height: 320px;
+            }
+
+        }
     }
 }
 
-
-@media (min-width:1200px) {
+@media (min-width:1180px) and (max-width: 1300px) {
 
     .home-solutions {
 
-        h2 {
-            font: 800 4.3rem $Raleway;
+        .card-solutions__container {
+            width: 60vw;
+
         }
 
-        p {
+
+
+    }
+
+}
+
+
+@media (min-width:1300px) {
+
+    .home-solutions {
+
+        &>.home-solutions__title {
+            font: 800 $Subtitle $Raleway;
+        }
+
+        &>p {
             font: 300 2rem/50px $Raleway;
         }
 
-        .card-solutions-container {
-            flex-direction: row;
+        .card-solutions__container {
+            width: 90vw;
+
         }
 
-        .card-solutions {
+        .card-solutions__card {
             margin-top: 0;
         }
-
 
     }
 

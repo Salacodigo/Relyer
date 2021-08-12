@@ -2,9 +2,7 @@ const expertsContainer = document.getElementsByClassName("swiper-wrapper")[0];
 const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 
 !(async function fetchExpert() {
-	let request = await fetch(
-		"https://server-relyer.herokuapp.com/api/expertos?limite=10"
-	);
+	let request = await fetch("https://server-relyer.herokuapp.com/api/expertos?limite=10");
 	let response = await request.json();
 	let experts = response.usuarios;
 
@@ -13,7 +11,7 @@ const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 
 	console.log(experts);
 
-	experts.forEach((expert) => {
+	experts.forEach(expert => {
 		if (counter % 2 === 0) {
 			imgAlt = "man";
 		} else {
@@ -25,7 +23,7 @@ const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 
 		expertSlide.innerHTML = `
         <div class="expert-card">
-            <img src="../Assets/experts/ex${counter}.jpg" alt="${imgAlt}">
+            <img src="../assets/experts/experts/ex${counter}.jpeg" alt="${imgAlt}">
             <h2>${expert.nombre}</h2>
             <p>${expert.experience}</p>
             <div class="category">
@@ -78,21 +76,14 @@ const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 	// CONTACT EACH EXPERT CLICKING IT
 	const expertContact = document.querySelectorAll(".expert");
 
-	expertContact.forEach((expert) => {
+	expertContact.forEach(expert => {
 		expert.addEventListener("click", () => {
-			let expertName =
-				expert.previousElementSibling.previousElementSibling
-					.previousElementSibling.innerText;
+			let expertName = expert.previousElementSibling.previousElementSibling.previousElementSibling.innerText;
 
 			if (logged === false) {
 				printMessage("#FFE1DE", "#F47174", `Login to contact experts`, "error");
 			} else {
-				printMessage(
-					"#C5F3D7",
-					"black",
-					`${expertName} will contact you soon ..`,
-					"success"
-				);
+				printMessage("#C5F3D7", "black", `${expertName} will contact you soon ..`, "success");
 				console.log(expertName);
 			}
 		});
@@ -108,13 +99,13 @@ const toolsContainer = document.getElementsByClassName("swiper-wrapper")[1];
 
 	let counter = 1;
 
-	tools.forEach((tool) => {
+	tools.forEach(tool => {
 		let toolSlide = document.createElement("div");
 		toolSlide.className = "swiper-slide";
 
 		toolSlide.innerHTML = `
             <div class="imgwrap">
-                <img src="../Assets/tools/tool${counter}.png" alt="tool">
+                <img src="../assets/experts/tools/tool${counter}.png" alt="tool">
             </div>
 
             <div class="info">

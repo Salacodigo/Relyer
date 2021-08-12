@@ -1,153 +1,64 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="author" content="Relyer Team">
+    <meta name="description"
+        content="Do a diagnosis of your company in terms of techonology level, by doing a selected test to identify possible improvements">
+    <meta name="keywords"
+        content="digital, transformation, tech, company, entrepreneurship, Relyer, digitalize company ">
+    <link rel="icon" href="../assets/home/relyer-icon.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="../styles/css/navbar.css">
-    <link rel="stylesheet" href="../styles/css/test.css">
-    <link rel="stylesheet" href="../styles/css/footer.css">
+    <link rel="stylesheet" href="../styles/css/navigator.min.css">
+    <link rel="stylesheet" href="../styles/css/testquestions.min.css">
+    <link rel="stylesheet" href="../styles/css/footer.min.css">
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/3a41e785ca.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
-    <script src="../js/testCard.js" defer></script>
+    <script src="../js/printMessage.js" async></script>
+    <script src="../js/testquestions.js" defer></script>
     <script src="../js/navigator.js" defer></script>
-    <script src="../js/accordionNav.js" defer></script>
+    <script src="../js/validToken.js" defer></script>
     <script src="../js/footer.js" defer></script>
-    <!-- <script src="../js/language.js" defer></script> -->
 
-
-    <title>Cards</title>
 </head>
 
 <body>
-
-    <nav class="nav-container">
-    </nav>
-
-    <progress id="progressbar" max="100" value="0"
-        style=" width:300px;position: sticky; top: 200px; left: 50%; right: 50%; border-radius: 20px; "> </progress>
-
-
+    <header>
+        <nav class="navbar"></nav>
+    </header>
     <main>
-        <section id="test">
-            <div class="card active">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis beatae exercitationem
-                    molestias suscipit, blanditiis tempora. Amet temporibus natus, aliquid maxime dignissimos,
-                    numquam
-                    quia officia dolore magni doloremque, expedita laboriosam?
-                </p>
-                <form action="#" name="pregunta1">
-                    <input type="radio" class="respuestasInput" id="respuesta1.0" name="card0" value="respuesta1">
-                    <label for="respuesta1.0">Respuesta 1</label>
-                    <br>
-                    <input type="radio" class="respuestasInput" id="respuesta2.0" name="card0" value="respuesta2">
-                    <label for="respuesta2.0">Respuesta 2</label>
-                    <br>
-                    <input type="radio" class="respuestasInput" id="respuesta3.0" name="card0" value="respuesta3">
-                    <label for="respuesta3.0">Respuesta 3</label>
-                    <br>
-                    <input type="radio" class="respuestasInput" id="respuesta4.0" name="card0" value="respuesta4">
-                    <label for="respuesta4.0">Respuesta 4</label>
-                    <br>
-                </form>
+        <div class="sidebar">
+            <div class="bubbles">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
             </div>
-            <div class="card">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis beatae exercitationem
-                    molestias suscipit, blanditiis tempora. Amet temporibus natus, aliquid maxime dignissimos,
-                    numquam
-                    quia officia dolore magni doloremque, expedita laboriosam?
-                </p>
-                <input type="radio" id="respuesta1.1" name="card1" value="respuesta1">
-                <label for="respuesta1.1">Respuesta 1</label>
-                <br>
-                <input type="radio" id="respuesta2.1" name="card1" value="respuesta2">
-                <label for="respuesta2.1">Respuesta 2</label>
-                <br>
-                <input type="radio" id="respuesta3.1" name="card1" value="respuesta3">
-                <label for="respuesta3.1">Respuesta 3</label>
-                <br>
-                <input type="radio" id="respuesta4.1" name="card1" value="respuesta4">
-                <label for="respuesta4.1">Respuesta 4</label>
-                <br>
-            </div>
-            <div class="card">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis beatae exercitationem
-                    molestias suscipit, blanditiis tempora. Amet temporibus natus, aliquid maxime dignissimos,
-                    numquam
-                    quia officia dolore magni doloremque, expedita laboriosam?
-                </p>
-                <input type="radio" id="respuesta1.2" name="card2" value="respuesta1">
-                <label for="respuesta1.2">Respuesta 1</label>
-                <br>
-                <input type="radio" id="respuesta2.2" name="card2" value="respuesta2">
-                <label for="respuesta2.2">Respuesta 2</label>
-                <br>
-                <input type="radio" id="respuesta3.2" name="card2" value="respuesta3">
-                <label for="respuesta3.2">Respuesta 3</label>
-                <br>
-                <input type="radio" id="respuesta4.2" name="card2" value="respuesta4">
-                <label for="respuesta4.2">Respuesta 4</label>
-                <br>
-            </div>
-            <div class="card">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis beatae exercitationem
-                    molestias suscipit, blanditiis tempora. Amet temporibus natus, aliquid maxime dignissimos,
-                    numquam
-                    quia officia dolore magni doloremque, expedita laboriosam?
-                </p>
-                <input type="radio" id="respuesta1.3" name="card3" value="respuesta1">
-                <label for="respuesta1.3">Respuesta 1</label>
-                <br>
-                <input type="radio" id="respuesta2.3" name="card3" value="respuesta2">
-                <label for="respuesta2.3">Respuesta 2</label>
-                <br>
-                <input type="radio" id="respuesta3.3" name="card3" value="respuesta3">
-                <label for="respuesta3.3">Respuesta 3</label>
-                <br>
-                <input type="radio" id="respuesta4.3" name="card3" value="respuesta4">
-                <label for="respuesta4.3">Respuesta 4</label>
-                <br>
-            </div>
-            <div class="card">
-                <h2>title</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero perspiciatis beatae exercitationem
-                    molestias suscipit, blanditiis tempora. Amet temporibus natus, aliquid maxime dignissimos,
-                    numquam
-                    quia officia dolore magni doloremque, expedita laboriosam?
-                </p>
-                <input type="radio" id="respuesta1.4" name="card4" value="respuesta1">
-                <label for="respuesta1.4">Respuesta 1</label>
-                <br>
-                <input type="radio" id="respuesta2.4" name="card4" value="respuesta2">
-                <label for="respuesta2.4">Respuesta 2</label>
-                <br>
-                <input type="radio" id="respuesta3.4" name="card4" value="respuesta3">
-                <label for="respuesta3.4">Respuesta 3</label>
-                <br>
-                <input type="radio" id="respuesta4.4" name="card4" value="respuesta4">
-                <label for="respuesta4.4">Respuesta 4</label>
-                <br>
-            </div>
-            <a href="./testresults.html" id="terminar-test">Terminar</a>
+        </div>
+        <section class="test">
+            <section class="card__container">
+                <!-- CARDS GO HERE -->
+            </section>
+            <button class="terminar-test">Finish</button>
         </section>
     </main>
-
     <footer></footer>
-
 </body>
 
 </html>

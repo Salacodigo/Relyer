@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="author" content="Relyer Team">
+    <meta name="description" content="Learn about diverse topics">
+    <meta name="keywords"
+        content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
+    <link rel="icon" href="../assets/home/relyer-icon.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="../styles/css/learn.css">
-    <link rel="stylesheet" href="../styles/css/navbar.css">
-    <link rel="stylesheet" href="../styles/css/footer.css">
+    <link rel="stylesheet" href="../styles/css/learn.min.css">
+    <link rel="stylesheet" href="../styles/css/navigator.min.css">
+    <link rel="stylesheet" href="../styles/css/footer.min.css">
+    <!-- SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- ICON -->
+    <!-- FONTAWESOME -->
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
     <!-- SCRIPTS -->
+    <script src="../js/printMessage.js" async></script>
     <script src="../js/navigator.js" defer></script>
-    <script src="../js/accordionNav.js" defer></script>
+    <script src="../js/validToken.js" defer></script>
     <script src="../js/learnSearch.js" defer></script>
     <script src="../js/learnInspirational.js" defer></script>
     <script src="../js/footer.js" defer></script>
@@ -29,146 +31,250 @@
 </head>
 
 <body>
-    <nav class="nav-container">
-    </nav>
+    <header>
+        <nav class="navbar"></nav>
+    </header>
 
     <!-- Section Search -->
     <section class="learn-search waves">
         <div class="learn-content">
             <div class="title-container">
-                <h2 class="title">Encuentra información relevante</h2>
+                <h2 class="title">Find relevant information</h2>
             </div>
-            
+
             <div class="buscador_preguntas_frecuentes text-center">
                 <form class="buscador_pf input-container">
-                    <input type="text" class="input" placeholder="Busca por términos clave" required> 
-                    <img src="https://img.icons8.com/pastel-glyph/64/000000/view-file--v1.png" alt="lookup keywords">	
+                    <input type="text" class="input" placeholder="Busca por términos clave" required>
+                    <img src="https://img.icons8.com/pastel-glyph/64/000000/view-file--v1.png" alt="lookup keywords">
                 </form>
             </div>
             <div id="resultados_busqueda" class="results-container results-box">
-              
+
                 <div class="result-card default">
-                    <div style="visibility: hidden;" class="keyword">transformación digital que tecnologia </div>
-                    <div class="result-title">¿QUÉ ES LA TRANSFORMACIÓN DIGITAL?</div>
+                    <div style="visibility: hidden;" class="keyword">digital transformation and techonology </div>
+                    <div class="result-title">WHAT IS DIGITAL TRANSFORMATION?</div>
                     <div class="result-description">
-                        <p>La transformación digital es la oportunidad que tiene las organizaciones de reinventarse a través del uso de tecnologías digitales para mejorar los procesos en sus cadenas de valor, sus modelos empresariales y operacionales y en su estructura organizativa.</p>
-                        <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Leer más</a>
+                        <p>Digital transformation is the opportunity organizations and companies have to improve
+                            processes, operations, structure and empresarial models with the use of technology
+                        </p>
+                        <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Read
+                            more</a>
                     </div>
                 </div>
                 <div class="result-card default">
-                    <div class="keyword">ASPECTOS A CONSIDERAR PARA INICIAR EL PROCESO DE TRANSFORMACIÓN DIGITAL EN TU ORGANIZACIÓN</div>
-                    <div class="result-title">ASPECTOS A CONSIDERAR PARA INICIAR EL PROCESO DE TRANSFORMACIÓN DIGITAL EN TU ORGANIZACIÓN</div>
+                    <div class="keyword">Aspects to consider in your digital process</div>
+                    <div class="result-title">ASPECTS TO CONSIDER IN OUR DIGITAL TRANSFORMATION</div>
                     <div class="result-description">
-                        <p>Es importante que las organizaciones tomen en consideración la oportunidad que representa transformarse digitalmente y la de convertirse en empresas competitivas en el mercado.</p>
-                        <a class="result-link" href="#">Link al recurso</a>
+                        <p>Is important for companies and organizations that taking the path of digital transformation
+                            is an opportunity to be more competitive in the market</p>
+                        <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link to
+                            the resource</a>
                     </div>
                 </div>
                 <div class="result-card default">
-                    <div class="keyword">EJES PRINCIPALES DE LA TRANSFORMACIÓN DIGITAL</div>
-                    <div class="result-title">EJES PRINCIPALES DE LA TRANSFORMACIÓN DIGITAL</div>
+                    <div style="visibility: hidden;" class="keyword">digital transformation and technology</div>
+                    <div class="result-title">WHAT IS DIGITAL TRANSFORMATION?</div>
                     <div class="result-description">
-                        <p>La transformación digital es un proceso que requiere de cambios, bien sea empresariales, operacionales, así como también hay que estar abiertos a la incorporación de nuevas tecnologías que faciliten nuestro trabajo diario.</p>
-                        <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link al recurso</a>
+                        <p>Is important for companies and organizations that taking the path of digital transformation
+                            is an opportunity to be more competitive in the market</p>
+                        <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link to
+                            the resource</a>
                     </div>
                 </div>
-		
-		
+
+
             </div>
 
             <div class="results-container" style="display: none;">
-                <div class="results-box">
+                <div class="results-box" id="results-box">
                     <div class="result-card">
-                        <div style="visibility: hidden;" class="keyword">transformación digital que tecnologia </div>
-                        <div class="result-title">¿QUÉ ES LA TRANSFORMACIÓN DIGITAL?</div>
+                        <div style="visibility: hidden;" class="keyword">digital transformation and technology</div>
+                        <div class="result-title">WHAT IS DIGITAL TRANSFORMATION?</div>
                         <div class="result-description">
-                            <p>La transformación digital es la oportunidad que tiene las organizaciones de reinventarse a través del uso de tecnologías digitales para mejorar los procesos en sus cadenas de valor, sus modelos empresariales y operacionales y en su estructura organizativa.</p>
-                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Leer más</a>
+                            <p>Is important for companies and organizations that taking the path of digital
+                                transformation
+                                is an opportunity to be more competitive in the market.</p>
+                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link
+                                to the resource</a>
                         </div>
                     </div>
                     <div class="result-card">
-                        <div class="keyword">ASPECTOS A CONSIDERAR PARA INICIAR EL PROCESO DE TRANSFORMACIÓN DIGITAL EN TU ORGANIZACIÓN</div>
-                        <div class="result-title">ASPECTOS A CONSIDERAR PARA INICIAR EL PROCESO DE TRANSFORMACIÓN DIGITAL EN TU ORGANIZACIÓN</div>
+                        <div class="keyword">ASPECTS TO CONSIDER IN YOUR FIRST STEPS TO DIGITAL TRANSFORMATION</div>
+                        <div class="result-title">ASPECTS TO CONSIDER IN YOUR FIRST STEPS TO DIGITAL TRANSFORMATION
+                        </div>
                         <div class="result-description">
-                            <p>Es importante que las organizaciones tomen en consideración la oportunidad que representa transformarse digitalmente y la de convertirse en empresas competitivas en el mercado.</p>
-                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link al recurso</a>
+                            <p>Is important for companies and organizations that taking the path of digital
+                                transformation
+                                is an opportunity to be more competitive in the market.
+                            </p>
+                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">link
+                                to the resource</a>
                         </div>
                     </div>
                     <div class="result-card">
-                        <div class="keyword">EJES PRINCIPALES DE LA TRANSFORMACIÓN DIGITAL</div>
-                        <div class="result-title">EJES PRINCIPALES DE LA TRANSFORMACIÓN DIGITAL</div>
+                        <div class="keyword">PILARS OF DIGITAL TRANSFORMATION</div>
+                        <div class="result-title">PILARS OF DIGITAL TRANSFORMATION</div>
                         <div class="result-description">
-                            <p>La transformación digital es un proceso que requiere de cambios, bien sea empresariales, operacionales, así como también hay que estar abiertos a la incorporación de nuevas tecnologías que faciliten nuestro trabajo diario.</p>
-                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link al recurso</a>
+                            <p>Transformation can be hard, it requires a lot of challenges but if you are willing to ,
+                                there are many benefits that are incredibly worthy.</p>
+                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">link
+                                to the resource</a>
                         </div>
                     </div>
                     <div class="result-card">
-                        <div class="keyword">QUÉ IMPLICA LA TRANSFORMACIÓN DIGITAL</div>
-                        <div class="result-title">¿QUÉ IMPLICA LA TRANSFORMACIÓN DIGITAL?</div>
+                        <div class="keyword">WHAT IS PART OF DIGITAL TRANSFORMATION?</div>
+                        <div class="result-title">WHAT IS PART OF DIGITAL TRANSFORMATION?</div>
                         <div class="result-description">
-                            <p>Las organizaciones deben adaptarse a un nuevo entorno digital, la alta gerencia tiene que tomar decisiones estratégicas en cuanto a la incorporación de nuevas tecnologías que conlleven al rediseño de procesos y de la estructura organizativa.</p>
-                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link al recurso</a>
+                            <p>Organizations and companies can make more informed decisions with the backup of
+                                technology and technology processes.</p>
+                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">link
+                                to the resource</a>
                         </div>
                     </div>
                     <div class="result-card">
-                        <div class="keyword">BENEFICIOS DE LA TRANSFORMACIÓN DIGITAL</div>
-                        <div class="result-title">BENEFICIOS DE LA TRANSFORMACIÓN DIGITAL</div>
+                        <div class="keyword">BENEFITS OF DIGITAL TRANSFORMATION</div>
+                        <div class="result-title">>BENEFITS OF DIGITAL TRANSFORMATION</div>
                         <div class="result-description">
-                            <p>La tecnología se ha convertido en el punto focal de nuestra existencia, resaltada por nuestra creciente confianza en los medios digitales para comunicarnos, realizar compras y esencialmente vivir nuestras vidas. En términos de negocio, esta dependencia de la tecnología destaca la necesidad de adoptar e integrar la transformación digital como una estrategia.</p>
-                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">Link al recurso</a>
+                            <p>Technology has become the focal point of our existence, highlighted by
+                                our growing reliance on digital media to communicate, make purchases
+                                and essentially live our lives. In business terms, this dependence on the
+                                technology highlights the need to embrace and integrate digital transformation as a
+                                strategy.</p>
+                            <a class="result-link" href="https://rosanarosas.com/transformacion-digital-empresas/">link
+                                to the resource</a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
+    </section>
+    <section class="inspirational-container">
+        <div class="learn-inspirational waves">
+            <div class="inspirational-content">
+                <div class="title-container">
+                    <h2 class="title">INSPIRATIONAL STORIES</h2>
+                </div>
+                <div class="photos-carrousel">
+                    <div class="photo-container">
+                        <img src="../assets/learn/inspirational-market.jpg" alt="Foto tienda" id="photo-one">
+                        <img src="../assets/learn/inspirational-office.jpg" alt="Foto tienda" id="photo-two">
+                        <img src="../assets/learn/inspirational-people.jpg" alt="Foto tienda" id="photo-three">
+                        <img src="../assets/learn/inspirational-kitchen.jpg" alt="Foto tienda" id="photo-four">
+                    </div>
+                    <div class="photo-name">
+                        <span class="name" id="name-one">Daniela</span>
+                        <span class="name" id="name-two">Arturo</span>
+                        <span class="name" id="name-three">Sofía</span>
+                        <span class="name" id="name-four">Foods</span>
+                    </div>
+                    <div class="description-container">
+                        <p class="description one" id="description-one">During the COVID-19 pandemic
+                            the
+                            cake shop,
+                            family business, was on the verge of closing its doors because its customers decreased.
+                            However
+                            Daniela found the place where she could find costumers, and began to use social networks
+                            to reach
+                            where
+                            his clients were there.
+                        </p>
+                        <p class="description" id="description-two">Arturo was worried because he was not going to
+                            be able to attend
+                            no one in his office due to sanitary measures. However, he brought down the
+                            physical barriers with the internet and now he manages a team remotely that provides
+                            financial advice
+                            in
+                            many parts of the country.
+                        </p>
+                        <p class="description" id="description-three">Sofia is a gifted singer was not ready
+                            for
+                            the
+                            day people told her that the concerts were not going to be able to take place. However, its
+                            ability
+                            to adapt
+                            allowed her to reach hundreds of thousands of people through social networks and monetize
+                            their
+                            works through
+                            of
+                            streaming platforms.
+                        </p>
+                        <p class="description" id="description-four">The feeling of cooking for empty tables
+                            became the
+                            opportunity to use home services and delivery platforms for this group of
+                            friends,
+                            Who
+                            had the objective of growing at twice the rate at which they were
+                            accustomed for their restaurant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <!-- Section videos -->
     <section class="learn-videos">
         <div class="videos-title">
             Videos
         </div>
-    <div class="swiper-container swiper-container-viva-ren">
-        <div class="swiper-wrapper">
-           
-            <div class="swiper-slide"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ_kSx92brw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="swiper-container swiper-container-viva-ren">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iQ_kSx92brw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NeQ4eE1QVVU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HZD8JdI7beE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7L_PGe75eTs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh1vvIIhZio"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
             </div>
-            <div class="swiper-slide"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NeQ4eE1QVVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HZD8JdI7beE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7L_PGe75eTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="swiper-slide"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh1vvIIhZio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-        </div>					
-        <div class="swiper-button-next swiper-button-next-viva-ren"></div>
-        <div class="swiper-button-prev swiper-button-prev-viva-ren "></div> 
-        <!-- Initialize Swiper -->
-  <script type="module">
-    let swiper_videos_viva_ren = new Swiper('.swiper-container-viva-ren', {
-      slidesPerView: 1,
-		breakpoints: {
-    960: {
-     	slidesPerView: 2,
-    }
-		},
-      navigation: {
-        nextEl: '.swiper-button-next-viva-ren',
-        prevEl: '.swiper-button-prev-viva-ren',
-      },
-	observer: true, 
-	observeParents: true
-    });
-  </script>
-  </div>
-</section>
-    
+            <div class="swiper-button-next swiper-button-next-viva-ren"></div>
+            <div class="swiper-button-prev swiper-button-prev-viva-ren "></div>
+            <!-- Initialize Swiper -->
+            <script type="module">
+                let swiper_videos_viva_ren = new Swiper('.swiper-container-viva-ren', {
+                    slidesPerView: 1,
+                    breakpoints: {
+                        960: {
+                            slidesPerView: 2,
+                        }
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next-viva-ren',
+                        prevEl: '.swiper-button-prev-viva-ren',
+                    },
+                    observer: true,
+                    observeParents: true
+                });
+            </script>
+        </div>
+    </section>
+
     <!-- Section News -->
     <section class="learn-news waves">
         <div class="news-content">
@@ -178,175 +284,215 @@
             <div class="news-container">
                 <div class="news-card">
                     <div class="img-container">
-                        <a href="https://elpais.com/elpais/2020/12/16/laboratorio_de_felicidad/1608119196_721750.html"
+                        <a href="https://rosanarosas.com/transformacion-digital-empresas/" target="_blank">
+                            <img src="https://rosanarosas.com/wp-content/uploads/2017/11/transformacion-digital.png"
+                                alt="IMG">
+                        </a>
+                    </div>
+                    <div class="new-information">
+                        <div class="title-container">
+                            <h3 class="title">DIGITAL TRANSFORMATION IN COMPANIES</h3>
+                        </div>
+                        <div class="description">
+                            <p class="text">
+                                Today it is clear that technology advances at accelerated steps and organizations
+                                cannot deny this aspect when formulating their strategies and structuring their
+                                business models. The impact of technology on companies is transcendental, since
+                                processes change, organizational culture changes, and all these changes
+                                lead to greater efficiency and effectiveness of the activities carried out.
+                            </p>
+                        </div>
+                        <div class="date-container">
+                            <span class="date">19/8/2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-container">
+                        <a href="https://platzi.com/blog/transformacion-digital-primeros-pasos/" target="_blank">
+                            <img src="https://static.platzi.com/media/blog/rawpixel-653764-unsplash-75850059-1855-4dfd-bb0d-b48d10ee8f7f.jpg"
+                                alt="IMG NEWS">
+                        </a>
+                    </div>
+                    <div class="new-information">
+                        <div class="title-container">
+                            <h3 class="title">
+                                Start your digital transformation today</h3>
+                        </div>
+                        <div class="description">
+                            <p class="text">At Platzi we are very committed to Digital Transformation in the
+                                Business. We believe that this is the way of doing business . Education will be
+                                transformed,
+                                and we want to contribute to the economy of Latin America.</p>
+                        </div>
+                        <div class="date-container">
+                            <span class="date">04/3/2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-container">
+                        <a href="https://www.innpulsacolombia.com/centros-de-transformacion-digital-empresarial"
                             target="_blank">
-                            <img src="../Assets/news-circuit.jpg" alt="IMG NEWS">
+                            <img src="https://www.innpulsacolombia.com/sites/default/files/inline-images/centros-de-transformacin-digital_45028417182_o.jpg"
+                                alt="IMG NEWS">
                         </a>
                     </div>
                     <div class="new-information">
                         <div class="title-container">
-                            <h3 class="title">Cuatro habilidades para liderar la transformación tecnológica</h3>
+                            <h3 class="title">What are the Business Digital Transformation Centers?
+                            </h3>
+                        </div>
+                        <div class="description">
+                            <p class="text">The Business Digital Transformation Centers (CTDE) are a program of
+                                iNNpulsa Colombia, the CIT Ministry and the ICT Ministry, in alliance with the main
+                                chambers of commerce, business associations of the country and educational institutions
+                                superior that aims to accompany MSMEs in their appropriation process
+                                technology tactic as a long-term strategy, which will help them improve their
+                                productivity and competitiveness.</p>
+                        </div>
+                        <div class="date-container">
+                            <span class="date">22/02/2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-container">
+                        <a href="http://www.andi.com.co/Home/Pagina/19-transformacion-digital" target="_blank">
+                            <img src="http://www.andi.com.co/Uploads/objetivosds.png" alt="IMG NEWS">
+                        </a>
+                    </div>
+                    <div class="new-information">
+                        <div class="title-container">
+                            <h3 class="title">DIGITAL TRANSFORMATION</h3>
                         </div>
                         <div class="description">
                             <p class="text">
-                                La pandemia ha acelerado cambios para los que no estábamos preparados. Nuevas realidades
-                                exigen nuevas técnicas y destrezas
+                                The Vice Presidency of Digital Transformation has as its main objective to work and
+                                promote actions so that Colombia and its entrepreneurs are digital. We are in
+                                a change of era in which companies, countries, governments, academia, the
+                                Society and individuals are experiencing a digital evolution, better known as the
+                                Fourth Industrial Revolution.
                             </p>
                         </div>
                         <div class="date-container">
-                            <span class="date">31/8/2020</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="img-container">
-                        <a href="https://protalento.org/empoderate/#empleabilidad" target="_blank">
-                            <img src="../Assets/news-Protalento.jpeg" alt="IMG NEWS">
-                        </a>
-                    </div>
-                    <div class="new-information">
-                        <div class="title-container">
-                            <h3 class="title">Empodérate del conocimiento</h3>
-                        </div>
-                        <div class="description">
-                            <p class="text">Protalento nos comparte recursos de formación en áreas realacionadas con
-                                tecnología.</p>
-                        </div>
-                        <div class="date-container">
-                            <span class="date">31/8/2020</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="img-container">
-                        <a href="https://platzi.com/blog/10-consejos-para-trabajar-y-estudiar/" target="_blank">
-                            <img src="../Assets/news-Platzi.png" alt="IMG NEWS">
-                        </a>
-                    </div>
-                    <div class="new-information">
-                        <div class="title-container">
-                            <h3 class="title">10 consejos para trabajar y estudiar sin enloquecer en el proceso</h3>
-                        </div>
-                        <div class="description">
-                            <p class="text">La plataforma de aprendizaje en tecnología más grande de Latinoamérica ha
-                                hablado</p>
-                        </div>
-                        <div class="date-container">
-                            <span class="date">31/10/2020</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="img-container">
-                        <a href="https://industria4.es/empresa/entender-la-industria-4-0/" target="_blank">
-                            <img src="../Assets/news-obrero.jpeg" alt="IMG NEWS">
-                        </a>
-                    </div>
-                    <div class="new-information">
-                        <div class="title-container">
-                            <h3 class="title">15 conceptos básicos para entender la Industria 4.0</h3>
-                        </div>
-                        <div class="description">
-                            <p class="text">
-                                Hablar de futuro en Industria 4.0 ya no tiene demasiado sentido… Hay que hablar de
-                                presente de la Industria 4.0.
-                            </p>
-                        </div>
-                        <div class="date-container">
-                            <span class="date">31/8/2020</span>
+                            <span class="date">18/11/2020</span>
                         </div>
                     </div>
                 </div>
                 <div class="news-card" style="display: none;">
                     <div class="img-container">
-                        <a href="https://elpais.com/elpais/2020/12/16/laboratorio_de_felicidad/1608119196_721750.html"
+                        <a href="https://forbes.co/2020/12/18/tecnologia/como-reimaginar-el-mundo-y-digitalizarlo-todo-segun-un-vp-de-microsoft/"
                             target="_blank">
-                            <img src="../Assets/news-circuit.jpg" alt="IMG NEWS">
+                            <img src="https://cdn.forbes.co/2020/12/Microsoft.jpg" alt="IMG">
                         </a>
                     </div>
                     <div class="new-information">
                         <div class="title-container">
-                            <h3 class="title">Cuatro habilidades para liderar la transformación tecnológica</h3>
+                            <h3 class="title">
+                                How to Reimagine the World and “Digitize Everything,” According to a Microsoft VP?
+                            </h3>
                         </div>
                         <div class="description">
                             <p class="text">
-                                La pandemia ha acelerado cambios para los que no estábamos preparados. Nuevas realidades
-                                exigen nuevas técnicas y destrezas
+                                The executive vice president and global president of sales, marketing and operations for
+                                Microsoft Jean-Philippe Courtois reflects in exclusive interview with Forbes
+                                Colombia on the opportunity to digitize everything, after a 2020 that forces
+                                reimagine the world and business.
                             </p>
                         </div>
                         <div class="date-container">
-                            <span class="date">31/8/2020</span>
+                            <span class="date">18/12/2020</span>
                         </div>
                     </div>
                 </div>
                 <div class="news-card" style="display: none;">
                     <div class="img-container">
-                        <a href="https://protalento.org/empoderate/#empleabilidad" target="_blank">
-                            <img src="../Assets/news-Protalento.jpeg" alt="IMG NEWS">
+                        <a href="https://forbes.co/2020/11/10/tecnologia/la-prioridad-encontrar-eficiencias-con-la-transformacion-digital/"
+                            target="_blank">
+                            <img src="https://cdn.forbes.co/2020/11/Vertiv-1280x720-1.jpg" alt="IMG">
                         </a>
                     </div>
                     <div class="new-information">
                         <div class="title-container">
-                            <h3 class="title">Empodérate del conocimiento</h3>
+                            <h3 class="title">The priority: finding efficiencies with digital transformation</h3>
                         </div>
                         <div class="description">
-                            <p class="text">Protalento nos comparte recursos de formación en áreas realacionadas con
-                                tecnología.</p>
+                            <p class="text">In Forbes Business Forum, Saida Ortiz, Regional Manager for NOLA de
+                                Vertiv, and Édgar Giraldo, Technology Lead for Accenture, talk about which have been
+                                solutions for companies in the transition to digital transformation.
+
+                            </p>
                         </div>
                         <div class="date-container">
-                            <span class="date">31/8/2020</span>
+                            <span class="date">10/11/2020</span>
                         </div>
                     </div>
                 </div>
                 <div class="news-card" style="display: none;">
                     <div class="img-container">
-                        <a href="https://platzi.com/blog/10-consejos-para-trabajar-y-estudiar/" target="_blank">
-                            <img src="../Assets/news-Platzi.png" alt="IMG NEWS">
+                        <a href="http://centrodigital.fenalco.com.co/masTransformacion.html" target="_blank">
+                            <img src="http://centrodigital.fenalco.com.co/img/banner-mastransformacion.jpg" alt="IMG ">
                         </a>
                     </div>
                     <div class="new-information">
                         <div class="title-container">
-                            <h3 class="title">10 consejos para trabajar y estudiar sin enloquecer en el proceso</h3>
+                            <h3 class="title">Better companies do a better country</h3>
                         </div>
                         <div class="description">
-                            <p class="text">La plataforma de aprendizaje en tecnología más grande de Latinoamérica ha
-                                hablado</p>
+                            <p class="text">Digital transformation portfolio for businessmen and entrepreneurs.</p>
                         </div>
                         <div class="date-container">
-                            <span class="date">31/10/2020</span>
+                            <span class="date"></span>
                         </div>
                     </div>
                 </div>
                 <div class="news-card" style="display: none;">
                     <div class="img-container">
-                        <a href="https://industria4.es/empresa/entender-la-industria-4-0/" target="_blank">
-                            <img src="../Assets/news-obrero.jpeg" alt="IMG NEWS">
+                        <a href="https://www.confecamaras.org.co/noticias/758-el-ministerio-tic-se-une-a-las-camaras-de-comercio-para-apoyar-a-los-empresarios-en-su-proceso-de-transformacion-digital"
+                            target="_blank">
+                            <img src="https://www.confecamaras.org.co/images/2020/Noticias_/mintic3.png" alt="IMG NEWS">
                         </a>
                     </div>
                     <div class="new-information">
                         <div class="title-container">
-                            <h3 class="title">15 conceptos básicos para entender la Industria 4.0</h3>
+                            <h3 class="title">
+                                The ICT Ministry joins the Chambers of Commerce to support the
+                                entrepreneurs in their digital transformation process</h3>
                         </div>
                         <div class="description">
                             <p class="text">
-                                Hablar de futuro en Industria 4.0 ya no tiene demasiado sentido… Hay que hablar de
-                                presente de la Industria 4.0.
+
+                                The main objective of the pact will be to deliver to the national companies - registered
+                                to
+                                Chambers of Commerce- the necessary tools to strengthen their processes
+                                operational, and bring your goods and services to the largest and most powerful showcase
+                                commercial: online trading.
                             </p>
                         </div>
                         <div class="date-container">
-                            <span class="date">31/8/2020</span>
+                            <span class="date">23/07/2020</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="loadmore">
-                <span>Cargar más</span>
+                <span>Load more</span>
                 <img src="https://img.icons8.com/color/48/000000/plus--v3.png" alt="cargar más">
             </div>
         </div>
     </section>
+    <section class="img-text-bann">
+        <div class="text-bann">
+            <h3>Web projects: phases and stages for agi developmentl</h3>
+        </div>
+        <div class="img-bann">
+            <img src="../assets/learn/ProcesoRelyer.jpg" alt="procesos Relyer">
+        </div>
+
+    </section>
     <!-- Section Tools -->
-    
+
 
     <footer></footer>
 

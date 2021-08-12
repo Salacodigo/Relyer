@@ -1,26 +1,46 @@
-/*---GENERAL---*/
-* {
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway';
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
+/*COLORS*/
 .img-background-footer {
-  background: url(../../Assets/c24724c96c6d39574d59c2a71bfbfa36-diseno-de-fondo-de-mar-submarino.jpg);
+  background: url(../../assets/footer/fondosubmarino.jpg);
   width: 100vw;
-  height: 400px;
+  height: 300px;
   margin: 0;
   padding: 0;
   background-position: center;
@@ -39,17 +59,46 @@ body {
   text-align: center;
 }
 
+footer {
+  margin-top: 50px;
+}
+
 .logo-footer img {
   margin: -40px 0px 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   position: relative;
 }
 
+.networks div i {
+  font-size: 35px;
+  color: white;
+  margin: 10px 0;
+}
+
+.social-net-ico {
+  font-size: 35px;
+  color: white;
+  margin: 10px;
+}
+
+.menu-footer a,
+.menu-footer-mobile a {
+  font: 700 18px "Raleway";
+}
+
+.menu-footer ul li {
+  margin: 0;
+}
+
+.networks div a {
+  margin: 10px 10px;
+}
+
 .background-menu {
-  background: url(../../Assets/Rectangle36.png);
+  background: url(../../assets/footer/footerrectangle.png);
   width: 100vw;
-  height: 150px;
+  height: 170px;
   margin: 0;
   padding: 0;
   background-position: center;
@@ -62,7 +111,7 @@ body {
   list-style: none;
   color: white;
   font-size: 25px;
-  margin: 10px 0px;
+  margin: 0px;
 }
 
 .menu-footer-mobile li a {
@@ -82,7 +131,7 @@ body {
 
 ul {
   -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .desktop {
@@ -95,11 +144,11 @@ ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     bottom: 25%;
     height: 50%;
@@ -107,15 +156,15 @@ ul {
   .menu-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 33%;
   }
   .content-logo-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 0;
     top: 0;
     width: 33%;
@@ -123,8 +172,8 @@ ul {
   .networks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 33%;
   }
   .background-menu-mobile {
@@ -140,15 +189,17 @@ ul {
     text-align: center;
     list-style: none;
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     margin: 10px 0px;
   }
   .menu-footer li a {
     color: white;
     text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
   }
   .logo-footer img {
-    width: 50%;
+    width: 60%;
     margin: 0;
   }
 }

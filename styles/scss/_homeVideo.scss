@@ -1,4 +1,4 @@
-.home {
+.homevideo {
     position: relative;
     background: linear-gradient(180deg,
             rgba(65, 204, 255, 0.95) 0%,
@@ -6,74 +6,72 @@
     z-index: 50;
 
 
-    h1 {
-        font: 900 5rem $Raleway;
+    &__maintitle {
+        font: 900 $MainTitleMobile $Raleway;
         color: $darkblue;
-        padding-top: 40px;
+        padding-top: 50px;
         padding-left: 60px;
     }
 
-    p {
+    &__description {
         max-width: 80vw;
-        font: 300 1.5rem $Raleway;
+        font: 300 $PMobile $Raleway;
         color: $white;
         padding-left: 60px;
+        text-align: justify;
 
         &>br {
             display: none;
         }
+
+        & .play-button-video--responsive {
+            border: none;
+            width: 260px;
+            background-color: $aquamarine;
+            font-weight: 800;
+            color: white;
+            font-size: 1.6rem;
+            text-align: center;
+            margin-top: 14px;
+        }
     }
 
-
-    .play-button {
+    &__video--desktop {
         display: none;
     }
 
-
-
     /* BUTTON TECH LVEL */
-    .techlevel {
+    &__techlevel {
         opacity: 0;
     }
+
 
     .bubbles {
         position: absolute;
         top: 10%;
         transform: scale(0.7);
+        height: 600px;
+        left: -15px;
     }
 
-    .mainwave {
-        position: absolute;
-        bottom: -75px;
+    & .mainwave {
+        overflow-x: hidden;
+        width: 100vw;
+        max-width: 100%;
     }
 
 
 }
 
-@media (max-width:1200px) {
-
-    .home {
-        .play-button-video {
-            display: none;
-        }
-
-
-
-
-    }
-
-}
 
 
 @media (min-width:800px) {
 
     video {
         display: none;
-
     }
 
     @keyframes rollvideo {
-
         0% {
             opacity: 0;
         }
@@ -81,10 +79,9 @@
         100% {
             opacity: 1;
         }
-
     }
 
-    .home {
+    .homevideo {
         position: relative;
         background: linear-gradient(180deg,
                 rgba(65, 204, 255, 0.95) 0%,
@@ -92,42 +89,50 @@
         z-index: 100;
 
         // FIRST TITLES 
-        h1 {
-            font: 900 7rem $Raleway;
-            padding-top: 70px;
+        &__maintitle {
+            font: 900 $MainTitle $Raleway;
+            padding-top: 90px;
             padding-left: 80px;
         }
 
-        &>p {
-            font: 300 2rem $Raleway;
+        &__description {
+            font: 300 $P $Raleway;
             padding-left: 80px;
             padding-bottom: 50px;
-
 
             &>br {
                 display: block;
             }
-
         }
 
+        &__video--desktop {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 70px;
+            z-index: 300;
+            height: 350px;
+            width: 620px;
+            border-radius: 10px;
+        }
 
         /* BUTTON TECH LEVEL */
-        .techlevel {
+        & .homevideo__techlevel {
             opacity: 1;
             width: 350px;
             height: 70px;
             border-radius: 30px;
             background-color: $secondblue;
             position: absolute;
-            bottom: -70px;
+            bottom: -120px;
             right: 20px;
             display: flex;
             align-items: center;
             z-index: 30;
 
-
             &>p {
                 font: 400 1.25rem $Raleway;
+                color: white;
                 width: 250px;
                 text-align: center;
 
@@ -143,39 +148,46 @@
                 margin-left: 50px;
                 cursor: pointer;
             }
-        }
 
-
-        .play-button {
-            display: block;
-            position: absolute;
-            color: $aquamarine;
-            font-size: 8.5rem;
-            top: 130px;
-            left: 45%;
-            cursor: pointer;
-
-            &:hover {
-                transition: 0.2s;
-                transform: scale(1.09);
-
-            }
         }
 
         .bubbles {
             transform: none;
             top: 30%;
             z-index: 30;
-
+            height: unset;
+            left: unset;
         }
-
 
     }
 
-    .mainwave {
-        position: absolute;
-        // bottom:-300px;
+    & .mainwave {
+        min-width: 250px;
         z-index: -10;
-        overflow: hidden;
+    }
+}
+
+@media (max-width:1230px) {
+    .homevideo {
+        &__video--desktop {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1300px) {
+
+    .homevideo {
+        &__video--desktop {
+            right: 25px;
+        }
+    }
+}
+
+@media (min-width:1230px) {
+    .homevideo {
+        & .play-button-video--responsive {
+            display: none;
+        }
     }
 }

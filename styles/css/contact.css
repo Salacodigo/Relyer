@@ -1,60 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+
+html {
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*COLORS*/
 body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway';
 }
 
-.img-background-footer {
-  background: url(/assets/c24724c96c6d39574d59c2a71bfbfa36-diseno-de-fondo-de-mar-submarino.jpg);
-  width: 100%;
-  height: 400px;
-  margin: 0;
-  padding: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.content-logo-footer {
-  margin: 0 30%;
-  top: -40px;
-}
-
-.logo-footer {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.logo-footer img {
-  margin: -40px 0px 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.background-menu {
-  background: url("../../assets/Rectangle36.png");
-  width: 100%;
-  height: 150px;
-  margin: 0;
-  padding: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.menu-footer-mobile li {
-  text-align: center;
-  list-style: none;
-  color: white;
-  font-size: 25px;
-  margin: 10px 0px;
-}
-
-.menu-footer-mobile li a {
-  color: white;
-  text-decoration: none;
+.space-contact {
+  height: 100px;
 }
 
 .img-networks {
@@ -69,7 +59,7 @@ body {
 
 ul {
   -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
 }
 
 .desktop {
@@ -82,11 +72,11 @@ ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     bottom: 25%;
     height: 50%;
@@ -94,15 +84,15 @@ ul {
   .menu-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 33%;
   }
   .content-logo-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 0;
     top: 0;
     width: 33%;
@@ -110,8 +100,8 @@ ul {
   .networks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 33%;
   }
   .background-menu-mobile {
@@ -143,7 +133,7 @@ ul {
 /*----------- Contacto --------------*/
 .contact-wrapper {
   -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-          box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .contact-wrapper > * {
@@ -154,7 +144,7 @@ ul {
   background: #fff;
   width: 60%;
   -webkit-box-shadow: 0px 0px 5px 1px #CDCDCD;
-          box-shadow: 0px 0px 5px 1px #CDCDCD;
+  box-shadow: 0px 0px 5px 1px #CDCDCD;
   margin-left: 20%;
 }
 
@@ -212,24 +202,24 @@ ul {
 }
 
 .contact-section {
-  background-image: url(/assets/fondo.png);
+  background-image: url(../../assets/contact/fondo.png);
   background-repeat: no-repeat;
   background-attachment: local;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10% 0;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0 10%;
   background-size: cover;
 }
 
 .left-contact {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 50%;
   text-align: center;
 }
@@ -237,8 +227,8 @@ ul {
 .right-contact {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 50%;
 }
 
@@ -246,6 +236,7 @@ ul {
   font-size: 45px;
   color: #35517A;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 .left-contact span {
@@ -259,13 +250,29 @@ ul {
 
 .padding-btn-send {
   padding: 0 30%;
+  cursor: pointer;
 }
 
 .img-networks-contact {
   background: #1A3256;
   border-radius: 30px;
   padding: 10px;
-  margin: 0 60px;
+  margin: 5% 60px;
+}
+
+.radios-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+}
+
+.form__label-radio {
+  width: 50%;
+}
+
+.form__label-radio input {
+  width: auto !important;
 }
 
 .img-networks-contact img {
@@ -297,7 +304,7 @@ ul {
   height: 100%;
   width: 100%;
   -webkit-animation: rotation 1s linear infinite;
-          animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
   border: 1px solid #41CCFF;
   border-top: 1px solid transparent;
   border-radius: 100%;
@@ -312,7 +319,7 @@ ul {
   margin-top: -12.5px;
   margin-left: -5.3px;
   -webkit-animation: wink 1s ease-in-out infinite alternate;
-          animation: wink 1s ease-in-out infinite alternate;
+  animation: wink 1s ease-in-out infinite alternate;
 }
 
 @media only screen and (min-width: 768px) {
@@ -356,22 +363,22 @@ ul {
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
 @keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
@@ -390,5 +397,33 @@ ul {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-contact h2 {
+    font-size: 35px;
+  }
+  .contact-section {
+    display: block;
+  }
+  .space-contact {
+    height: 0;
+  }
+  .left-contact,
+  .right-contact {
+    width: 100%;
+  }
+  .right-contact {
+    margin-top: 100px;
+    padding: 0 5%;
+  }
+  .padding-left-contact {
+    padding: 0px 8%;
+  }
+  .contact-form {
+    margin: 0;
+    margin-left: 0;
+    width: 100%;
   }
 }

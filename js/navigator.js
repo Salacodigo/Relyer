@@ -1,102 +1,119 @@
-/*-------- APPEND NAVIGATOR, RESPONSIVE, NAV BUTTONS--------- */
+/*-------- APPEND NAVIGATOR, RESPONSIVE, NAV BUTTONS, TRANSITIONS--------- */
 
 /*TEMPLATE FOR THE NAVIGATOR */
 let navTemplate = document.createElement("template");
-navTemplate.innerHTML = `   
-    <ul>
-    <img class="relyer-logo" src="../Assets/relyer-logo.svg" alt="Relyer Logo">
+navTemplate.innerHTML = `
+<!-- LEFT SIDE LOGO NAV -->
+<img class="navbar__img" src="../assets/home/relyer-logo.svg" alt="Relyer Logo">
+<!-- CENTRAL LINKS NAVIGATOR -->
+<div class="navbar__centralnav">
+    <!-- HOME -->
+    <a href="../index.html" class="centralnav__home">Home</a>
+    <!-- SERVICES -->
+    <div class="centralnav__services">
+        <h3>Services
+            <img class="simplearrow" src="../assets/home/normalarrow.svg" alt="arrowmobile">
+            <img class="doublearrow" src="../assets/home/doublearrow.svg" alt="doublearrow">
 
-    <li class="nav-list2">
-        <a href="../index.html" class="main-sections">
-            <h3 class="translate ">Home</h3>
+        </h3>
+        <div class="dropdownmenu">
+            <a class=" services__experts" href="./experts.html">Experts &
+                Tools</a>
+            <a href="./test.html" class="services__test">Diagnosis
+                Test</a>
+        </div>
+    </div>
+    <!-- LEARN -->
+    <a href="./learn.html">Learn</a>
+    <!-- ABOUT US -->
+    <div class="centralnav__aboutus">
+        <h3>About us
+            <img class="simplearrow" src="../assets/home/normalarrow.svg" alt="arrowmobile">
+            <img class="doublearrow" src="../assets/home/doublearrow.svg" alt="doublearrow">
+        </h3>
+        <div class="dropdownmenu">
+            <a href="./aboutus.html" class="aboutus__knowus">Know us</a>
+            <a href="./contact.html" class="aboutus__contact">Contact</a>
+        </div>
+    </div>
+    <!-- LOGIN REGISTER -->
+    <a class="login--mobile" href="./login.html">Login/Register</a>
+
+    <div class="centralnav__language--mobile">
+        <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+            src="../assets/home/en-flag.svg" alt="United States flag">
+        <img width="60" height="40" class="changelang__enflag changelang__lang" src="../assets/home/es-flag.svg"
+            alt="Spanish Flag">
+    </div>
+</div>
+<!-- RIGHT SIDE LINKS NAVIGATOR -->
+<div class="navbar__rightnav">
+    <!-- LOGIN -->
+    <div class="rightnav__login button">
+        <a class="login--desktop" href="./login.html">Login/Register</a>
+        <a class="login--tablet" href="./login.html">
+            <img class="loginicon" src="../assets/home/signin.svg" alt="Sign in">
         </a>
-        <div class="main-sections services">
-            <h3 class="translate ">Services</h3>
-            <i class="fas fa-angle-double-down"></i>
-
-            <div class="subsection">
-            <a class="paragraph first-paragraph experts translate" href="../html/expertstools.html">Experts &
-                            Tools</a>
-                        <a href="../html/testInformative.html"
-                            class="paragraph second-paragraph test translate">Diagnosis Test</a>
-                    </div>
-
-        </div>
-        <a href="../html/learn.html" class="main-sections learnmore">
-            <h3 class="translate "> Learn more</h3>
-        </a>
-        <div class="main-sections aboutus">
-            <h3 class="translate ">About us </h3>
-            <i class="fas fa-angle-double-down"></i>
-            <div class="subsection">
-                <a class="paragraph first-paragraph knowus translate">Know us</a>
-                <a class="paragraph second-paragraph contact translate">Contact</a>
-            </div>
-
-        </div>
-    </li>
-
-    <li class="nav-list3">
-    <a href="../html/login.html" class="login translate">Login/Register</a>
-    <div class="language">
-        <img class="language-flag" src="../Assets/en-flag.svg" alt="United States flag">
-        <h2 class="langtitle">English</h2>
-
-        <div class="optionlanguage">
-            <p class="languageoptions en selected">English</p>
-            <p class="languageoptions es">Spanish</p>
-        </div>
 
     </div>
-</li>
-    </ul>
-    <div class="hamburguer"><span></span><span></span><span></span></div>
-
-    <div class="responsive-nav">
-    <ul>
-        <a class="responsive1 translate">Home</a>
-        <a class="responsive2 translate">Experts & Tools </a>
-        <a class="responsive3 translate"> Diagnosis Test</a>
-        <a class="responsive4 translate">Learn more</a>
-        <a class="responsive5 translate">Know us </a>
-        <a class="responsive6 translate">Contact </a>
-
-
-    </ul>
+    <!-- CHANGE LANGUAGE -->
+    <div class="rightnav__changelang button">
+        <img width="60" height="40" class="changelang__enflag" src="../assets/home/en-flag.svg"
+            alt="United States flag">
+        <h2 class="changelang__title">English</h2>
+        <ul class="changelang__options">
+            <li class="changelang__lang selected">English</li>
+            <li class="changelang__lang">Spanish</li>
+        </ul>
     </div>
+</div>
+<!-- HAMBURGUER MENU FOR MOBILE -->
+<div class="hamburguer">
+    <span></span><span></span><span></span>
+</div>
+
     `;
 /*  NAV CONTAINER */
-let navContainer = document.getElementsByClassName("nav-container")[0];
+const navContainer = document.getElementsByTagName("nav")[0];
 
 if (document.body.id !== "home") navContainer.appendChild(navTemplate.content);
 
+/* STICKY NAV */
+window.addEventListener("scroll", () => {
+	navContainer.classList.toggle("sticky", window.scrollY > 0);
+});
+
+/*  GO TO HOME ON LOGO */
+let relyerlogo = document.getElementsByClassName("navbar__img")[0];
+
+relyerlogo.addEventListener("click", () => {
+	if (document.body.id !== "home") location.href = "../index.html";
+});
+
+// MOBILE
+
 /*HAMBURGUER RESPONSIVE*/
-
-let hamburguer = document.getElementsByClassName("hamburguer")[0];
-let firstspan = hamburguer.firstElementChild;
-let secondspan = hamburguer.firstElementChild.nextElementSibling;
-let thirdspan = hamburguer.lastElementChild;
-let responsivenav = document.getElementsByClassName("responsive-nav")[0];
-
+const hamburguer = document.getElementsByClassName("hamburguer")[0];
+const firstspan = hamburguer.firstElementChild;
+const secondspan = hamburguer.firstElementChild.nextElementSibling;
+const thirdspan = hamburguer.lastElementChild;
+const responsivenav = document.getElementsByClassName("navbar__centralnav")[0];
 let contadornav = 0;
 
 window.addEventListener("scroll", () => {
-	containeranimation(true);
+	if (hamburguer) {
+		containeranimation(true);
+	}
 });
+
 hamburguer.addEventListener("click", () => {
 	containeranimation(false);
 });
 
 function containeranimation(quit) {
 	if (contadornav == 0 && quit === false) {
-		firstspan.setAttribute(
-			"style",
-			" transition:1s;transform: rotate(44deg) translateY(10.5px) translateX(9px); background-color: white;"
-		);
-		secondspan.setAttribute(
-			"style",
-			"transition:1s; transform: rotate(-45deg) ; transform: translate-y(10px) ;background-color: white;"
-		);
+		firstspan.setAttribute("style", " transition:1s;transform: rotate(45deg) translateY(9px) translateX(9.4px); background-color: white;");
+		secondspan.setAttribute("style", "transition:1s; transform: rotate(-45deg) ;background-color: white;");
 		thirdspan.setAttribute("style", "display:none;");
 		responsivenav.setAttribute("style", "transition:1s; transform: none;");
 		contadornav = 1;
@@ -104,25 +121,25 @@ function containeranimation(quit) {
 		firstspan.setAttribute("style", " transition:1s;transform: none;");
 		secondspan.setAttribute("style", "transition:1s; transform: none;");
 		thirdspan.setAttribute("style", "transition:2s; display:block;");
-		responsivenav.setAttribute(
-			"style",
-			"transition:1s; transform: translateX(-100%);"
-		);
+		// IF YOU ARE IN MOBILE YOU SEE AN ANIMATION OTHERWISE YOU DONT
+		if (window.innerWidth < 990) {
+			responsivenav.setAttribute("style", "transition:1s; transform: translateX(-100%);");
+		} else {
+			responsivenav.setAttribute("style", "transition:0s; transform: translateX(-100%);");
+		}
+
 		contadornav = 0;
 	}
 }
 
-let digitaltText = document.getElementsByClassName("digitalt")[0];
-/* STICKY NAV */
+// DROPDPWN MENU MOBILE
 
-window.addEventListener("scroll", () => {
-	navContainer.classList.toggle("sticky", window.scrollY > 0);
-});
+const servicesContainer = document.querySelector(".centralnav__services");
+const aboutusContainer = document.querySelector(".centralnav__aboutus");
 
-/*  GO TO HOME ON LOGO */
+servicesContainer.addEventListener("click", activeClass);
+aboutusContainer.addEventListener("click", activeClass);
 
-let relyerlogo = document.getElementsByClassName("relyer-logo")[0];
-
-relyerlogo.addEventListener("click", () => {
-	if (document.body.id !== "home") location.href = "../index.html";
-});
+function activeClass(e) {
+	e.target.nextElementSibling.classList.toggle("active");
+}

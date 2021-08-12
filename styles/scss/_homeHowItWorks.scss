@@ -1,50 +1,46 @@
 .how-it-works {
 
     h2 {
-        font: 700 3.5rem $Raleway;
+        font: 700 $SubtitleMobile $Raleway;
         text-align: center;
-        margin-bottom: 40px;
+        margin: 40px 0 20px 0;
     }
 
-    .wave1,
-    .wave2,
-    .wave3 {
+    &>.wavy {
         display: none;
     }
 
     /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
-    &>.hiwsection-container {
+    &>.how-it-works__container {
         padding-top: 0;
+        overflow: hidden;
 
         /* GENERAL STYLES FOR ALL OF THEM */
-        &>.hiwsection {
-
+        &>.how-it-works__item {
             position: relative;
+            text-align: center;
+            margin: 0 auto;
 
-            &>.content {
-                text-align: center;
+            &>h3 {
+                font: 800 3.2rem $Raleway;
+                color: $blue;
+                padding-top: 100px;
+            }
+
+            &>p {
+                font: 400 1.7rem/40px $Raleway;
+                max-width: 94vw;
                 margin: 0 auto;
 
-                &>h3 {
-                    font: 800 3.2rem $Raleway;
-                    color: $blue;
-                }
-
-                &>p {
-                    font: 400 1.7rem/40px $Raleway;
-                }
-
             }
+
 
             .numbers {
+                position: absolute;
+                top: 15px;
+                left: 15px;
                 transform: scale(0.7);
             }
-        }
-
-        .spider,
-        .reading,
-        .chess {
-            display: none;
         }
 
         .spiderwhite,
@@ -59,36 +55,46 @@
         /* EACH OF THE SECTIONS */
         &>.identify {
             background: linear-gradient(90.9deg, rgba(170, 224, 253, 0.63) -3.59%, rgba(117, 141, 236, 0.53) 99.23%);
-
-            &>.number1 {
-                margin-left: 20px;
-            }
-
         }
 
         &>.learn {
-            position: unset;
             background: linear-gradient(270deg, #b4f0e0 7.09%, rgba(223, 243, 240, 0.09) 100%);
-
-            &>.number2 {
-                position: unset;
-            }
-
         }
 
         &>.apply {
-
             background: linear-gradient(270.45deg, rgba(170, 224, 253, 0.63) 10.17%, rgba(117, 141, 236, 0.53) 90.03%);
-
-            &>.number3 {
-                margin-left: 20px;
-            }
         }
 
     }
 }
 
+@media (min-width:800px) and (max-width: 1200px) {
+    /* tablet, landscape iPad */
 
+    .how-it-works {
+
+        /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+        &>.how-it-works__container {
+            overflow: unset;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow-x: auto;
+            scrollbar-width: 30vw;
+            @include scroller;
+
+            &>.how-it-works__item {
+                text-align: center;
+                min-width: 100vw;
+                margin: 0;
+
+
+            }
+        }
+    }
+
+
+}
 
 
 @media (min-width:1200px) {
@@ -96,12 +102,23 @@
 
     .how-it-works {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        & .wavy {
+            display: block;
+            width: 105vw;
+            top: 50px;
+            position: absolute;
+            left: -30px;
+            z-index: -10;
+        }
 
         h2 {
-            position: absolute;
-            top: 30px;
-            margin-left: 140px;
-            font: 400 4.5rem $Raleway;
+            text-align: start;
+            margin: 120px 0 130px 100px;
+            font: 400 $Subtitle $Raleway;
             color: $darkblue;
             z-index: 50;
 
@@ -110,125 +127,107 @@
             }
         }
 
-        .wave1,
-        .wave2,
-        .wave3 {
-            display: block;
-            width: 100%;
-            z-index: 40;
-
-        }
-
-        .wave1 {
-            position: absolute;
-            width: 100vw;
-        }
-
 
         /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
-        &>.hiwsection-container {
-            padding-top: 540px;
-
+        &>.how-it-works__container {
+            display: flex;
+            flex-direction: column;
 
             /* GENERAL STYLES FOR ALL OF THEM */
-            &>.hiwsection {
-                background: white;
-                opacity: 1;
-                height: 35vw;
-
-
-                .wave2 {
-                    position: relative;
-                    bottom: 400px;
-                    transform: rotate(4deg);
-                }
-
-                .wave3 {
-                    position: relative;
-                    bottom: 260px;
-                }
-
-                &>.content {
-                    text-align: unset;
-                    margin: unset;
-                    margin: 0px 0px 100px 120px;
-
-                    &>h3 {
-                        font: 800 4rem $Raleway;
-                    }
-
-                    &>p {
-                        margin-top: 10px;
-                        font: 400 1.8rem/40px $Raleway;
-                        color: $black;
-                    }
-
-                }
-
-                .numbers {
-                    transform: scale(0.8);
-                }
-            }
-
-            .spider,
-            .reading,
-            .chess {
-                display: block;
-                position: absolute;
-            }
-
-            .spiderwhite,
-            .readingwhite,
-            .chesswhite {
-                display: none;
-            }
-
-            /* EACH OF THE SECTIONS */
-            &>.identify {
-
-                &>.spider {
-                    top: 80px;
-                    left: 35vw;
-                    transform: scale(0.7);
-                }
-
-            }
-
-            &>.learn {
-
+            &>.how-it-works__item {
                 position: relative;
+                background: unset;
+                opacity: 1;
+                height: 200px;
+                text-align: unset;
+                margin: 0px 0px 30px 120px;
+
+                &>h3 {
+                    font: 800 3.3rem $Raleway;
+                    padding: 0;
+                    color: $black;
+                }
+
+                &>p {
+                    max-width: unset;
+                    text-align: justify;
+                    margin-top: 10px 0 0 0;
+                    font: 300 1.9rem/40px $Raleway;
+                    color: $black;
+
+
+                }
+
+                &>.numbers {
+                    position: absolute;
+                    top: -15px;
+                    left: -100px;
+                }
 
                 &>.number2 {
                     position: absolute;
-                    right: 20px;
-                    top: -120px;
+                    top: -15px;
+                    left: 400px;
                 }
 
-                &>.content {
+                &.learn {
+                    align-self: flex-end;
+                    text-align: left;
+                    margin-right: 60px;
+
+                    &>h3 {
+                        margin-left: 240px;
+                    }
+
+                    &>p {
+                        text-align: end;
+                    }
+                }
+
+                .spiderwhite,
+                .readingwhite,
+                .chesswhite {
                     position: absolute;
-                    top: 0px;
-                    right: 110px;
-                    text-align: right;
+                    top: -25px;
                 }
 
-                &>.reading {
-                    right: 45vw;
+                .spiderwhite,
+                .chesswhite {
+                    left: 32vw;
                 }
+
+                .readingwhite {
+                    right: 33vw;
+                }
+
 
             }
-
-            &>.apply {
-
-                // margin-top: 200px;
-                height: 30vw;
-
-                &>.chess {
-                    top: 80px;
-                    left: 45vw;
-                }
-            }
-
         }
     }
+}
+
+@media (min-width:1350px) {
+
+    .how-it-works {
+
+        /* COTAINER OF ALL THE SECTIONS HOW DOES IT WORK */
+        &>.how-it-works__container {
+
+            /* GENERAL STYLES FOR ALL OF THEM */
+            &>.how-it-works__item {
+
+                .spiderwhite,
+                .chesswhite {
+                    left: 28vw;
+                }
+
+                .readingwhite {
+                    right: 28vw;
+                }
+
+            }
+        }
+    }
+
 
 }

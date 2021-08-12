@@ -4,360 +4,324 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
     <meta name="author" content="Relyer Team">
     <meta name="description"
-        content="Find an expert to improve your company, discover the latest apps and tools to make things easier and test your companie">
+        content="Find an expert to improve your company, discover the latest apps and tools to make things easier and test your company">
     <meta name="keywords"
         content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
-    <!-- FONTS RALEWAY AND PRATA -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- FONTAWESOME ICONS -->
-    <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
+    <link rel="icon" href="./assets/home/relyer-icon.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="./styles/css/navbar.css">
-    <link rel="stylesheet" href="./styles/css/home.css">
-    <link rel="stylesheet" href="./styles/css/footer.css">
+    <link rel="stylesheet" href="./styles/css/navigator.min.css">
+    <link rel="stylesheet" href="./styles/css/home.min.css">
+    <link rel="stylesheet" href="./styles/css/footer.min.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a2ed2fdecb.js" crossorigin="anonymous"></script>
     <!-- SCRIPTS -->
-    <script src="js/printMessage.js" defer></script>
-    <script src="js/navigator.js" defer></script>
-    <script src="js/homevideo.js" defer></script>
-    <script src="js/accordionNav.js" defer></script>
-    <script src="js/language.js" defer></script>
-    <script src="js/validToken.js" defer></script>
-    <title>Home</title>
+    <script src="./js/printMessage.js" async></script>
+    <script src="./js/navigator.js" defer></script>
+    <script src="./js/validToken.js" defer></script>
+    <script src="./js/home.js" defer></script>
+
+    <title>Relyer</title>
 </head>
 
 <body id="home">
 
-    <nav class="nav-container">
-        <ul>
-            <img class="relyer-logo" src="./Assets/relyer-logo.svg" alt="Relyer Logo">
+    <!-- WE ARE RELYER, WE HOPE YOU LIKE THE PROJECT, IT WAS A PLEASURE TO BE PART OF IT  -->
+    <header>
+        <!-- NAVIGATOR START HERE -->
+        <!-- BEM BLOCK - ELEMENT - MODIFIER  BLOCK__ELEMENT--MODIFIER -->
+        <nav class="navbar">
+            <!-- LEFT SIDE LOGO NAV -->
+            <img class="navbar__img" src="./assets/home/relyer-logo.svg" alt="Relyer Logo">
+            <!-- CENTRAL LINKS NAVIGATOR -->
+            <div class="navbar__centralnav">
+                <!-- HOME -->
+                <a href="#!" class="centralnav__home">Home</a>
+                <!-- SERVICES -->
+                <div class="centralnav__services">
+                    <h3>Services
+                        <img class="simplearrow" src="./assets/home/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="./assets/home/doublearrow.svg" alt="doublearrow">
 
-            <li class="nav-list2">
-                <a href="#!" class="main-sections">
-                    <h3 class="translate">Home</h3>
-                </a>
-                <div class="main-sections services">
-                    <h3 class="translate">Services</h3>
-                    <i class="fas fa-angle-double-down"></i>
-
-                    <div class="subsection">
-                        <a class="paragraph first-paragraph experts translate" href="./html/expertstools.html">Experts &
+                    </h3>
+                    <div class="dropdownmenu">
+                        <a class=" services__experts" href="./html/experts.html">Experts &
                             Tools</a>
-                        <a href="./html/testInformative.html"
-                            class="paragraph second-paragraph test translate">Diagnosis Test</a>
+                        <a href="./html/test.html" class="services__test">Diagnosis
+                            Test</a>
                     </div>
-
                 </div>
-                <a href="./html/learn.html" class="main-sections learnmore">
-                    <h3 class="translate"> Learn more</h3>
-                </a>
-                <div class="main-sections aboutus">
-                    <h3 class="translate">About us </h3>
-                    <i class="fas fa-angle-double-down"></i>
-                    <div class="subsection">
-                        <a class="paragraph first-paragraph knowus translate">Know us</a>
-                        <a class="paragraph second-paragraph contact translate">Contact</a>
+                <!-- LEARN -->
+                <a href="./html/learn.html">Learn</a>
+                <!-- ABOUT US -->
+                <div class="centralnav__aboutus">
+                    <h3>About us
+                        <img class="simplearrow" src="./assets/home/normalarrow.svg" alt="arrowmobile">
+                        <img class="doublearrow" src="./assets/home/doublearrow.svg" alt="doublearrow">
+                    </h3>
+                    <div class="dropdownmenu">
+                        <a href="./html/aboutus.html" class="aboutus__knowus">Know us</a>
+                        <a href="./html/contact.html" class="aboutus__contact">Contact</a>
                     </div>
-
                 </div>
-            </li>
+                <!-- LOGIN REGISTER -->
+                <a class="login--mobile" href="./html/login.html">Login/Register</a>
 
-            <li class="nav-list3">
-                <a href="./html/login.html" class="login translate">Login/Register</a>
-                <div class="language">
-                    <img class="language-flag" src="./Assets/en-flag.svg" alt="United States flag">
-                    <h3 class="langtitle">English</h3>
-
-                    <div class="optionlanguage">
-                        <h3 class="languageoptions en selected">English</h3>
-                        <h3 class="languageoptions es">Spanish</h3>
-                    </div>
-
+                <div class="centralnav__language--mobile">
+                    <img width="60" height="40" class="changelang__enflag changelang__lang selected"
+                        src="./assets/home/en-flag.svg" alt="United States flag">
+                    <img width="60" height="40" class="changelang__enflag changelang__lang"
+                        src="./assets/home/es-flag.svg" alt="Spanish Flag">
                 </div>
-            </li>
-        </ul>
-        <div class="hamburguer"><span></span><span></span><span></span></div>
-
-        <div class="responsive-nav">
-            <ul>
-                <a class="responsive1 translate">Home</a>
-                <a class="responsive2 translate">Experts & Tools </a>
-                <a class="responsive3 translate"> Diagnosis Test</a>
-                <a class="responsive4 translate">Learn more</a>
-                <a class="responsive5 translate">Know us </a>
-                <a class="responsive6 translate">Contact </a>
-
-
-            </ul>
-        </div>
-    </nav>
-
-
-    <header class="home">
-
-
-        <h1 class="translate">Relyer</h1>
-        <p class="translate">We are the connection between <br>
-            the micro-entrepreneurs and <br>
-            technological, organizational & <br>
-            cultural solutions and methods
-        </p>
-        <div class="play-button">
-            <img class="play-button-video" src="./Assets/playcircle.svg" alt="Play Video">
-        </div>
-        <div class="techlevel">
-            <p class="translate">Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
-
-            <div class="rightarrowcontainer">
-                <i class="fas fa-arrow-circle-right"></i>
             </div>
-        </div>
+            <!-- RIGHT SIDE LINKS NAVIGATOR -->
+            <div class="navbar__rightnav">
+                <!-- LOGIN -->
+                <div class="rightnav__login button">
+                    <a class="login--desktop" href="./html/login.html">Login/Register</a>
+                    <a class="login--tablet" href="./html/login.html">
+                        <img class="loginicon" src="./assets/home/signin.svg" alt="Sign in">
+                    </a>
 
-        <img class="bubbles" src="Assets/bubbles.svg" alt="Bubbles">
-
-
+                </div>
+                <!-- CHANGE LANGUAGE -->
+                <div class="rightnav__changelang button">
+                    <img width="60" height="40" class="changelang__enflag" src="./assets/home/en-flag.svg"
+                        alt="United States flag">
+                    <h2 class="changelang__title">English</h2>
+                    <ul class="changelang__options">
+                        <li class="changelang__lang selected">English</li>
+                        <li class="changelang__lang">Spanish</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- HAMBURGUER MENU FOR MOBILE -->
+            <div class="hamburguer">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
     </header>
-    <img class="mainwave" src="Assets/wave.jpg" alt="Wave">
+    <!-- END NAVBAR -->
 
-
-
-    <section class="home-solutions">
-
-        <h2 class="translate">Our solutions</h2>
-        <p class="translate">Tech and innovation are our right hand</p>
-
-        <div class="card-solutions-container">
-
-            <div class="card-solutions experts">
-                <img src="Assets/cardexperts.svg" alt="Experts">
-                <h3 class="card-solutionstitle translate">Experts</h3>
-            </div>
-
-            <div class="card-solutions tech">
-                <img src="Assets/cardtech.svg" alt="Tech">
-                <h3 class="card-solutionstitle translate">Tech</h3>
-
-            </div>
-
-            <div class="card-solutions resources">
-                <img src="Assets/cardresources.svg" alt="Resources">
-                <h3 class="card-solutionstitle translate">Resources</h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="how-it-works">
-
-        <h2 class="translate">How does it <span>work?</span> </h2>
-
-        <img class="wave1" src="Assets/firstwaves.svg" alt="Wave">
-
-
-        <!-- HOW IT WORKS CONTAINER -->
-        <div class="hiwsection-container">
-
-            <div class="hiwsection identify">
-
-                <img class="numbers number1" src="Assets/number1.svg" alt="number1">
-
-                <div class="content">
-                    <h3 class="translate">Identify</h3>
-                    <p class="translate">You can either find possible <br>
-                        issues by yourself or with our <br>
-                        diagnosis</p>
-                </div>
-
-                <img class="spider" src="Assets/spider.svg" alt="spider">
-                <img class="spiderwhite" src="Assets/spiderwhite.svg" alt="spiderwhite">
-
-                <img class="wave2" src="Assets/secondwave.svg" alt="Wave2">
-
-
-            </div>
-
-            <div class="hiwsection learn">
-
-                <img class="numbers number2" src="Assets/number2.svg" alt="number2">
-
-
-                <div class="content">
-                    <h3 class="translate">Learn</h3>
-                    <p class="translate">Discover how tech tools and <br>
-                        methodologies can take you <br>
-                        the next level with experts <br>
-                        guide</p>
-                </div>
-
-                <img class="reading" src="Assets/reading.svg" alt="reading">
-                <img class="readingwhite" src="Assets/readingwhite.svg" alt="readingwhite">
-
-                <img class="wave3" src="Assets/thirdwave.svg" alt="Wave3">
-
-
-            </div>
-
-
-            <div class="hiwsection apply">
-
-                <img class="numbers number3" src="Assets/number3.svg" alt="number3">
-
-
-                <div class="content">
-                    <h3 class="translate">Apply</h3>
-                    <p class="translate"> Use the concepts learnt and <br>
-                        see the expansion of your <br>
-                        company/ business </p>
-                </div>
-
-                <img class="chess" src="Assets/chess.svg" alt="chess">
-                <img class="chesswhite" src="Assets/chesswhite.svg" alt="chesswhite">
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="first-step">
-
-        <p class="translate">It doesn’t matter whether you’re
-            struggling with
-            managing devices
-            and tech, or if you already
-            have more experience
+    <!-- START HOMELAND VIDEO -->
+    <main class="homevideo">
+        <h1 class="homevideo__maintitle">Relyer</h1>
+        <p class="homevideo__description">
+            Our platform helps
+            <abbr title="Micro, small and medium size enterprises">MSMEs</abbr>
+            identify <br>
+            their tech needs, connecting <br>
+            with suppliers & experts <br>
+            that will boost your company<br>
+            <button class="play-button-video--responsive button">Play video</button>
         </p>
+        <video class="homevideo__video--desktop" src="./assets/home/relyer.mp4" controls></video>
 
-        <img src="Assets/snow.svg" alt="Snow">
+        <div class="homevideo__techlevel">
+            <p>Know the <span class="techlevelspan"> tech level</span> <br> of your company</p>
 
-        <h3 class="translate">We’ll help you make your <span class="first">First step</span> </h3>
-
-    </section>
-
-    <section class="carrousel">
-
-        <h2 class="translate">Enterprises that support us</h2>
-
-
-
-        <div class="slider-container">
-
-            <div class="cover-slider">
-            </div>
-
-            <div class="slidertrack">
-
-                <img src="Assets/iconplatzi.svg" alt="Platzi">
-                <img src="Assets/iconceiba.svg" alt="Ceiba">
-                <img src="Assets/iconglobant.svg" alt="Globant">
-                <img src="Assets/imagineapps.svg" alt="Imagine Apps">
-                <img src="Assets/rocketfy.svg" alt="rocketfy">
-                <img src="Assets/protalento.svg" alt="Protalento">
-
-                <!-- INFINITE EFFECT -->
-                <img src="Assets/iconplatzi.svg" alt="Platzi">
-                <img src="Assets/iconceiba.svg" alt="Ceiba">
-                <img src="Assets/iconglobant.svg" alt="Globant">
-                <img src="Assets/imagineapps.svg" alt="Imagine Apps">
-
-            </div>
-
-
-        </div>
-
-
-        <div class="statistics">
-
-            <h3 class="translate"> <span class="statistics-numbers ">+100</span> <br> Companies</h3>
-            <h3 class="translate"> <span class="statistics-numbers ">+4.5</span> <br> Rating</h3>
-            <h3 class="translate"> <span class="statistics-numbers ">3</span> <br>Language</h3>
-
-
-        </div>
-
-
-    </section>
-
-
-    <section class="CTA">
-
-        <img src="Assets/circlecta.svg" alt="Circle">
-
-        <div class="start-now">
-
-            <a href="./html/expertstools.html" class="translate">START NOW</h>
-                <i class="fas fa-arrow-right"></i>
+            <a href="html/test.html" class="rightarrowcontainer">
+                <i class="fas fa-arrow-circle-right"></i>
             </a>
         </div>
 
+        <img class="bubbles" src="./assets/home/bubbles.svg" alt="Bubbles">
+
+    </main>
+    <!-- WAVY BACKGROUND FOR DIFFERENTE SIZES -->
+    <picture class="mainwave">
+        <source media="(min-width: 1200px)" srcset="./assets/home/wave.svg">
+        <source media="(min-width: 800px)" srcset="./assets/home/wavemedium.svg">
+        <source media="(min-width: 480px)" srcset="./assets/home/wavemobile.svg">
+        <img src="./assets/home/wavemini.svg" alt="Wave Background">
+    </picture>
+    <!-- FINISH LANDHOME VIDEO -->
+
+
+    <!-- START HOME SOLUTIONS -->
+    <section class="home-solutions">
+
+        <h2 class="home-solutions__title">Our solutions</h2>
+        <p>Tech and innovation are our right hand</p>
+
+        <div class="card-solutions__container home-solutions--desktop">
+            <div width="132" height="145" class="card-solutions__card diagnosis">
+                <img src="./assets/home/cardtest.svg" alt="Resources">
+                <h3 class="card-solutionstitle ">Diagnosis</h3>
+            </div>
+            <div width="132" height="145" class="card-solutions__card tech">
+                <img src="./assets/home/cardtech.svg" alt="Tech">
+                <h3 class="card-solutionstitle ">Tech</h3>
+            </div>
+            <div width="132" height="145" class="card-solutions__card resources">
+                <img src="./assets/home/cardresources.svg" alt="Resources">
+                <h3 class="card-solutionstitle ">Resources</h3>
+            </div>
+            <div width="132" height="145" class="card-solutions__card experts">
+                <img src="./assets/home/cardexperts.svg" alt="Experts">
+                <h3 class="card-solutionstitle ">Experts</h3>
+            </div>
+        </div>
+    </section>
+    <!-- FINISH HOME SOLUTIONS-->
+
+    <!-- START HOW IT WORKS -->
+    <section class="how-it-works">
+
+        <img height="1007" width="100vw" class="wavy" src="./assets/home/Previa.jpg" alt="wavy">
+        <h2 class="how-it-works__title">How does it <span>work?</span> </h2>
+
+        <div class="how-it-works__container">
+
+            <div class="how-it-works__item identify">
+                <img class="numbers number1" src="./assets/home/number1.svg" alt="number1">
+                <h3>Identify</h3>
+                <p>Recognize your needs with<br>
+                    our diagnosis in areas such as <br>
+                    marketing, costumer service, <br>
+                    management,and more
+
+                </p>
+                <img width="230" height="auto" class="spiderwhite" src="./assets/home/spiderwhite.svg"
+                    alt="spiderwhite">
+            </div>
+
+            <div class="how-it-works__item learn">
+                <img class="numbers number2" src="./assets/home/number2.svg" alt="number2">
+                <h3>Learn</h3>
+                <p>We provide useful content, <br>
+                    suggest tools for you and<br>
+                    connect you with experts that<br>
+                    fit your needs and expectations
+                </p>
+                <img width="230" height="auto" class="readingwhite" src="./assets/home/readingwhite.svg"
+                    alt="readingwhite">
+            </div>
+
+            <div class="how-it-works__item apply">
+                <img class="numbers number3" src="./assets/home/number3.svg" alt="number3">
+                <h3>Apply</h3>
+                <p> You can have 1:1 meetings <br>
+                    with multidisciplinary experts<br>
+                    that will answer your questions <br>
+                    and boost your company
+                </p>
+                <img width="230" height="auto" class="chesswhite" src="./assets/home/chesswhite.svg" alt="chesswhite">
+            </div>
+
+        </div>
+    </section>
+    <!-- FINISH HOW IT WORKS -->
+
+    <!-- START PHRASE OBSTACLES -->
+    <section class="phraseobstacles">
+        <p>It doesn’t matter whether you’re
+            struggling with
+            tech, or if you are more experienced,
+            <strong>
+                We will help you avoid the obstacles of this big sea
+
+            </strong>
+        </p>
+        <picture>
+            <source media="(min-width: 1100px)" srcset="./assets/home/shark.jpg">
+            <source media="(min-width: 800px)" srcset="./assets/home/sharktablet.jpg">
+            <img src="./assets/home/shark.jpg" alt="Shark ">
+        </picture>
 
     </section>
+    <!-- FINISH PHRASE OBSTACLES -->
 
+    <!-- START ALLIES -->
+    <section class="allies">
+
+        <h2 class="allies__title">Allies that support us</h2>
+
+        <div class="allies__slider">
+            <div class="cover-slider"></div>
+            <div class="slidertrack">
+                <img width="300" height="150" src="./assets/home/allies/allie1.png" alt="Impulsa allie">
+                <img width="300" height="150" src="./assets/home/allies/allie2.png" alt="Redeban allie">
+                <img width="300" height="150" src="./assets/home/allies/allie3.svg" alt="Ceiba allie">
+                <img width="400" height="150" src="./assets/home/allies/allie4.png" alt="Alegra allie">
+                <img width="300" height="150" src="./assets/home/allies/allie5.svg" alt="Platzi allie">
+                <img width="300" height="150" src="./assets/home/allies/allie6.svg" alt="Rocketfy allie">
+                <!-- INFINITE EFFECT -->
+                <img width="300" height="150" src="./assets/home/allies/allie1.png" alt="Impulsa allie">
+                <img width="300" height="150" src="./assets/home/allies/allie2.png" alt="Redeban allie">
+                <img width="300" height="150" src="./assets/home/allies/allie3.svg" alt="Alegra allie">
+                <img width="400" height="150" src="./assets/home/allies/allie4.png" alt="Alegra allie">
+            </div>
+        </div>
+
+    </section>
+    <!-- FINISH ALLIES -->
+
+    <!-- START TECH LEVEL -->
     <div class="tech-level">
-
-        <h2 class="translate">Know the <span>tech level</span> of your company</h2>
-        <img class="buttonright" src="Assets/arrowcta.svg" alt="Arrow">
-
+        <h2>Know the <strong>tech level</strong> of your company</h2>
+        <a href="./html/test.html">
+            <img class="buttonright" src="./assets/home/arrowcta.svg" alt="Arrow">
+        </a>
     </div>
+    <!-- END TECH LEVEL -->
 
+    <!-- DINAMICALLY ADDED FOOTER -->
     <footer>
         <div class="img-background-footer">
             <div class="mobile content-logo-footer ">
                 <div class="logo-footer">
-                    <img src="./Assets/Logo.png" alt="">
+                    <img src="./assets/footer/logo.png" alt="footer">
                 </div>
             </div>
-            <div class="background-menu mobile">
-                <div class="menu-footer-mobile">
+            <div class="background-menu mobile" style="display:flex;justify-content: space-around;align-items: center;">
+                <div class="menu-footer-mobile mobile" style="width:50%;">
                     <ul>
+                        <li> <a href="#!"> Home</a></li>
+                        <li> <a href="./html/experts.html"> Services</a></li>
                         <li> <a href="./html/learn.html"> Learn more</a></li>
-                        <li><a href="./hmtl/contact.html"> Contact</a></li>
-                        <li><a href="./html/aboutUs.html"> About us</a></li>
+                        <li><a href="./html/aboutus.html"> About us</a></li>
                     </ul>
+                </div>
+                <div class="networks mobile" style="width:50%;">
+                    <div class="img-networks">
+                        <a href="#" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="blank"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#" target="blank"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#" target="blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
 
             </div>
             <div class="background-menu desktop">
                 <div class="menu-footer">
                     <ul>
+                        <li> <a href="#!"> Home</a></li>
+                        <li> <a href="./html/experts.html"> Services</a></li>
                         <li> <a href="./html/learn.html"> Learn more</a></li>
-                        <li><a href="./hmtl/contact.html"> Contact</a></li>
-                        <li><a href="./html/aboutUs.html"> About us</a></li>
+                        <li><a href="./html/aboutus.html"> About us</a></li>
                     </ul>
                 </div>
                 <div class="content-logo-footer">
                     <div class="logo-footer">
-                        <img src="./Assets/Logo.png" alt="">
+                        <a href="#!">
+                            <img src="./assets/footer/logo.png" alt="relyer logo">
+                        </a>
                     </div>
                 </div>
                 <div class="networks">
                     <div class="img-networks">
-                        <img src="./Assets/markunread.png" alt="Correo">
-                        <img src="./Assets/Instagram.png" alt="Instagram">
-                        <img src="./Assets/Facebook.png" alt="Facebook">
-                        <img src="./Assets/Tinder.png" alt="Tinder">
+                        <a href="#" target="blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="blank"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#" target="blank"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#" target="blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
             </div>
-            <div class="networks mobile">
-                <div class="img-networks">
-                    <img src="./Assets/markunread.png" alt="Correo">
-                    <img src="./Assets/Instagram.png" alt="Instagram">
-                    <img src="./Assets/Facebook.png" alt="Facebook">
-                    <img src="./Assets/Tinder.png" alt="Tinder">
-                </div>
-            </div>
+
         </div>
     </footer>
 

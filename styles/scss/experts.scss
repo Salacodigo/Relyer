@@ -1,0 +1,407 @@
+@import 'global';
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 250px;
+}
+
+body {
+    height: 2200px;
+}
+
+header {
+    position: unset;
+    width: 100vw;
+}
+
+.experts-container {
+
+    background: rgb(26, 50, 86);
+    background: linear-gradient(180deg, rgba(26, 50, 86, 1) 15%, rgba(58, 176, 226, 1) 100%);
+    width: 100vw;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -600px;
+        width: 100vw;
+        height: 100px;
+        background: linear-gradient(to bottom, #39addf65, transparent);
+    }
+
+    &>header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        h1 {
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font: 900 6.5rem $Raleway;
+            padding: 20px;
+        }
+
+        p {
+            color: rgb(173,
+                    173,
+                    173);
+            font-size: 1.6rem;
+            max-width: 60vw;
+        }
+
+        &>.img-wrapper {
+
+
+            &>.expert-woman {
+                position: absolute;
+                mix-blend-mode: lighten;
+                top: 110px;
+                left: 0;
+            }
+        }
+
+        &>a {
+            height: fit-content;
+
+            &>.down-button {
+                cursor: pointer;
+                width: 70px;
+                height: 70px;
+                margin-top: 40px;
+                margin-bottom: 200px;
+                animation: 2s ease-in-out 5s infinite downButton;
+            }
+        }
+
+        @keyframes downButton {
+
+            0% {}
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(-0px);
+            }
+        }
+    }
+
+    // Slider General Container
+    .swiper-container {
+        height: 527px;
+        margin-top: 0px;
+        padding: 20px;
+        width: 90vw;
+
+        .slidercontrols {
+            color: white;
+        }
+
+        // Slider Inner container
+        &>.swiper-wrapper {
+            display: flex;
+            max-width: 30vw;
+            margin-bottom: 40px;
+
+            &>.swiper-slide {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                &>.expert-card {
+                    background-color: whitesmoke;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 500px;
+                    position: relative;
+                    text-align: center;
+                    width: 300px;
+
+                    &>img {
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 50%;
+                        position: relative;
+                        bottom: 20px;
+                        z-index: 1000000;
+                        object-fit: cover;
+                    }
+
+                    &>h2 {
+                        font-size: 2rem;
+                    }
+
+                    &>p {
+                        margin-bottom: 40px;
+                        margin-top: 20px;
+                        width: 80%;
+                        text-align: justify;
+                    }
+
+                    &>.category {
+                        background-color: rgba(100, 148, 237, 0.103);
+                        padding: 10px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 70px;
+                    }
+
+                    &>button {
+                        background-color: $aquamarine;
+                        border: none;
+                        border-radius: 10px;
+                        color: $darkblue;
+                        cursor: pointer;
+                        font-size: 1.3rem;
+                        height: 10%;
+                        padding: 10px;
+                        position: absolute;
+                        bottom: 10px;
+                        text-align: center;
+                        width: 60%;
+
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.tools-container {
+
+    position: relative;
+
+    &>img {
+        position: absolute;
+        right: -350px;
+        top: 10px;
+        z-index: -100;
+    }
+
+    &>header {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        h1 {
+            color: black;
+            margin-top: 70px;
+            margin-bottom: 20px;
+            font: 900 6.5rem $Raleway;
+            padding: 20px;
+        }
+
+        p {
+            color: rgb(173,
+                    173,
+                    173);
+            font-size: 1.6rem;
+            max-width: 60vw;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    // Slider General Container
+    &>.swiper-container {
+        height: 450px;
+        margin-top: 20px;
+        padding: 20px;
+        width: 70vw;
+
+        .slidercontrols {
+            color: black;
+            bottom: 0 !important;
+
+        }
+
+        // Slider Inner container
+        &>.swiper-wrapper {
+            max-width: 25vw;
+            margin-bottom: 40px;
+
+            &>.swiper-slide {
+                display: flex;
+                flex-wrap: wrap;
+                width: 40%;
+                background: rgb(11, 59, 189);
+                background: linear-gradient(90deg, rgba(11, 58, 189, 0.753) 33%, rgba(12, 110, 247, 0.411) 100%);
+                border-radius: 20px;
+
+
+                &>.imgwrap {
+                    width: 30%;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    &>img {
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        position: relative;
+                        bottom: 20px;
+                        z-index: 1000000;
+                    }
+                }
+
+                &>.info {
+                    width: 65%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &>h2 {
+                        color: #103270;
+                        margin-top: 30px;
+                        font-size: 3rem;
+                        font-weight: 800;
+                    }
+
+                    &>p {
+                        color: white;
+                        width: 95%;
+                        text-align: justify;
+                        font-size: 1.4rem;
+                        margin-bottom: 40px;
+                        margin-top: 20px;
+                    }
+
+                    &>button {
+                        background-color: white;
+                        border: none;
+                        border-radius: 10px;
+                        color: #103270;
+                        cursor: pointer;
+                        font-size: 1.3rem;
+                        height: 10%;
+                        padding: 10px;
+                        position: absolute;
+                        bottom: 30px;
+                        text-align: center;
+                        width: 20%;
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+.swp2 {
+    padding: 20px 20px 50px !important;
+}
+
+@media (max-width:500px) {
+    .experts-container {
+
+        .swiper-container {
+            &>.swiper-wrapper {
+
+                &>.swiper-slide {
+
+                    &>.expert-card {
+                        width: 72vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .experts-container {
+
+        width: 100vw;
+
+        &::before {
+            width: 100vw;
+        }
+    }
+
+
+    .img-wrapper img {
+        width: 100%;
+    }
+
+    .tools-container {
+
+        & img {
+            position: absolute;
+            right: 0;
+            top: 4%;
+            z-index: - 100;
+            width: 50%;
+
+        }
+
+        &>.swiper-container {
+            height: 600px;
+            width: 85vw;
+
+            &>.swiper-wrapper {
+
+                &>.swiper-slide {
+                    width: 80vw;
+
+                    &>.imgwrap {
+                        display: none;
+
+                        & img {
+                            display: none;
+                        }
+                    }
+
+                    &>.info {
+                        width: 100%;
+
+                        & h2 {
+                            font-size: 2rem;
+
+                        }
+
+                        & p {
+                            font-size: 1.3rem;
+                        }
+
+                        & button {
+                            width: 40%;
+                            margin-top: 10px;
+                        }
+
+                        & p {
+                            margin-top: 30px;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

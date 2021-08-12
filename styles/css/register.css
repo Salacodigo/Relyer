@@ -1,23 +1,42 @@
-/* ---RELYER--- */
-/* COLORS */
-/* Layers */
-/* Call to action */
-/* Titles */
-/* Contrast */
-/* FONTS */
-/*---GENERAL---*/
-* {
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*COLORS*/
 html {
   width: 100vw;
   height: 100vh;
@@ -98,7 +117,7 @@ html {
 form {
   width: 100vw;
   height: 100vh;
-  background-color: #41CCFF;
+  background-color: #41ccff;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +146,7 @@ form > .form-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 80vw;
 }
 
 form > .form-container > h1 {
@@ -158,6 +178,14 @@ form > .form-container > .inputcontainer > h2 {
 
 form > .form-container > .inputcontainer:first-of-type {
   margin-top: 30px;
+}
+
+form > .form-container > .inputcontainer.conditions {
+  margin-top: 15px;
+}
+
+form > .form-container > .inputcontainer.conditions > .conditionslabel {
+  width: 70vw;
 }
 
 form > .form-container > .inputcontainer > .input {
@@ -199,7 +227,7 @@ form > .form-container > .selectlabel {
   margin-bottom: 20px;
   font-weight: 800;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   display: inline-block;
   color: black;
 }
@@ -235,7 +263,12 @@ form > .form-container > .createaccount {
       align-self: center;
 }
 
-@media (min-width: 800px) {
+form > .form-container > .createaccount a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 1100px) {
   form {
     width: 1000px;
     height: 680px;
@@ -263,7 +296,7 @@ form > .form-container > .createaccount {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     left: 0;
-    background-image: url(../../Assets/seawall.jpg);
+    background-image: url(../../assets/loginregister/seawall.jpg);
     -webkit-filter: sepia(1%);
             filter: sepia(1%);
     display: -webkit-box;
@@ -378,10 +411,14 @@ form > .form-container > .createaccount {
     font: 400 1.15rem "Raleway", sans-serif;
   }
   form > .form-container > .createaccount {
+    width: unset;
     margin-top: 20px;
     margin-left: -25px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  form > .form-container > .createaccount a {
+    color: black;
   }
 }

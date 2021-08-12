@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+html {
+    // RALEWAY MAIN FONT, ENCODE SANSERIF FALLBACK FONT
+    font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+.button {
+    height: 44px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@mixin scroller {
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 10px;
+    }
+}
+
+/*COLORS*/
+
+// Layers
+$lightblue: #41ccff;
+$blue: #6E80EC;
+$secondblue:#3AB0E2;
+$purple: #BBAAE8;
+$orange: #EC9E5F;
+$green: #7DDC98; // Possible option
+$white: white;
+
+// Call to action
+$aquamarine: #08FFBA;
+
+// Titles
+$darkblue: #1A3256;
+$black: #010913;
+
+// Contrast
+$bluecontrast: #708DDC;
+$graycontrast: #F6F6FC;
+
+
+// FONTS
+$Raleway:'Raleway',
+sans-serif;
+$Prata: 'Prata',
+serif;
+$Encode: 'Encode Sans Semi Expanded',
+sans-serif;
+
+// SIZE TEXT DESKTOP
+$NavText: 1.25rem;
+$MainTitle: 7rem;
+$P: 1.8rem;
+$Subtitle: 3.8rem;
+
+// SIZE TEXT MOBILE
+$MainTitleMobile: 5.5rem;
+$PMobile: 1.8rem;
+$SubtitleMobile: 3rem;
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

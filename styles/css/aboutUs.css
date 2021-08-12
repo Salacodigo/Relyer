@@ -1,30 +1,49 @@
-/*---GENERAL---*/
-* {
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-/* ---RELYER--- */
-/* COLORS */
-/* Layers */
-/* Call to action */
-/* Titles */
-/* Contrast */
-/* FONTS */
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*COLORS*/
 .about-wave {
   display: none;
 }
 
 .choose-us {
   background-color: #3DC2F8;
-  padding: 50px;
+  padding: 0 50px 50px 50px;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -46,28 +65,90 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.choose-us .items-why-choose-us .item1-why-chooseUs .item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
+.aboutus-img img {
+  width: 100%;
+}
+
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-2,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-3,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-1,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-2,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-3,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-1,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-2,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
   width: 100px;
   margin: 10px auto;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8FC2F2), to(#8251DB));
-  background: linear-gradient(to bottom, #8FC2F2, #8251DB);
+  background: -webkit-gradient(linear, left bottom, left top, from(#011120), to(#041a3f));
+  background: linear-gradient(to top, #011120, #041a3f);
+  color: white;
+  padding: 20px 10px;
 }
 
-.choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2,
+.choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2,
+.choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2,
+.choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
   width: 90px;
   margin: 0 auto;
 }
 
-.choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
+.aboutus-img {
+  background: -webkit-gradient(linear, left bottom, left top, from(#011120), to(#041a3f));
+  background: linear-gradient(to top, #011120, #041a3f);
+  text-align: center;
+}
+
+.choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1,
+.choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2,
+.choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3,
+.choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1,
+.choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2,
+.choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3,
+.choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1,
+.choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2,
+.choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
   margin-top: 10px;
 }
 
 @media (min-width: 768px) {
+  .aboutus-img {
+    background: -webkit-gradient(linear, left bottom, left top, from(#011120), to(#041a3f));
+    background: linear-gradient(to top, #011120, #041a3f);
+    text-align: center;
+  }
+  .aboutus-img img {
+    width: 50%;
+  }
   .about-wave {
     display: block;
     position: absolute;
@@ -79,30 +160,75 @@ html {
     background-color: unset;
   }
   .choose-us .title-choose-us h3 {
+    color: #35517A;
     font-size: 40px;
   }
   .choose-us .logo-simple {
     margin: 30px 0 0 0;
   }
   .choose-us .items-why-choose-us {
-    margin: 40px 100px;
+    margin: 0 5%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
-  .choose-us .items-why-choose-us .item1-why-chooseUs, .choose-us .items-why-choose-us .item2-why-chooseUs, .choose-us .items-why-choose-us .item3-why-chooseUs {
+  .choose-us .items-why-choose-us .item1-why-chooseUs,
+  .choose-us .items-why-choose-us .item2-why-chooseUs,
+  .choose-us .items-why-choose-us .item3-why-chooseUs {
     width: 33.3%;
     margin: 0 40px;
   }
-  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-2,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-3,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-1,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-2,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-3,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-1,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-2,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 {
     margin: 10px auto;
   }
-  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2, .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item1,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item2,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-1 .icon-item3,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item1,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item2,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-2 .icon-item3,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item1,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item2,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .item-3 .icon-item3,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item1,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item2,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-1 .icon-item3,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item1,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item2,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-2 .icon-item3,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item1,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item2,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .item-3 .icon-item3,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item1,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item2,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-1 .icon-item3,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item1,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item2,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-2 .icon-item3,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item1,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item2,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .item-3 .icon-item3 {
     width: 90px;
     margin: 0 auto;
   }
-  .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2, .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
+  .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-1,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-2,
+  .choose-us .items-why-choose-us .item1-why-chooseUs .info-item-3,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-1,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-2,
+  .choose-us .items-why-choose-us .item2-why-chooseUs .info-item-3,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-1,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-2,
+  .choose-us .items-why-choose-us .item3-why-chooseUs .info-item-3 {
     margin-top: 20px;
     font-size: 20px;
   }
@@ -131,16 +257,25 @@ html {
 }
 
 .reviews .swiper-slide {
-  background-color: #FFDDC1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#011120), to(#041a3f));
+  background: linear-gradient(to top, #011120, #041a3f);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.reviews .swiper-slide img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reviews .innerslide {
@@ -154,12 +289,12 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .reviews .innerslide > img {
@@ -181,7 +316,8 @@ html {
   font-size: 1rem;
 }
 
-.reviews .swiper-button-prev, .reviews .swiper-button-next {
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
   color: white;
 }
 
@@ -191,16 +327,15 @@ html {
     margin-bottom: 40px;
   }
   .reviews .swiper-slide {
-    background-color: #FFDDC1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .reviews .innerslide {
     position: relative;
@@ -213,12 +348,12 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .reviews .innerslide > img {
     position: absolute;
@@ -234,9 +369,10 @@ html {
     text-align: justify;
     text-align: center;
     width: 89%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  .reviews .swiper-button-prev, .reviews .swiper-button-next {
+  .reviews .swiper-button-prev,
+  .reviews .swiper-button-next {
     color: white;
   }
 }
@@ -265,24 +401,28 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.skills .skills-ctn .progress1, .skills .skills-ctn .progress2, .skills .skills-ctn .progress3 {
+.skills .skills-ctn .progress1,
+.skills .skills-ctn .progress2,
+.skills .skills-ctn .progress3 {
   margin-top: 24px;
   text-align: center;
   width: 100%;
 }
 
-.skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
+.skills .skills-ctn .progress1 .progress-bar,
+.skills .skills-ctn .progress2 .progress-bar,
+.skills .skills-ctn .progress3 .progress-bar {
   width: 70%;
   margin: 0 auto;
   background-color: white;
   border-radius: 40px;
   height: 20px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -295,30 +435,42 @@ html {
     height: 40%;
     width: 98%;
   }
-  .skills .skills-ctn .progress1, .skills .skills-ctn .progress2, .skills .skills-ctn .progress3 {
+  .skills .skills-ctn .progress1,
+  .skills .skills-ctn .progress2,
+  .skills .skills-ctn .progress3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin: 12px 0 12px 0;
     text-align: center;
     width: 100%;
   }
-  .skills .skills-ctn .progress1 .skill1, .skills .skills-ctn .progress1 .skill2, .skills .skills-ctn .progress1 .skill3, .skills .skills-ctn .progress2 .skill1, .skills .skills-ctn .progress2 .skill2, .skills .skills-ctn .progress2 .skill3, .skills .skills-ctn .progress3 .skill1, .skills .skills-ctn .progress3 .skill2, .skills .skills-ctn .progress3 .skill3 {
+  .skills .skills-ctn .progress1 .skill1,
+  .skills .skills-ctn .progress1 .skill2,
+  .skills .skills-ctn .progress1 .skill3,
+  .skills .skills-ctn .progress2 .skill1,
+  .skills .skills-ctn .progress2 .skill2,
+  .skills .skills-ctn .progress2 .skill3,
+  .skills .skills-ctn .progress3 .skill1,
+  .skills .skills-ctn .progress3 .skill2,
+  .skills .skills-ctn .progress3 .skill3 {
     font-size: 1.4rem;
     font-weight: 400;
     width: 20%;
     text-align: left;
     margin-left: 70px;
   }
-  .skills .skills-ctn .progress1 .progress-bar, .skills .skills-ctn .progress2 .progress-bar, .skills .skills-ctn .progress3 .progress-bar {
+  .skills .skills-ctn .progress1 .progress-bar,
+  .skills .skills-ctn .progress2 .progress-bar,
+  .skills .skills-ctn .progress3 .progress-bar {
     background-color: white;
     border-radius: 40px;
     height: 20px;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     width: 50%;
   }
 }
@@ -352,7 +504,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .team .members-team .member-ctn {
@@ -363,6 +515,8 @@ html {
 
 .team .members-team .member-ctn .member-photo {
   max-width: 90%;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .team .members-team .member-ctn .member-info p {
@@ -384,7 +538,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .team .members-team .member-ctn {
     width: 33%;
@@ -412,7 +566,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     margin: 0 5%;
   }
 }
@@ -430,8 +584,8 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 15px auto;
   font-family: "Raleway", sans-serif;
 }
@@ -506,12 +660,12 @@ html {
   .counters {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     margin: 55px 30px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .counters .counter1,
   .counters .counter2,
@@ -534,10 +688,16 @@ html {
     display: -ms-flexbox;
     display: flex;
     background-color: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .values .title-values {
-    width: 60%;
-    margin: auto 0;
+    width: 30%;
+    margin: 0;
   }
   .values .title-values .logo-simple {
     width: 70px;
@@ -568,44 +728,12 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
-  .values {
-    padding: 0 200px;
-  }
-}
-
-/* ---RELYER--- */
-/* COLORS */
-/* Layers */
-/* Call to action */
-/* Titles */
-/* Contrast */
-/* FONTS */
-.introTitle {
-  position: absolute;
-  font: 700 1.5rem "Raleway", sans-serif;
-  color: white;
-  z-index: 900;
-  top: 50px;
-  left: 20px;
-}
-
-.introTitle2 {
-  position: absolute;
-  font: 800 4rem/50px "Raleway", sans-serif;
-  letter-spacing: 12px;
-  color: white;
-  z-index: 900;
-  left: 20px;
-  top: 105px;
-}
-
 .swiper-container {
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   width: 99vw;
   height: 600px;
 }
@@ -627,8 +755,8 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: justify;
   margin: 0 25px;
 }
@@ -648,14 +776,41 @@ html {
   margin: 15px auto;
 }
 
+.introTitle {
+  position: absolute;
+  font: 700 6vw "Raleway", sans-serif;
+  color: white;
+  z-index: 900;
+  top: 364px;
+  left: 4vw;
+}
+
+.introTitle2 {
+  position: absolute;
+  font: 800 15vw "Raleway", sans-serif;
+  letter-spacing: 12px;
+  color: white;
+  z-index: 900;
+  top: 280px;
+  left: 4vw;
+}
+
+.aboutus-img {
+  height: 400px;
+  width: 100vw;
+}
+
 @media (min-width: 768px) {
+  .aboutus-img {
+    height: auto;
+  }
   .introTitle {
     position: absolute;
     font: 700 2.5rem "Raleway", sans-serif;
     color: white;
     z-index: 900;
-    top: 80px;
-    left: 150px;
+    top: 20vw;
+    left: 4vw;
   }
   .introTitle2 {
     position: absolute;
@@ -663,8 +818,8 @@ html {
     letter-spacing: 12px;
     color: white;
     z-index: 900;
-    top: 180px;
-    left: 150px;
+    top: 26vw;
+    left: 4vw;
   }
   .about-we-give .what-do-we-give {
     display: -webkit-box;
@@ -672,8 +827,8 @@ html {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .about-we-give .what-do-we-give .title-section-we-give {
     font-size: 50px;
@@ -681,14 +836,14 @@ html {
   }
   .about-we-give .what-do-we-give .explanation-about-us {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: justify;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     font-size: 22px;
     max-width: 90vw;
   }
@@ -701,6 +856,12 @@ html {
     height: -moz-fit-content;
     height: fit-content;
     margin: auto 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .team .members-team .member-ctn {
+    width: 100%;
   }
 }
 

@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="author" content="Relyer Team">
+    <meta name="description" content="Register a new account on Relyer to access experts and do the test">
+    <meta name="keywords"
+        content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
+    <link rel="icon" href="../assets/home/relyer-icon.svg">
     <!-- STYLES -->
-    <link rel="stylesheet" href="../styles/css/navbar.css">
-    <link rel="stylesheet" href="../styles/css/register.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css/register.min.css">
+    <!-- FONT AWESOME -->
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
     <!--SCRIPT  -->
-
-    <script src="../js/printMessage.js" defer></script>
+    <script src="../js/printMessage.js" async></script>
     <script src="../js/register.js" defer></script>
     <title>Relyer</title>
 </head>
@@ -55,8 +55,8 @@
             <label class="selectlabel" for="city">Select a city :</label>
             <select class="inputselect" id="city" name="city">
                 <option value="santander">Santander</option>
-                <option value="nortedesantander">Norte de Santander</option>
-                <option class="lastoption" value="bogota">Bogotá</option>
+                <option value="nortedesantander">Antioquia</option>
+                <option class="lastoption" value="bogota">Cundinamarca D.C.</option>
             </select>
 
             <label class="selectlabel role-label" for="entrp">Select a Role :</label>
@@ -66,8 +66,11 @@
                 <option class="lastoption" value="learning">Just Learning</option>
             </select>
 
-            <label for="condiciones">Acepta los terminos y condiciones</label>
-            <input type="checkbox" name="condiciones" required>
+            <div class="inputcontainer conditions">
+                <input type="checkbox" name="conditions" required>
+                <label class="conditionslabel" for="conditions">Accept terms and conditions</label>
+
+            </div>
 
 
             <button type="submit" class="ctabutton">Create account</button>

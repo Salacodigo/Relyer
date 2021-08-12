@@ -1,26 +1,53 @@
-/*General*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-* {
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
+a {
+  color: white;
+}
+
+html {
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*COLORS*/
 main #inicioTest {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #inicioTest h1 {
@@ -38,7 +65,7 @@ main #inicioTest p {
 }
 
 main #inicioTest #pasos {
-  width: 80%;
+  width: 90%;
   margin-top: 2%;
 }
 
@@ -51,11 +78,11 @@ main #inicioTest #pasos #parrafo-pasos {
 }
 
 main #inicioTest #pasos h2 {
-  color: #6E80EC;
+  color: white;
   margin-top: 3%;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: start;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 main #inicioTest #pasos p {
@@ -69,17 +96,18 @@ main #inicioTest #pasos div {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 5%;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2%;
 }
 
 main #inicioTest #pasos div img {
-  width: 70%;
+  width: 100%;
   height: auto;
+  max-width: 100px !important;
 }
 
 main #inicioTest #pasos div div {
@@ -88,11 +116,10 @@ main #inicioTest #pasos div div {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
 }
 
 main #inicioTest #pasos div div p {
@@ -106,8 +133,8 @@ main #inicioTest .button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: center;
   margin-bottom: 5%;
 }
 
@@ -127,12 +154,13 @@ main #inicioTest .button a {
   main #inicioTest #pasos div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   main #inicioTest #pasos div img {
     width: 30%;
-    margin-right: 5%;
+    margin-right: 0;
+    max-width: 100px !important;
   }
   main #inicioTest .button {
     margin-top: 0%;
@@ -147,27 +175,28 @@ main #inicioTest .button a {
     width: 60%;
   }
   main #inicioTest #pasos {
-    width: 60%;
+    width: 90%;
   }
   main #inicioTest #pasos div {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     vertical-align: initial;
   }
   main #inicioTest #pasos div img {
-    width: 20%;
-    margin-right: 5%;
+    width: 100%;
+    margin-right: 0;
+    max-width: 100px !important;
   }
   main #inicioTest #pasos div div {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     line-height: 20px;
   }
   main #inicioTest .button {
-    width: 60%;
+    width: 100%;
     margin-top: 0%;
   }
   main #inicioTest .button a {
@@ -198,11 +227,11 @@ main #test {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #test .container-barra {
@@ -210,6 +239,22 @@ main #test .container-barra {
   width: 95%;
   height: 30px;
   background-color: #EBEDED;
+}
+
+.arriba {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+.card {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 25%;
+  margin: 0 10px;
+  padding: 10px;
+  min-height: 466px;
 }
 
 main #test .container-barra .barra {
@@ -223,7 +268,7 @@ main #test .container-barra .barra {
 main #test .card {
   background: rgba(5, 198, 244, 0.1);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 10px;
@@ -302,11 +347,11 @@ main #resultados {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main #resultados h1 {
@@ -335,10 +380,10 @@ main #resultados .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-flow: wrap;
-      flex-flow: wrap;
+  flex-flow: wrap;
 }
 
 main #resultados .container div {
@@ -383,5 +428,11 @@ main #resultados .container div canvas {
   }
   main #resultados .container div {
     width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
   }
 }

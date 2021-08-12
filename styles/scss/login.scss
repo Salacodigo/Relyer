@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'normalize';
+@import 'global';
 
 html {
     width: 100vw;
@@ -149,6 +148,9 @@ form {
             margin-top: 20px;
             margin-left: -25px;
             align-self: center;
+
+
+            ;
         }
     }
 
@@ -179,7 +181,7 @@ form {
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
             left: 0;
-            background-image: url(../../Assets/seawall.jpg);
+            background-image: url(../../assets/loginregister/seawall.jpg);
             display: flex;
             background-size: cover;
             background-position: left;
@@ -264,6 +266,13 @@ form {
                 margin-top: 20px;
                 margin-left: -25px;
                 align-self: center;
+
+                & a {
+                    color: black;
+                    text-decoration: underline;
+                }
+
+
             }
         }
 

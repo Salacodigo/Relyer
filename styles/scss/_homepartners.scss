@@ -1,21 +1,19 @@
-.carrousel {
+.allies {
 
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-
-    &>h2 {
-        font: 800 2rem $Raleway;
+    &>.allies__title {
+        margin-top: 30px;
+        font: 800 $SubtitleMobile $Raleway;
         text-align: center;
-
     }
 
     /* SLIDER */
-
-    &>.slider-container {
+    &__slider {
         background: white;
         width: 100%;
         margin-top: 25px;
@@ -26,11 +24,9 @@
         overflow: hidden;
         position: relative;
 
-
         /* X - Y - BLUR -SPREAD */
-        box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .125);
+        box-shadow: 0 0px 40px 40px rgba(0, 0, 0, .06);
         margin-top: 50px;
-
 
         &::before,
         &::after {
@@ -53,51 +49,30 @@
             top: 0;
         }
 
-
-
-        &>.slidertrack {
+        & .slidertrack {
             display: flex;
-            height: 200px;
+            height: 180px;
             width: calc(400px *7);
             align-items: center;
-            animation: scroll 20s linear infinite;
+            animation: infiniteCarrousel 20s linear infinite;
 
             &>img {
-                width: 300px;
-                height: 150px;
+                // width: 300px;
+                // height: 150px;
                 margin: 0 100px;
             }
 
 
-            @keyframes scroll {
+            @keyframes infiniteCarrousel {
                 0% {
                     transform: translateX(0);
                 }
 
                 100% {
-                    transform: translateX(calc(-400px * 7 - (100px / 2 + 8px)))
+                    transform: translateX(-3066.5px)
                 }
             }
         }
-
-    }
-
-    &>.statistics {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-
-        &>h3 {
-            font: 300 1.2rem $Raleway;
-            text-align: center;
-
-            &>span.statistics-numbers {
-                font: 300 1.7rem $Prata;
-            }
-
-        }
-
 
     }
 
@@ -107,33 +82,18 @@
 
 @media (min-width:1200px) {
 
-    .carrousel {
+    .allies {
 
-        &>h2 {
-            font: 800 2.5rem $Raleway;
+        &>&>.allies__title {
+            font: 800 $Subtitle $Raleway;
         }
 
-        &>.slider-container {
+        &__slider {
 
             &::before,
             &::after {
                 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
-        }
-
-
-        &>.statistics {
-
-            &>h3 {
-                font: 300 1.8rem $Raleway;
-                text-align: center;
-
-                &>span.statistics-numbers {
-                    font: 300 2.2rem $Prata;
-                }
-
-            }
-
         }
     }
 

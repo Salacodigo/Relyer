@@ -27,6 +27,13 @@
         direction: 'horizontal',
         loop: true,
         speed: 500,
+        slidesPerView: 1,
+        breakpoints: {
+            960: {
+                slidesPerView: 2,
+            }
+            
+        },
 
         // AUTOPLAY
         autoplay: {

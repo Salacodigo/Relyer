@@ -1,23 +1,42 @@
-/* ---RELYER--- */
-/* COLORS */
-/* Layers */
-/* Call to action */
-/* Titles */
-/* Contrast */
-/* FONTS */
-/*---GENERAL---*/
-* {
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif, 'Encode Sans Semi Expanded', sans-serif;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+.button {
+  height: 44px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*COLORS*/
 html {
   width: 100vw;
   height: 100vh;
@@ -129,7 +148,7 @@ form > .form-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #41CCFF;
+  background-color: #41ccff;
 }
 
 form > .form-container > h1 {
@@ -233,7 +252,7 @@ form > .form-container > .createaccount {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     left: 0;
-    background-image: url(../../Assets/seawall.jpg);
+    background-image: url(../../assets/loginregister/seawall.jpg);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,5 +345,9 @@ form > .form-container > .createaccount {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  form > .form-container > .createaccount a {
+    color: black;
+    text-decoration: underline;
   }
 }

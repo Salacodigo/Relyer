@@ -1,0 +1,378 @@
+@import "global";
+
+.navbar {
+    background-color: #4CCFFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 140px;
+    z-index: 200;
+    position: relative;
+    z-index: 1000;
+
+    /* LOGO NAVIGATOR */
+    &>.navbar__img {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        height: 110px;
+        width: 110px;
+    }
+
+    /* CENTRAL LINKS NAVIGATOR */
+    & .navbar__centralnav {
+        transform: translateX(-100%);
+        background-color: $darkblue;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 0.95;
+        z-index: 300;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .centralnav__home {
+            margin-top: 120px
+        }
+
+        & a,
+        & h3 {
+            width: 100vw;
+            cursor: pointer;
+            text-align: center;
+            font-size: $NavText;
+            display: block;
+            color: white;
+            padding: 30px 20px;
+
+            &:hover {
+                color: $purple;
+            }
+        }
+
+        &>.centralnav__services,
+        &>.centralnav__aboutus {
+
+            position: relative;
+
+            & .dropdownmenu {
+                all: unset;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+
+            // DONT SHOW ARROW ICON 
+            & img {
+                position: relative;
+                width: 20px;
+                height: 20px;
+                bottom: 2px;
+                left: 10px;
+            }
+
+            // INSTEAD SHOW DOUBLE ARROW
+            & .doublearrow {
+                display: none;
+            }
+        }
+
+        & .centralnav__language--mobile {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            padding: 10px 10px;
+
+            & img {
+                cursor: pointer;
+
+            }
+
+        }
+    }
+
+    /* RIGHT SIDE NAV */
+    .navbar__rightnav {
+        display: none;
+    }
+
+    &>.hamburguer {
+        width: 38px;
+        height: 40px;
+        top: 45px;
+        right: 30px;
+        z-index: 500;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+
+        &>span {
+            width: 100%;
+            height: 6px;
+            margin-top: 7px;
+            border-radius: 25px;
+            display: block;
+            background-color: $black;
+        }
+    }
+}
+
+
+@media (min-width:1000px) {
+
+    /* big landscape tablets, laptops, and desktops */
+
+    header {
+        z-index: 1000;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+    }
+
+    .navbar {
+        height: 115px;
+        min-width: 100vw;
+        width: 100%;
+        background-color: #4CCFFF;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        // WHEN THE NAVIGATOR IS STICKY
+        &.sticky {
+            z-index: 1000;
+            opacity: 0.95;
+            background-color: #41ccffde;
+        }
+
+        &>.navbar__img {
+            height: 115px;
+            width: 115px;
+            top: 5px;
+            left: 50px;
+        }
+
+        /* CENTRAL LINKS NAVIGATOR */
+        & .navbar__centralnav {
+            transform: none !important;
+            transition: 0s !important;
+            background-color: transparent;
+            position: static;
+            flex-direction: row;
+            align-items: center;
+            margin-left: calc(20vw - 3%);
+
+            & .centralnav__home {
+                margin-top: unset;
+            }
+
+            & a,
+            & h3 {
+                font-weight: 700;
+                width: 10vw;
+                min-width: 130px;
+                height: 115px;
+                padding: 50px 0;
+                border-radius: 5px;
+
+                &:hover,
+                &:active {
+                    color: white;
+                    cursor: pointer;
+                    background-color: #3ab0e217;
+                }
+            }
+
+            &>.centralnav__services,
+            &>.centralnav__aboutus {
+
+                &:hover>a,
+                &:hover>h3 {
+                    color: whitesmoke;
+                    cursor: pointer;
+                    background-color: #3ab0e217;
+
+                    .doublearrow {
+                        bottom: 10px;
+                        display: block;
+                    }
+                }
+
+                &>.dropdownmenu {
+
+                    position: fixed;
+                    top: 115px;
+                    width: 10vw;
+                    height: 70px;
+                    padding-top: 10px;
+
+                    &>a {
+                        border-radius: 2px;
+                        background-color: #3AB0E2;
+                        margin-bottom: 10px;
+                        width: 100%;
+                        height: fit-content;
+                        min-height: 30px;
+                        padding: 0;
+                        font: 500 1.25rem/28px "Raleway";
+                    }
+                }
+
+                &:hover {
+                    &>.dropdownmenu {
+                        display: block;
+                    }
+                }
+
+                // HIDE SIMPLE ARROW
+                .simplearrow {
+                    display: none;
+                }
+
+                // SHOW DOUBLE ARROW
+                & .doublearrow {
+                    position: absolute;
+                    left: 40%;
+                    display: none;
+                }
+            }
+
+            & .login--mobile {
+                display: none;
+            }
+
+            & .centralnav__language--mobile {
+                display: none;
+            }
+        }
+
+        /* RIGHT SIDE NAV */
+        & .navbar__rightnav {
+            z-index: 200;
+            position: absolute;
+            right: 20px;
+            top: 35.5px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            // LOGIN
+            & .rightnav__login {
+                font: 900 1.25rem/20px "Raleway";
+
+                color: rgba(245, 245,
+                        245,
+                        0.829);
+                background: $aquamarine;
+                padding: 10px 30px;
+                width: 30px;
+
+                &:hover {
+                    background: #08ffb9d8;
+                }
+
+                & .login--tablet {
+                    display: block;
+
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                & .login--desktop {
+                    display: none;
+                }
+            }
+
+            // LANGUAGE
+            & .rightnav__changelang {
+                padding: 10px 25px;
+                background-color: $bluecontrast;
+
+                & .changelang__title {
+                    font: 700 1.25rem/15px "Raleway";
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: #708ddcdc;
+
+                    &>.changelang__options {
+                        display: block;
+                    }
+                }
+            }
+
+            & .changelang__options {
+                position: fixed;
+                top: 80px;
+                width: 150px;
+                height: fit-content;
+                padding-top: 10px;
+                display: none;
+
+                & .changelang__lang {
+                    background-color: #708ddcdc;
+                    height: 32px;
+                    font: 500 1.25rem/28px "Raleway";
+                    color: white;
+                    border-radius: 4px;
+                    text-align: center;
+                    margin-bottom: 10px;
+
+                    &.selected {
+                        color: gainsboro;
+                    }
+                }
+            }
+        }
+
+        &>.hamburguer {
+            display: none;
+        }
+    }
+}
+
+@media (min-width:1230px) {
+    /* tablet, landscape iPad */
+
+    .navbar {
+
+        /* RIGHT SIDE NAV */
+        &>.navbar__rightnav {
+            right: 50px;
+
+            // LOGIN
+            &>.rightnav__login {
+                width: 232px;
+
+                &>.login--tablet {
+                    display: none;
+                }
+
+                &>.login--desktop {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1300px) {
+    .navbar {
+        & .navbar__centralnav {
+            gap: 20px;
+        }
+    }
+}

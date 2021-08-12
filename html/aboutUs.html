@@ -4,67 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <!-- Font Raleway & Prata -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- ICON -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="author" content="Relyer Team">
+    <meta name="description" content="Get to know Relyer and the team behind it">
+    <meta name="keywords"
+        content="digital, transformation, tech, company, entrepreneurship, Protalento, Relyer, digitalize company ">
+    <link rel="icon" href="../assets/home/relyer-icon.svg">
+    <!-- FONT AWESOME -->
     <script src='https://kit.fontawesome.com/a2ed2fdecb.js' crossorigin='anonymous'></script>
-    <!-- Styles connection -->
+    <!-- SWIPER -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="../styles/css/navbar.css">
-    <link rel="stylesheet" href="../styles/css/aboutUs.css">
-    <link rel="stylesheet" href="../styles/css/footer.css">
-    <!-- SWIPER -->
-
-
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../styles/css/navigator.min.css">
+    <link rel="stylesheet" href="../styles/css/aboutus.min.css">
+    <link rel="stylesheet" href="../styles/css/footer.min.css">
     <!-- SCRIPTSS -->
-    <!-- SWIPER -->
+    <script src="../js/printMessage.js" async></script>
     <script src="../js/aboutSlider.js" defer></script>
     <script src="../js/navigator.js" defer></script>
     <script src="../js/validToken.js" defer></script>
-    <script src="../js/accordionNav.js" defer></script>
     <script src="../js/footer.js" defer></script>
-    <script src="../js/language.js" defer></script>
-
-
+    <title>About Us</title>
 
 </head>
 
 <body>
-
-    <nav class="nav-container"></nav>
+    <header>
+        <nav class="navbar"></nav>
+    </header>
     <!-- Section Slider -->
 
     <!-- Slider main container -->
-    <div class="swiper-container swpcont1">
-
-        <h1 class="introTitle translate">DISCOVER</h1>
-        <h2 class="introTitle2 translate"> RELYER</h2>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="https://source.unsplash.com/XJXWbfSo2f0/2000x800" alt="cats">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://source.unsplash.com/QckxruozjRg/2000x800" alt="cats">
-            </div>
-            <div class="swiper-slide"><img src="https://source.unsplash.com/wZA5o-bECNc/2000x800" alt="animal"></div>
-
+    <section class="banner-aboutus">
+        <div class="aboutus-img">
+            <h1 class="introTitle translate">DISCOVER</h1>
+            <h2 class="introTitle2 translate"> RELYER</h2>
+            <img src="../assets/aboutus/delfines-aboutus.jpeg" alt="dolphins">
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination swp1"></div>
+    </section>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev btnpswp1"></div>
-        <div class="swiper-button-next btnnswp1"></div>
-
-    </div>
 
     <!-- Section about We Give -->
     <section class="about-we-give">
@@ -83,7 +62,7 @@
     </section>
 
     <!-- Section Values -->
-    <div class="counters">
+    <div class="counters" style="display: none;">
         <div class="counter1">
             <div class="figure">+20</div>
             <div class="title-counter translate">Professionals</div>
@@ -98,10 +77,10 @@
         </div>
     </div>
 
-    <img class="about-wave" src="../Assets/aboutwave.svg" alt="wave">
+    <img class="about-wave" src="../assets/aboutus/aboutwave.svg" alt="wave">
     <section class="values">
         <div class="title-values">
-            <img src="../Assets/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
+            <img src="../assets/aboutus/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
             <p class="subtitle-values translate">Discover</p>
             <div class="relyer-brand">
                 <h3>RE<br>LY<br>ER<br></h3>
@@ -116,31 +95,28 @@
     <!-- Section Choose Us -->
     <section class="choose-us">
         <div class="title-choose-us">
-            <img src="../Assets/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
+            <img src="../assets/aboutus/darkdolphin.svg" alt="dolphinLogo" class="logo-simple">
             <h3 class="title-section-chooseUs translate">Why Relyer?</h3>
         </div>
         <div class="items-why-choose-us">
             <div class="item1-why-chooseUs">
                 <div class="item-1">
-                    <img src="https://i.pinimg.com/originals/d1/f3/cc/d1f3ccc7e836617fb6e5db7fed1ae90b.png"
-                        alt="iconConnection" class="icon-item1">
+                    <i class="fas fa-users" style="font-size: 60px;"></i>
                 </div>
-                <div class="info-item-1 translate">Valoramos a las personas como individuos y a la familia</div>
+                <div class="info-item-1 translate">We value people ,consumers and our team as a family</div>
             </div>
             <div class="item2-why-chooseUs">
                 <div class="item-2">
-                    <img src="https://image.flaticon.com/icons/png/512/1340/1340105.png" alt="iconMeasure"
-                        class="icon-item2">
+                    <i class="fas fa-chart-line" style="font-size: 60px;"></i>
                 </div>
-                <div class="info-item-2 translate">Trabajamos en equipo con nuestros clientes de manera transparente
+                <div class="info-item-2 translate">We work transparently with our team, creating valuable relationships
                 </div>
             </div>
             <div class="item3-why-chooseUs">
                 <div class="item-3">
-                    <img src="https://image.flaticon.com/icons/png/512/107/107788.png" alt="iconMeasure"
-                        class="icon-item3">
+                    <i class="fas fa-lightbulb" style="font-size: 60px;"></i>
                 </div>
-                <div class="info-item-3 translate">Somos generadores de ideas y soluciones</div>
+                <div class="info-item-3 translate">We are ideas and solutions generators </div>
             </div>
         </div>
     </section>
@@ -151,8 +127,7 @@
         </div>
         <div class="members-team">
             <div class="member1 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
-                    class="photo-member1 member-photo">
+                <img src="../assets/aboutus/Perfil5.png" alt="team-member" class="photo-member1 member-photo">
                 <div class="member-info">
                     <p class="name-member1 name-member">Santiago</p>
                     <p class="position-member1 translate">Scrum Master</p>
@@ -168,8 +143,7 @@
                 </div>
             </div>
             <div class="member2 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
-                    class="photo-member2 member-photo">
+                <img src="../assets/aboutus/daniel-perfil.jpeg" alt="team-member" class="photo-member2 member-photo">
                 <div class="member-info">
                     <p class="name-member2 name-member">Daniel</p>
                     <p class="position-member2 translate">UX/UI designer</p>
@@ -185,8 +159,7 @@
                 </div>
             </div>
             <div class="member3 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
-                    class="photo-member3 member-photo">
+                <img src="../assets/aboutus/perfil-aleja.jpeg" alt="team-member" class="photo-member3 member-photo">
                 <div class="member-info">
                     <p class="name-member3 name-member">Alejandra</p>
                     <p class="position-member3 translate">Product Owner</p>
@@ -201,8 +174,7 @@
                 </div>
             </div>
             <div class="member4 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
-                    class="photo-member4 member-photo">
+                <img src="../assets/aboutus/Juan Jose Florez.jpg" alt="team-member" class="photo-member4 member-photo">
                 <div class="member-info">
                     <p class="name-member4 name-member">Juan José</p>
                     <p class="position-member4 translate">Backend developer</p>
@@ -218,7 +190,7 @@
                 </div>
             </div>
             <div class="member5 member-ctn">
-                <img src="https://tuwebsoluciones.com/wp-content/uploads/2018/03/team-member-4.jpg" alt="team-member"
+                <img src="../assets/aboutus/Documentos escaneados_page-0001.jpg" alt="team-member"
                     class="photo-member4 member-photo">
                 <div class="member-info">
                     <p class="name-member5 name-member">Alejandro</p>
@@ -237,7 +209,7 @@
         </div>
     </section>
     <!-- Section Skills -->
-    <section class="skills">
+    <section class="skills" style="display: none;">
         <div class="title-section-skills">
             <h4 class="team-skills translate">OUR SKILLS</h4>
         </div>
@@ -269,7 +241,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="innerslide">
-                        <img src="https://source.unsplash.com/100x100/?girl" alt="woman" class="userpic">
+                        <img src="../assets/aboutus/cost1.jpg" alt="woman" class="userpic">
                         <h2 class="name">Sara</h2>
                         <p class="opinion translate">"You guys are amazing, my company went somewhere I didn't believe
                             possible
@@ -279,7 +251,7 @@
 
                 <div class="swiper-slide">
                     <div class="innerslide">
-                        <img src="https://source.unsplash.com/100x100/?guy" alt="guy" class="userpic">
+                        <img src="../assets/aboutus/cost2.jpg" alt="guy" class="userpic">
                         <h2 class="name">Andrew</h2>
                         <p class="opinion translate">"I'm spechless for all the things I learnt and the way my
                             entrepreneur ideas
@@ -291,7 +263,7 @@
 
                 <div class="swiper-slide">
                     <div class="innerslide">
-                        <img src="https://source.unsplash.com/100x100/?girl,woman" alt="woman" class="userpic">
+                        <img src="../assets/aboutus/cost3.jpg" alt="woman" class="userpic">
                         <h2 class="name">Danna</h2>
                         <p class="opinion translate">" I sincerely can say that it was really great, you might think is
                             just a
@@ -304,7 +276,7 @@
 
                 <div class="swiper-slide">
                     <div class="innerslide">
-                        <img src="https://source.unsplash.com/100x100/?guy,model" alt="man" class="userpic">
+                        <img src="../assets/aboutus/cost4.jpg" alt="man" class="userpic">
                         <h2 class="name">Shawn</h2>
                         <p class="opinion translate">" I mean like just can say 2 words , thank you"</p>
                     </div>
@@ -313,7 +285,7 @@
 
                 <div class="swiper-slide">
                     <div class="innerslide">
-                        <img src="https://source.unsplash.com/100x100/?girl,beauty" alt="woman" class="userpic">
+                        <img src="../assets/aboutus/cost5.jpg" alt="woman" class="userpic">
                         <h2 class="name">Sofia</h2>
                         <p class="opinion translate">" When you give your best and you're guided by the best success is
                             a joke to

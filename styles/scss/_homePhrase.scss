@@ -1,24 +1,30 @@
-.first-step {
+.phraseobstacles {
     margin-top: 40px;
-    background-color: rgba(110, 128, 236, 0.7);
+    background-color: #031225;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-width: 100vw;
 
     &>p {
-        padding-top: 50px;
-        font: 600 1.5rem/45px $Raleway;
+        padding: 20px 0;
+        text-align: justify;
+        font: 200 $PMobile $Raleway;
         color: white;
-        max-width: 90vw;
+        max-width: 80vw;
 
     }
 
-    &>img {
+    &>picture {
+        order: -1;
         padding-top: 25px;
-        width: 80vw;
 
-        filter: blur(0.3px);
+        &>img {
+
+            width: 80vw;
+        }
     }
 
     &>h3 {
@@ -31,48 +37,34 @@
 }
 
 
+@media (min-width:800px) {
 
-
-
-@media (min-width:1200px) {
-
-    .first-step {
-        display: block;
+    .phraseobstacles {
+        background: rgb(10, 38, 94);
+        background: linear-gradient(90deg, rgba(10, 38, 94, 0.9484628398766678) 0%, rgba(3, 18, 37, 1) 42%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         position: relative;
         height: 500px;
-        margin-bottom: 50px;
+        margin: 85spx 0 0 0;
 
         &>p {
-            position: absolute;
-            font: 400 2.2rem/60px $Raleway;
+            text-align: justify;
+            font: 200 2rem/50px $Raleway;
             color: white;
             max-width: 40vw;
-            top: 80px;
-            left: 60px;
-
-
         }
 
-        &>img {
+        &>picture {
+            order: 2;
             padding-top: none;
-            position: absolute;
-            width: 40vw;
-            right: 20px;
-            filter: blur(0px);
-        }
+            position: static;
 
-        &>h3 {
-            position: absolute;
-            font: 400 2.2rem $Raleway;
-            text-align: left;
-            bottom: 10px;
-            right: 20px;
-            width: 35vw;
+            &>img {
 
-        }
-
-        .first {
-            font-weight: 900;
+                width: 40vw;
+            }
         }
     }
 
